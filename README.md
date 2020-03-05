@@ -1,2 +1,3 @@
 # IDS-RAM_4_0
- Text for the IDS-RAM 4.0
+ IDS RAM_4_0 is under construction here. Initialitzed based on IDS-RAM 3.0
+ 

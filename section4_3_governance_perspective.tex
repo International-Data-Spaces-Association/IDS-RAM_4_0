@@ -1,0 +1,408 @@
+
+\subsection{Governance Perspective}
+%\addcontentsline{toc}{subsection}{Governance Perspective}
+
+
+The Governance Perspective of the Reference Architecture Model defines the roles, functions, and processes of the International Data Spaces from a governance and compliance point of view. It thereby defines the requirements to be met by the business ecosystem to achieve secure and reliable corporate interoperability. This chapter provides an overview of how central questions of governance are defined on each layer of the Reference Architecture Model (see section 3). In particular, it describes how the International Data Spaces enables companies to define rules and agreements for compliant collaboration.
+
+While the International Data Spaces enables all participants to act in compliance with negotiated rules and processes, it does not make any restrictions or enforce predefined regulations. The architecture of the International Data Spaces should be seen as a functional framework providing mechanisms that can be customized by the participating organizations according to their individual requirements.
+
+The International Data Spaces supports governance issues by
+\begin{itemize}
+	\item providing an infrastructure for data exchange, corporate interoperability, and the use of new, digital business models;
+	\item establishing trustworthy relationships between Data Owners, Data Providers, and Data Consumers;
+	\item acting as a trustee for mediation between participants;
+	\item facilitating negotiation of agreements and contracts;
+	\item aiming at transparency and traceability of data exchange and data use;
+	\item allowing private and public data exchange;
+	\item taking into account individual requirements of the participants; and
+	\item offering a decentralized architecture that does not require a central authority.
+\end{itemize}
+
+
+The Governance Perspective in the context of the IDS-RAM relates to concepts from an organizational and technical point of view to establish the development of a healthy and trustful data ecosystem. It supports collaborative governance mechanisms, so that the common service and value propositions are achieved, while protecting the interests of all actors. 
+
+As innovative business models and digital, data-driven services require enhanced data management capabilities, the role of data governance is increasingly receiving attention. Therefore, the management of data related resources by means of decision rights, accountabilities, roles, and ownership makes data governance a fundamental element in the International Data Spaces ecosystem. To manage data under consideration of business needs and the existing digital infrastructure, data governance, being a leadership function of data management, acts as an enabler for successfully engaging in a collaborative ecosystem. It is therefore necessary to establish suitable organizational structures and procedures that determine who makes what kind of decisions concerning data assets, and which responsibilities and accountabilities are associated with these decisions.
+
+In this context, organizations are confronted with new challenges. Innovative, data-driven business solutions often require that data is increasingly used outside of the organization. This development transcends organizational boundaries, as internal data is used externally, and vice versa. At the same time, this creates new forms of collaboration in data ecosystems. Various actors, such as original equipment manufacturers (OEMs), suppliers, or third-party vendors interact with each other and contribute to fulfilling a common value proposition. 
+
+From an internal perspective of one single organization, the execution and allocation of decision rights for the management and use of data manifests itself within organizational structures. They ensure that relevant guidelines and principles regarding data assets are in place and monitored. However, traditional instruments for assigning decision rights and accountabilities in terms of data usually do not reach beyond an organization’s borders. Thus, the influence of authority for the individual actor within a data ecosystem might be limited. The IDS-RAM addresses this challenge in a federated manner by distributing decision rights for data governance and management activities to the different roles in the International Data Spaces ecosystem. It thereby supports the requirements to be met by the actors within the ecosystem to achieve secure and reliable interoperability as well as desirable behavior regarding the use of data. 
+
+
+\subsubsection{Governance Aspects Addressed by the Different Layers of the IDS-RAM}
+%\addcontentsline{toc}{subsubsection}{Governance Aspects Addressed by the Different Layers of the IDS-RAM}
+
+\paragraph{Business Layer\\}
+
+The Business Layer (see Chapter 3.1) facilitates the development and use of new, digital business models to be applied by the Participants in the International Data Spaces. It also specifies the roles within the IDS. Thereby, it is directly related to the Governance Perspective by considering the business point of view regarding data ownership, data provision, and data consumption, and by describing core service concepts such as data brokerage.
+
+\paragraph{Functional Layer\\}
+
+The Functional Layer (see Chapter 3.2) defines the functional requirements of the International Data Spaces, and the concrete features resulting from them, in a technology-independent way. The IDS Connector represents the main interface to enable participation in the ecosystem. From a governance perspective, interoperability and connectivity must be ensured to support trust, security, and data sovereignty. Beside the Clearing House and the Identity Provider, which are entities for which the relation to governance is obvious, also the functionality of certain technical core components (e.g., the App Store or the Connector) relates to the Governance Perspective.
+
+\paragraph{Process Layer\\}
+
+Providing a dynamic view of the architecture, the Process Layer (see Chapter 3.3) describes the interactions taking place between the different components of the International Data Spaces. The three major processes described in the Process Layer section (onboarding, exchanging data, and publishing and using Data Apps) are directly related to the Governance Perspective, as they define its scope regarding the technical architecture.
+
+\paragraph{Information Layer\\}
+
+The Information Layer (see Chapter 3.4) specifies the Information Model, which provides a common vocabulary for Participants to express their concepts. It thereby defines a framework for standardized collaboration and for using the infrastructure of the International Data Spaces for establishing individual agreements and contracts. The vocabulary plays a key role in the Governance Perspective because of its relevance for describing data by metadata in the International Data Spaces.
+
+\paragraph{System Layer\\}
+
+The System Layer (see Chapter 3.5) relates to the Governance Perspective due to its technical implementation of different security levels for data exchange between the Data Endpoints in the International Data Spaces.
+
+
+
+\subsubsection{Data Governance}
+%\addcontentsline{toc}{subsubsection}{Data Governance}
+\paragraph{Key Roles and Correlating Data Governance and Management Activities \\}
+
+The following tables list what data governance / data management activities central roles in the IDS ecosystem are occupied with, and what IDS components are involved. 
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 10 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{2.75in}p{3.14in}}
+%row no:1
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Data Owner / Data Provider}}} & 
+\multicolumn{1}{p{3.14in}}{} \\
+\hhline{~~}
+%row no:2
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{DG/DM activities}}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Define usage constraints for data resources} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Publish metadata including usage constraints to Broker} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Transfer data with usage constraints linked to data} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Receive information about data transaction from Clearing House} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Bill data (if required)} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Monitor policy enforcement} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Manage data quality} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Describe the data source} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Authorize Data Provider, if Data Provider is not the Data Owner}
+\end{itemize}} \\
+\hhline{~~}
+%row no:3
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Enabling/Supporting IDS Component: }}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont IDS Connector} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Catalogue of rules allowing Data Owners to configure usage conditions related to their own requirements} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Define pricing model and pricing (see section 3.4.3.9)}
+\end{itemize}} \\
+\hhline{~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 10 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 11 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{2.73in}p{3.16in}}
+%row no:1
+\multicolumn{1}{p{2.73in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Data Consumer}}} & 
+\multicolumn{1}{p{3.16in}}{} \\
+\hhline{~~}
+%row no:2
+\multicolumn{1}{p{2.73in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{DG/DM activities}}} & 
+\multicolumn{1}{p{3.16in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Use data in compliance with usage constraints} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Search for existing datasets by making an inquiry at a Broker Service Provider} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Nominate Data Users (if needed)} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Receive information about data transaction from Clearing House} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Monitor policy enforcement}
+\end{itemize}} \\
+\hhline{~~}
+%row no:3
+\multicolumn{1}{p{2.73in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Enabling/Supporting IDS Component: }}} & 
+\multicolumn{1}{p{3.16in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont IDS Connector} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Catalogue of rules to act in compliance with usage constraints specified by Data Owner}
+\end{itemize}} \\
+\hhline{~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 11 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 12 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{2.75in}p{3.14in}}
+%row no:1
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Broker Service Provider}}} & 
+\multicolumn{1}{p{3.14in}}{} \\
+\hhline{~~}
+%row no:2
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{DG/DM activities}}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Match demand and supply of data} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Provide Data Consumer with metadata}
+\end{itemize}} \\
+\hhline{~~}
+%row no:3
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Enabling/Supporting IDS Component: }}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Broker Service Provider component} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Core of the metadata model must be specified by the International Data Spaces (by the Information Model)} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Provide registration interface for Data Provider} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Provide query interface for Data Consumer} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Store metadata in internal repository for being queried by Data Consumers}
+\end{itemize}} \\
+\hhline{~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 12 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 13 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{2.75in}p{3.14in}}
+%row no:1
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Clearing House}}} & 
+\multicolumn{1}{p{3.14in}}{} \\
+\hhline{~~}
+%row no:2
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Data-related activities}}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Monitor and log data transactions and data value chains} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Monitor policy enforcement} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Provide data accounting platform}
+\end{itemize} \par } \\
+\hhline{~~}
+%row no:3
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Enabling/Supporting IDS Component: }}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Clearing House component} \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Logging data}
+\end{itemize}} \\
+\hhline{~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 13 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 14 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{2.75in}p{3.14in}}
+%row no:1
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{App Store Provider}}} & 
+\multicolumn{1}{p{3.14in}}{} \\
+\hhline{~~}
+%row no:2
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Data-related activities}}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Offer Data Services (e.g. for data visualization, data quality, data transformation, data governance) } \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Provide Data Apps } \par 	\item {\fontsize{10pt}{12.0pt}\selectfont Provide metadata and a contract based on the metadata for app user}
+\end{itemize}} \\
+\hhline{~~}
+%row no:3
+\multicolumn{1}{p{2.75in}}{{\fontsize{10pt}{12.0pt}\selectfont \textbf{Enabling/Supporting IDS Component: }}} & 
+\multicolumn{1}{p{3.14in}}{\begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont App Store Provider component}
+\end{itemize} \par \begin{itemize}
+	\item {\fontsize{10pt}{12.0pt}\selectfont Interfaces for publishing and retrieving Data Apps plus corresponding data}
+\end{itemize}} \\
+\hhline{~~}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 14 ends here %%%%%%%%%%%%%%%%%%%%
+
+\paragraph{IDS Data Governance Model\\}
+
+
+The IDS Data Governance Model defines a framework of decision-making rights and processes with regard to the definition, creation, processing, and use of data. While governance activities set the overall directive of the decision-making system, data management comprises three groups of activities with regard to the creation, processing, and use of data. In the IDS context, data governance comprises also usage rights of data shared and exchanged within the IDS ecosystem. The management of metadata specifies data about data and comprises both syntactical, semantic and pragmatic information. This is of particular importance in distributed system environments that do not rely on a central instance for data storage, but instead allow self-organization of different heterogeneous databases. Additionally, data lifecycle management is concerned with the creation and capturing of data, including data processing, enrichment, storage, distribution, and use.
+
+The following responsibility assignment matrix (RACI matrix) supports the allocation of these activities to enable a governance mechanism in the IDS ecosystem. RACI stands for $``$responsible$"$ , $``$accountable$"$ , $``$consulted$"$  and $``$informed$"$ . The focus lies on the „R$``$ and „A$``$ of the RACI matrix, supported by the notation „S$``$, which stands for „supported$``$. 
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 15 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+{
+\setlength\extrarowheight{3pt}
+\begin{longtable}{p{1.11in}p{1.09in}p{1.05in}p{1.09in}p{0.95in}}
+
+\endfirsthead
+\multicolumn{5}{c}{\textit{continued from previous page}}
+%\hline
+\endhead
+\multicolumn{5}{r}{\textit{continued on next page}} \\
+\endfoot
+\endlastfoot%row no:1
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Activity}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont Data Owner / Data Provider}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont Data User / Data Consumer}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont Broker}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont Clearing House}} \\
+\hhline{~~~~~}
+%row no:2
+\multicolumn{1}{p{1.11in}}{\cellcolor[HTML]{D9D9D9}{\fontsize{10pt}{12.0pt}\selectfont Management}} & 
+\multicolumn{1}{p{1.09in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{1.05in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{1.09in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{0.95in}}{\cellcolor[HTML]{D9D9D9}} \\
+\hhline{~~~~~}
+%row no:3
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Determine data usage restrictions (execute data ownership rights)}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:4
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Enforce  data usage restrictions}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:5
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Ensure data quality } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:6
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Monitor and log data transactions } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A -}} \\
+\hhline{~~~~~}
+%row no:7
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Enable data provenance } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} \\
+\hhline{~~~~~}
+%row no:8
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Provide clearing services } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} \\
+\hhline{~~~~~}
+%row no:9
+\multicolumn{1}{p{1.11in}}{\cellcolor[HTML]{D9D9D9}{\fontsize{10pt}{12.0pt}\selectfont Metadata } \par } & 
+\multicolumn{1}{p{1.09in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{1.05in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{1.09in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{0.95in}}{\cellcolor[HTML]{D9D9D9}} \\
+\hhline{~~~~~}
+%row no:10
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Describe and publish metadata } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:11
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Look up and retrieve metadata } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:12
+\multicolumn{1}{p{1.11in}}{\cellcolor[HTML]{D9D9D9}{\fontsize{10pt}{12.0pt}\selectfont Data Lifecycle }} & 
+\multicolumn{1}{p{1.09in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{1.05in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{1.09in}}{\cellcolor[HTML]{D9D9D9}} & 
+\multicolumn{1}{p{0.95in}}{\cellcolor[HTML]{D9D9D9}} \\
+\hhline{~~~~~}
+%row no:13
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Capture and create data } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:14
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Store data } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:15
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Enrich and aggregate data } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:16
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Distribute and provide data } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:17
+\multicolumn{1}{p{1.11in}}{{\fontsize{10pt}{12.0pt}\selectfont Link data } \par } & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.05in}}{{\fontsize{10pt}{12.0pt}\selectfont S}} & 
+\multicolumn{1}{p{1.09in}}{{\fontsize{10pt}{12.0pt}\selectfont R, A}} & 
+\multicolumn{1}{p{0.95in}}{{\fontsize{10pt}{12.0pt}\selectfont -}} \\
+\hhline{~~~~~}
+%row no:18
+\multicolumn{5}{p{\dimexpr6.09in+8\tabcolsep\relax}}{{\fontsize{10pt}{12.0pt}\selectfont Legend: R – Responsible; A – Accountable; S – Supporting. }} \\
+\hhline{~~~~~}
+
+\caption{Roles responsible, accountable and supporting in data governance}
+
+\end{longtable}}
+
+%%%%%%%%%%%%%%%%%%%% Table No: 15 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+
+The following subsections describe five topics that are addressed by the Governance Perspective. These topics play an important role when it comes to the management of data assets.
+
+\subsubsection{Data as an Economic Good}
+%\addcontentsline{toc}{subsubsection}{Data as an Economic Good}
+As data can be decoupled from specific hardware and software implementations, it turns into an independent economic good. While this opens up new opportunities, it creates challenges as well. To ensure competitiveness of organizations, a solution is required that facilitates new, digital business models.
+
+The International Data Spaces offers a platform for organizations to offer and exchange data and digital services. In doing so, it offers a basic architecture for organizations that want to optimize their data value chains. The main goal is to enable participants to leverage the potential of their data within a secure and trusted business ecosystem. The International Data Spaces thereby covers the information system perspective and provides the components that enable participants to define individual business cases.
+
+The International Data Spaces neither makes any statements on legal perspectives, nor does it restrict participants to any predefined patterns. Instead, it offers the possibility to design digital business models individually and as deemed appropriate.
+
+\subsubsection{Data Ownership}
+%\addcontentsline{toc}{subsubsection}{Data Ownership}
+In the material world, the difference between the terms $``$possession$"$  and $``$property$"$  is an abstract, yet necessary construct. It is accepted that moving a good from one place to another and changing possession of the good does not necessarily have an impact on the property rights. Regarding the specific concept of the International Data Spaces, it is necessary to take into account that the Data Owner and Data Provider may not be identical (see Chapter 3.1.1).
+
+From a legal perspective, there is no ownership regarding data, as data is an intangible good. With the $``$Free Flow of Data$"$  Regulation\footnote{ Regulation (EU) 2018/1807 of the European Parliament and of the Council of 14 November 2018 on a framework for the free flow of non-personal data in the European Union },\ the European Commission supports data exchange and data sharing across borders in the means of technical hurdles. The IDS approach supports the implementation of the regulation for non-personal data. At the same time the democratization of data is not the aim of the IDS concept, as  data ownership is an important aspect when it comes to offering data and negotiating contracts in digital business ecosystems, especially because data can easily be duplicated. 
+
+The International Data Spaces makes sure the need of a Data Provider or a Data Producer is comprehensively addressed by providing a secure and trusted platform for authorization and authentication within a decentralized architecture. This allows Data Providers as well as Service Providers to be identified and controlled by an Identity Provider (see Chapter 3.1.1). Decentralized data exchange by means of Connectors, in contrast to other architectures of data networks (e.g., data lakes or cloud services), ensures full data sovereignty. In addition to these self-control mechanisms, the architecture allows logging of data transfer information at a Clearing House (see Chapter 3.2.5). 
+
+As the need for Data Sovereignty is obvious, but the term of ownership is not defined for data, the term $``$Data Sovereign$"$  indicates the rights, duties, and responsibilities for this role. The term and the role of the Data Owner is defined for this document in section 3.1.1 and does not cover a legal statement on data ownership. This is indeed relevant on every layer of the architecture. 
+
+As the International Data Spaces intends to build upon and apply existing law, it will not include any purely technology-oriented solutions to prevent data duplication or misuse of data assets. However, it supports these important aspects over the entire data lifecycle. Furthermore, it supports the arrangement of collaborative solutions by providing an appropriate technical infrastructure.
+
+\subsubsection{Data Sovereignty}
+%\addcontentsline{toc}{subsubsection}{Data Sovereignty}
+Data sovereignty is a natural person’s or corporate entity’s capability of being entirely self-determined with regard to its data. The Reference Architecture Model presented in this document particularly addresses this capability, as it specifies requirements for secure data exchange and restricted data use in a trusted business ecosystem.
+
+The International Data Spaces promotes interoperability between all participants based on the premise that full self-determination with regard to one’s data goods is crucial in such a business ecosystem. Data exchange takes place by means of secured and encrypted data transfer including authorization and authentication. The Data Provider may attach metadata to the data transferred using the IDS Vocabulary. In doing so, the terms and conditions to ensure data sovereignty can be defined unambiguously (e.g., data usage, pricing information, payment entitlement, or time of validity). The International Data Spaces thereby supports the concrete implementation of applicable law, without predefining conditions from a business point of view, by providing a technical framework that can be customized to the needs of individual participants.
+
+\subsubsection{Data Quality}
+%\addcontentsline{toc}{subsubsection}{Data Quality}
+Because of the correlation between good data quality and maximizing the value of data as an economic good, the International Data Spaces explicitly addresses the aspect of data quality. Due to this premise, the International Data Spaces enables its participants to assess the quality of data sources by means of publicly available information and the transparency it provides with regard to the brokerage functionality it offers. Especially in competitive environments, this transparency may force Data Providers to take data maintenance more seriously. By extending the functionality of the Connector with self-implemented Data Apps (see Chapter 3.2.4), the International Data Spaces lays the foundation for automated data (quality) management.
+
+\subsubsection{Data Provenance}
+%\addcontentsline{toc}{subsubsection}{Data Provenance}
+By creating transparency and offering clearing functionality, the International Data Spaces provides a way to track the provenance and lineage of data. This is strongly linked to the topics of data ownership and data sovereignty.  Data provenance tracking can be implemented with local tracking components integrated into IDS Connectors and a centralized provenance storage component attached to the Clearing House (see Chapter 3.1.1), which receives all logs concerning activities performed in the course of a data exchange transaction, and requests confirmations of successful data exchange from the Data Provider and the Data Consumer. In doing so, data provenance is always recursively traceable. In, addition provenance information can be integrated into the IDS Vocabulary, so as to enable the participants to maintain data provenance as part of the metadata during the process of data exchange.
+
+The International Data Spaces thereby provides the possibility to implement and use appropriate concepts and standards. However, it does not force participants to use these concepts and standards. It is therefore up to the individual participant to provide correct information (i.e., metadata) on the provenance of data.
+
