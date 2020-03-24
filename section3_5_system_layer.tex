@@ -210,15 +210,18 @@ As described in section 3.5.1 Connectors can make use of Apps for several purpos
 In addition, Data Apps can be divided into three categories:
 
 \begin{itemize}
-	\item System Adapters are Data Apps on the Data Provider side, establishing interfaces to external enterprise information systems. The main tasks of a Data App belonging to this category is providing access to enterprise information systems and, if necessary, transforming from an internal data model to a data model recommended, or considered as a standard, for a given application domain, as well as to add metadata to the data.
+	\item System Adapters are Data Apps establishing interfaces to external enterprise information systems. The main tasks System Adapters is providing access to enterprise information systems and, if necessary, transforming from an internal data model to a data model applicable for data a exchange (e.g., a standard or recommendation for a given application domain), as well as to enrich the data with the required
+	metadata to exchange information with other Connectors. System Adapters can be used by Data Providers and Data Consumers, i.e., for reading and writing data to enterprise information systems. 
 
-	\item Smart Data Apps (or Data Sink Connectors) are Data Apps on the Data Consumer side, executing any kind of data processing, transformation, or storage functionality. Normally, the data provided by, or sent to, a Smart Data App is already annotated with metadata (as described in the Information Layer section).
+	\item Smart Data Apps execute any kind of data processing or transformation. Normally, the data provided by, or sent to, a Smart Data App is already annotated with metadata (as described in the Information Layer section). The important difference to System Adapters is that Smart Data Apps have input \emph{and} output data, as they process the input data to provide value-added
+	output data. For example, a Smart Data App could apply a data transformation (e.g., from miles into meters or from XML into JSON) or apply machine learning to do classification (e.g., to recognize malicious
+	behavior of a machine).
 
-	\item Other Apps providing a certain use of the data on Data Consumer or Data Provider side. Usage Policies can enforce the processing of the data in a trusted environment, i.e. a Trusted Connector. 
+	\item Management Apps provide additional functionality within a Connector, but do not deal directly with the data being exchanged. For example, Usage Policies can enforce the processing of the data in a trusted environment, i.e., a Trusted Connector. A monitoring app could provide statistical information about data usage to a Data Provider.
 \end{itemize}
 
 
 
 The IDS App Store is a secure platform for distributing Data Apps and features different search options (e.g., by functional or non-functional properties, pricing model, certification status, community ratings, etc.). An IDS App Store consists of a registry for available Data Apps in this App Store. Therefore, an App Store supports operations for Data App registration, publication, maintenance, and query, as well as operations for the provisioning of a Data App to a connector. These basic operations can be complemented by additional services, e.g., billing or support activities. 
 
-\todo{Hier Verweis auf Jive-Dokument hinzufügen?}
+\todo{Hier Verweis auf Jive-Dokument hinzufügen? : https://industrialdataspace.jiveon.com/docs/DOC-2604}
