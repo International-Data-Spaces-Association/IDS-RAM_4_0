@@ -191,9 +191,37 @@ Another way of Connector miniaturization offers the Embedded Connector. Embedded
 
 Additional steps for Connector miniaturization may include the use of a common runtime for all components, or simplified versions of the Data Router and the Data Bus. If data is to be sent to a fixed recipient only, a simple Data Bus client library may be sufficient. Similarly, it may be sufficient to hard-code a single, fixed connection to the Data Bus instead of using a configurable component. To save communication overhead, simple API calls inside the common runtime could be used.
 
-\subsubsection{Broker}
+\subsubsection{Meta Data Broker}
 %\addcontentsline{toc}{subsubsection}{Broker}
-The IDS Broker consists of an IDS Connector (see section 3.5.1), a service for data source registration, publication, maintenance, and query, based on an index. Therefore, for any interaction with the IDS Broker the processes defined on the Process Layer, the descriptions defined on the Information Layer, and descriptions defined on the System Layer can be applied. The Information Layer describes the message types for Broker registration and query. An IDS Broker may provide additional services that must be described by the IDS Information Model. 
+
+%old
+%The IDS Broker consists of an IDS Connector (see section 3.5.1), a service for data source registration, publication, maintenance, and query, based on an index. Therefore, for any interaction with the IDS Broker the processes defined on the Process Layer, the descriptions defined on the Information Layer, and descriptions defined on the System Layer can be applied. The Information Layer describes the message types for Broker registration and query. An IDS Broker may provide additional services that must be described by the IDS Information Model. 
+
+%new
+The IDS Meta Data Broker is a service for publishing and searching metadata of connectors and resources between International Data Spaces Participants. In order to ensure the necessary interoperability and general interactions, an IDS Meta Data Broker is also defined as a specialized IDS Connector. The communication between an IDS Connector and an IDS Meta Data Broker is based on the same principles as any other Connector-Connector communication within the International Data Spaces. Still, an IDS Meta Data Broker provides a collection of additional functionalities:
+\begin{itemize}
+	\item Indexing services in order to effectively and efficiently respond to queries and present known Connectors and other resources
+	\item Interfaces for Users or IDS-Messages to ensure access to the stored information. 
+\end{itemize}
+
+
+The capabilities and functionalities of an IDS Meta Data Broker are subject of IDS Certification. After a successful certification of the relevant Criteria of an IDS Connector and as an IDS Meta Data Broker, a software component can include the following RDF statement into its Self-Description:
+ 
+\begin{verbatim}
+<Connector/Broker URI>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+<https://w3id.org/idsa/core/Broker> .
+\end{verbatim}
+\todo{make a listing with numbering out of this}
+
+In accordance to the thereby directly included guaranteed features, an IDS conform Meta Data Broker may provide significantly more services. Several options to include broker features in an International Data Space are possible: 
+\begin{itemize}
+	\item only mandatory IDS Meta Data Broker features as specifed in the IDS Meta Data Broker Specification\footnote{ToDo Link},
+	\item mandatory and optional features as specifed in the IDS Meta Data Broker Specification,
+	\item general features supporting publication, indexing and discovery which are not mentioned in this as specifed in the IDS Meta Data Broker Specification (not applicable as an IDS Meta Data Broker, if they interfere with mandatory features), or
+	\item any combination of the first three categories.
+\end{itemize}
+
 
 \subsubsection{Data Apps and App Store}
 %\addcontentsline{toc}{subsubsection}{Data Apps and App Store}
