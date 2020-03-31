@@ -142,7 +142,10 @@ Regarding the IDS-RAM, \textit{Data }is defined in alignment with ISO/IEC 2382:2
 
 \textbf{CONTEXT} Temporal, spatial and real-world entities linked to the Resource content are covered by the Context concern (see section 3.4.3.6).
 
-\textbf{CONCEPT} Semantic annotation of the Resource content is covered by the Concept concern (see section 3.4.6).
+\textbf{CONCEPT} Semantic annotation of the Resource content is covered by the Concept concern for the Resource as a whole (see section 3.4.3.7),
+% ToDo: referer (link was wrong in RAM 3.0)
+and by links to domain-specific vocabularies for a more detailed view (see section 3.4.4).
+% ToDo: referer
 
 
 
@@ -698,7 +701,7 @@ This figure also provides a summary of external standards reused.
 
 \subsubsection{Vocabularies}
 %\addcontentsline{toc}{subsubsection}{Vocabularies}
-The IDS expresses its Information Model as an RDF ontology in order to provide unambiguous identifiers and formalized definitions of its concepts and relations. To simplify the integration of the IDS ontology, descriptions directly connected to the respective concepts, as well as links to widely-known concepts of so called upper-level ontologies, provide further explanations. As data exchange between different parties is at the core of the IDS, only a fundamental core vocabulary for data descriptions and data exchange invocations is required for all IDS participants. Domain-specific vocabularies may be used wherever necessary to extend the core concepts and to provide more information on data provided or requested.
+The IDS expresses its Information Model as an RDF ontology in order to provide unambiguous identifiers and formalized definitions of its concepts and relations. To simplify the integration of the IDS ontology, descriptions directly connected to the respective concepts, as well as links to widely-known concepts of so called upper-level ontologies, provide further explanations. As data exchange between different parties is at the core of the IDS, only a fundamental core vocabulary for data descriptions and data exchange invocations is required for all IDS participants. Domain-specific vocabularies may be used wherever necessary to extend the core concepts and to provide more information on data provided or requested. On the one hand, the Information Model be extended by vocabularies describing (Digital) Resources in domain specific ways. On the other hand, the Information Model itself allows, in the scope of its \textit{Content} concern, for describing domain-specific aspects of the structure and/or semantics of the content of a \textit{Resource} or of one of its \textit{Representation}s by referencing domain-specific vocabularies. Terms from such vocabularies may be referenced and their usage in the content of a Resource/Representation may be expressed, e.g., on the level of the Resource/Representation as a whole (using the VoID Vocabulary of Interlinked Datasets\footnote{https://www.w3.org/TR/void/ }), or in the context of describing table/matrix or graph structures of Data Resources (using the Data Cube Vocabulary\footnote{https://www.w3.org/TR/vocab-data-cube/ } or the SHACL Shapes Constraint Language\footnote{https://www.w3.org/TR/shacl/ }, respectively).
 
 \subsubsection{Data App Interfaces}
 %\addcontentsline{toc}{subsubsection}{Data App Interfaces}
