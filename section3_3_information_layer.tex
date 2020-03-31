@@ -437,7 +437,7 @@ Quality is commonly interpreted as $``$fitness for use$"$  (J. M. Juran)\footnot
 
 \textbf{DIMENSION} A quality Dimension is a qualitative characteristic of a dataset relevant to the Data Consumer. It relates to whether data is complete, valid, accurate, up to date, (technically) available, and so on. User-oriented quality dimensions are measured by means of one or more quantifiable metrics. 
 
-\textbf{METRIC} A quality Metric implements a particular approach to assess a data quality dimension by observing a concrete indicator, such as the spatial resolution (accuracy) or the up-time of the Resource’s server (availability). The value of a metric is often numeric (percentage) or boolean. 
+\textbf{METRIC} A quality Metric implements a particular approach to assessing a data quality dimension by observing a concrete indicator, such as the spatial resolution (accuracy) or the up-time of the Resource’s server (availability). The value of a metric is often numeric (percentage) or boolean. 
 
 \textbf{MEASUREMENT} Evaluation of a given dataset against a specific quality metric results in a measurement. Measurement results, as well as individual, subjective assessments may be annotated by means of metadata. 
 
@@ -467,7 +467,9 @@ Quality is commonly interpreted as $``$fitness for use$"$  (J. M. Juran)\footnot
 
 \subparagraph*{Policy}
 %\addcontentsline{toc}{subparagraph}{Policy}
-A Policy defines rules for access to and usage of Resources. Published as part of a Resource’s metadata, it constitutes a contract offer to be further negotiated and agreed upon by the prospective Data Consumer. 
+A Policy defines rules for access to and usage of Resources, as further specified in the subsections on Data Access Control and Data Usage Control of section 4.1.3.
+% ToDo: referer
+Published as part of a Resource’s metadata, it constitutes a contract offer to be further negotiated and agreed upon by the prospective Data Consumer. 
 
 Example: \textit{Permission for unrestricted usage of report data given the obligation the assignee John Doe will cite the source of data (Creative Commons Attribution, CC by)}.
 
@@ -477,7 +479,7 @@ Example: \textit{Permission for unrestricted usage of report data given the obli
 
 \textbf{ACTION} Alongside with operations on Assets (e.g. copy, print, convert), an Action may comprise general obligations (e.g. pay, attribute) or modify the interpretation of the policy (e.g. ensure exclusiveness)\footnote{https://www.w3.org/TR/odrl-vocab/$\#$ actionConcepts }. 
 
-\textbf{ASSET }An Asset is the subject of a Rule, a Resource or a collection of Resources. Depending on the Policy’s specifications (e.g. do not redistribute), the Asset’s content needs to be identified in a persistent and unambiguous manner in order to be effectively enforceable, independently of the provisioning type (e.g. download URL) or storage context (Data Provider or Data Consumer) (for example, by an identifier composed of indicators such as artifact name and hash sum).
+\textbf{ASSET }An Asset, i.e., a Resource or a collection of Resources, is the subject of a Rule. Depending on the Policy’s specifications (e.g. do not redistribute), the Asset’s content needs to be identified in a persistent and unambiguous manner in order to be effectively enforceable, independently of the provisioning type (e.g. download URL) or storage context (Data Provider or Data Consumer) (for example, by an identifier composed of indicators such as artifact name and hash sum).
 
 \textbf{CONSTRAINT} A formal Constraint may restrict the applicability of a Rule (e.g. by purpose of use), guide the selection of collection items (e.g. according to the file format) and permissible Parties (e.g. by role), or refine the interpretation of Actions (e.g. print at low resolution). The underlying Policy language has to define appropriate properties (e.g. purpose, file format, role, or resolution) along with conditions of their applicability and interpretation\footnote{https://www.w3.org/TR/odrl-vocab/$\#$ term-LeftOperand }. Reusing quality metrics (e.g. server uptime), as introduced above, allows specifying Policies on the required quality of service (QoS). 
 
