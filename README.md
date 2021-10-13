@@ -2,7 +2,7 @@
  
 ## Overview 
 
-Welcome to the IDS-RAM 4.0 repository of the [IDSA](). This Repository is the working version of the IDS RAM 4.0. It was initalized with [IDS-RAM 3.0](https://internationaldataspaces.org/download/16630/). 
+Welcome to the IDS-RAM 4.0 repository of the [IDSA](../../../idsa). This Repository is the working version of the IDS RAM 4.0. It was initialized with [IDS-RAM 3.0](https://internationaldataspaces.org/download/16630/). 
 
 *This is not the official and approved version of IDS-RAM 4.0.*
 
@@ -13,10 +13,10 @@ Please also consider the information
 - [the changelog](./CHANGELOG.md)
 - check the open [issues](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues) and the [Pull Requests](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/pulls)
 
-[IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G) provides additonal information to the IDS-RAM. 
+[IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G) provides additional information to the IDS-RAM. 
  
 ## Schedule
-The IDS-RAM 4.0 shall be relased in April 2022. Therefore the development will be *freezed end of Februray 2022*.
+The IDS-RAM 4.0 shall be released in April 2022. Therefore the development will be *freezed end of February 2022*.
 
 Regular touchpoints will be conducted starting from October 25th 2021:
 - Mondays 4 pm to 4:30 pm (weekly)
