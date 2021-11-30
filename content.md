@@ -1,5 +1,6 @@
 # Table of content IDS-RAM
 
+
 ## 1	Introduction	
 
 1.1	Goals of the International Data Space	
@@ -186,7 +187,7 @@
 
 	
 
-4.1.$	Data Access Control  and Data Usage Control	
+4.1.5	Data Access Control  and Data Usage Control	
 
     4.1.7	Usage Control building blocks in the International Dataspace	
 
@@ -199,9 +200,13 @@
 ### 4.2	Certification Perspective	
 
 4.2.1	Certification Aspects on the different Architectural Layers
+
 4.2.2	Roles in the Certification Process	
+
 4.2.3	Core Component Certification	
+
 4.2.4	IDS Certification Process
+
 
 ### 4.3	Governance Perspective	
 
@@ -228,4 +233,5 @@ NEW 4.3.1 IDS Governance aspects of the IDSA Rule Book
 
 ### Appendix A: Glossary	
 > Gloassary should be linked to IDS-G Glossary
+
 
