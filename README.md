@@ -1,4 +1,4 @@
-# IDS-RAM_4_0
+# IDS-RAM 4.0
  
 ## Overview 
 
@@ -23,7 +23,23 @@ Regular touchpoints will be conducted starting from October 25th 2021:
 - Thursdays 8:30 am to 9 am (weekly)
 - Wednesdays 10 am to 11 am (biweekly)
 
+## Scope of IDS-RAM
+
+The IDS-RAM is complemented with additonal documents and repositories. Most relevant in this context is IDS-G (inclduing IDS-G-pre). 
+In general, IDS-RAM contains the conceptual level including technology agnostic specifications. 
+The genreal outline of the IDS-RAM is based on the five layers and the three perspectives. Each
+layer should refelct the main components and aspects of the IDS. 
+
+IDS-G contains specific details on specifications, e.g. APIs and their descriptions. 
+
+IDS-RAM 4.0 will be created as an online docment and does not target a printed document first. This enables the use
+of linking to content in other places more easily, e.g. IDS-G. A printable White Paper of the IDS-RAM should be genrated
+from this repository. Here the main outline of the concepts shall be described. 
+
+
 ## Structure
+
+The [content](./content.md) describes the target structure for the document. 
 
 README.md this file
 
