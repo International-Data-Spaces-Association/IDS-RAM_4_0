@@ -39,8 +39,10 @@
 
 3.1.1	Roles in the International Data Space	
  > Definition of each role
+ > each component should be introduced here
 
 3.1.2	Interaction of Roles
+> verify this general interaction scheme
 
 3.1.3 Digital Identities
 
@@ -61,6 +63,8 @@
 3.2.6	Data Markets
 
 ### 3.3	Process Layer	
+
+> We should consider to describe here the interactions for each component
 
 3.3.1 Onboarding
 
@@ -95,11 +99,16 @@
 
 3.4.13	Summary	
 
-3.4.14	Vocabularies	
+*3.4.14	Vocabularies*
 
-3.4.15	App Interfaces	
+> Vocabularies and vocabulary provider have to be more detailed
+
+3.4.15	App Interfaces
+
 
 ### 3.5	System Layer	
+
+> Each component described in one subsection, Connector, Meta Data Broker, App Store, Clearing House, Vocabulary Provider
 
 3.5.1	Connector Architecture	
 
@@ -117,27 +126,27 @@
 
 ### 4.1	Security Perspective	
 
-4.1.1	Security Aspects on the Different Architectural Layers	73
+4.1.1	Security Aspects on the Different Architectural Layers	
 
 4.1.2	General Security Principles	
 
 4.1.3	Key Security Concepts
 
-  Secure Communication
+ 4.1.3.1 Secure Communication
 
-  Identity Management
+  4.1.3.2 Identity Management
 
     Mapping of Participant Certification and Connector Certification to Identity Management
  
-  Proposed PKI Structure
+    Proposed PKI Structure
   
-  Connector Certificate Deployment
+    Connector Certificate Deployment
   
-  Using the Dynamic Attribute Provisioning Service (DAPS) for Identity Management
+     Using the Dynamic Attribute Provisioning Service (DAPS) for Identity Management
   
-  Using an Authorization Service for Resource Access Control
+    Using an Authorization Service for Resource Access Control
   
-  Trust Management
+     Trust Management
     
     PKI Rollout
     
@@ -167,7 +176,7 @@
     
     Connector Security Profiles
   
-  Trusted Platform
+  4.1.3.3 Trusted Platform
     
     Isolation and Remote Execution Guarantee
     
@@ -175,17 +184,17 @@
     
     Dynamic Trust Monitoring
 
-4.1.5	Data Access Control	
+	
 
-4.1.6	Data Usage Control	
+4.1.$	Data Access Control  and Data Usage Control	
 
-4.1.7	Usage Control building blocks in the International Dataspace	
+    4.1.7	Usage Control building blocks in the International Dataspace	
 
-4.1.8	Involved Roles in the Usage Control Process	
+    4.1.8	Involved Roles in the Usage Control Process	
 
-4.1.9	Data Provenance Tracking	
+    4.1.9	Data Provenance Tracking	
 
-4.1.10	Data Provenance on the Different Architectural Layers	
+    4.1.10	Data Provenance on the Different Architectural Layers	
 
 ### 4.2	Certification Perspective	
 
@@ -195,6 +204,8 @@
 4.2.4	IDS Certification Process
 
 ### 4.3	Governance Perspective	
+
+NEW 4.3.1 IDS Governance aspects of the IDSA Rule Book
 
 4.3.1	Data Governance Aspects	
   
@@ -216,9 +227,5 @@
 
 
 ### Appendix A: Glossary	
+> Gloassary should be linked to IDS-G Glossary
 
-### Appendix B: Security Profiles in detail	
-
-### Appendix C: List of figures	
-
-### Appendix D: List of tables	
