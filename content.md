@@ -153,6 +153,15 @@
  4.1.3.1 Secure Communication
 
   4.1.3.2 Identity Management
+  
+  > General outline:
+  > Need for mapping between operational environment/component certification to identies (relation to Conformity assessment and IDS Certification)
+  > requirements for identities including 2 options centralized (PKI) vs decentralized (DID)
+  > describing on different levels: Organizations, Connectors /Execution environments and individuals
+  > and
+  > claim management, including 2 options DAPS and Verifiable Credentials
+  > and
+  > need for interoperability between the approaches
 
     Mapping of Participant Certification and Connector Certification to Identity Management
  
@@ -200,11 +209,13 @@
     
     Remote Integrity Verification
     
+    NEW: Distributed deployments e.g. K8N
+    
     Dynamic Trust Monitoring
-
+	> does this section fit here?
 	
 
-4.1.5	Data Access Control  and Data Usage Control	
+4.1.5	Data Access Control and Data Usage Control	
 
     4.1.7	Usage Control building blocks in the International Dataspace	
 
@@ -227,6 +238,9 @@
 
 ### 4.3	Governance Perspective	
 
+4.3.1 NEW: Governance for Data Space Instances (Federations) and Federation of Data Spaces (Federation of Federations)
+	> Links to implications that arise out of this in the different sections/layers/perspectives should be added here
+
 NEW 4.3.1 IDS Governance aspects of the IDSA Rule Book
 
 4.3.1	Data Governance Aspects	
@@ -246,6 +260,13 @@ NEW 4.3.1 IDS Governance aspects of the IDSA Rule Book
 4.3.5	Data Quality	
 
 4.3.6	Data Provenance	
+
+4.3.7 NEW: Data Privacy
+	> Is this really and only a Governance aspect, it also has security concerns? 
+	> let's outline the need from a governance aspect and then show the implications to the technical sections 
+	> before including the security perspective. Add it also in the context to make clear what ids covers and what not. 
+	>
+	> maybe this should be part of data sovereignty or data ownership?
 
 
 ### Appendix A: Glossary	
