@@ -73,6 +73,8 @@
 
 3.3.3	Publishing and Using Data Apps	
 
+> Definition of interactions between Connectors, Meta Data Broker, Clearing House, App Store, Vocabulary Provider, Identity Provider
+
 
 ### 3.4	Information Layer	
 
@@ -113,14 +115,29 @@
 
 3.5.1	Connector Architecture	
 
-3.5.2	Configuration Model	
+3.5.1.2	Configuration Model	
+> let's discuss if we need this
 
-3.5.3	Special Connector Implementations	
-
+3.5.1.3	Special Connector Implementations	
+> let's discuss if we need this
 
 3.5.4	Meta Data Broker	
 
 3.5.5 Data Apps and App Store
+
+3.5.6 Clearing House
+
+3.5.7 Vocabulary Provider
+
+3.5.8 Identity Provider
+
+3.5.8.1 CA (unsure?)
+
+3.5.8.2 DAPS
+
+3.5.8.3 ParIS
+
+
 
 
 ## 4	Perspectives of the Reference Architecture Model	
