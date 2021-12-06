@@ -26,3 +26,5 @@ This folder contains the working document for the IDS-RAM 4.0. It is organized i
 [4.2 Certification Perspective](./4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/README.md)
 
 [4.3 Governance Perspective](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/README.md)
+
+[Glossary](https://github.com/International-Data-Spaces-Association/IDS-G/tree/main/glossary)
