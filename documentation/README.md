@@ -5,7 +5,7 @@ This folder contains the working document for the IDS-RAM 4.0. It is organized i
 
 [1. Introduction](./1_Introduction/README.md)
 
-[2. Context of the International Data Spaces](.//README.md)
+[2. Context of the International Data Spaces](./2_Context_of_the_International_Data_Spaces/README.md)
 
 [3. Layers of the Reference Architecture Model](./3_Layers_of_the_Reference_Architecture_Model/README.md)
 
