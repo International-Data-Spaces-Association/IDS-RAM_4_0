@@ -5,8 +5,7 @@ The overall “Onboarding” process consists of several sub processes. The firs
 
 The overall “Onboarding” process is illustrated in the following figure.
 
-![Onboarding process] (../../media/image22.png)
-
+![Onboarding process](../../media/image22.png)
 
 The following paragraphs describe each step of the onboarding process in more detail.
 
