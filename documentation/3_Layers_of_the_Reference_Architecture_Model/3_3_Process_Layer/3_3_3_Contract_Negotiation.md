@@ -4,3 +4,4 @@ While a Connector self-description basically contains information about the data
 
 - Add https://github.com/International-Data-Spaces-Association/IDS-G-pre/tree/connector-interaction/Communication/sequence-diagrams/data-connector-to-data-connector#usage-contract-negotiation
 - Update from Julia required
+- Integrate Clearing House workflow during Contract Negotation
