@@ -1,8 +1,8 @@
 # Contributing to RAM 4.0
 
-The IDS-RAM is oneof the core deliverables of the  [IDSA](https://www.internationaldataspaces.org) that comes along with additional specifications in [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G).
+The IDS-RAM is one of the core deliverables of the  [IDSA](https://www.internationaldataspaces.org) that comes along with additional specifications in [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G).
 
-All content published here is approved by the IDSA Technical Steering Committee and the IDSA Working Groups. You are very welcome to contribute
+All content published here is approved by the IDSA Technical Steering Committee (IDSA TSC) and the IDSA Working Groups. You are very welcome to contribute
 to this project when you find a bug, want to suggest an improvement, or have an idea for a useful
 feature. For this, always create an issue and a corresponding branch, and follow our style
 guides as described below.
@@ -52,7 +52,7 @@ After creating an issue yourself or if you want to address an existing issue, yo
 branch with a unique number and name that assigns it to an issue. Therefore, follow the guidelines
 at https://deepsource.io/blog/git-branch-naming-conventions/. After your changes, update the
 `README.md`, Wiki, and `CHANGELOG.md` with necessary details. Then, create a pull request and note
-that **committing to the main branch is not allowed**. Please use the feature `linked issues` to
+that **directly committing to the main branch is not allowed**. Please use the feature `linked issues` to
 link issues and pull requests.
 
 Pull requests have to be approved by the IDSA TSC and the IDSA Working Groups.
@@ -73,6 +73,9 @@ changes to a type.
 
 An example of a very good commit might look like this: `feat![login]: add awesome breaking feature`
 
+## Copyright and Licensing
+
+Content that is added to the repository is published under the Creative Commons Attribution 4.0 license (see the [LICENSE.md file](./LICENSE.md)). That means that you implicitly accept that your content is treated by CC4.0 as soon as you push any changes to the main repository and can be further published, updated, or deleted. In particular, you grant the IDSA the copyright on your content and make sure that your addition does not conflict with any other copyright claim of your knowledge, for instance for used pictures or other graphics. 
 
 ## Versioning
-THe next version will be Version 4.0
+The next published version of the Reference Architecture Model will be Version 4.0.
