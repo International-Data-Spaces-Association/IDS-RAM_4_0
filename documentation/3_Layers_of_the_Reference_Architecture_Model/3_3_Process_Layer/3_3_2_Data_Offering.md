@@ -19,18 +19,32 @@ After reaching a syntactically and semantically correct Self-Description, the Da
 - **//TODO** Handful of sentences that the self-description have to be update accordingly
 - **//TODO** Not all metadata is made available to everyone. Usage Policy enforcement starts right here and shows everyone who requests the self-description only the data they could access.
 
+As mentioned already, the Connector hosting the data asset is the solely applicable source of truth regarding the data asset's IDS Self-Description. This implies in particular, that the hosting Connector, more precisely the Participant controlling the Connector, can change the data asset as well as its Self-Description at any time. Even though it might be in its interest to establish a reputation as a reliable and trustworthy business partner, it might need to deploy updates without further notice. The Data Provider might want to inform certain other Connectors about changes but is not obliged to do so. It is also not necessary to supply older or outdated data assets or Self-Descriptions. Consequently, the existence of a suitable Self-Description document is not a sufficient proof of the existence of the related data asset. A Data Consumer might want to request the latest version of the Self-Description also at the original Connector to be sure.
+
+Nevertheless, the Data Provider has the interest to also maintain the distributed Self-Descriptions at the IDS Metadata Brokers to avoid misunderstandings and to protect its reputation. It can do so by sending update requests to the respective Metadata Broker instances, which already host the previous versions. It does so by sending the new Self-Description document, which uses the same identifier as the previously sent document. The IDS Metadata Brokers then overwrite their stored instances. Please note that Metadata Brokers may also store previous versions of Self-Descriptions, for instance for documentation purposes. Furthermore, only certain Connectors are allowed to update individual Self-Descriptions. By default, the creating Connector has this right but also explicitly named different Connectors may be allowed to execute update requests. One use case might be that one Data Provider operates several IDS Connectors, and the originally creating Connector is not active anymore. In such cases, the Participant must of course still be able to control its related Self-Descriptions.
+
+
 ## Interactions with IDS Metadata Brokers
 
-### Data Provider Connector register metadata at Broker
+The IDS Metadata Broker is the component in an IDS that allows the publication of Self-Descriptions for IDS Resources and IDS Connectors. It thereby solves the Search&Discovery problem in decentralized networks. Data Consumers want to find suitable data offers while not knowing the existence or the location of their Data Providers. They therefore need an intermediate service that stores Self-Descriptions and makes them searchable in effective manners. This task is solved through the IDS Metadata Brokers.
+
+However, no Data Provider is obliged to publish any or all of their data assets at any Metadata Broker. Neither is a Data Consumer forced to start his integration process at a Metadata Broker, if it has other options to find and locate its data exchange partners. Still, both have the option to interact with an IDS Metadata Broker using the following main interaction patterns.
+
+### Data Provider Connector registers Metadata
 - Sequence diagram for Connector Data Provider register metadata at Broker (optional)
 
+As shown in Fig. [AA](#PublishSelf-Description), the Data Provider can send Self-Description documents to a Metadata Broker. The Self-Description must be self-containing and compliant to the specifications of the IDS Information Model. Usually, JSON-LD representations of the RDF classes [ids:Connector](https://w3id.org/idsa/core/Connector) and [ids:Resource](https://w3id.org/idsa/core/Resource) are used. The Metadata Broker then checks the Self-Description document syntactic correctness and persists it in its local database. It explicitly does not check the semantic correctness or the plausibility of the supplied information.
 
-![Publish Self-Description](../../media/image25_register-at-broker.png)
+![PublishSelf-Description](../../media/image25_register-at-broker.png)
+#### _Fig. AA: Process to register a Self-Description at an IDS Metadata Broker_
 
+Different to other ecosystems, the Metadata Broker in an IDS does not actively crawls for Self-Descriptions or searches for updates. In contrast to for instance common search engines for the Web, the Metadata Broker relies on notifications from the original providers. In case the Data Provider misses an update, the Metadata Broker can therefore not made responsible for outdated or wrong information.
+
+Data Providers may be offered to restrict the publication of their Self-Descriptions based on certain Usage Control patterns. A Data Provider may for instance prohibit the presentation of its Self-Descriptions to its competitors by delivering a black list in a Usage Contract together with its Self-Descriptions. Specialized Metadata Brokers might provide respective control features for domains where the pure existence of metadata already uncovers critical business information.
 
 ### Data Consumer searching for Self-Descriptions
 
-To find a Data Provider, the Data Consumer may search in the catalogs of a Metadata Broker Service Provider. Before that, however, the Data Consumer needs to select a suitable Broker (e.g. based on thematic coverage) and determine the query capabilities (e.g. a graphical search interface or a domain-specific query language). The Broker then returns the query result to the Data Consumer, who needs to interpret the result to find out about the different data sources available in the International Data Spaces for providing the data specified in the query. Each query result must provide information about each IDS Connector capable of providing the desired data, so that the Data Consumer can retrieve each Connector’s self-description
+To find a Data Provider, the Data Consumer may search in the catalogs of a Metadata Broker Service Provider. Before that, however, the Data Consumer needs to select a suitable Metadata Broker (e.g. based on thematic coverage) and determine the query capabilities (e.g. a graphical search interface or a domain-specific query language). The Metadata Broker then returns the query result to the Data Consumer, who needs to interpret the result to find out about the different data sources available in the International Data Spaces for providing the data specified in the query. Each query result must provide information about each IDS Connector capable of providing the desired data, so that the Data Consumer can retrieve each Connector’s self-description
 to learn more about how to receive the desired dataset from a technical point of view (e.g., endpoint addresses, protocol). The Data Provider may serve the same data using different
 representations or pricing options, so the Data Consumer may select a suitable offer from the Data Provider’s Connector description.
 
@@ -43,5 +57,4 @@ representations or pricing options, so the Data Consumer may select a suitable o
 ## Getting Self-Description from Data Provider
 - Sequence diagram for getting self description from Data Provider
 
-
-Alternatively, the Data Consumer may already know a suitable Data Provider. In this case, the Data Consumer can contact the Data Provider directly (i.e. without invoking a broker).
+Alternatively, the Data Consumer may already know a suitable Data Provider. In this case, the Data Consumer can contact the Data Provider directly (i.e. without invoking a Metadata Broker or any other IDS infrastructure component). As the IDS is designed in a completely self-sovereign manner and preventing gate keepers wherever possible, the right to establish bidirectional business - and data exchange - relations independent of any other third party is at the heart of the overall architecture.
