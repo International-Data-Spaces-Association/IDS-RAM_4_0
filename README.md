@@ -59,7 +59,7 @@ README.md this file
 
 ### Others (TODO: valid for the old Latex files in the folder ./LaTex, not for the new structure)
 - [Media folder for pictures and other resources](./media)
-- [IDSA_RAM_4_0.tex as umbrella document](./IDSA_RAM_4_0.tex)
-- [list of authors](./authors_contributors.tex)
-- [bibliography](./bibliography.bib)
-- [front matter](./editor_contributing_projects.tex)
+- [IDSA_RAM_4_0.tex as umbrella document](./LaTex/IDSA_RAM_4_0.tex)
+- [list of authors](./LaTex/authors_contributors.tex)
+- [bibliography](./LaTex/bibliography.bib)
+- [front matter](./LaTex/editor_contributing_projects.tex)
