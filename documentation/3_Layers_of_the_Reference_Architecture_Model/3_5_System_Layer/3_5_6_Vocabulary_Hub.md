@@ -1,1 +1,23 @@
 # Vocabulary Hub
+
+The interoperability requirements in the IDS directly lead to the usage of commonly known, standardized terms to describe data, services, contracts, and so on. Collection of these standardized identifiers form so-called vocabularies. In the most basic appearance, any list of controlled terms can be a vocabulary. To make use of their content, the respective vocabulary documents need to be shared between the relevant parties. This can be done through digital catalogs but also in printed forms like for instance a language dictionary.
+
+In the IDS, however, further requirements occur. The terms of the vocabulary must be machine-readable, also to some degree their descriptions and titles, as well as new terms must be available for lookups. As stated in [Section 3.4](../3_4_Information_Layer), the IDS relies in RDF to encode its attributes and data descriptions. The IDS Information Model is the central vocabulary that all parties of any IDS share.
+
+Nevertheless, the IDS Information Model only represents the lowest common denominator of all IDS use cases. It is therefore the minimal set of terms all IDS components must understand. In specific domains, however, more and more expressive terms are needed. It is therefore a good practice to extend the basic information model with additional vocabularies and provide them in the same ways as the core one.
+
+To do so, a certain service is needed to provide a plattform to host, maintain, publish, and document the additional vocabularies. This service is the IDS Vocabulary Hub. It provides IDS-conform endpoints to enable the seamless communication with IDS Connectors and infrastructure components. Vocabulary Hubs give access to the defined terms and their descriptions, present changes and outline the different versions. They act as the management platforms for data schemes that can be used in IDS use cases.
+
+
+## Maintaining vocabularies
+
+IDS Vocabulary Hubs give the developer of domain-specific vocabularies the tools and functions to create, improve, and publish their terms. While it is expected that these vocabularies follow the RDF pattern, further requirements like the Linked Data concepts or even formal ontologies are not enforced.
+
+The experts can use the Vocabulary Hub to collaboratively work on their definitions, document or visualize them, and at some point publish them to a data space. They may also import existing, third-party vocabularies into the Vocabulary Hub and thereby making them usable by Connectors. The Vocabulary Hub then provides access to the whole vocabulary, parts of it, or directly to individual terms.
+
+
+## Runtime Lookups
+
+As soon as a vocabulary is settled, Connectors might use them to increase the information content of their asset's Self-Descriptions. In the IDS world, this happens by introducing new attributes or values with previously unknown URIs/IRIs. Connectors that read those Self-Descriptions discover face the challenge of not knowing their semantic meaning at first. They can now lookup (or 'dereference') the attribute's identifier at the Vocabulary Hub. The Vocabulary Hub responds with small RDF document explaining the attribute. This usually includes the type or class of the entity, it's label in different languages, and a short description, also possibly in several languages. The Connector can integrate these explanations into its workflows and thereby present the newly discovered meaning to its users.
+
+There are also further processes possible. For instance, it's a common practice to organize digital vocabularies in namespaces, where each namespace contains a terms for a specific purpose. The IDS Information Model for instance uses the namespaces `ids` (http://w3id.org/idsa/core/) and `idsc` (http://w3id.org/idsa/code/). A Connector can also ask for a complete vocabulary defined by a previously unknown namespace. In that case, the Vocabulary Hub will return the complete vocabulary document including all terms and their relations among each other. While this document has in general a bigger size, it can be stored or cached at the Connector and thereby reduce the number of overall required interactions - presenting a more effective way for the Connector.

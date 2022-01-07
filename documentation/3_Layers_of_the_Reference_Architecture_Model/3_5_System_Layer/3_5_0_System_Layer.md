@@ -23,8 +23,8 @@ Data Spaces):
 - the Identity Provider as defined in the Security
 Perspective,
 - the Vocabulary Hub currently as defined outside the IDS,
-- the Update Repository (i.e. the source for updates of deployed Connectors) depending on the connectors technology, and <!--//**TODO**: 'Update Repository' is new at this location (by Sebastian Bader) --> 
-- the Trust Repository (i.e. the source for trustworthy software stacks and fingerprints as well as remote attestation checks) as discussed in the Security Perspective.
+- the Update Repository (i.e. the source for updates of deployed Connectors) depending on the connectors technology, and <!--//**TODO**: 'Update Repository' is new at this location (by Sebastian Bader) -->
+- the Trust Repository (i.e. the source for trustworthy software stacks and fingerprints as well as remote attestation checks) as discussed in the Security Perspective. <!--//**TODO**: 'Trust Repository' is new at this location (by Sebastian Bader) -->
 
 A distributed network like the International Data Spaces relies on the connection of different member nodes where Connectors or other core components are hosted (a Connector comprising one or more Data Endpoints). The Connector is responsible for the exchange of data or as a proxy in the exchange of data, as it executes the complete data exchange process (see Section 3.3.2) from and to the internal data resources and enterprise systems of the participating organizations and the International Data Spaces. It provides metadata to the Broker as specified in the connector self-description, e.g. technical interface description, authentication mechanism, exposed data sources, and associated data usage policies. It is important to note that the data is transferred between the Connectors of the Data Provider and the Data Consumer (peer-to-peer network concept).
 
