@@ -1,7 +1,4 @@
 # Data Offering
-
-- **//TODO** BPMN for User interaction (Create Offering [Data Catalog / Resource / Artifact / Representation])
-
 A Participant who wants to offer data artifacts in a data space needs to conduct several steps to make it available to potential Data Consumers. In the most simplistic way, the Data Provider knows his Consumer at the beginning and directly informs him about available data assets, the selected endpoints, and the access mechanisms. This bidirectional data exchange bypasses most of the IDS infrastructure components and keeps the additional efforts to a minimum.
 
 However, in typical data spaces use cases, a Data Provider does not know which other Participant is interested into his data offering, or even doesn't know about the existence of the later Data Consumer at the time when the data set is published. In such cases, the proper description and advertisement at the right locations is critical to enable a business transaction.
