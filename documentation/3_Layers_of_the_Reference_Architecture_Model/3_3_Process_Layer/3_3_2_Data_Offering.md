@@ -35,7 +35,7 @@ As shown in Fig. [AA](#PublishSelf-Description), the Data Provider can send Self
 ![PublishSelf-Description](../../media/image25_register-at-broker.png)
 #### _Fig. AA: Process to register a Self-Description at an IDS Metadata Broker_
 
-Different to other ecosystems, the Metadata Broker in an IDS does not actively crawls for Self-Descriptions or searches for updates. In contrast to for instance common search engines for the Web, the Metadata Broker relies on notifications from the original providers. In case the Data Provider misses an update, the Metadata Broker can therefore not made responsible for outdated or wrong information.
+Different to other ecosystems, the Metadata Broker in an IDS does not actively crawl for Self-Descriptions or searches for updates. In contrast to for instance common search engines for the Web, the Metadata Broker relies on notifications from the original providers. In case the Data Provider misses an update, the Metadata Broker can therefore not made responsible for outdated or wrong information.
 
 Data Providers may be offered to restrict the publication of their Self-Descriptions based on certain Usage Control patterns. A Data Provider may for instance prohibit the presentation of its Self-Descriptions to its competitors by delivering a black list in a Usage Contract together with its Self-Descriptions. Specialized Metadata Brokers might provide respective control features for domains where the pure existence of metadata already uncovers critical business information.
 
