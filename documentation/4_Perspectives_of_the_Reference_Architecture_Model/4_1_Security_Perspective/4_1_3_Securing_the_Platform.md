@@ -1,3 +1,5 @@
+Issue for this section: https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues/70
+
 Describe how to create and deploy a secure platform as a baseline for the different IDS connector trust levels. Deployment can be monolithic (one connector per machine), shared or distributed.
 We need to raise awareness of what security mechanisms can achieve and address limitations of trust mechanisms as well. 
 
