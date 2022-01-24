@@ -4,11 +4,12 @@ Describe how to create and deploy a secure platform as a baseline for the differ
 We need to raise awareness of what security mechanisms can achieve and address limitations of trust mechanisms as well. 
 
 
-* Deployment scenarios
+* Deployment scenarios -> Overview illustrations (1:1 1:n m:n)
     * Connector as a single device
     * Multiple connectors per device
     * Distributed deployment (e.g., k8s) 
-    * Discussion on-premise and cloud scenarios (cloud is basically on-premise at another site and operator)    
+    * Discussion on-premise and cloud scenarios (cloud is basically on-premise at another site and operator)
+    * Deployment scenarios also depend on existing infrastructure and environment (existing modules, services, ...)    
 * HW security features, their purpose and limitations (background)
     * HSM
     * TPM
@@ -22,3 +23,26 @@ We need to raise awareness of what security mechanisms can achieve and address l
     * Integrity protected audit logging
     * Protecting data at rest / in transit
     * Achieving protection from malicious administrators
+
+## HW security features / characteristics
+* HSM
+    * Cryptographic processor
+    * Device to protect external keys from illicit access
+    * Provides tamper protection
+    * Can be deployed as a network devices, shared by multiple clients
+* TPM 
+    * Cryptographic module complying to TCG specification 
+    * Provides a root of trust, based on a key provisioned by the manufacturer
+    * Can securely store measurements of software components
+    * Provides interfacing for remote attestation
+    * Is attached to a defined device
+* Confidential computing
+    * Depend on hardware features of the CPU
+    * Cryptographically provides confidentiality and integrity protection for process memory
+    * Provides measurements for (some of the) software components
+    * Current implementations provide remote attestation that verifies the launched software artefact, but no runtime attestation
+* For complete fulfillment of certification requirements, a combination of the mentioned techniques might need to be applied. 
+
+
+
+
