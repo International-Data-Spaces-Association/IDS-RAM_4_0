@@ -2,7 +2,7 @@ Issue for this section: https://github.com/International-Data-Spaces-Association
 
 * Protecting software artefacts 
     * Integrity & provenance protection of software artefacts (using signatures of software manifest, containing software fingerprints)
-        * App manifest
+        * App manifest discussion
     * Deployment and decommissioning of software artefacts
     * Integrity verification before startup, runtime verification
 
