@@ -1,4 +1,4 @@
-Related issue: https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues/69
+Issue for this section: https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues/69
 
 
 * Identities for devices
