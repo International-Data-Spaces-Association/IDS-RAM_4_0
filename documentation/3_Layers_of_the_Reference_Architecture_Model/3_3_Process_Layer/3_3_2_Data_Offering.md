@@ -33,7 +33,7 @@ However, no Data Provider is obliged to publish any or all of their data assets 
 
 ### Data Provider IDS Connector registers Metadata
 
-As shown in Figure [AA](#PublishSelf-Description), the Data Provider can send Self-Description documents to a Metadata Broker. The Self-Description must be self-containing and compliant to the specifications of the IDS Information Model. Usually, JSON-LD representations of the RDF classes [ids:Connector](https://w3id.org/idsa/core/Connector) and [ids:Resource](https://w3id.org/idsa/core/Resource) are used. The Metadata Broker then checks the Self-Description document syntactic correctness and persists it in its local database. It explicitly does not check the semantic correctness or the plausibility of the supplied information.
+As shown in Figure [3.3.2.1](#PublishSelf-Description), the Data Provider can send Self-Description documents to a Metadata Broker. The Self-Description must be self-containing and compliant to the specifications of the IDS Information Model. Usually, JSON-LD representations of the RDF classes [ids:Connector](https://w3id.org/idsa/core/Connector) and [ids:Resource](https://w3id.org/idsa/core/Resource) are used. The Metadata Broker then checks the Self-Description document syntactic correctness and persists it in its local database. It explicitly does not check the semantic correctness or the plausibility of the supplied information.
 
 ![PublishSelf-Description](../../media/image25_register-at-broker.png)
 #### _Fig. 3.3.2.1: Process to Register a Self-Description at an IDS Metadata Broker_
@@ -47,7 +47,8 @@ Data Providers may be offered to restrict the publication of their Self-Descript
 To find a Data Provider, the Data Consumer may search in the catalogs of a Metadata Broker Service Provider. Before that, however, the Data Consumer needs to select a suitable Metadata Broker (e.g. based on thematic coverage) and determine the query capabilities (e.g. a graphical search interface or a domain-specific query language). The Metadata Broker then returns the query result to the Data Consumer, who needs to interpret the result to find out about the different data sources available in the International Data Spaces for providing the data specified in the query. Each query result must provide information about each IDS Connector capable of providing the desired data, so that the Data Consumer can retrieve each IDS Connector’s Self-Description
 to learn more about how to receive the desired dataset from a technical point of view (e.g., endpoint addresses, protocol). The Data Provider may serve the same data using different representations or pricing options, so the Data Consumer may select a suitable offer from the Data Provider’s IDS Connector description.
 
-![Query Self-Descriptions](../../media/image27_query-at-broker.png)
+![Query Self-Descriptions](../../media/image27_query-at-broker.PNG)
+#### _Fig. 3.3.2.2: Query Self-Description at an IDS Metadata Broker_
 
 
 ## Getting Self-Description from Data Provider
