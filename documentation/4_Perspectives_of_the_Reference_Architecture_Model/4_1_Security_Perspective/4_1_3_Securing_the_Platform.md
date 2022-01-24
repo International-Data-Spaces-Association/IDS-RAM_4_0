@@ -16,6 +16,7 @@ We need to raise awareness of what security mechanisms can achieve and address l
 * Platform security features and requirements
     * Secure boot / measured boot
     * Remote integrity verification (remote attestation)
+        * Measurements, Measurement lists, RTM / OS Manifest 
     * Component isolation (e.g., container based isolation)
     * Key handling / provisioning 
     * Integrity protected audit logging
