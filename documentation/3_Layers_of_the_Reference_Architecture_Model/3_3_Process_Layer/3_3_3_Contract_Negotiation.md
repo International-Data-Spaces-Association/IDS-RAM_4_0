@@ -26,7 +26,8 @@ Figure x covers the "happy flow". ...
 #### _Fig. C: Contract Negotiation - Counter Offers_
 
 _Please note, as this is a technology-independent message flow, appropriate responses were not 
-considered. The illustrated processes can run synchronously as well as asynchronously._
+considered. The illustrated processes can run synchronously as well as asynchronously, and can be 
+cancelled at any time due to non-IDS-related issues._
 
 As soon as a Contract Agreement has been reached, this is instantiated and deployed inside both IDS 
 Connectors. This means it needs to be persisted in an immutable way on both sides. Next, the 
