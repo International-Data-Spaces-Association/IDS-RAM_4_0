@@ -9,13 +9,24 @@ details in Section x. // TODO Link to information layer explaining a contract of
 
 In a (semi-)automated negotiation process performed by the Usage Control frameworks of the 
 participating IDS Connectors, the Data Consumer and the Data Provider need to agree on a Data Usage
-Contract, respectively Contract Agreement. 
+Contract, respectively Contract Agreement. The following sequence diagrams visualize this process in 
+more detail.
+
+![Contract Negotiation: Happy Flow](media/policy-negotiation-sequence-1.png)
+#### _Fig. A: Contract Negotiation - The Happy Flow_
 
 <!-- Sequence diagram -->
 <!-- Integrate Clearing House workflow during Contract Negotiation -->
 <!-- Source: https://github.com/International-Data-Spaces-Association/IDS-G-pre/tree/main/Communication/sequence-diagrams/data-connector-to-data-connector -->
 
-Figure x shows this process in detail. ...
+Figure x covers the "happy flow". ...
+
+#### _Fig. B: Contract Negotiation - Initiation by Data Provider_
+
+#### _Fig. C: Contract Negotiation - Counter Offers_
+
+_Please note, as this is a technology-independent message flow, appropriate responses were not 
+considered. The illustrated processes can run synchronously as well as asynchronously._
 
 As soon as a Contract Agreement has been reached, this is instantiated and deployed inside both IDS 
 Connectors. This means it needs to be persisted in an immutable way on both sides. Next, the 
