@@ -12,8 +12,12 @@ participating IDS Connectors, the Data Consumer and the Data Provider need to ag
 Contract, respectively Contract Agreement. The following sequence diagrams visualize this process in 
 more detail.
 
+_Please note, as this is a technology-independent message flow, appropriate responses were not
+considered. The illustrated processes can run synchronously as well as asynchronously, and can be
+cancelled at any time._
+
 ![Contract Negotiation: Happy Flow](media/policy-negotiation-sequence-1.png)
-#### _Fig. A: Contract Negotiation - The Happy Flow_
+#### _Fig. XX: Contract Negotiation - The Happy Flow_
 
 <!-- Sequence diagram -->
 <!-- Integrate Clearing House workflow during Contract Negotiation -->
@@ -21,13 +25,11 @@ more detail.
 
 Figure x covers the "happy flow". ...
 
-#### _Fig. B: Contract Negotiation - Initiation by Data Provider_
+![Contract Negotiation: Initiation by Data Provider](media/policy-negotiation-sequence-2.png)
+#### _Fig. XX: Contract Negotiation - Initiation by Data Provider_
 
-#### _Fig. C: Contract Negotiation - Counter Offers_
-
-_Please note, as this is a technology-independent message flow, appropriate responses were not 
-considered. The illustrated processes can run synchronously as well as asynchronously, and can be 
-cancelled at any time due to non-IDS-related issues._
+![Contract Negotiation: Counter Offers](media/policy-negotiation-sequence-3.png)
+#### _Fig. XX: Contract Negotiation - Counter Offers_
 
 As soon as a Contract Agreement has been reached, this is instantiated and deployed inside both IDS 
 Connectors. This means it needs to be persisted in an immutable way on both sides. Next, the 
