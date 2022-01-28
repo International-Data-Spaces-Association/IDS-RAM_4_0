@@ -67,7 +67,7 @@ type._
 
 Figure CC illustrates a more complex negotiation flow that covers counter Contract Offers and 
 external input. As soon as the Data Provider's IDS Connector receives a valid Contract Request, it
-may notify interested users or systems and provides an interface for input. Thus, the IDS Connector, 
+may notify interested users or systems and provide an interface for input. Thus, the IDS Connector, 
 if it does not already do so by default, can be extended by the functionality to automatically 
 negotiate contracts within a certain range (e.g. using an AI service). Alternatively, a service 
 or a user can interact and directly affect the negotiation by rejecting or agreeing to Contract
