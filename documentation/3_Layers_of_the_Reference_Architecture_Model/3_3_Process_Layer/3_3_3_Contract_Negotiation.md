@@ -5,7 +5,6 @@ datasets, these also include Usage Control information in form of a Contract Off
 describes under what conditions the Data Provider is willing to make its data available to the Data 
 Consumer. This can range from simple access restrictions to complex pre- and post-duties. See more
 details in Section x. // TODO Link to information layer explaining a contract offer.
-<!-- Source: https://github.com/International-Data-Spaces-Association/IDS-G-pre/tree/usage-control-terms/UsageControl/contract -->
 
 In a (semi-)automated negotiation process performed by the Usage Control frameworks of the 
 participating IDS Connectors, the Data Consumer and the Data Provider need to agree on a Data Usage
@@ -18,10 +17,6 @@ cancelled at any time._
 
 ![Simple Contract Negotiation](media/policy-negotiation-sequence-1.png)
 #### _Fig. AA: Simple Contract Negotiation_
-
-<!-- Sequence diagram -->
-<!-- Integrate Clearing House workflow during Contract Negotiation -->
-<!-- Source: https://github.com/International-Data-Spaces-Association/IDS-G-pre/tree/main/Communication/sequence-diagrams/data-connector-to-data-connector -->
 
 Figure AA shows the "happy flow". This covers the easiest sequence which is at least necessary to 
 reach a Contract Agreement. In advance, the Data Provider has attached a Contract Offer to a data 
