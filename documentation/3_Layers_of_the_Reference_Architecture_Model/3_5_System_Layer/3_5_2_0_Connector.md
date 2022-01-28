@@ -1,48 +1,48 @@
-# Connector
+# IDS Connector
 
-The Connector Architecture uses application container management technology to ensure an isolated and secure environment for individual data services. A data service matches a system which offers an API to store, access or process data. To ensure privacy of sensitive data, data processing should take place as close to the data source as possible. Any data preprocessing (e.g., filtering, anonymization, or analysis) should be performed by the backend or IDS Data Apps. Only data intended for being made available to other participants should be made visible through Connectors.
+The Connector Architecture uses application container management technology to ensure an isolated and secure environment for individual data services. A data service matches a system which offers an API to store, access or process data. To ensure privacy of sensitive data, data processing should take place as close to the data source as possible. Any data preprocessing (e.g., filtering, anonymization, or analysis) should be performed by the backend or IDS Apps. Only data intended for being made available to other participants should be made visible through Connectors.
 
-Data Apps are data services encapsulating data processing and/or data transformation functionality bundled as container images for simple installation by application container management.
+IDS Apps are services for realizing business logic inside the IDS Connector. IDS Apps can be used to process data, connect to external systems or control the IDS Connector. IDS Apps can be downloaded via the IDS App Store and deployed at the IDS Connector.
 
-Using an integrated index service, the Broker manages the data sources available in the International Data Spaces and supports publication and maintenance of associated metadata. Furthermore, the Broker Index Service supports the search for data resources. Both the App Store and the Broker are based on the Connector architecture (which is described in detail in the following paragraphs) in order to support secure and trusted data exchange with these services.
+Using an integrated index service, the Metadata Broker manages the data sources available in the International Data Spaces and supports publication and maintenance of associated metadata. Furthermore, the Metadata Broker supports the search for data resources. 
 
+The Clearing House is used to optionally store transaction metadata or data usage between Connectors and thus to log the data exchange. In addition, contracts concluded between participants can be stored. Furthermore, payment for data consumption can be processed via the Clearing House if required.
 
----
-**TODO** update following text
+The App Store, Metadata Broker and Clearing House are based on the IDS Connector architecture (which is described in detail in the following paragraphs) in order to support secure and trusted data exchange with these services.
 
-Figure 332 illustrates the internal structure of the Connector. A concrete installation of a Connector may differ from this structure, as existing components can be modified and optional components added. The components shown in Figure 332 can be assigned to two phases: Execution and Configuration.
+## IDS Connector Architecture
 
-The Execution phase of a Connector involves the following components:
+The Connector consists of one or more computers/virtual machines, operating systems running on them, an Application Container Management and the Connector Core Service(s) built on top of it. 
 
-- _Application Container Management_: In most cases, the deployment of an Execution Core Container and selected Data Services is based on application containers. Data Services are isolated from each other by containers in order to prevent unintended interdependencies. Using Application Container Management, extended control of Data Services and containers can be enforced. During development, and in case of systems with limited resources, Application Container Management can be omitted. Difficulties in container deployment can be handled by special Execution Configurators (see below). 
-- An _Execution Core Container_ provides components for interfacing with Data Services and supporting communication (e.g., Data Router or Data Bus to a Connector).
-	- A _Data Router_ handles communication with Data Services to be invoked according to predefined configuration parameters. In this respect, it is responsible of how data is sent (and received) to (and from) the Data Bus from (and to) Data Services. Participants have the option to replace the Data Router component by alternative implementations of various vendors. Differences in configuration can be handled by specialized Execution Configurator plug-ins. If a Connector in a limited or embedded platform consists of a single Data Service or a fixed connection configuration (e.g., on a sensor device), the Data Router can be replaced by a hard-coded software, or the Data Service can be exposed directly. The Data Router invokes relevant components for the enforcement of Usage Policies, e.g. a Policy Enforcement Point (see section 4.1.3.6), as configured in the connector or specified in the Usage Policy. 
-	- The Data Bus exchanges data with Data Services and Data Bus components of other Connectors. It may also store data within a Connector. Usually, the Data Bus provides the method to exchange data between Connectors. Like the Data Router, the Data Bus can be replaced by alternative implementations in order to meet the requirements of the operator. The selection of an appropriate Data Bus may depend on various aspects (e.g., costs, level of support, throughput rate, quality of documentation, or availability of accessories).
-- An _App Store Container_ is a certified container downloaded from the App Store, providing a specific Data Service to the Connector.
-- A _Custom Container_ provides a self-developed Data Service. Custom containers usually require no certification. 
-- A _Data Service_ defines a public API, which is invoked from a Data Router. This API is formally specified in a meta-description that is imported into the configuration model. The tasks to be executed by Data Services may vary. Data Services can be implemented in any programming language and target different runtime environments. Existing components can be reused to simplify migration from other integration platforms.
-- The _Runtime_ of a Data Service depends on the selected technology and programming language. The Runtime together with the Data Service constitutes the main part of a container. Different containers may use different runtimes. What runtimes are available depends only on the base operating system of the host computer. From the runtimes available, a service architect may select the one deemed most suitable.
+![Connector Architecture](/media/connector_architecture.png)
+#### _Fig. 3.5.2.0.1: Connector Architecture_
 
-The Configuration phase of a Connector involves the following components:
-- The _Configuration Manager_ constitutes the administrative part of a Connector. Its main task is the management and validation of the Configuration Model, followed by deployment of the Connector. Deployment is delegated to a collection of Execution Configurators by the Configurator Management.
-- The _Configuration Model_ is an extendable domain model for describing the configuration of a Connector. It consists of technology-independent, inter-connected configuration aspects.
-- _Configurator Management_ loads and manages an exchangeable set of Execution Configurators. When a Connector is deployed, the Configurator Management delegates each task to a special Execution Configurator.
-- _Execution Configurators_ are exchangeable plug-ins which
-execute or translate single aspects of the Configuration
-Model to a specific technology. The procedure of executing
-a configuration depends on the technology used. Common
-examples would be the generation of configuration
-files or the usage of a configuration API. Using different
-Execution Configurators, it is possible to adopt new or alternative
-technologies and integrate them into a Connector.
-Therefore, every technology (operating system, application
-container management, etc.) gets its own Execution
-Configurator.
-- The _Validator_ checks if the Configuration Model complies with self-defined rules and with general rules specified by the International Data Spaces, respectively. Violation of rules can be treated as warnings or errors. If such warnings or errors occur, deployment may fail or be rejected.
+The individual elements of the deployment are shown in Figure 3.5.2.0.1 and described below:
+- _Application Container Management_: In most cases, the deployment of the Connector Core Service(s) and selected IDS Apps is based on application containers. IDS Apps are isolated from each other by containers in order to prevent unintended interdependencies. Using Application Container Management, extended control of IDS Apps and containers can be enforced. During development, and in case of systems with limited resources, Application Container Management can be omitted.  
+- _Connector Core Service(s)_ provides components for Data Management, Metadata Management, Contract and Policy Management, IDS App Management, IDS Protocols Authentication any many more. A detailed explanation is given in the following section [IDS Connector Functions](#ids-connector-functions).
+- An _App Store Container_ is a certified container downloaded from the App Store, providing a specific IDS App to the Connector.
+- A _Custom Container_ provides a self-developed Custom App. Custom containers usually require no certification. 
+- An _IDS App_ defines a public API, which is invoked from the IDS Connector. This API is formally specified in a meta-description that is imported during the deployment phase of an IDS App. The tasks to be executed by IDS Apps may vary. IDS Apps can be implemented in any programming language and target different runtime environments. Existing components can be reused to simplify migration from other integration platforms. A detailed description of how to use IDS Apps can be found in section [3.3.5](../3_3_Process_Layer/3_3_5_Publishing_and_using_Data_Apps.md), the deployment of IDS Apps is explained in section [3.5.3](/3_5_3_App_Store_and_Data_Apps.md).
+- The _Runtime_ of a Custom/App Store/Connector Core Container depends on the selected technology and programming language. The Runtime together with application constitutes the main part of a container. Different containers may use different runtimes. What runtimes are available depends only on the base operating system of the host computer. From the runtimes available, a service architect may select the one deemed most suitable.
 
-As the Configuration phase and the Execution phase are separated
-from each other, it is possible to develop, and later
-on operate, these components independently of each other.
-Different Connector implementations may use various kinds
-of communication and encryption technologies, depending
-on the requirements given.
+## IDS Connector Functions
+
+The IDS Connector must include some essential functionality in its Connector Core Service(s). The functionalities can be implemented in individual Mirco services or as a single comprehensive software block.
+
+![Connector Functional View](/media/connector_functional_view.png)
+#### _Fig. 3.5.2.0.2: Connector Functional View_
+
+The individual functionalities of the Connector Core Service(s) are shown in Figure 3.5.2.0.2 and described below:
+- _Authentication Service_
+- _Data Exchange_
+- _IDS Protocol(s)_
+- _Remote Attestation_
+- _(Audit) Logging Service_
+- _Monitoring Service_
+- _Data App Management_
+- _Policy Engine_
+- _Contract Management_
+- _Metadata Management_
+- _Data Management_
+- _Configuration Management_
+- _User Management_
