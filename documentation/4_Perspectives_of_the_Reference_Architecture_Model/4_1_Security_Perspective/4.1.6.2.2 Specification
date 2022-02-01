@@ -1,0 +1,11 @@
+2. ##### **SPECIFICATION**
+Another important aspect of data usage control is the specifi- cation and management of usage restrictions. Data Providers have to express data usage restrictions in a more or less for- mal way. For technical enforcement, the specification must produce a machine-readable output. The Policy Administra- tion Point (PAP) is the entry point for specification of usage policies, often via a user-friendly graphical interface.
+ 
+1. ###### **IDS Policy Language**
+&nbsp;
+
+2. ###### **Contracts and Usage Policies**
+&nbsp;
+
+3. ###### **NEGOTIATION**
+Policy negotiation is also part of policy management. As en- forcement mechanisms can work differently across different systems or technologies, abstract policies may have different instantiations. Hence, usage policies must always be instanti- ated on the target system.
