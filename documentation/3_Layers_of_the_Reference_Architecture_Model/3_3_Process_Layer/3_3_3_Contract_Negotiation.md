@@ -4,7 +4,7 @@ While a Connector Self-Description basically contains descriptive information ab
 datasets, these also include Usage Control information in form of a Contract Offer. A Contract Offer
 describes under what conditions the Data Provider is willing to make its data available to the Data 
 Consumer. This can range from simple access restrictions to complex pre- and post-duties. See more
-details in Section x. // TODO Link to information layer explaining a contract offer.
+details in Section [X](). // TODO Link to information layer explaining a contract offer.
 
 In a (semi-)automated negotiation process performed by the Usage Control frameworks of the 
 participating IDS Connectors, the Data Consumer and the Data Provider need to agree on a Data Usage
@@ -18,17 +18,17 @@ cancelled at any time._
 ![Simple Contract Negotiation](media/policy-negotiation-sequence-1.png)
 #### _Fig. AA: Simple Contract Negotiation_
 
-Figure AA shows the "happy flow". This covers the easiest sequence which is at least necessary to 
+Figure [AA]() shows the most simple version of the sequence that is at least necessary to 
 reach a Contract Agreement. In advance, the Data Provider has attached a Contract Offer to a data 
-offer. As described in Section 3.3.2, this is returned to the Data Consumer as part of the IDS 
-Connector's Self-Description. However, the Data Consumer can submit a Contract Request at any time, 
-even if no Contract Offer exists yet.
+offer. As described in Section [3.3.2](3_3_2_Data_Offering.md), this is returned to the Data 
+Consumer as part of the IDS Connector's Self-Description. However, the Data Consumer can submit a 
+Contract Request at any time, even if no Contract Offer exists yet.
 
-_In this sequence diagram, as well as in the following ones, the figure next to the IDS Connectors 
+_In Figure [AA](), as well as in the following ones, the shape next to the IDS Connectors 
 represents a user or a connected system that interacts with it - accordingly initiates or influences 
 the sequence._
 
-In Figure AA, the negotiation sequence is initiated by the Data Consumer's IDS 
+In Figure [AA](), the negotiation sequence is initiated by the Data Consumer's IDS 
 Connector sending a Contract Request to the Data Provider. The content of this Contract Request can 
 differ from the Contract Offer, or it can adopt it as it is. The meta-information in the contract is 
 modified accordingly (e.g., the date, the term, or the signature). As soon as the Data Provider's 
@@ -47,20 +47,20 @@ As with previous Contract Requests or Contract Offers, the Contract Agreement is
 validity. If, at any time, a participant does not agree with the shared content, the Contract can be 
 rejected. In the case of a Contract Rejection, the sequence is aborted. Connected systems or users 
 are notified and previously saved Contract Agreements are revoked (internally and externally, e.g. 
-from the Clearing House). A negotiation sequence is never reactivated, but can be restarted at 
-any time.
+from the Clearing House). A negotiation sequence is never reactivated, but a new one can be started 
+at any time.
 
 ![Contract Negotiation: Initiation by Data Provider](media/policy-negotiation-sequence-2.png)
 #### _Fig. BB: Contract Negotiation - Initiation by Data Provider_
 
-Figure BB depicts a simple negotiation flow, as Figure AA. In this case, the sequence is reversed 
-and the Data Provider initiates the negotiation. Nevertheless, it should be noted that, since the 
-Data Provider is the one who makes the data offer, it is always the one who signs the Contract 
-Agreement last and sends it to the Clearing House.
+Figure [BB]() depicts a simple negotiation flow as Figure AA. In this case, however, the sequence is 
+reversed and the Data Provider initiates the negotiation. Nevertheless, it should be noted that, 
+since the Data Provider is the one who makes the data offer, it is always the one who signs the 
+Contract Agreement last and sends it to the Clearing House.
 
-_In general, all sequences are not fixed and can take place in any conceivable way. The IDS solely 
-defines the roles of Data Consumer and Data Provider and how to deal with messages of a certain 
-type._
+_In general, all sequences are not fixed and can take place in any conceivable direction. The IDS 
+solely defines the roles of Data Consumer and Data Provider and how to deal with messages of a 
+certain type._
 
 ![Contract Negotiation: Counter Offers](media/policy-negotiation-sequence-3.png)
 #### _Fig. CC: Contract Negotiation - Counter Offers_
