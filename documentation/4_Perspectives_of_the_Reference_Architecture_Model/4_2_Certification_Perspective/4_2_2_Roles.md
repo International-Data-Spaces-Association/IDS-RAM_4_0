@@ -58,7 +58,7 @@ develop software components intended to be deployed within the
 International Data Spaces (i.e., prospective Software Providers) and to
 organizations that intend to become IDS Participants.
 
-[TODO: explain the different approaches for Assurance Level 1 and Level 2/3 where EF is involved]
+[TODO: explain the different approaches for Assurance Level 1 and Level 2/3 where EF is involved - not too many details, those will follow in the process chapter 4.2.5]
 
 [^2]: IDSA White Paper Certification -- Framework for the IDS
     Certification Scheme, Version 2.0
