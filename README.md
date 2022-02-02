@@ -43,7 +43,7 @@ The [content](./content.md) describes the target structure for the document.
 
 README.md this file
 
-### Sections of the RAM
+### Sections of the RAM (LaTex)
 - [Section 1: Introduction](./section1_introduction.tex)
 - [Section 2: Context of IDS](./section2_context_of_ids.tex)
 - [Section 3: Layers of the RAM ](./section3_layers_of_RAM.tex)
@@ -56,6 +56,18 @@ README.md this file
 - [Appendix A](./appendix_a_glossary.tex)
 - [Appendix B](./appendix_b_profiles.tex)
 
+### Sections of the RAM (Markdown)
+- [Section 1: Introduction](./documentation/1_Introduction/)
+- [Section 2: Context of IDS](./documentation/2_Context_of_the_International_Data_Spaces/)
+- [Section 3: Layers of the RAM ](./documentation/3_Layers_of_the_Reference_Architecture_Model/)
+- [Section 3.1: Business Layer](./documentation/3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/)
+- [Section 3.2: Functional Layer](./documentation/3_Layers_of_the_Reference_Architecture_Model/3_2_Functional_Layer/)
+- [Section 3.3: Process Layer](./documentation/3_Layers_of_the_Reference_Architecture_Model/3_3_Process_Layer/)
+- [Section 3.4: Information Layer](./documentation/3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/)
+- [Section 3.5: System Layer](./documentation/3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/)
+- [Section 4.1: Security Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/)
+- [Section 4.2: Certification Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/)
+- [Section 4.3: Governance Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_Government_Perspective/)
 
 ### Others (TODO: valid for the old Latex files in the folder ./LaTex, not for the new structure)
 - [Media folder for pictures and other resources](./media)
