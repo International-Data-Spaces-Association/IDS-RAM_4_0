@@ -1,6 +1,6 @@
 # Component Certification
 
-[todo: revise and describe the different levels]
+[todo: revise and describe the different levels <- move here from chapter 4.1 (Security)]  
 [todo: add how non-connector components are addressed and that/how criteria are applicable for different deployment scenarios]
 
 Core components to be used in the IDS must provide the required
