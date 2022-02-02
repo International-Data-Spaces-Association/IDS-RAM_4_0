@@ -67,7 +67,7 @@ README.md this file
 - [Section 3.5: System Layer](./documentation/3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/)
 - [Section 4.1: Security Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/)
 - [Section 4.2: Certification Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/)
-- [Section 4.3: Governance Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_Government_Perspective/)
+- [Section 4.3: Governance Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_3_Government_Perspective/)
 
 ### Others (TODO: valid for the old Latex files in the folder ./LaTex, not for the new structure)
 - [Media folder for pictures and other resources](./media)
