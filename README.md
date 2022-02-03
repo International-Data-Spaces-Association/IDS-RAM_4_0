@@ -51,7 +51,7 @@ README.md this file
 - [Section 3.3: Information Layer](./section3_3_information_layer.tex)
 - [Section 3.5: System Layer](./section3_5_system_layer.tex)
 - [Section 4.1: Security Perspective](./section4_1_security_perspective.tex)
-- [Section 4.2: Certification Perspective](./section4_2_certification_perspective.tex)
+- [Section 4.2: Certification Perspective](./blob/InitialCertificationPerspective/documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/README.md)
 - [Section 4.3: Governance Perspective](./section4_3_governance_perspective.tex)
 - [Appendix A](./appendix_a_glossary.tex)
 - [Appendix B](./appendix_b_profiles.tex)
