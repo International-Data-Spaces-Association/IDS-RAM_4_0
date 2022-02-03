@@ -97,7 +97,9 @@
  in 2018, the roles defined here will be assigned to actual
  organizations.
 
- Figure 1: Industrial Data Space Certification - Roles &
+
+![Role and responsibilities](./media/Certification_scheme_overview.png)
+ Figure 1: International Data Spaces Certification - Roles &
  Responsibilities
 
 ## International Data Spaces Association
@@ -318,7 +320,7 @@
 
 ## Issuance of Certificates
 
- ![](media/image15.png)Figure 2: Industrial Data Space Certification --
+ ![Issuance of Certificates](media/fig2_.png)Figure 2: International Data Spaces Certification --
  Issuance of Certificates
 
  After a successfully completed evaluation, the Certification Body
@@ -474,7 +476,7 @@
  Business
 
  ¹For more information see
- ht[tps://www.iso.org/isoiec-27001-](http://www.iso.org/isoiec-27001-)
+ [https://www.iso.org/isoiec-27001-](http://www.iso.org/isoiec-27001-)
  information-security.html
 
  Layer of the IDS Reference Architecture Model [IDS- RA, 3.1]:
@@ -603,9 +605,7 @@
  GESIS, Komsa, Thyssenkrupp) were conducted. The workshops were
  organized by the WG Certification, bringing together experts in
  participant certification from the Working Group with the security
- officer and
-
- / or the compliance officer from the companies. In addition to the
+ officer and / or the compliance officer from the companies. In addition to the
  audit readiness, this validation gave valuable feedback for the list
  of certification requirements and the associated questionnaire.
 
@@ -847,6 +847,7 @@
  industry standard ISA/ IEC 62443-4-2 [62443-4-2] and best practice
  requirements for secure software development.
 
+![criteria Synergy](./media/fig3_criteria.png)
  Figure 6: Criteria Synergy
 
  Each criteria section targets a set of evaluation goals:
@@ -1053,25 +1054,7 @@
  associated documentation, to the evaluation facility and the
  certification body.
 
- **Applicant (Participant, Developer)**
-
- **Evaluation Facility**
-
- **Certification Body**
-
- **Start**
-
- **Consultation (optional)**
-
- **Commisioning Evaluation Facility**
-
- **Verify Contract**
-
- **Application for Certification**
-
- **Opening of Proceedings**
-
- **Kick-Off**
+![Application Stage](./media/fig4.png)
 
 ## Evaluation Stage
 
@@ -1110,6 +1093,8 @@
  next stage as a basis for the decision-making for the approval of the
  certificate.
 
+ ![Evaluation Stage](./media/fig5.png)
+
 ## Certification Stage
 
  The main topics of this stage are the examination of the evaluation
@@ -1142,15 +1127,7 @@
     (acceptance or rejection), an invoice will be send to the applicant
     by the evaluation facility and the certification body.
 
- **Rejection Notice and Invoices**
-
- **Assessment of Evaluation Report**
-
- **Expense Report**
-
- **Application for Re-Certification**
-
- **IDS Conformity Confirmed**
+ *![Certification Stage](./media/fig6.png)
 
  **PART 5 --** FUTURE WORK
 
