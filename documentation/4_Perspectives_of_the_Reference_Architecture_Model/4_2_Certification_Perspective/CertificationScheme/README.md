@@ -4,7 +4,7 @@ The IDSA Certification Scheme consist of the follwing sections
 
 # CONTENT
 
-## [INTRODUCTION](./introduction.md)
+## [INTRODUCTION](./Introduction.md)
 
 ## [**PART 1 --** CERTIFICATION FRAMEWORK](./Certification-Framework.md)
 
