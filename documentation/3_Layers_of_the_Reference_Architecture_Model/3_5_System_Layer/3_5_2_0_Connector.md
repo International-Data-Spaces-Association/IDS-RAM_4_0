@@ -27,14 +27,19 @@ The individual elements of the deployment are shown in Figure 3.5.2.0.1 and desc
 
 ## IDS Connector Functions
 
-The IDS Connector must include some essential functionality in its Connector Core Service(s). The functionalities can be implemented in individual Mirco services or as a single comprehensive software block.
+The IDS Connector must include some essential functionality in its Connector Core Service(s). The functionalities can be implemented in individual mirco services or as a single comprehensive software block. In addition, the services do not have to be provided over the same infrastructure. For example, it is possible to distinguish between the Data Plane and the Control Plane. The Control Plane covers all aspects from identity management, over the creation and discovery of data offers, to the negotiation of contracts. Lastly, the Control Plane also triggers the Data Plane after negotiating used technologies first. The Data Plane is treated separately from the Control Plane, as it can use a different transfer protocol. While the data offers and contracts are negotiated using e.g., an IDS protocol, the data transfer and storage of huge amounts of data can performed “out-of-band” with low latency using an appropriate technology. The modularity allows this to be substituted or augmented. Moreover, multiple transfer mechanisms to support diverse data types can be used in parallel. With this, the IDS Connector solves key aspects of how to handle streaming, large data transfer, and hyper scaling.
 
 ![Connector Functional View](media/connector_functional_view.png)
 #### _Fig. 3.5.2.0.2: Connector Functional View_
 
 The individual functionalities of the Connector Core Service(s) are shown in Figure 3.5.2.0.2 and described below:
-- _Authentication Service_
-- _Data Exchange_
+
+- The _Authentication Service_ holds the necessary information to authenticate the IDS Connector from/to other backend systems and/or the system access from/to the IDS Connector from other IDS participants. For security reasons, we recommend a clear separation of the internal and external access credentials. However, from a functionality perspective it is one function
+. The _Authentication Service_ provides a Configuration interface and can offer an interface to connect custom authentication services. In order to authenticate incoming and outgoing connections it holds
+	- the Key/Trust Store for the _IDS Protocol(s)_, 
+	- the Authentication Credentials for the access of the _Data Management_ and _Data Exchange to external systems, and 
+	- the Information for the Access Control of the _Data Exchange_ and _Data Management_ to the IDS.
+- The _Data Exchange_ component provides or requires interfaces to exchange Data with other IDS Participants (Providers/Consumers). The Component can be deployed also on another infrastructure then the IDS Protocol(s) component and it is possible to have more then one Data Exchange component. The _Data Exchange_ component does not support IDS specific interfaces and does not understand the IDS information model.
 - _IDS Protocol(s)_
 - _Remote Attestation_
 - _(Audit) Logging Service_
