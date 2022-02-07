@@ -161,55 +161,26 @@ required rate of security for the exchange of data, e.g. entry level
 for weather data, but member level coupled with Management System for
 sensitive business data.
 
-+-----------------+----------------+----------------+----------------+
-|                 |  **Entry      |  **Member     |  **Central    |
-|                 |  Level**      |  Level**      |  Level**      |
-+=================+================+================+================+
-|  **Data        |  Required     |  Recommended  |  Optional     |
-|  Owner**       |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **Data        |  Required     |  Recommended  |  Optional     |
-|  Provider**    |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **Data        |  Required     |  Recommended  |  Optional     |
-|  Consumer**    |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **Broker      |                |  Required     |  Optional     |
-|  Service       |                |                |                |
-|  Provider**    |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **App Store   |                |  Required     |  Optional     |
-|  Provider**    |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **Vocabulary  |                |  Required     |  Optional     |
-|  Provider**    |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **Service     |                |  Required     |  Optional     |
-|  Provider**    |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **Clearing    |                |                |  Required     |
-|  House**       |                |                |                |
-+-----------------+----------------+----------------+----------------+
-|  **Identity    |                |                |  Required     |
-|  Provider**    |                |                |                |
-+-----------------+----------------+----------------+----------------+
+| |  **Entry Level** | **Member Level* | **Central Level** |
+|---|---|---|---|  
+|  **Data Owner** | Required | Recommended | Optional |
+|  **Data Provider** | Required | Recommended | Optional |
+|  **Data Consumer** | Required | Recommended | Optional |
+|  **Broker Service Provider** | - | Required | Optional |
+|  **App Store Provider** | - | Required | Optional |
+|  **Vocabulary Provider** | - | Required | Optional |
+|  **Service Provider** | - | Required | Optional |
+|  **Clearing House** | - | - | Required |
+|  **Identity Provider** | - | - | Required |
 
 Figure 3: Mapping of the roles in the Industrial Data Space to the
 levels of certification
 
-+-----------------+-----------------+-----------------+-----------------+
-|                 |  **Self-          |  **Management  |  **Control     |
-|                 | Assessment** |  System**      |  Framework**   |
-+=================+=================+=================+=================+
-|  **Entry       |                 |                 |                 |
-|  Level**       |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  **Member      |                 |                 |                 |
-|  Level**       |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  **Central     |                 |                 |                 |
-|  Level**       |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
+| | **Self-Assessment** | **Management System** | **Control Framework** |
+| --- | --- | --- | --- |
+| **Entry Level** | :heavy_check_mark: | :heavy_check_mark: | - |
+|  **Member Level**  | - | :heavy_check_mark: | :heavy_check_mark: |
+|  **Central Level** | - | :heavy_check_mark: | :heavy_check_mark: |
 
 Figure 4: Certification Approach for participants of the Industrial
 Data Space
