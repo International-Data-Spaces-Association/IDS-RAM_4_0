@@ -14,23 +14,11 @@ barrier specifically suitable for SMEs and on the other hand a
 scalable certification to meet high information security
 requirements.
 
-+-----------------+-----------------+-----------------+-----------------+
-|                 |  **Checklist   |  **Concept     |  **High        |
-|                 |  Approach**    |  Review**      |  Assurance     |
-|                 |                 |                 |  Evaluation**  |
-+=================+=================+=================+=================+
-|  **Base        |                 |                 |                 |
-|  Security      |                 |                 |                 |
-|  Profile**     |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  **Trust       |                 |                 |                 |
-|  Security      |                 |                 |                 |
-|  Profile**     |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
-|  **Trust+      |                 |                 |                 |
-|  Security      |                 |                 |                 |
-|  Profile**     |                 |                 |                 |
-+-----------------+-----------------+-----------------+-----------------+
+| | **Checklist Approach** | **Concept Review** | **High Assurance Evaluation** | 
+| --- | --- | --- | --- |
+|  **Base Security Profile** | :heavy_check_mark: | :heavy_check_mark: | - |
+|  **Trust Security Profile** | - | :heavy_check_mark: | :heavy_check_mark: |
+|  **Trust+ Security Profile** | - | :heavy_check_mark: | :heavy_check_mark: |
 
 Figure 5: Certification Approach for core components of the Industrial
 Data Space
