@@ -43,7 +43,6 @@ This enables the use of linking contents more easily, e.g. creating references t
 After that, a printable White Paper of the IDS RAM should be generated from this repository. 
 There, the main outline of the concepts shall be described.
 
-
 ## Structure
 
 The [content](./content.md) describes the target structure of the document.
@@ -63,11 +62,3 @@ The following list provides direct links to the existing chapters.
   - [Section 4.1: Security Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/)
   - [Section 4.2: Certification Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/)
   - [Section 4.3: Governance Perspective](./documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_3_Government_Perspective/)
-
-### Others 
-// TODO: valid for the old Latex files in the folder ./LaTex, not for the new structure
-- [Media folder for pictures and other resources](./media)
-- [IDSA_RAM_4_0.tex as umbrella document](./LaTex/IDSA_RAM_4_0.tex)
-- [list of authors](./LaTex/authors_contributors.tex)
-- [bibliography](./LaTex/bibliography.bib)
-- [front matter](./LaTex/editor_contributing_projects.tex)
