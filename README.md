@@ -1,9 +1,9 @@
-# IDS-RAM 4.0
+# IDS RAM 4.0
 
-Welcome to the IDS-RAM 4.0 repository of the [IDSA](../../../idsa). This repository is the working 
-version of the IDS RAM 4.0. It was initialized with [IDS-RAM 3.0](https://internationaldataspaces.org/download/16630/).
+Welcome to the IDS RAM 4.0 repository of the [IDSA](../../../idsa). This repository is the working 
+version of the IDS RAM 4.0. It was initialized with [IDS RAM 3.0](https://internationaldataspaces.org/download/16630/).
 
-_Please note that this is not yet the official and approved version of IDS-RAM 4.0._
+_Please note that this is not yet the official and approved version of the IDS RAM 4.0._
 
 ## Overview
 
@@ -17,10 +17,10 @@ and check the open [issues](https://github.com/International-Data-Spaces-Associa
 and [pull requests](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/pulls).
 
 The [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G) provides additional 
-information to the IDS-RAM.
+information to the IDS RAM.
 
 ## Schedule
-The IDS-RAM 4.0 should be released in April 2022. Therefore, the development will be 
+The IDS RAM 4.0 should be released in April 2022. Therefore, the development will be 
 **freezed end of February 2022**.
 
 Regular touchpoints will be conducted starting from October 25th 2021:
@@ -28,19 +28,19 @@ Regular touchpoints will be conducted starting from October 25th 2021:
 - Thursdays 8:30 am to 9 am (weekly)
 - Wednesdays 10 am to 11 am (biweekly)
 
-## Scope of IDS-RAM
+## Scope
 
-The IDS-RAM is complemented with additional documents and repositories. Most relevant in this 
+The IDS RAM is complemented with additional documents and repositories. Most relevant in this 
 context is the IDS-G (including IDS-G-pre).
-In general, the IDS-RAM contains the conceptual level including technology-agnostic specifications.
-The general outline of the IDS-RAM is based on the five layers and the three perspectives. Each
+In general, the IDS RAM contains the conceptual level including technology-agnostic specifications.
+The general outline of the IDS RAM is based on the five layers and the three perspectives. Each
 layer should reflect the main components and aspects of the IDS.
 
 The IDS-G contains specific details on specifications, e.g. APIs and their descriptions.
 
-The IDS-RAM 4.0 will be created as an online document and does not target a printed document, at first. 
-This enables the use of linking contents more easily, e.g. creatin references to the IDS-G. 
-After that, a printable White Paper of the IDS-RAM should be generated from this repository. 
+The IDS RAM 4.0 will be created as an online document and does not target a printed document, at first. 
+This enables the use of linking contents more easily, e.g. creating references to the IDS-G. 
+After that, a printable White Paper of the IDS RAM should be generated from this repository. 
 There, the main outline of the concepts shall be described.
 
 
@@ -49,7 +49,7 @@ There, the main outline of the concepts shall be described.
 The [content](./content.md) describes the target structure of the document.
 The following list provides direct links to the existing chapters.
 
-### Sections of the RAM (Markdown) 
+### Sections of the RAM
 // TODO to be completed
 - [Section 1: Introduction](./documentation/1_Introduction/)
 - [Section 2: Context of IDS](./documentation/2_Context_of_the_International_Data_Spaces/)
