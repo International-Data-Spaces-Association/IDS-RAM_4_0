@@ -11,18 +11,27 @@ This requires the following information:
 * integrity proof of software stack: measurements and software manifests
 * Up-to-dateness of transferred information and additional dynamic information -> DAPS
 
-## Preparation for Communication
+## Preparation for Communication/Required Information
 Provisioning all required information onto the device
+
 Periodically, request current information from DAPS
+![Overview Required Information](./media/information_for_communication_channel.png)
 
 ## Establishment of a Secure Communication Channel
 TLS Handshake
-DAT übertragen und prüfen
 Remote Attestation Report übertragen und überprüfen
   * Exchange of software manifests
   * Verification of software manifests
+  DAT übertragen und prüfen
+
+![Communication Channel Establishment](./media/communication_channel_establishment.png)
 
 ## Data Transfer using this Communication Channel
-Drafting dynamic trust monitoring
+
+Communication over Communication Channel
+
+Using a separate channel for data exchange -> Risks and Consequences
+
+## Dynamic Trust Monitoring
 * Periodic integrity verification of components (remote attestation, protocol version checking, other black box testing)
 * Monitoring client on component (feeding central monitoring service)
