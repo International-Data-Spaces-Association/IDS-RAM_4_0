@@ -3,7 +3,7 @@
 Since security generally covers non-functional aspects, security and trust serve as an enabler for functionalities such as data exchange. This results in security being a cross-cutting concern for the layers discussed in the core chapters of the RAM. 
 
 ## BUSINESS LAYER
-Security aspects are crucial for the definition of roles and basic interaction patterns in the International Data Spaces.
+Security delivers the means to create trust in the ecosystem and allows to create data value chains. The roles that are established in chapter [Chapter 3.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/README.md) are used to establish these data value chains. 
 
 ## PROCESS LAYER
 To take security aspects into account on the Process Layer, it is important that existing processes are permanently monitored, validated, and redesigned, if need be. For example, to allow trustworthy identification and authentication of Participants using a central public key infrastructure (PKI), a Participant must apply for a public key certificate that is registered in a central PKI and deployed inside its Connector. For dynamic attribute support, an identity management server needs to verify attributes before issuing access tokens. The same is true for trustworthy operations of an App Store, for which data must be verified and signed by a trusted entity before it can be uploaded.
