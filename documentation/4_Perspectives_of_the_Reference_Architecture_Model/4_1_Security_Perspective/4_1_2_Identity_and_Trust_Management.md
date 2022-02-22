@@ -1,7 +1,8 @@
-# 4.1.2 Identity and Trust Management
-Dataspace, unbekannte  Teilnehmer treffen aufeinander, Vertrauen nötig für Datenaustausch
+# Identity and Trust Management
 
-## 4.1.2.1. Identities for Devices
+The International Data Spaces allow participants a cross-company data exchange. In many cases, the participants intending to exchange data do not know enough about the other company and its utilized components to properly assess the consequences of such a data exchange. Thus, the IDS offers mechanisms to gain reliable information which help establish trust and enable participants to make sovereign and informed decisions.
+
+## Identities for Devices
 ### Introduction - Gerd
 Goal:
 Identities need to identify one instance of a software blueprint on qualified platforms.
@@ -46,10 +47,16 @@ Each Service Instance needs to be mapped to one platform it utilizes:
 ![Identity mapping for different scenarios](./identity_mapping.png)
 (Comment: the platforms in the image may always be either physical devices or protected VMs)
 
-### Metadata - Monika
-TODO: Identifier alleine reicht für Nachweis der Zertifizierung nicht aus, dafür gibt es "Beschreibungsartefakte" (Manifeste+Company Description) mit Metadaten über Gerät und zugehörige Eigenschaften.
-Infos über das Unternehmen hinter dem Konnektor
-Infos über den verwendeten Software-Stack
+### Describing Metadata
+The IDS targets not only a secure exchange of data but also a trustworthy environment for data processing honoring the defined usage control policies. To achieve this goal, it is not sufficient to only know the identity of another IDS component, but additional information about the company operating the component and the utilized software stack is required.
+This information is provided in form of the following describing artifacts:
+* A **Company Description** for each company operating an IDS component which contains verified information about the company as well as information about its Operational Environment Certification (explained in [Chapter 4.2.3](../4_2_Certification_Perspective/4_2_3_Operational_Environment_Certification.md)).
+* **Software Manifests** for the utilized software components which have been evaluated in the Component Certification explained in [Chapter 4.2.4](../4_2_Certification_Perspective/4_2_4_Component_Certification.md)). In addition to the awarded certification levels, the manifests contain verified measurements which can be used to validate that the described software is truly running on the device. To support re-usability of components, the description of each software stack consists of three types of Software Manifests used for describing different layers:
+  * A **Root of Trust for Measurement (RTM) Manifest** for components of the boot stage,
+  * an **Operating System (OS) Manifest** for utilized kernel and user space components, including the container run time enabling the execution of different isolated containers/apps, and
+  * an arbitrary number of **App Manifests** per component identifying the utilized containers/apps.
+Signatures are utilized to represent the passed stages of the certification process (described in [Chapter 4.2.5](../4_2_Certification_Perspective/4_2_5_Processes.md)) and allow a validation of the correctness of the describing artifacts.
+In addition to these static artifacts, the connector operator may add additional attributes to the component's description or have them validated and registered at the DAPS.
 
 ### Different Components in the IDS and their Role in Identity Management - Gerd
 
@@ -105,7 +112,7 @@ Thus, the shared functionality can be provided by a Core Container:
 * Metadaten (Software/Unternehmen - zertifizierte Eigenschaften Mapping ) in einer "signierten Datei" z.B. JWS, VCs, ... -> signierte Info mit langer Laufzeit -> technischen Standards im IDS-G festlegen
 * DAT-Token: OAuth-Token, VC, ... (Aktualität und ggf. weitere geprüfte EIgenschaften)-> signierte Info mit kurzer Laufzeit -> technischen Standards im IDS-G festlegen
 
-## 4.1.2.2. Identities for Participants (enterprises/organizations or Human Users) - Monika
+## Identities for Participants (enterprises/organizations or Human Users) - Monika
 Diskussion über Identitäten für Teilnehmer eines Datenraums.
 Wofür bräuchte/will man das?
 -> Verantwortlichkeit für das Verhalten eines Konnektors
@@ -136,7 +143,7 @@ Rollen sollten hier immer in Bezug auf den IDS ausgestellt werden - ein Abbilden
 * Sicheres Generieren und Speichern von Private Key für Personen, der verwendet wird: Soft-Token, Smartcard, eID, ...
 * Wichtig: Details in RuleBook und IDS-G festlegen, sollte mit eIDAS aligned sein
 
-## 4.1.2.3. Trust Bootstrapping and Trust chains - Gerd
+## Trust Bootstrapping and Trust Chains - Gerd
 Each component requires two certificates and keys:
 1. Platform Key: for the platform used
 2. TLS Key: for the service instance running
