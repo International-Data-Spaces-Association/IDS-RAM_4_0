@@ -39,14 +39,14 @@ The individual functionalities of the Connector Core Service(s) are shown in Fig
 	- the Key/Trust Store for the _IDS Protocol(s)_, 
 	- the Authentication Credentials for the access of the _Data Management_ and _Data Exchange to external systems, and 
 	- the Information for the Access Control of the _Data Exchange_ and _Data Management_ to the IDS.
-- The _Data Exchange_ component provides or requires interfaces to exchange Data with other IDS Participants (Providers/Consumers). The Component can be deployed also on another infrastructure then the IDS Protocol(s) component and it is possible to have more then one Data Exchange component. The _Data Exchange_ component does not support IDS specific interfaces and does not understand the IDS information model.
-- _IDS Protocol(s)_
-- _Remote Attestation_
-- _(Audit) Logging Service_
-- _Monitoring Service_
-- _Data App Management_
-- _Policy Engine_
-- _Contract Management_
+- The _Data Exchange_ component provides or requires interfaces to exchange Data with other IDS Participants (Providers/Consumers). The Component can be deployed also on another infrastructure then the IDS Protocol(s) component and it is possible to have more then one Data Exchange component. The _Data Exchange_ component does not support IDS specific interfaces and does not interpret the IDS information model.
+- The _IDS Protocol(s)_ component support at least one IDS specific interface defined in [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G) to realize the processes defined in the section [3.3](../../3_3_Process_Layer).
+- The _Remote Attestation_ component is used to increase the trust between the interlocutors. It can be used to detect whether the software has been modified at the other party's end. See section [4.1](../../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective) for more information. The component is needed for certification level 2 or higher, see section [4.2.4](../../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_4_Component_Certification.md).
+- The _(Audit) Logging Service_ component is responsible to log all relevant information during the operation of the component. For example, changes to settings, error messages, data accesses, policy implementations, etc. should be logged. The information can also be passed on to corresponding systems that take over the (auditable) logging. Therefore the component provides or requires an interface to this systems. 
+- The _Monitoring Service_ component is used to monitor the status of the component. It can be used to see for exmaple if the connector is running, in an error state, or offline.
+- The _Data App Management_ component supports to download, deploy and integrate IDS Apps in the IDS Connector.
+- The _Policy Engine_ component summarize all components used for enforcing the IDS Usage Control Policies (part of an IDS contract). These include:  the Policy Administration Point (PAP), the Policy Enforcement Point (PEP), the Policy Information Point (PIP), the Policy Execution Point (PXP), the Policy Management Point (PMP), and the Policy the Policy Decision Point (PDP). All are described in detail in section [4.1.6](../../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_6_Usage_Control.md)
+- The _Contract Management_ component is responsible to manage the contract negotiation between partners (see section [3.3.3](../../3_Layers_of_the_Reference_Architecture_Model/3_3_Process_Layer/3_3_3_Contract_Negotiation.md)) and to store the IDS contract agreements afterwards.
 - _Metadata Management_
 - _Data Management_
 - _Configuration Management_
