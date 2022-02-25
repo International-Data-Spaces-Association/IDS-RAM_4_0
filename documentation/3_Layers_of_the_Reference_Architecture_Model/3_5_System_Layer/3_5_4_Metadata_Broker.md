@@ -23,7 +23,7 @@ A Metadata Broker might support endpoints for different IDS protocol bindings. I
 
 ## Search and Querying
 
-The main purpose of a Metadata Broker is the provisioning of remote search functionalities. This can be done in a resource-oriented manner if the identifiers of the targeted Self-Descriptions are already known in advance. Alternatively, full-text or complex queries might be used. A complex query in this  sense is any query that combines filters, aggregations or traverses the Self-Description graph to search for information. Query languages that provide such capabilities are for instance SPARQL and SPARQL-Star, JsonPath, or Cypher. Which language is supported by which Metadata Broker instance is outlined in its own Self-Description.
+The main purpose of a Metadata Broker is the provisioning of remote search functionalities. This can be done in a resource-oriented manner if the identifiers of the targeted Self-Descriptions are already known in advance. Alternatively, full-text or complex queries might be used. A complex query in this  sense is any query that combines filters, aggregations or traverses the Self-Description graph to search for information. Which query language is supported by which Metadata Broker instance is outlined in its own Self-Description.
 
 The IDS Information Model provides the scheme for the searches. The knowledge of the Information Model can be used by querying Connectors to formulate their inquiries. Metadata Brokers may also provide additional templates or preformulated queries to support the Connectors.
 
