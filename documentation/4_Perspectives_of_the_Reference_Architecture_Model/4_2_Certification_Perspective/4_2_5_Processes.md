@@ -1,15 +1,20 @@
 # Certification Processes
 
-[TODO: add introduction]
+Participants and core components within the IDS 
+ecosystem shall provide sufficiently high degree of 
+security regarding the integrity and confidentiality 
+of the data being processed in the IDS. Therefore, 
+a certification of participants and core components 
+is mandatory. Involved partners are the applicant, 
+evaluation facility and the certification body. 
 
 ## Approval of Evaluation Facilities
 [TODO: Add chapter on approval of evaluation facilities ]
 
-## Evaluation
-[Todo: revise and differentiate assurance levels]
-Figure [1](#fig:Certification_process){reference-type="ref"
-reference="fig:Certification_process"} outlines the basic structure of
-the certification process, together with the roles involved in this
+## Processes
+
+Figures 1 and 2 outline the basic structure of
+the certification process, according to the different assurance levels, together with the roles involved in this
 process. The Certification Body and the Evaluation Facility belong to
 the "Governance Body" category specified on the Business Layer (see
 section 3.1.1). The tasks of these roles with regard to the
@@ -21,8 +26,6 @@ It should be noted that all roles described in this section are specific
 to the International Data Spaces (i.e. terms such as "Certification
 Body" should not be misunderstood to refer to an existing organization
 already granting certificates).
-
-![Certification process](./media/image79.png)
 
 The certification process is divided into the following three phases:
 
@@ -36,6 +39,16 @@ The certification process is divided into the following three phases:
 3.  Certification Phase: The main goal of this stage is the examination
     of the evaluation report by the certification body, which issues a
     certificate if the result of the evaluation process is positive.
+
+In the first assurance level certification, the applicant must apply for certification directly to the Certification Body  to trigger the start of the certification process. Once the Certification Body accepts the application, the applicant will conduct a self-assessment which will be evaluated by the Certification Body. If the result of the evaluation is possitive, the Certification Body will issue a certificate.
+
+![image](https://user-images.githubusercontent.com/77682996/155738445-479e9507-7415-4e16-b0dd-6d159d3d8528.png)
+
+The second and third assurance level certification require an Evaluation Facility to conduct the evaluation of the component or operational environment. The applicant must apply for certification to an approved evaluation facility to carry out the evaluation according to the IDS certification schema. Provided the Evaluation Facility accepts the application, the evaluation will be conducted and an evaluation report will be generated. The Certification Body will examine the evaluation report and, if the result is possitive, issue a certificate.
+
+![image](https://user-images.githubusercontent.com/77682996/155738509-f4477f71-aeb8-4de2-bbf1-53373ae919c5.png)
+
+These processes apply both to the component and the operational environment certification. 
 
 After a successfully completed evaluation process, the Certification
 Body awards an International Data Spaces certificate to the applicant.
