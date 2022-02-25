@@ -1,24 +1,20 @@
 # IDS Connector
 
-The Connector Architecture uses application container management technology to ensure an isolated and secure environment for individual data services. A data service matches a system which offers an API to store, access or process data. To ensure privacy of sensitive data, data processing should take place as close to the data source as possible. Any data preprocessing (e.g., filtering, anonymization, or analysis) should be performed by the backend or IDS Apps. Only data intended for being made available to other participants should be made visible through Connectors.
+The IDS Connector Architecture use application container management technology to ensure an isolated and secure environment for individual IDS Apps and IDS Connector functionalities. An IDS App matches an application which offers an API to store, access or process data. To ensure privacy of sensitive data, data processing should take place as close to the data source as possible. Any data preprocessing (e.g., filtering, anonymization, or analysis) should be performed by the backend or IDS Apps. Only data intended for being made available to other participants should be made visible through Connectors.
 
 IDS Apps are services for realizing business logic inside the IDS Connector. IDS Apps can be used to process data, connect to external systems or control the IDS Connector. IDS Apps can be downloaded via the IDS App Store and deployed at the IDS Connector.
 
-Using an integrated index service, the Metadata Broker manages the data sources available in the International Data Spaces and supports publication and maintenance of associated metadata. Furthermore, the Metadata Broker supports the search for data resources. 
-
-The Clearing House is used to optionally store transaction metadata or data usage between Connectors and thus to log the data exchange. In addition, contracts concluded between participants can be stored. Furthermore, payment for data consumption can be processed via the Clearing House if required.
-
-The App Store, Metadata Broker and Clearing House are based on the IDS Connector architecture (which is described in detail in the following paragraphs) in order to support secure and trusted data exchange with these services.
+The [IDS App Store](3_5_3_App_Store_and_Data_Apps.md), [Metadata Broker](3_5_4_Broker.md) and [Clearing House](3_5_5_Clearing_House.md) are based on the IDS Connector architecture (which is described in detail in the following section) in order to support secure and trusted data exchange with these services.
 
 ## IDS Connector Architecture
 
 The Connector consists of one or more computers/virtual machines, operating systems running on them, an Application Container Management and the Connector Core Service(s) built on top of it. 
 
 ![Connector Architecture](media/connector_architecture.png)
-#### _Fig. 3.5.2.0.1: Connector Architecture_
+#### _Fig. 3.5.2.1: Connector Architecture_
 
 The individual elements of the deployment are shown in Figure 3.5.2.0.1 and described below:
-- _Application Container Management_: In most cases, the deployment of the Connector Core Service(s) and selected IDS Apps is based on application containers. IDS Apps are isolated from each other by containers in order to prevent unintended interdependencies. Using Application Container Management, extended control of IDS Apps and containers can be enforced. During development, and in case of systems with limited resources, Application Container Management can be omitted.  
+- _Application Container Management_: In most cases, the deployment of the Connector Core Service(s) and selected IDS Apps is based on application containers. See section [Special Connectors](#special-connectors) for other cases. IDS Apps are isolated from each other by containers in order to prevent unintended interdependencies. Using Application Container Management, extended control of IDS Apps and containers can be enforced. During development, and in case of systems with limited resources, Application Container Management can be omitted.  
 - _Connector Core Service(s)_ provides components for Data Management, Metadata Management, Contract and Policy Management, IDS App Management, IDS Protocols Authentication any many more. A detailed explanation is given in the following section [IDS Connector Functions](#ids-connector-functions).
 - An _App Store Container_ is a certified container downloaded from the App Store, providing a specific IDS App to the Connector.
 - A _Custom Container_ provides a self-developed Custom App. Custom containers usually require no certification. 
@@ -27,12 +23,18 @@ The individual elements of the deployment are shown in Figure 3.5.2.0.1 and desc
 
 ## IDS Connector Functions
 
-The IDS Connector must include some essential functionality in its Connector Core Service(s). The functionalities can be implemented in individual mirco services or as a single comprehensive software block. In addition, the services do not have to be provided over the same infrastructure. For example, it is possible to distinguish between the Data Plane and the Control Plane. The Control Plane covers all aspects from identity management, over the creation and discovery of data offers, to the negotiation of contracts. Lastly, the Control Plane also triggers the Data Plane after negotiating used technologies first. The Data Plane is treated separately from the Control Plane, as it can use a different transfer protocol. While the data offers and contracts are negotiated using e.g., an IDS protocol, the data transfer and storage of huge amounts of data can performed “out-of-band” with low latency using an appropriate technology. The modularity allows this to be substituted or augmented. Moreover, multiple transfer mechanisms to support diverse data types can be used in parallel. With this, the IDS Connector solves key aspects of how to handle streaming, large data transfer, and hyper scaling.
+The IDS Connector must include some essential functionality in its _Connector Core Service(s)_. The functionalities can be implemented in individual mirco services or as a single comprehensive software block. In addition, the services do not have to be deployed in the same infrastructure. For example, it is possible to distinguish between the Data Plane and the Control Plane. 
+
+The Control Plane covers all aspects from identity management, over the creation and discovery of data offers, to the negotiation of contracts. Lastly, the Control Plane also triggers the Data Plane after negotiating used technologies first. 
+
+The Data Plane is treated separately from the Control Plane, as it can use a different transfer protocol. While the data offers and contracts are negotiated using e.g., an IDS protocol, the data transfer and storage of huge amounts of data can performed “out-of-band” with low latency using an appropriate technology. The modularity allows this to be substituted or augmented. Moreover, multiple transfer mechanisms to support diverse data types can be used in parallel. With this, the IDS Connector solves key aspects of how to handle streaming, large data transfer, and hyper scaling.
 
 ![Connector Functional View](media/connector_functional_view.png)
-#### _Fig. 3.5.2.0.2: Connector Functional View_
+#### _Fig. 3.5.2.2: Connector Functional View_
 
-The individual functionalities of the Connector Core Service(s) are shown in Figure 3.5.2.0.2 as an UML deployment diagram where each functionality is depicted as a component. In the IDS connector itself, we have deliberately not specified which of the components provides an interface and which consumes the interface to interact with each other. This varies from implementation to implementation. Also, the image does not include all the interactions between the components for the sake of clarity. The components are described below:
+The individual functionalities of the _Connector Core Service(s)_ are shown in Figure 3.5.2.0.2 as an [UML deployment diagram](https://www.omg.org/spec/UML/2.5.1/) where each functionality is depicted as a component. In the IDS connector itself, we have deliberately not specified which of the components provides an interface and which consumes the interface to interact with each other. This varies from implementation to implementation. Also, the image does not include all the interactions between the components for the sake of clarity.
+
+The components are described below:
 
 - The _Authentication Service_ holds the necessary information to authenticate the IDS Connector from/to other backend systems and/or the system access from/to the IDS Connector from other IDS participants. For security reasons, we recommend a clear separation of the internal and external access credentials. However, from a functionality perspective it is one function
 . The _Authentication Service_ provides a Configuration interface and can offer an interface to connect custom authentication services. In order to authenticate incoming and outgoing connections it holds
@@ -53,3 +55,13 @@ This is shown via the solid line inside the connector.
 - The _Configuration Management_ contains the configuration parameters for the IDS Protocols and the components in general.
 - The _User Management_ is responsible to provide user authentication for every interface of the components. Therefore, the user management can use external Identity Services or provide this service by itself. It also can be configured via an interface.
 
+## Special Connectors
+
+What type of Connector is to be implemented may depend on various aspects, such as the execution environment given or the current developmental stage regarding Data Services or Data Flows used. In the following, three exemplary scenarios are outlined:
+
+- _Developer Connector:_
+As is the case for the development of any software, developing Data Services or configuring Data Flows comprises several phases (specification, implementation, debugging, testing, profiling, etc.). For reasons of simplification, it may be useful to run Connectors without application container management. In doing so, the development process can be accelerated, as packing and starting the container can be omitted, and debugging can be done in the development environment. After successfully passing all tests, the configuration model used for the Developer Connector can be used to deploy a productive (live) Connector. Upon deployment in the live environment, the Connector is ready for being used.
+- _Mobile Connector:_
+Mobile operating systems (e.g., Android, iOS, or Windows Mobile) use platforms with limited hardware resources. In such environments, application container management is not necessarily required. The same applies for operating systems which do not support application containers, or systems without any operating system (e.g. microcontrollers). In such environments, Data Services (and the execution core) can be started directly on the host system, without requiring any virtualization. The differences between Connectors with containers and Connectors without containers can be met by different Execution Configurator modules.
+- _Embedded Connector:_
+Another way of Connector miniaturization offers the Embedded Connector. Embedded Connectors have the same design as Mobile Connectors, and do not necessarily require application container management either. However, unlike Mobile or Developer Connectors, the Configuration Manager is not part of the Connector hardware platform here, which is why remote configuration capabilities of the platform are required (e.g., using an API or configuration files). Additional steps for Connector miniaturization may include the use of a common runtime for all components, or simplified versions of the Data Router and the Data Bus. If data is to be sent to a fixed recipient only, a simple Data Bus client library may be sufficient. Similarly, it may be sufficient to hard-code a single, fixed connection to the Data Bus instead of using a configurable component. To save communication overhead, simple API calls inside the common runtime could be used.
