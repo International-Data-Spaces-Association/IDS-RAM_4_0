@@ -77,7 +77,7 @@ Alongside with data _access_ control, regulating access to specific digital reso
 
 Usage control is an extension of access control ~~(see figure 4.12)~~. It is about the specification and enforcement of restrictions regulating what may be done with a data asset, and what not. Thus, usage control is concerned with requirements that pertain to data processing (obligations) rather than data access (provisions). Usage control is relevant in the context of intellectual property protection, regulatory compliance, and digital rights management.
 
-![image](4_1_6_images/UC-Definition.drawio.png)
+![image](media/UC-Definition.drawio.png)
 
 _Figure 4.12: Data usage control – an extension of data access control_
 
@@ -109,7 +109,7 @@ It is important to note that the purpose of data usage control is to allow the s
 
 Data usage control can be implemented by means of a machine-readable contract, which is expected to be fulfilled by a party. It is a way to track and trace data as it is used within different systems and to collect evidence of the violation of agreed usage constraints. With that in mind, solutions range from organizational rules or legal contracts to completely technical ways of enforcing usage restrictions. For example, an organizational rule (e.g. a company policy) could state that employees must not use removable storage devices, such as USB sticks. Similarly, a technical form of enforcement, such as group policies specified by the Windows operating system, can prevent employees from using removable storage devices. In some scenarios, organizational rules, legal contracts, and technical rules can be used interchangeably. In other scenarios, the three forms can be used to complement each other. In the long run, it can be expected that organizational rules and legal contracts will increasingly be replaced by technical forms of enforcement (as illustrated in ~~Figure 4.13).~~
 
-![image](4_1_6_images/Technical_vs_Organizational.drawio.png)
+![image](media/Technical_vs_Organizational.drawio.png)
 
 _Figure 4.13: Technical enforcement vs. organizational/legal enforcement_
 
@@ -151,7 +151,7 @@ In order to implement and enforce usage policies at a specification level within
 
 For example, the ODRL Constraint class expresses logical conditions that govern the applicability of a Rule. Here, an Operator _(eq)_ relates the Left Operand (a predicate like _Geospatial Named Area_) to a Right Operand (dynamic or predefined value). On the one side, the IDS Usage Control Language extends the group of [predefined predicates](http://www.w3.org/TR/odrl-vocab/#term-LeftOperand) in order to support decision-making in particular scenarios of the IDS, such as [data residency;](http://www.omg.org/data-residency/) on the other side, it defines a configuration overlay (b) to tie the abstract predicates (a) to an operable programming logic supplied by the respective target environment (c), as illustrated by ~~Figure 4.17~~.
 
-![image](4_1_6_images/mapping-of-policy-languages.drawio.png)
+![image](media/mapping-of-policy-languages.drawio.png)
 
 _Figure 4.17: Examples of mapping among policy language levels_
 
