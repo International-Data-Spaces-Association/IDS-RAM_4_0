@@ -19,7 +19,7 @@ Other components (Broker, DAPS, ...) are represented by their Service (represent
 
 One component always is characterized by the combination of platform and service instance. It would be possible to run each Service directly on a certified platform:
 
-![Components SW Stack](./SW_Stack_Components.png)
+![Components SW Stack](./media/SW_Stack_Components.png)
 
 By definition of former RAM versions, all IDS infrastructure services need to be run on top of a Connector (implying a Core Container). This is useful, since we can have shared certification requirements and some functionality overlaps can be covered this way.
 
@@ -44,7 +44,7 @@ Each Service Instance needs to be mapped to one platform it utilizes:
   * If connector is run in one protected VM (e.g. SEV SNP): 1 UID is mapped to 1 key for this SEV-SNP VM.
   * If multiple protected VMs (e.g. SEV SNP) form a distributed platform setup: 1 UID for the setup maps to n platform keys for the VMs which comprise this setup.
 
-![Identity mapping for different scenarios](./identity_mapping.png)
+![Identity mapping for different scenarios](./media/identity_mapping.png)
 (Comment: the platforms in the image may always be either physical devices or protected VMs)
 
 ### Describing Metadata
@@ -94,7 +94,7 @@ The DAPS is used as part of the bootstrapping of trust and thus be considered as
 
 Thus, the shared functionality can be provided by a Core Container:
 
-![Components SW Stack - Core Container](./SW_Stack_Components_core.png)
+![Components SW Stack - Core Container](./media/SW_Stack_Components_core.png)
 
 ### Component Lifecycle -> potentially move to process layer
 
