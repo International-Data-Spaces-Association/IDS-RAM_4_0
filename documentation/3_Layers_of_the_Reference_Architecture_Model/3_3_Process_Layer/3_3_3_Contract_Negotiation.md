@@ -57,14 +57,18 @@ reactivated, but a new one can be started at any time.
 ## Clearing House
 
 In addition, for extra security, the approval of a Contract Request or Offer may be extended by
-involving the Clearing House. This signs the TODO
+involving the Clearing House. After receiving the Contract Agreement from the Data Provider, it 
+first checks the signature of both involved Connectors and then signs the Contract Agreement itself. 
+The Provider Connector returns the triple signed Contract Agreement to the Data Consumer, that can
+finally check all signatures to be sure that the Contract Agreement contains the requested content.
 
 ![Clearing House Involvement](media/policy-negotiation-sequence-4.png)
 #### _Fig. BB: Contract Agreement with Clearing House Involvement_
 
 ## Reversed Sequence
 
-Figure [CC]() depicts a simple negotiation flow as Figure [CC](#_fig-aa-simple-contract-negotiation_). 
+Figure [CC](#_fig-cc-contract-negotiation---initiation-by-data-provider_) depicts a simple 
+negotiation flow as Figure [CC](#_fig-cc-contract-negotiation---initiation-by-data-provider_). 
 In this case, however, the sequence is reversed and the Data Provider initiates the negotiation. 
 Nevertheless, it should be noted that, since the Data Provider is the one who makes the data offer, 
 it is always the one who signs the Contract Agreement last (and sends it to the Clearing House).
@@ -74,17 +78,17 @@ it is always the one who signs the Contract Agreement last (and sends it to the 
 
 ## Counter Offers
 
-Figure DD illustrates a more complex negotiation flow that covers counter Contract Offers and
-external input. As soon as the Data Provider's IDS Connector receives a valid Contract Request, it
-may notify interested users or systems and provide an interface for input. Thus, the IDS Connector,
-if it does not already do so by default, can be extended by the functionality to automatically
-negotiate contracts within a certain range (e.g. using an AI service). Alternatively, a service
-or a user can interact and directly affect the negotiation by rejecting or agreeing to Contract
-Offers or Requests. In addition, counter Contract Offers can be made. Further steps take place as
-already described above: Incoming Contracts are validated and as soon as a Contract Agreement has
-been reached, it is persisted and enforced by both IDS Connectors. How this Policy Enforcement will
-be ensured is explained in Section [3.3.6](3_3_6_Policy_Enforcement.md).
+Figure [DD](#_fig-dd-contract-negotiation---counter-offers_) illustrates a more complex negotiation 
+flow that covers counter Contract Offers and external input. As soon as the Data Provider's IDS 
+Connector receives a valid Contract Request, it may notify interested users or systems and provide 
+an interface for input. Thus, the IDS Connector, if it does not already do so by default, can be 
+extended by the functionality to automatically negotiate contracts within a certain range (e.g., 
+using an AI service). Alternatively, a service or a user can interact and directly affect the 
+negotiation by rejecting or agreeing to Contract Offers or Requests. In addition, counter Contract 
+Offers can be made. Further steps take place as already described above: Incoming Contracts are 
+validated and as soon as a Contract Agreement has been reached, it is persisted and enforced by both 
+IDS Connectors. How this Policy Enforcement will be ensured is explained in Section 
+[3.3.6](3_3_6_Policy_Enforcement.md).
 
 ![Contract Negotiation: Counter Offers](media/policy-negotiation-sequence-3.png)
 #### _Fig. DD: Contract Negotiation - Counter Offers_
-// TODO Update Fig DD
