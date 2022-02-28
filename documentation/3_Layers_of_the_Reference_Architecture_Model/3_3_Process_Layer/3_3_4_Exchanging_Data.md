@@ -15,10 +15,14 @@ start to actually exchange data by invoking a Data Operation (e.g., data upload 
 transformation, or data query) via their IDS Connectors during the Transfer Phase. How this can be 
 done is described in the following.
 
-![InvokeDataOperation](media/image28.jpeg)
-#### _Fig. 1: Processes during Control and Transfer Phase_
+_Please note, as this is a technology-independent message flow, appropriate responses were not
+considered. The illustrated processes can run synchronously as well as asynchronously, and can be
+cancelled at any time._
 
-The invocation of a Data Operation is part of the Control Phase, as shown in Figure [1](), and 
+![Communication Phases](media/sd-communication-phases.png)
+#### _Fig. 1: Communication Phases via IDS Protocol_
+
+The invocation of a Data Operation is part of the Control Phase, as shown in Figure [1](#_fig-1-communication-phases-via-ids-protocol_), and 
 initiated by a Connector that refers to a Contract Agreement. As the subsequent sequence should not 
 be bound to neither a communication protocol nor to a communication pattern, this can be implemented 
 differently, as stated in the following. For this to work, a Data Operation request requires 
@@ -49,11 +53,7 @@ applied systems and not to the Connector component.
 ### Data Transfer via the Same Infrastructure and Protocol
 
 Either synchronously or asynchronously, the Data Providing Connector may respond with the Data 
-Operation result directly as a response to the request - via an IDS communication protocol. The
-sequence is depicted in Figure [2]().
-
-![InvokeDataOperation](media/image28.jpeg)
-#### _Fig. 2: Data Exchange via IDS Protocol_
+Operation result via an IDS communication protocol, as depicted in Figure [1](#_fig-1-communication-phases-via-ids-protocol_).
 
 ### Data Transfer via Another Infrastructure or Protocol
 
@@ -61,10 +61,10 @@ Alternatively to the previously described process, after the Data Operation invo
 Consumer's Connector can take the provided information and establish a connection directly between 
 the Data Provider’s system acting as a data source, and a system on the consumer-side acting as the 
 data sink. This offers the possibility to establish and leave connections open, or to switch from 
-data pulling to data pushing easily. The sequence is depicted in Figure [2]().
+data pulling to data pushing easily. The sequence is depicted in Figure [2](#_fig-2-out-of-band-data-exchange_).
 
-![InvokeDataOperation](media/image28.jpeg)
-#### _Fig. 3: Out-of-band Data Exchange_
+![Out-of-band Data Exchange](media/sd-data-transfer.png)
+#### _Fig. 2: Out-of-band Data Exchange_
 
 ## Usage Control
 
