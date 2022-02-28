@@ -7,7 +7,7 @@ To enforce data usage restrictions, a system’s actions need to be monitored an
 
 Enforcement relies on a decision. The PDP has the responsibility to answer incoming requests (e.g., system actions) from a PEP in the form of a decision (see Figure ~~4.14)~~. Decision-making based on usage restriction is also called (policy) evaluation. There are several types of evaluation, such as event-based or flow-based approaches.
 
-![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_6_images/Communication-PEP-and-PDP.drawio.png)
+![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/media/Communication-PEP-and-PDP.drawio.png)
 
 _Figure 4.14: Communication Policy Enforcement Point and Policy Decision Point_
 
@@ -17,7 +17,7 @@ For example: It is possible to model the transition of data as an event with att
 
 The policy decision may also depend on additional information that is not present in the intercepted system action itself. This includes information about the context, such as data flows or the geographical location of an entity. It is also possible to specify pre- or post-conditions that have to hold before (e.g., integrity check of the environment) and after (e.g., data item is deleted after usage) decision-making. In addition, it is possible to define on-conditions that have to hold during usage (e.g., only during business hours). These conditions usually specify constraints and permissions that have to be fulfilled before, during, and after using data (~~see Figure 4.15)~~.
 
-![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_6_images/usage-control-conditions.drawio.png)
+![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/media/usage-control-conditions.drawio.png)
 
 _Figure 4.15: Usage Control Pre-, On-, and Post-Conditions_
 
