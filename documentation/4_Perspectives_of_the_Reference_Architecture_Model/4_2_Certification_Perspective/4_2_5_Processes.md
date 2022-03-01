@@ -41,9 +41,6 @@ For Assurance Level 1, the Applicant must apply directly to the Certification Bo
 The second and third assurance level certification require an Evaluation Facility to conduct the evaluation of the component or operational environment. The applicant must apply for certification to an approved evaluation facility to carry out the evaluation according to the IDS certification schema. Provided the Evaluation Facility accepts the application, the evaluation will be conducted and an evaluation report will be generated. The Certification Body will examine the evaluation report and, if the result is possitive, issue a certificate.
 
 ![image](https://user-images.githubusercontent.com/77682996/155738509-f4477f71-aeb8-4de2-bbf1-53373ae919c5.png)
-
-These processes apply both to the component and the operational environment certification. 
-
 After a successfully completed evaluation process, the Certification
 Body awards an International Data Spaces certificate to the applicant.
 This certificate has a limited validity period. In order to renew a
