@@ -21,7 +21,7 @@ to the International Data Spaces (i.e. terms such as "Certification
 Body" should not be misunderstood to refer to an existing organization
 already granting certificates).
 
-The certification process is divided into the following three phases:
+The certification follows the same process for all certification profiles in Operational Environment and Component Certification. It consists of the following three phases:
 
 1.  Application Phase: The main goal of this stage is the successful
     start of the IDS evaluation and certification process.
