@@ -42,7 +42,7 @@ The second and third assurance level certification require an Evaluation Facilit
 
 ![image](https://user-images.githubusercontent.com/77682996/155738509-f4477f71-aeb8-4de2-bbf1-53373ae919c5.png)
 After a successfully completed evaluation process, the Certification
-Body awards an International Data Spaces certificate to the applicant.
+Body awards an International Data Spaces certificate to the Applicant.
 This certificate has a limited validity period. In order to renew a
 certificate before it expires, re-certification is required, taking into
 account any relevant external developments that have happened in the
