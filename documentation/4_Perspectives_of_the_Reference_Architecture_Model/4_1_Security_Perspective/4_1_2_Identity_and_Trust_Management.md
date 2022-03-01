@@ -1,18 +1,17 @@
 # Identity and Trust Management
 
-The International Data Spaces allow participants a cross-company data exchange. In many cases, the participants intending to exchange data do not know enough about the other company and its utilized components to properly assess the consequences of such a data exchange. Thus, the IDS offers mechanisms to gain reliable information which help establish trust and enable participants to make sovereign and informed decisions.
+The International Data Spaces allow participants a cross-company data exchange. In many cases, the participants intending to exchange data do not know enough about the other company and its utilized components to properly assess the consequences of such a data exchange. Thus, the IDS offers mechanisms to gain reliable information which help to establish trust and enable participants to make sovereign and informed decisions.
 
 ## Identities for Devices
-### Introduction - Gerd
-Goal:
-Identities need to identify one instance of a software blueprint on qualified platforms.
 
-The identity concept is equally used for all technical components in the IDS. Each component needs an identifier. The component is characterized by it's utilized platform and a service instance.
-The platform consists of
-* HW
-* Firmware
-* OS
-* Container Runtime (sometimes including a Usage Control components)
+The IDS Connector is the central device to establish trust on a technical level and to ensure a secure data exchange across domain boundaries. 
+In the IDS, each connector instance possesses it's own identity. Each connector instance is made up of several aspects:
+- The platform the IDS Connector instance depends on. A platform consists of hardware, firmware, operating system and (container) runtime environment.
+- The Connector Core Services software artefacts that provide management functionality and IDS interoperability.
+- The configuration of a IDS Connector (defined data routes, configured Usage Control framework).
+- The Data Apps or other services (e.g., Clearing House services) that are bound to this connector instance. 
+
+The IDS Connector identity serves to uniquely identify one instance of a service and app bundle on qualified platforms. The identity concept is equally used for all technical components in the IDS. 
 
 The service instance for a connector is typically a Service including a core container, usage control framework (sometimes integrated in core container) and applications (Data Apps).
 Other components (Broker, DAPS, ...) are represented by their Service (represented by one or multiple containers) running on a comparable platform.
@@ -47,6 +46,7 @@ Each Service Instance needs to be mapped to one platform it utilizes:
 ![Identity mapping for different scenarios](./media/identity_mapping.png)
 (Comment: the platforms in the image may always be either physical devices or protected VMs)
 
+TODO: Mention shared identities for load balanced connector instances?
 ### Describing Metadata
 The IDS targets not only a secure exchange of data but also a trustworthy environment for data processing honoring the defined usage control policies. To achieve this goal, it is not sufficient to only know the identity of another IDS component, but additional information about the company operating the component and the utilized software stack is required.
 This information is provided in form of the following describing artifacts:
