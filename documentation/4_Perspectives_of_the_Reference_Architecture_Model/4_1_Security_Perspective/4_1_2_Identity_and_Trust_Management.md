@@ -13,7 +13,7 @@ In the IDS, each connector instance possesses it's own identity. Each connector 
 
 The IDS Connector identity serves to uniquely identify one instance of a service and app bundle on qualified platforms. The identity concept is equally used for all technical components in the IDS. 
 
-The service instance for a connector is typically a Service including a core container, usage control framework (sometimes integrated in core container) and applications (Data Apps).
+The service instance for a connector is typically a Service including a core services, usage control framework  and applications (Data Apps).
 Other components (Broker, DAPS, ...) are represented by their Service (represented by one or multiple containers) running on a comparable platform.
 
 One component always is characterized by the combination of platform and service instance. It would be possible to run each Service directly on a certified platform:
