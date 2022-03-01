@@ -5,7 +5,6 @@ The realization of the IDS Certification schema requires different roles respons
 * Evaluation Facilities, and
 * one Certification Body
 
-The Certification Body and the Evaluation Facility belong to the "Governance Body" category specified on the Business Layer (see [Chapter 3.1.1.](../../3_1_1_Roles.md)). 
 It should be noted that all roles described in this section are specific to the International Data Spaces (i.e. terms such as "Certification Body" should not be misunderstood to refer to an existing organization already granting certificates).
 
 While the roles are described below, additional details on the different processes they take part in are described in [Chapter 4.2.5](./4_2_5_Processes.md).
