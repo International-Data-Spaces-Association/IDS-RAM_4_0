@@ -5,7 +5,7 @@ Participants and core components within the IDS ecosystem shall fulfill common r
 ## Approval of Evaluation Facilities
 [TODO: Add chapter on approval of evaluation facilities ]
 
-## Processes
+## Certification Process for Operational Environments and Core Components
 
 Figures 1 and 2 outline the basic structure of
 the certification process, according to the different assurance levels, together with the roles involved in this
