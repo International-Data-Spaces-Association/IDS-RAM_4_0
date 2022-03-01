@@ -4,23 +4,23 @@ The International Data Spaces allow participants a cross-company data exchange. 
 
 ## Identities for Devices
 
-The IDS Connector is the central device to establish trust on a technical level and to ensure a secure data exchange across domain boundaries. 
+The IDS Connector is the central device to establish trust on a technical level and to ensure a secure data exchange across domain boundaries.
 In the IDS, each connector instance possesses it's own identity. Each connector instance is made up of several aspects:
 - The platform the IDS Connector instance depends on. A platform consists of hardware, firmware, operating system and (container) runtime environment.
 - The Connector Core Services software artefacts that provide management functionality and IDS interoperability.
 - The configuration of a IDS Connector (defined data routes, configured Usage Control framework).
-- The Data Apps or other services (e.g., Clearing House services) that are bound to this connector instance. 
+- The Data Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
 
-The IDS Connector identity serves to uniquely identify one instance of a service and app bundle on qualified platforms. The identity concept is equally used for all technical components in the IDS. 
+The IDS Connector identity serves to uniquely identify one instance of a service and app bundle on qualified platforms. The identity concept is equally used for all technical components in the IDS.
 
 The service instance for a connector is typically a Service including a core services, usage control framework  and applications (Data Apps).
 Other components (Broker, DAPS, ...) are represented by their Service (represented by one or multiple containers) running on a comparable platform.
 
-One component always is characterized by the combination of platform and service instance. It would be possible to run each Service directly on a certified platform:
+One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platfor, the Connector Core Services and the deployed Data Apps.
 
-![Components SW Stack](./media/SW_Stack_Components.png)
 
-By definition of former RAM versions, all IDS infrastructure services need to be run on top of a Connector (implying a Core Container). This is useful, since we can have shared certification requirements and some functionality overlaps can be covered this way.
+![Components SW Stack](./media/SW_Stack_Components_connector_blueprint.png)
+
 
 ### Component Identifier - Monika
 The identity of a combination of platform and service instance is bound to an identifier for the service instance.
@@ -58,43 +58,54 @@ This information is provided in form of the following describing artifacts:
 Signatures are utilized to represent the passed stages of the certification process (described in [Chapter 4.2.5](../4_2_Certification_Perspective/4_2_5_Processes.md)) and allow a validation of the correctness of the describing artifacts.
 In addition to these static artifacts, the connector operator may add additional attributes to the component's description or have them validated and registered at the DAPS.
 
-### Different Components in the IDS and their Role in Identity Management - Gerd
+### Different Components in the IDS and their Role in Identity Management
 
-* CA:
-  * responsible for issuing Identity certificates
-  * nach Prüfung von ...
-  Provisionierung:
-  Operator -> erzeugt Schlüssel und legt sie auf dem Gerät ab
-  GErät oder Operator kontaktieren CA -> Zertifikat ausstellen
-* DAPS:
-  * aktuellen Status von Manifesten und Descriptions
-  * weitere dynamische Attribute (verified by DAPS provider)
-  * issues DATs
-  * cannot be run on a top of a connector, since it would validate it's own DAT
-  Bild: Im Betrieb:
-  Connector -> DAPS: DAT Anfrage
-  DAPS -> Connector: DAT
-  Connector: intern erzeugt Attestation Report
-  Connector -> Connector 2: Attestation Report und DAT
-  Connector 2 verifiziert AR
-* ParIS:
-  * only informative component with information about organizations
-  * not used for trust building
-  * realized as a specific type of connector
-* Connector
-  * gets an identity as described above
-* Metadata Broker
-  * special type of connector, gets identity as described above
-* Clearing House
-  * special type of connector, gets identity as described above
-* App store
-  * special type of connector, gets identity as described above
+Several services and components are involved in issuing identities, adding dynamic attributes and enabling trust in the IDS:
 
-The DAPS is used as part of the bootstrapping of trust and thus be considered as an externals service (such as the PKI services). Clearing House and Metadate Broker share functionality with the Connector itself (self-description, identity, audit logging, Usage Control).
+The **Certificate Authority (CA)**:
 
-Thus, the shared functionality can be provided by a Core Container:
+* Issues identity certificates for connector instances by signing Certificate Signing Requests (CSRs) that have been handed in by valid connector instances.
+* Revokes certificates that become invalid.
+* Assures private keys are properly stored in hardware modules (such as a TPM or HSM) before signing CSRs.
 
-![Components SW Stack - Core Container](./media/SW_Stack_Components_core.png)
+The **Dynamic Attribute Provisioning Service (DAPS)**:
+* Enriches connector identities by issuing identity claims to enrich IDS Connector identities.
+* Embedds them into a **Dynamic Attribute Token (DAT)** which is handed out to requesting IDS Connector instances.
+* Verifies the current status/validity of software manifests and descriptions.
+* Delivers dynamic attributes such as device location.
+* Serves claims such as valid transport cerificates.
+
+Some services do not provide means for trust establishment, but are purely serving informations that need to be verified in other ways:
+
+The **Participant Information System (ParIS)** :
+* Serves as an informative service to provide additional information about participants.
+* Does not provide verified information that should be used to build trust upon.
+
+The **Metadata Broker** :
+* Serves information about IDS connector instances and provides services.
+* Does not provide verified information that should be used to build trust upon.
+* Serves only information that is considered public.
+
+Most services run on top of a Connector instance (Clearing House, ParIS, Metadata Broker). The DAPS is used as part of the bootstrapping of trust and thus must be considered as an external service (such as the PKI services). Clearing House and Metadate Broker share functionality with the Connector itself (self-description, identity, audit logging, Usage Control).
+
+### Interactions between IDS Connectors and Identity Components
+
+To establish a trusted connection, each connector needs the identity information of the corresponding connector to perform access and usage control decisions. The interactions can be depicted as follows:
+
+![Interaction between IDS Connectors and Identity Components](./media/IdM_Interactions.png)
+
+1. Each IDS Connector acquires a valid identity from the IDS Device CA.
+2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.
+3. When establishing communication, the DAT of both IDS Connector instances is exchanged. This is also matched with the used TLS certificate.
+
+To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information. to further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate.
+Two cases must be evaluated:
+
+1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
+2. The connector uses a separate certificate for TLS connectors (e.g., issued by a CA such as Let's Encrypt). In this casem the corresponding IDS Connector must assure the certificate fingerprint matches the one that is embedded in the DAT.
+
+TODO: Define the DAT process to validate the fingerprint.
+
 
 ### Component Lifecycle -> potentially move to process layer
 
