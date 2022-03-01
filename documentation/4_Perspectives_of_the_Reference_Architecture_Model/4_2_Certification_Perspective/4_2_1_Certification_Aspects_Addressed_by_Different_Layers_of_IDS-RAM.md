@@ -1,11 +1,11 @@
 # Certification Aspects Addressed by the Different Layers of the IDS-RAM
 
-[TODO: revise]
+Certification is an essential mechanism in the IDS which supports the establishment of trust and, thus, an ecosystem which can be used for cross-company data exchange and processing. Therefore, it has relations to the different layers of the IDS RAM as explained below.
 
 ## Business Layer
 
-The Certification Body and the Evaluation Facility are in charge of the certification process. Their interactions and responsibilities in this process are described in section 4.2.2.
-Organizations assuming a role under one of the three categories Core Participant, Intermediary, and Software/Service Provider (see Section 3.1.1) are potential targets of certification. The [Certification Scheme](./CertificationScheme) describes for each role what level of certification is required and what the focus of the certification is.
+The Certification Body and Evaluation Facilities are in charge of the certification process. Their interactions and responsibilities in this process are described in [Chapter 4.2.2](./4_2_2_Roles.md) and [Chapter 4.2.5](./4_2_5_Processes.md). Both entities belong to the "Governance Body" category specified on the Business Layer (see [Chapter 3.1.1.](../../3_1_1_Roles.md))
+Organizations assuming a role under one of the three categories Core Participant, Intermediary, and Software/Service Provider (see [Chapter 3.1.1.](../../3_1_1_Roles.md)) are potential targets of certification, i.e. may act as Applicant for the Certification. The [Certification Scheme](./CertificationScheme) describes for each role what level of certification is required and what the focus of the certification is.
 
 ## Functional Layer
 
