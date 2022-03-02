@@ -10,7 +10,7 @@ On one side, the following three Trust Levels are established:
 + Trust Level 2: Providing reliable services
 + Trust Level 3: Offering trust-building services
 
-Higher Trust Level represent the increasing amount of criteria which needa to be fulfilled for a successful certification.
+Higher Trust Level represent the increasing amount of criteria which needs to be fulfilled for a successful certification.
 
 On the other side, the following three Assurance Levels are established:
 + Assurance Level 1: Self-Assessment
