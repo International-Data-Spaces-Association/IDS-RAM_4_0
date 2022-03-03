@@ -16,7 +16,7 @@ The IDS Connector identity serves to uniquely identify one instance of a service
 The service instance for a connector is typically a Service including a core services, usage control framework  and applications (Data Apps).
 Other components (Broker, DAPS, ...) are represented by their Service (represented by one or multiple containers) running on a comparable platform.
 
-One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platfor, the Connector Core Services and the deployed Data Apps.
+One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platform, the Connector Core Services and the deployed Data Apps.
 
 
 ![Components SW Stack](./media/SW_Stack_Components_connector_blueprint.png)
