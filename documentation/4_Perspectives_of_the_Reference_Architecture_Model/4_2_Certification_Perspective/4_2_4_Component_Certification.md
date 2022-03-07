@@ -43,7 +43,7 @@ The following figure illustrates all possible combinations of assurance and trus
 An in-depth description of the Component Certification and its profiles can be found in the [Certification Scheme](./CertificationScheme). The Criteria Catalogue for Components can be requested on the [IDSA homepage](https://internationaldataspaces.org/publications/white-papers/).
 
 ## Certification of other components
-As the Broker, App Store, Clearing House, ParIS and Vocabulary Provider components are at their core also a Connector, the general certification process and assurance levels apply to them as well, in addition to component specific funtional profiles. As an example for these profiles, the criteria catalogue "Components-Broker" can be requested from the IDSA for free[^6].
+As the Broker, App Store, Clearing House, ParIS and Vocabulary Provider components are at their core also a Connector, the general certification process and assurance levels apply to them as well, in addition to component specific functional profiles. As an example for these profiles, the criteria catalogue "Components-Broker" can be requested on the [IDSA Homepage](https://internationaldataspaces.org/publications/white-papers/).
 
 [^5]: IDSA White Paper Certification -- Framework for the IDS
     Certification Scheme 
