@@ -12,7 +12,7 @@ independent on the type of component that is being certified (e.g. Connector, Br
 * Assurance Level 3: External evaluation including concept review, testing and source code audit
 
 ## Connector Trust Levels
-The criteria that make up each of the three trust levels for a Connector are defined in such a way that they are specific enough to ensure interoperability with the functional requirements of an IDS Connector, yet general enough, to allow the use of a Connector in different deployment scenarios without having to define different critera catalogues for each separate use case.
+The criteria that make up each of the three trust levels for a Connector are defined in such a way that they are specific enough to ensure interoperability with the functional requirements of an IDS Connector, yet general enough, to allow the use of a Connector in different deployment scenarios without having to define different criteria catalogues for each separate use case.
 
 The following three trust levels are defined for the certification of a Connector:
 * Trust Level 1: Data space interoperability
@@ -20,7 +20,7 @@ The following three trust levels are defined for the certification of a Connecto
 * Trust Level 3: Additional protection from internal attacks
 
 The following figure illustrates all possible combinations of assurance and trust level, that an applicant can choose from.  
-This matrix approach allows the component developer to select a combination of assurance and trust level for their component that best correspond with the intended use cases. On the one hand, this ensures a low entry barrier specifically suitable for SMEs. On the othe hand, a scalable certification to meet high information security requirements becomes possible.
+This matrix approach allows the component developer to select a combination of assurance and trust level for their component that best correspond with the intended use cases. On the one hand, this ensures a low entry barrier specifically suitable for SMEs. On the other hand, a scalable certification to meet high information security requirements becomes possible.
 ![Bild-Titel](./media/2022_Component_Certification_Matrix.png)
 
 The combinations not marked with a tick, e.g. Assurance Level 1 and Trust Level 3 can not be selected, due to incompatible purposes.
