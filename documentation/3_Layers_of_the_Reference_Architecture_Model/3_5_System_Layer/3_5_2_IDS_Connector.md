@@ -10,7 +10,7 @@ The [IDS App Store](3_5_3_App_Store_and_Data_Apps.md), [Metadata Broker](3_5_4_B
 
 The Connector consists of one or more computers/virtual machines, operating systems running on them, an Application Container Management and the Connector Core Service(s) built on top of it. 
 
-![Connector Architecture](media/connector_architecture.png)
+![Connector Architecture](media/3.5.2.1_connector_architecture.png)
 #### _Fig. 3.5.2.1: Connector Architecture_
 
 The individual elements of the deployment are shown in Figure 3.5.2.0.1 and described below:
@@ -29,7 +29,7 @@ The Control Plane covers all aspects from identity management, over the creation
 
 The Data Plane is treated separately from the Control Plane, as it can use a different transfer protocol. While the data offers and contracts are negotiated using e.g., an IDS protocol, the data transfer and storage of huge amounts of data can performed “out-of-band” with low latency using an appropriate technology. The modularity allows this to be substituted or augmented. Moreover, multiple transfer mechanisms to support diverse data types can be used in parallel. With this, the IDS Connector solves key aspects of how to handle streaming, large data transfer, and hyper scaling.
 
-![Connector Functional View](media/connector_functional_view.png)
+![Connector Functional View](media/3.5.2.2_connector_functional_view.png)
 #### _Fig. 3.5.2.2: Connector Functional View_
 
 The individual functionalities of the _Connector Core Service(s)_ are shown in Figure 3.5.2.0.2 as an [UML deployment diagram](https://www.omg.org/spec/UML/2.5.1/) where each functionality is depicted as a component. In the IDS connector itself, we have deliberately not specified which of the components provides an interface and which consumes the interface to interact with each other. This varies from implementation to implementation. Also, the image does not include all the interactions between the components for the sake of clarity.
