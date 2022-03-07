@@ -1,10 +1,6 @@
 # Component Certification
 
 Trustful cross-company information exchange requires secure Software and Hardware components. All core IDS components have to meet a list of certification criteria to proof the provision of the required functionality, interoperability and level of security. The evaluation of certification criteria is conducted in the IDS Core Component Certification.
-An in-depth description of the certification process, and how it applies
-to the key elements of the IDS architecture, can be found in Part 3 of
-the White Paper Certification[^5]. Access to the core component certification
-criteria catalogues for Connectors and Brokers, respectively, can be requested from the IDSA for free[^6].
 
 Within the next two subchapters, three different levels of assurance and trust for the certification of components are defined.
 This matrix approach allows the component developer to select both the assurance and trust level for the certification of their component, that best correspond with the use cases, that their specific component was developed for. On the one hand, this ensures a low entry barrier specifically suitable for SMEs. On the other
@@ -44,6 +40,7 @@ The following three trust levels are defined for the certification of a Connecto
 
 The following figure illustrates all possible combinations of assurance and trust level, that an applicant can choose from. The combinations not marked with a tick, e.g. Assurance Level 1 and Trust Level 3 can not be selected, due to incompatible purposes. 
 ![Bild-Titel](./media/2022_Component_Certification_Matrix.png)
+An in-depth description of the Component Certification and its profiles can be found in the [Certification Scheme](./CertificationScheme). The Criteria Catalogue for Components can be requested on the [IDSA homepage](https://internationaldataspaces.org/publications/white-papers/).
 
 ## Certification of other components
 As the Broker, App Store, Clearing House, ParIS and Vocabulary Provider components are at their core also a Connector, the general certification process and assurance levels apply to them as well, in addition to component specific funtional profiles. As an example for these profiles, the criteria catalogue "Components-Broker" can be requested from the IDSA for free[^6].
