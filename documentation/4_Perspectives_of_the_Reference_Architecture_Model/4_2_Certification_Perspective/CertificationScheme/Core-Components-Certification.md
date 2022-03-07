@@ -1,5 +1,38 @@
 **PART 3 --** CORE COMPONENTS CERTIFICATION
 
+[*TODO: Update chapter with new naming;*
+
+*TODO: Integrate the following details regarding the different levels:*
+
+**Assurance Levels**
+* Assurance Level 1: Checklist self-assessment and automated interoperability testing
+	* This level is targeted at developers looking for a low entrance barrier into the IDS.
+	* The effort and costs in this level are very low for the applicant due to the self-assessment approach.
+	* The interoperability is verified via statements made by the developer in a checklist and an automated test suite without any involvement of an external evaluation facility.
+* Assurance Level 2: External concept review including functional and security testing
+	* Starting in level 2, external evaluation facilities are tasked with the evaluation, to ensure an independent evaluation result.
+	* Level 2 is the right balance between an independent review and the corresponding costs.
+	* The external concept review includes the examination of documentation as well as the testing the Connector, to ensure the correct implementation of the functional and security requirements.
+* Assurance Level 3: External evaluation including concept review, testing and source code audit
+	* For use cases that require a high evaluation guarantee, such as the exchange of very sensitive data, higher efforts and costs will be required to ensure the customers needs in regard to security assurances are met.
+	* As such, level 3 includes an in-depth source code review as well as a review of the development process (including an audit of the development site) in addition to the evaluation performed for level 2.
+
+**Trust Levels**
+* Trust Level 1: Data space interoperability
+	* Basic level security profile to participate in a data space
+    * Minimal agreed cybersecurity requirements to ensure the trustworthiness of the ecosystem as a whole
+	* Verified interoperability with IDS-components and compliance to the basic rules of a data space
+* Trust Level 2: Feature complete for data usage control
+	* Provision of a common foundation for trusted data exchange including the enforcement of Usage Policies in a trusted environment
+	* Remote Attestation as a way to prove the integrity of a software stack and ensure that the certified software stack is truly deployed
+	* Additional cybersecurity requirements are verified
+* Trust Level 3: Additional protection from internal attacks
+	* Addition of advanced cybersecurity measures that are not commonly required
+	* Support of protection against malicious administrators (internal attacks)
+	* Provision of an additional level of trust and verification for the data provider as well as the data consumer
+
+*TODO: Remove section on "Piloting of Certification Criteria"*]
+
 To secure the intended cross-industrial and cross-company information
 exchange, the Indus- trial Data Space core components must provide the
 required functionality and an appropriate level of security. As such,
@@ -14,7 +47,7 @@ barrier specifically suitable for SMEs and on the other hand a
 scalable certification to meet high information security
 requirements.
 
-| | **Checklist Approach** | **Concept Review** | **High Assurance Evaluation** | 
+| | **Checklist Approach** | **Concept Review** | **High Assurance Evaluation** |
 | --- | --- | --- | --- |
 |  **Base Security Profile** | :heavy_check_mark: | :heavy_check_mark: | - |
 |  **Trust Security Profile** | - | :heavy_check_mark: | :heavy_check_mark: |
