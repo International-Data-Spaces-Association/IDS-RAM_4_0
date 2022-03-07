@@ -1,13 +1,6 @@
 # Component Certification
 
-In order to secure the intended cross-company information exchange, the 
-core components to be used in the IDS must provide the required
-functionality and level of security. As such, the certification of core
-components focuses on interoperability and security, while aiming to
-strengthen the development and maintenance process of these components.
-
-To build this trust in a structured way, the International Data Spaces
-has established a well-defined process for core component certification.
+Trustful cross-company information exchange requires secure Software and Hardware components. All core IDS components have to meet a list of certification criteria to proof the provision of the required functionality, interoperability and level of security. The evaluation of certification criteria is conducted in the IDS Core Component Certification.
 An in-depth description of the certification process, and how it applies
 to the key elements of the IDS architecture, can be found in Part 3 of
 the White Paper Certification[^5]. Access to the core component certification
