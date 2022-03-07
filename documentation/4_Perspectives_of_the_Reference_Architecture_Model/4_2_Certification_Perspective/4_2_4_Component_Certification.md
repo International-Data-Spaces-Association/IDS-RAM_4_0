@@ -1,16 +1,14 @@
 # Component Certification
 
-Trustful cross-company information exchange requires secure Software and Hardware components. All core IDS components have to meet a list of certification criteria to proof the provision of the required functionality, interoperability and level of security. The evaluation of certification criteria is conducted in the IDS Core Component Certification.
+Trustful cross-company information exchange requires secure soft- and hardware components. All IDS components have to meet a list of certification criteria to prove the provision of the required functionality, interoperability and level of security. The evaluation of these certification criteria is conducted in the IDS Core Component Certification.
 
 Within the next two subchapters, three different levels of assurance and trust for the certification of components are defined.
-This matrix approach allows the component developer to select both the assurance and trust level for the certification of their component, that best correspond with the use cases, that their specific component was developed for. On the one hand, this ensures a low entry barrier specifically suitable for SMEs. On the other
-hand, a scalable certification to meet high information security requirements becomes possible.
 
 ## Component Assurance Levels:
 The depth and rigor of a component evaluation consists of the following three assurance levels, 
 independent on the type of component that is being certified (e.g. Connector, Broker, etc.):
 * Assurance Level 1: Checklist self-assessment and automated interoperability testing
-	* This level is therefore targeted at developers looking for a low entrance barrier into the IDS. 
+	* This level is targeted at developers looking for a low entrance barrier into the IDS. 
 	* The effort and costs in this level are very low for the applicant due to the self-assessment approach. 
 	* The interoperability is verified via statements made by the developer in a checklist and an automated test suite without any involvement of an external evaluation facility.
 * Assurance Level 2: External concept review including functional and security testing
@@ -26,26 +24,25 @@ The criteria that make up each of the three trust levels for a Connector are def
 
 The following three trust levels are defined for the certification of a Connector:
 * Trust Level 1: Data space interoperability
-	* basic level security profile to participate in a data space
-    * minimal agreed cybersecurity requirements to ensure the trustworthiness of the ecosystem as a whole 
-	* verified interoperability with IDS-components and compliance to the basic rules of a data space
+	* Basic level security profile to participate in a data space
+    * Minimal agreed cybersecurity requirements to ensure the trustworthiness of the ecosystem as a whole 
+	* Verified interoperability with IDS-components and compliance to the basic rules of a data space
 * Trust Level 2: Feature complete for data usage control
-	* provision of a common foundation for trusted data exchange including the enforcement of Usage Policies in a trusted environment
+	* Provision of a common foundation for trusted data exchange including the enforcement of Usage Policies in a trusted environment
 	* Remote Attestation as a way to prove the integrity of a software stack and ensure that the certified software stack is truly deployed
-	* additional cybersecurity requirements are verified
+	* Additional cybersecurity requirements are verified
 * Trust Level 3: Additional protection from internal attacks
-	* addition of advanced cybersecurity measures that are not commonly required
-	* support of protection against malicious administrators (internal attacks)
-	* provision of an additional level of trust and verification for the data provider as well as the data consumer
+	* Addition of advanced cybersecurity measures that are not commonly required
+	* Support of protection against malicious administrators (internal attacks)
+	* Provision of an additional level of trust and verification for the data provider as well as the data consumer
 
-The following figure illustrates all possible combinations of assurance and trust level, that an applicant can choose from. The combinations not marked with a tick, e.g. Assurance Level 1 and Trust Level 3 can not be selected, due to incompatible purposes. 
+The following figure illustrates all possible combinations of assurance and trust level, that an applicant can choose from.  
+This matrix approach allows the component developer to select a combination of assurance and trust level for their component that best correspond with the intended use cases. On the one hand, this ensures a low entry barrier specifically suitable for SMEs. On the othe hand, a scalable certification to meet high information security requirements becomes possible.
 ![Bild-Titel](./media/2022_Component_Certification_Matrix.png)
+
+The combinations not marked with a tick, e.g. Assurance Level 1 and Trust Level 3 can not be selected, due to incompatible purposes.
+
 An in-depth description of the Component Certification and its profiles can be found in the [Certification Scheme](./CertificationScheme). The Criteria Catalogue for Components can be requested on the [IDSA homepage](https://internationaldataspaces.org/publications/white-papers/).
 
 ## Certification of other components
 As the Broker, App Store, Clearing House, ParIS and Vocabulary Provider components are at their core also a Connector, the general certification process and assurance levels apply to them as well, in addition to component specific functional profiles. As an example for these profiles, the criteria catalogue "Components-Broker" can be requested on the [IDSA Homepage](https://internationaldataspaces.org/publications/white-papers/).
-
-[^5]: IDSA White Paper Certification -- Framework for the IDS
-    Certification Scheme 
-    https://internationaldataspaces.org/publications/white-papers/
-[^6]: https://internationaldataspaces.org/publications/white-papers/
