@@ -26,7 +26,7 @@ independent on the type of component that is being certified (e.g. Connector, Br
 	* The interoperability is verified via statements made by the developer in a checklist and an automated test suite without any involvement of an external evaluation facility.
 * Assurance Level 2: External concept review including functional and security testing
 	* Starting in level 2, external evaluation facilities are tasked with the evaluation, to ensure an independent evaluation result.
-	* For a number of Connectors, level 2 is the right balance between an independent review and the corresponding costs. 
+	* Level 2 is the right balance between an independent review and the corresponding costs. 
 	* The external concept review includes the examination of documentation as well as the testing the Connector, to ensure the correct implementation of the functional and security requirements. 
 * Assurance Level 3: External evaluation including concept review, testing and source code audit
 	* For use cases that require a high evaluation guarantee, such as the exchange of very sensitive data, higher efforts and costs will be required to ensure the customers needs in regard to security assurances are met.
