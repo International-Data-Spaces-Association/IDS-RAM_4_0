@@ -31,7 +31,7 @@ The following three trust levels are defined for the certification of a Connecto
 	* verified interoperability with IDS-components and compliance to the basic rules of a data space
 * Trust Level 2: Feature complete for data usage control
 	* provision of a common foundation for trusted data exchange including the enforcement of Usage Policies in a trusted environment
-	* remote attestation
+	* Remote Attestation as a way to prove the integrity of a software stack and ensure that the certified software stack is truly deployed
 	* additional cybersecurity requirements are verified
 * Trust Level 3: Additional protection from internal attacks
 	* addition of advanced cybersecurity measures that are not commonly required
