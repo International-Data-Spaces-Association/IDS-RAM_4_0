@@ -3,12 +3,12 @@ To enforce policies, there are components oriented to XACML (Link). First, these
 
 ![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/media/Communication-PEP-and-PDP.drawio.png)
 
-_Figure 4.14: Communication Policy Enforcement Point and Policy Decision Point_
+_Figure 3.3.6-1: Communication Policy Enforcement Point and Policy Decision Point_
 
 ## PEP
 **The Policy Enforcement Point (PEP)** has two tasks. First, it is the entry point for enforcement, meaning it is the point where data or metadata is stopped and transferred to the PDP, the PDP makes a decision and returns it to the PEP. Secondly, the PEP will subsequently manipulate or lock the data according to the decision. 
 ## PDP
-As mentioned before, the **Policy Decision Point (PDP**) makes the decision based on the data transmitted by the PEP and the stored policies. The policies specify the conditions and obligations. The result of the evaluation is send to the PEP for enforcement. (Fig. XX). The PDP also interprets the policies in terms of contextual information and instructions. It is linked to the other components presented here also.
+As mentioned before, the **Policy Decision Point (PDP**) makes the decision based on the data transmitted by the PEP and the stored policies. The policies specify the conditions and obligations. The result of the evaluation is send to the PEP for enforcement. (Fig. 3.3.6-1). The PDP also interprets the policies in terms of contextual information and instructions. It is linked to the other components presented here also.
 ## PIP
 **The Policy Information Point (PIP)** is the component to determine information such as context information during policy evaluation. This information can then be used in the PDP to make decisions. (More about context information in chapter 4.1.6)
 ## PXP
