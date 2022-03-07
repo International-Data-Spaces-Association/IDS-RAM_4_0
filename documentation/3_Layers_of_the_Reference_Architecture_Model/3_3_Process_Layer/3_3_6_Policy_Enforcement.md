@@ -1,4 +1,28 @@
-# Policy Enforcement
+# Policy Enforcment
+To enforce policies, there are components oriented to XACML (Link). First, these components should be explained briefly, then their interaction should be shown. To enforce policies there should be the following 2 components. A PolicyEnforcementPoint (PEP) and a PolicyDescisionPoint (PDP).
+
+![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/media/Communication-PEP-and-PDP.drawio.png)
+
+_Figure 4.14: Communication Policy Enforcement Point and Policy Decision Point_
+
+## PEP
+**The Policy Enforcement Point (PEP)** has two tasks. First, it is the entry point for enforcement, meaning it is the point where data or metadata is stopped and transferred to the PDP, the PDP makes a decision and returns it to the PEP. Secondly, the PEP will subsequently manipulate or lock the data according to the decision. 
+## PDP
+As mentioned before, the **Policy Decision Point (PDP**) makes the decision based on the data transmitted by the PEP and the stored policies. The policies specify the conditions and obligations. The result of the evaluation is send to the PEP for enforcement. (Fig. XX). The PDP also interprets the policies in terms of contextual information and instructions. It is linked to the other components presented here also.
+## PIP
+**The Policy Information Point (PIP)** is the component to determine information such as context information during policy evaluation. This information can then be used in the PDP to make decisions. (More about context information in chapter 4.1.6)
+## PXP
+**The Policy Execution Point (PXP)** is the components for implementing instructions or requirements these can be before a decision and their successful execution can be included as a condition, or they can be executed after a decision has been made. (More about the execution of instructions in chapter 4.1.6)
+## PMP, PAP
+**The Policy Management Point (PMP)** and **the Policy Administration Point (PAP)** are not components that are directly needed for enforcement, but should be briefly mentioned here. The PMP is as the name already says for the handling of the Policies to constantly, it makes the Policies available to the PDP, activates, deactivates and deletes these. The PAP is used to support the creation of policies for users via an user interface.
+
+## The Interaction in the IDS Connector
+**An example process** in the IDS Connector. Let's assume there is a policy describing that data can only be used when the connector is in the EU and the usage is sent to the clearing house after the data has been used. We assume that such a policy is deposited (negotiated) for the PDP and the components to implement it are available. Now a process may exist to enforce access control, on the data provider side. It basically does not matter if it is a send or fetch of the data. To implement data usage control, there must also be a process on the data consumer side. We want to focus here on the case of Usage Control on the consumer side, which can be used very similarly also for access control, since the data provider, has a high interest to enforce this as early as possible. In Figure XX Is an IDS connector that receives data, the connector core is of central importance it knows the routes of the data and can thus integrate the PEPs at appropriate points. This can be done when the data leaves the IDS Connector Core or e.g. via Interceptor Pattern for completely controlled data flows. If data is to flow to a data sink (app, storage), the IDS Connector Core knows the destination, it knows the identifications of the data, which are transferred in the form of metadata. Before the data flows directly, the PEP acts in front of it and sends all the required information to the PDP. The implementation of the solution can be implemented in the core or as a standalone application (runs as an IDS Connector App), but the principle remains the same. The PDP analyzes the policy and must be connected via the IDS Connector Core to a system that can provide a statement about the IDS Connector location, IDS ParIS is used here as an example. If the connector is located in the EU, the data is released, or the PEP does not have to change anything, the PDP informs the PEP of this. Now there is the instruction to log the data delivery in the clearinghouse. This is now done via PXP which is connected to the IDS Clearing House via the IDS Connector Core in the same way as the PIP. The PDP can now log important information and parameters provided by the PEP and PIP to the Clearing House via PXP. More details about different types of context information and the execution of instructions can be found in chapter 4.1.6.
+
+
+
+
+#  OLD Policy Enforcement
 
 Enforcement of data usage restrictions can be characterized and implemented in different forms. Organizational rules or legal contracts can be substituted, or at least accompanied, by technical solutions, which introduce a new level of security. Vice versa, technical solutions can be accompanied by organizational rules or legal contracts (e.g., to compensate missing capabilities of the technical solution).
 
