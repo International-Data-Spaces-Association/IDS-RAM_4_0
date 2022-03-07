@@ -1,4 +1,4 @@
-# Policy Enforcment
+# Policy Enforcement
 Enforcement of data usage restrictions (Policy Enforcement) can be characterized and implemented in different forms. Organizational rules or legal contracts can be substituted, or at least accompanied, by technical solutions, which introduce a new level of security. Vice versa, technical solutions can be accompanied by organizational rules or legal contracts (e.g., to compensate missing capabilities of the technical solution).
 
 Although it is a commonly used solution to address data usage control restrictions by organizational rules, the IDS-RAM focuses on technical enforcement.
