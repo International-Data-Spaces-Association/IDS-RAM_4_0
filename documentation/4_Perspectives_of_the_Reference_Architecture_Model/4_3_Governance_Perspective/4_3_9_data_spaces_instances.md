@@ -6,10 +6,10 @@ Consequently, the IDSA will consider (the governance of) its development and dep
 1.	striving for interoperability within data spaces instances (referred to as ‘federations’ or ‘intra data space interoperability’), such that implementation components of the IDS architecture are developed in coherence and provide a gradual migration and growth path, and
 2.	preparing for interoperability between multiple data spaces instances (referred to as ‘federation of federations’ or ‘inter data space interoperability’), to pave the way towards the federation of interoperable data spaces as pursued by the European data strategy.
 
-The governance of both intra and inter data space interoperability focusses on the set of commonly agreed principles and architectures, covering more than merely the technical aspects. A framework for addressing all aspects to be governed is provided by the new European Interoperability Framework (EIF) as developed by the European Commission. The EIF distinguishes four interoperability levels (legal, organizational, semantic, technical) under an overarching integrated governance approach (figure below):
+The governance of both intra and inter data space interoperability focusses on the set of commonly agreed principles and architectures, covering more than merely the technical aspects. A framework for addressing all aspects to be governed is provided by the new European Interoperability Framework (EIF) as developed by the European Commission. The EIF distinguishes four interoperability levels (legal, organizational, semantic, technical) under an overarching integrated governance approach (figure 4.3.9.1):
 
 ![image](https://user-images.githubusercontent.com/11537506/155714995-efc51e15-ac1b-4f38-8dea-5a2d20f67a89.png)
-Figure x. Interoperability levels as distinguished in the New European Interoperability Framework.
+Figure 4.3.9.1: Interoperability levels as distinguished in the New European Interoperability Framework.
 
 For both intra and inter data space interoperability the IDSA has defined its approach on the governance for development and deployment on the various aspects for each of the interoperability levels in the IDSA Whitepaper ‘Governance for Data Spaces Instances’  . It clarifies the roles and responsibilities. In certain cases, the data space instance itself will fill in domain-specific details, while in other cases, the IDSA can propose inter data space standards. 
 
