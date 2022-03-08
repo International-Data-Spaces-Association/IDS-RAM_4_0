@@ -13,12 +13,12 @@ The functional requirements of the International Data Spaces defined in [Chapter
 
 ## Process Layer
 
-The Process Layer ([Chapter 3.3.](../../3_Layers_of_the_Reference_Architecture_Model/3_3_Process_Layer/3_3_Process_Layer.md) defines relevant processes for onboarding and using components in the IDS. Where those processes are relevant for the compliance of a component or organization, they are also evaluated during certification with regards to the adherence with those processes.
+The Process Layer ([Chapter 3.3.](../../3_Layers_of_the_Reference_Architecture_Model/3_3_Process_Layer/3_3_Process_Layer.md)) defines relevant processes for onboarding and using components in the IDS. Where those processes are relevant for the compliance of a component or organization, they are also evaluated during certification with regards to the adherence with those processes.
 
 ## Information Layer
 
 Certification of a core component comprises also its compliance with the Reference Architecture Model regarding functionality, protocols, etc.
-Whenever relevant, evaluation of a core component's compliance also refers to its compatibility with the Information Model defined in the Information Layer ([Chapter 3.4.](../../3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/3_4_Information_Layer.md).
+Whenever relevant, evaluation of a core component's compliance also refers to its compatibility with the Information Model defined in the Information Layer ([Chapter 3.4.](../../3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/3_4_Information_Layer.md)).
 
 ## System Layer
 
