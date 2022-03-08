@@ -11,9 +11,9 @@ The governance of both intra and inter data space interoperability focusses on t
 ![image](https://user-images.githubusercontent.com/11537506/155714995-efc51e15-ac1b-4f38-8dea-5a2d20f67a89.png)
 Figure 4.3.9.1: Interoperability levels as distinguished in the New European Interoperability Framework.
 
-For both intra and inter data space interoperability the IDSA has defined its approach on the governance for development and deployment on the various aspects for each of the interoperability levels in the IDSA Whitepaper ‘Governance for Data Spaces Instances’  . It clarifies the roles and responsibilities. In certain cases, the data space instance itself will fill in domain-specific details, while in other cases, the IDSA can propose inter data space standards. 
+For both intra and inter data space interoperability the IDSA has defined its approach on the governance for development and deployment on the various aspects for each of the interoperability levels in the IDSA Whitepaper ‘Governance for Data Spaces Instances’. It clarifies the roles and responsibilities. In certain cases, the data space instance itself will fill in domain-specific details, while in other cases, the IDSA can propose inter data space standards. 
 
-It is to be noted that in previous releases of the IDSA RAM, the focus has been on  on de development of intra data space interoperability. In the mean-time, the inter data space interoperability has been gaining major interest, as exemplified by the work of the Data Sharing Coalition on the Data Sharing Canvas   and within the EU Project Trusts  . With such initiatives, the IDSA will keep close alignment.
+It is to be noted that in previous releases of the IDSA RAM, the focus has been on  on de development of intra data space interoperability. In the mean-time, the inter data space interoperability has been gaining major interest, as exemplified by the work of the Data Sharing Coalition on the Data Sharing Canvas   and within the EU Project Trusts. With such initiatives, the IDSA will keep close alignment.
 
 References
 
