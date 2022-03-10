@@ -29,7 +29,7 @@ However, no Data Provider is obliged to publish any data assets at any IDS Metad
 
 As shown in Figure [3.3.2.1](#PublishSelf-Description), the Data Provider can send Self-Description documents to an IDS Metadata Broker. The Self-Description must be self-containing and compliant to the specifications of the IDS Information Model. Usually representations of the RDF classes [ids:Connector](https://w3id.org/idsa/core/Connector) and [ids:Resource](https://w3id.org/idsa/core/Resource) are used. The IDS Metadata Broker then checks the Self-Description syntactic correctness and persists it in its local database. It does not check the semantic correctness, or the plausibility of the supplied information.
 
-![PublishSelf-Description](../../media/image25_register-at-broker.png)
+![PublishSelf-Description](../../media/image25_register-at-broker-activity.png)
 #### _Fig. 3.3.2.1: Process to Register a Self-Description at an IDS Metadata Broker_
 
 Different to other ecosystems, an IDS Metadata Broker does not actively crawl for Self-Descriptions or searches for updates. The IDS Metadata Broker relies on notifications from the original Data Providers. In case the Data Provider misses an update, the IDS Metadata Broker can therefore not be made responsible for outdated or wrong information.
