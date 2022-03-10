@@ -7,10 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- ParIS descriptions for Business, Process, and Systems Layer
+- none
 
 ### Changed
-- Metadata Broker descriptions throughout the RAM
+- none
 
 ### Removed
 - none

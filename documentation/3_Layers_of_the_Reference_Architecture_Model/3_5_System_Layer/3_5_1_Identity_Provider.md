@@ -1,10 +1,11 @@
 # Identity Provider
 
-## DAPS
+## Dynamic Attribute Provisioning Service (DAPS)
+//TODO !
 
-## ParIS
+## Participant Information Service (ParIS)
 
-The Participant Information System role, short ParIS, can be implemented in different variations
+The Participant Information Service role, short ParIS, can be implemented in different variations
 and implementation patterns. Independent of different design decisions or used
 technologies, all ParIS implementations must host an IDS endpoint that hosts a
 Self-Description of the ParIS itself as well as functions to query and update
