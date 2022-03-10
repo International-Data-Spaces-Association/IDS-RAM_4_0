@@ -7,9 +7,13 @@ The IDS define manners to tackle these challenges by specifying a technology-agn
 
 Apart from such edge cases, the Data Provider has the interest to correctly and comprehensively describe its data assets to maximize the amount of interested Data Consumers. It further wants to stick to commonly accepted and understood standards to simplify its discovery for potential business partners. The IDS Information Model provides the schema for Self-Descriptions and their basic building blocks, like for instance Usage Contracts, endpoint descriptions, or the internal structure of data assets.
 
-The first step in a typical data publication process is therefore the proper creation of a data asset Self-Description. Usually, IDS Connectors provide the technical manners to create and maintain them, e.g. through suitable GUIs. After reaching a syntactically and semantically correct Self-Description, they are then deployed at the Data Providers IDS Connector and can be accessed by other IDS Connectors via its endpoints. Depending on the requesting IDS Connector, the returned Self-Description may differ. Thus, the offering IDS Connector could offer different data at different conditions for different Participants of an IDS ecosystem.
+## Self-Description at Data Provider
 
-## IDS Metadata Brokers
+The first step in a typical data publication process is therefore the proper creation of a data asset Self-Description. Usually, IDS Connectors provide the technical manners to create and maintain them, e.g. through suitable GUIs. After reaching a syntactically and semantically correct Self-Description, they are then deployed at the Data Providers IDS Connector and can be accessed by other IDS Connectors via its endpoints.
+
+Depending on the requesting IDS Connector, the returned Self-Description may differ. Thus, the offering IDS Connector could offer different data at different conditions for different Participants of an IDS ecosystem. Self-Descriptions may also include elements of domain specific ontologies or generic key/values depending on the domain of the ecosystem.
+
+## IDS Metadata Broker
 
 The Data Provider may want to announce the created Self-Descriptions at a central component in a data space instead of just offering it in its own IDS Connector instance. Therefore, the Data Provider can send the Self-Descriptions to a responsible central IDS infrastructure component, the IDS Metadata Broker. The IDS Metadata Broker is a component in a data space that allows the publication of Self-Descriptions for IDS Resources and IDS Connectors, besides the original IDS Connector itself. Data Consumers can find suitable data offers while not knowing the existence or the location of the Data Providers.
 
