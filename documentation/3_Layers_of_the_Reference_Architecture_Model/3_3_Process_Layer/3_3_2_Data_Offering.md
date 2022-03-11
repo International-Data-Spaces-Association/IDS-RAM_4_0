@@ -42,7 +42,7 @@ To find a Data Provider, the Data Consumer may search in the catalogs of an IDS 
 
 The IDS Metadata Broker then returns the query result to the Data Consumer. The query result may differ depending on the requesting IDS Connector due to filtering of the displayed data according to usage policies defined by the Data Provider. The Data Consumer needs to interpret the result to find out about the different data sources available. Each query result must provide information about each IDS Connector capable of providing the desired data, so the Data Consumer can access each IDS Connector’s Self-Description to learn more about how to receive the desired dataset. The Data Provider may serve the same data using different representations or pricing options, so the Data Consumer may select a suitable offer from the Data Provider.
 
-![Query Self-Descriptions](../../media/image27_query-at-broker-activity.PNG)
+![Query Self-Descriptions](../../media/image27_query-at-broker-activity.png)
 #### _Fig. 3.3.2.2: Query IDS Metadata Broker_
 
 ## Crawling Self-Descriptions
