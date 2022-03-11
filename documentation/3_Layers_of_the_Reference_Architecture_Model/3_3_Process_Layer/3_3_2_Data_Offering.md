@@ -30,7 +30,7 @@ However, no Data Provider is obliged to publish any data assets at any IDS Metad
 As shown in Figure [3.3.2.1](#PublishSelf-Description), the Data Provider can send Self-Description documents to an IDS Metadata Broker. The Self-Description must be self-containing and compliant to the specifications of the IDS Information Model. Usually representations of the RDF classes [ids:Connector](https://w3id.org/idsa/core/Connector) and [ids:Resource](https://w3id.org/idsa/core/Resource) are used. The IDS Metadata Broker then checks the Self-Description syntactic correctness and persists it in its local database. It does not check the semantic correctness, or the plausibility of the supplied information.
 
 ![PublishSelf-Description](../../media/image25_register-at-broker-activity.png)
-#### _Fig. 3.3.2.1: Process to Register a Self-Description at an IDS Metadata Broker_
+#### _Fig. 3.3.2.1: Register Self-Description at IDS Metadata Broker_
 
 Different to other ecosystems, an IDS Metadata Broker does not actively crawl for Self-Descriptions or searches for updates. The IDS Metadata Broker relies on notifications from the original Data Providers. In case the Data Provider misses an update, the IDS Metadata Broker can therefore not be made responsible for outdated or wrong information.
 
@@ -42,8 +42,8 @@ To find a Data Provider, the Data Consumer may search in the catalogs of an IDS 
 
 The IDS Metadata Broker then returns the query result to the Data Consumer. The query result may differ depending on the requesting IDS Connector due to filtering of the displayed data according to usage policies defined by the Data Provider. The Data Consumer needs to interpret the result to find out about the different data sources available. Each query result must provide information about each IDS Connector capable of providing the desired data, so the Data Consumer can access each IDS Connector’s Self-Description to learn more about how to receive the desired dataset. The Data Provider may serve the same data using different representations or pricing options, so the Data Consumer may select a suitable offer from the Data Provider.
 
-![Query Self-Descriptions](../../media/image27_query-at-broker.PNG)
-#### _Fig. 3.3.2.2: Query Self-Description at an IDS Metadata Broker_
+![Query Self-Descriptions](../../media/image27_query-at-broker-activity.PNG)
+#### _Fig. 3.3.2.2: Query IDS Metadata Broker_
 
 ## Crawling Self-Descriptions
 Another possible approach to find relevant data offers in a data ecosystem is a federated catalog. This approach is based on a crawler architecture implementing a federated cache node (FCN) and a federated cache crawler (FCC). The FCN of an IDS Connector makes data offers public to other Participants, as part of its Self-Description. In addition, further information describing the contents can be requested directly. This way, another IDS Connector can cache all available data offerings by crawling known Data Providers via its FCC.
