@@ -1,6 +1,3 @@
-- TODO: insert links where useful
-- TODO: need to define participant identity further
-
 ## Onboarding
 
 The overall 'Onboarding' process consists of several sub-processes. The first step for an organization to join the International Data Spaces as a Data Provider or Data Consumer is to acquire an identity to be used in the IDS.
