@@ -7,6 +7,7 @@ In a second step, the organization needs to either request an IDS Connector from
 The overall 'Onboarding' process is illustrated in the following figure.
 
 ![Onboarding process](../../media/image22.png)
+#### _Fig. 3.3.1.1: Onboarding process_
 
 ### Acquire Identity
 
