@@ -221,7 +221,9 @@ _Figure 4.20: Data flow across company borders_
 
 #### **4.1.6.9 CONTEXT INFORMATION AND OBLIGATION FULLFILLMENT**
 
-&nbsp;
+Context information is information such as time, location, states of systems, etc., these can be very different. In IDS, one can basically distinguish 2 types. Information that is obtained directly from the connector and context information that is obtained from external sources. Information that can be obtained from the connector itself, such as a system state, is referred to as local context information. Information that contains, for example, the state of a payment or information from the IDS ParIS is global context information. This context information may also be referred to as IDS PIP. The IDS policy language provides ways for this context information to be addressed and used. A Usage Control System can then use this context information for enforcement by connecting Policy Information Points (PIPs).
+
+An IDS contract can contain obligations that have to be fulfilled, for example logging in the clearing house or deleting stored data. Here, too, there is a difference between local (in the connector) and global (outside the connector). While deleting data stored in the connector is a local execution, logging to an external destination is a global execution. Elements with interfaces for executing commitments are called Policy Execution Points (PXPs). These IDS PXPs can be connected to the Enforcement Framework and used accordingly.
 
 #### **4.1.6.10 DATA PROVENANCE TRACKING**
 
