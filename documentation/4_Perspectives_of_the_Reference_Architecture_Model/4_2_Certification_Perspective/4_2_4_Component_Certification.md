@@ -2,7 +2,7 @@
 
 Trustful cross-company information exchange requires secure soft- and hardware components. All IDS components have to meet a list of certification criteria to prove the provision of the required functionality, interoperability and level of security. The evaluation of these certification criteria is conducted in the IDS Core Component Certification.
 
-Within the next two subchapters, three different levels of assurance and trust for the certification of components are defined.
+Within the next two subsections, three different levels of assurance and trust for the certification of components are defined.
 
 ## Component Assurance Levels:
 The depth and rigor of a component evaluation consists of the following three assurance levels, 
