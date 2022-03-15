@@ -3,24 +3,21 @@
 <!-- https://github.com/International-Data-Spaces-Association/IDS-G-pre/tree/main/Communication/sequence-diagrams/data-connector-to-data-connector#requesting-data -->
 <!-- from LaTex file section3_1_process_layer -->
 
-Operations of a Data Consumer or Data Provider can be assigned to two separate phases: the Control 
-Phase and the Transfer Phase. During the Control Phase, both Participants pass multiple processes, 
-the Onboarding (see Section [3.3.1](3_3_1_Onboarding.md)), the Data Offering 
-(see Section [3.3.2](3_3_2_Data_Offering.md)), and the Contract Negotiation (see Section 
-[3.3.3](3_3_3_Contract_Negotiation.md)), using an IDS-specific protocol. The respective protocol 
-bindings are specified in the [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G). 
+After a successful Onboarding (see Section [3.3.1](3_3_1_Onboarding.md)), the operations of a Data 
+Consumer or Data Provider can be assigned to two phases: the Control Phase and the Transfer Phase. 
+In the Control Phase, both Participants pass multiple processes (Data Offering 
+(see Section [3.3.2](3_3_2_Data_Offering.md)) and Contract Negotiation (see Section 
+[3.3.3](3_3_3_Contract_Negotiation.md))) to prepare the data transfer, using an IDS-specific 
+communication protocol. The respective protocol bindings are defined in the 
+[IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G). 
 
-If all of these processes were successfully finished, the Data Consumer and the Data Provider can 
-start to actually exchange data by invoking a Data Operation (e.g., data upload or download, data 
-transformation, or data query) via their IDS Connectors during the Transfer Phase. How this can be 
+In the Transfer Phase, if all aforementioned processes were successfully finished, the Data Consumer 
+and the Data Provider can start to actually exchange data by invoking a Data Operation (e.g., data 
+upload or download, data transformation, or data query) via their IDS Connectors. How this can be 
 done is described in the following.
 
-_Please note, as this is a technology-independent message flow, appropriate responses were not
-considered. The illustrated processes can run synchronously as well as asynchronously, and can be
-cancelled at any time._
-
 ![Communication Phases](media/sd-communication-phases.png)
-#### _Fig. 1: Communication Phases via IDS Protocol_
+#### _Fig. XX: Communication Phases_
 
 The invocation of a Data Operation is part of the Control Phase, as shown in Figure [1](#_fig-1-communication-phases-via-ids-protocol_), and 
 initiated by a Connector that refers to a Contract Agreement. As the subsequent sequence should not 
@@ -53,7 +50,9 @@ applied systems and not to the Connector component.
 ### Data Transfer via the Same Infrastructure and Protocol
 
 Either synchronously or asynchronously, the Data Providing Connector may respond with the Data 
-Operation result via an IDS communication protocol, as depicted in Figure [1](#_fig-1-communication-phases-via-ids-protocol_).
+Operation result without using a proprietary system or protocol. In the course of this, all 
+information flows that are shown in Figure [XX](#_fig-1-communication-phases-via-ids-protocol_) 
+would run directly between the two Connectors using an IDS protocol.
 
 ### Data Transfer via Another Infrastructure or Protocol
 
