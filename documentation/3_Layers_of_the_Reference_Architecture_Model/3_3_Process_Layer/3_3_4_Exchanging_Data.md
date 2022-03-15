@@ -67,10 +67,7 @@ data pulling to data pushing easily. The sequence is depicted in Figure [2](#_fi
 
 ## Usage Control
 
-Usage control on both sides signals the Data Operation to the data provenance tracking 
-infrastructure (accessible via the Clearing House), so that provenance information about the 
-transferred data  is kept up to date. Usage Control on the Data Consumer side also signals the 
-receipt of the Data Operation result to the data provenance tracking infrastructure, in order to 
-confirm that the transaction has been completed successfully (see more details in Section 
-[3.3.6](3_3_6_Policy_Enforcement.md) and Section 
-[4.1.6](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_6_Usage_Control.md)).
+All communication patterns and protocols must ensure that usage control, covering the contents of 
+the negotiated Contract Agreement, is enforced, and that the involved Connectors are included in the 
+data transfer, at least by event-based notifications. More details about Policy Enforcement are
+described in Section [3.3.6](3_3_6_Policy_Enforcement.md).
