@@ -143,7 +143,7 @@ paradigm[^12].
 
 #### Separation of Concerns (SoC)
 
-Following theseparation of concerns design principle, only one
+Following the separation of concerns design principle, only one
 dimension of a subject matter is considered at a time, for the sake of
 clarity and consistency. Similar to the principle a microscope works,
 each concern follows a particular, analytical point of view, while other
