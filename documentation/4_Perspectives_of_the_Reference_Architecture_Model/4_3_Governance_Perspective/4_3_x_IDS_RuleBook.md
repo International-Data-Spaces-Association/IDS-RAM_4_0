@@ -67,7 +67,7 @@ for the realization of use cases on the foundation of a trustworthy infrastructu
 The IDSA Rulebook defines structures and processes for the implementation of the
 IDS-Reference Architecture Model in real-world scenarios. This includes the
 realization of the essential service as well as the definition of processes for
-the relevant processes, e.g. admission and withdrawal of par-ticipants.
+the relevant processes, e.g. admission and withdrawal of participants.
 
 
 Cross Industry Approach: This approach on data sovereignty is not industry specific,
@@ -98,7 +98,7 @@ commercial assumptions à Essential services (low profit), base services (enabli
 cash cow services on top of that. à Commercial agreements will be done separately.
 
 6. Liaisons agreements: The data sovereignty community based on IDS naturally collaborates with
-other ecosystems like ENX or certifications in automotive, Plattform Industrie4.0, GAIA-X etc.
+other ecosystems like ENX or certifications in automotive, Plattform Industrie 4.0, GAIA-X etc.
 Liaisons agreements are about guiding principles guard railing for these collaborations. IDSA
 provides processes and measures to actively contribute to liaisons and to provide value for
 the IDSA Liaison partners.
@@ -145,7 +145,7 @@ Guiding principles were leading the team in structuring the complete IDS ecosyst
 -	Overall: Create a new global open standard for data sovereignty:
 
 Open standard generally implies: 1) free to use for everyone (although in some sectors this is interpreted in different ways ...),
-2) an open process through which everyone can partici-pate, 3) transparent decision making (preferably by
+2) an open process through which everyone can participate, 3) transparent decision making (preferably by
 consensus or otherwise through a pre-defined structure).
 
 
