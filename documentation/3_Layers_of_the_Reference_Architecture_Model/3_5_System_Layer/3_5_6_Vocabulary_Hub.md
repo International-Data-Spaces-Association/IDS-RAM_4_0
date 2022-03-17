@@ -6,7 +6,7 @@ In the IDS, however, further requirements occur. The terms of the vocabulary mus
 
 Nevertheless, the IDS Information Model only represents the lowest common denominator of all IDS use cases. It is therefore the minimal set of terms all IDS components must understand. In specific domains, however, more and more expressive terms are needed. It is therefore a good practice to extend the basic information model with additional vocabularies and provide them in the same ways as the core one.
 
-To do so, a certain service is needed to provide a plattform to host, maintain, publish, and document the additional vocabularies. This service is the IDS Vocabulary Hub. It provides IDS-conform endpoints to enable the seamless communication with IDS Connectors and infrastructure components. Vocabulary Hubs give access to the defined terms and their descriptions, present changes and outline the different versions. They act as the management platforms for data schemes that can be used in IDS use cases.
+To do so, a certain service is needed to provide a platform to host, maintain, publish, and document the additional vocabularies. This service is the IDS Vocabulary Hub. It provides IDS-conform endpoints to enable the seamless communication with IDS Connectors and infrastructure components. Vocabulary Hubs give access to the defined terms and their descriptions, present changes and outline the different versions. They act as the management platforms for data schemes that can be used in IDS use cases.
 
 
 ## Maintaining vocabularies

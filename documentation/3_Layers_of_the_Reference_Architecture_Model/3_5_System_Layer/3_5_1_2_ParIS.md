@@ -5,7 +5,7 @@ From a System Layer view, the internal architecture components and endpoints of 
 
 ## Components
 
-A ParIS typicaly consists of the following functional building blocks, which can be implemented using different technology stacks and hosting solutions:
+A ParIS typically consists of the following functional building blocks, which can be implemented using different technology stacks and hosting solutions:
 
 - _Server_ to host the IDS Endpoints.
 - _Database_ to persist the RDF Self-Descriptions of the registered IDS Participants.
@@ -16,14 +16,14 @@ A ParIS typicaly consists of the following functional building blocks, which can
 
 ## Endpoints
 
-The interactions with a ParIS can be distinguished into two main categories. The first one is related to the initial provisioning of Participant information during their onboarding in an IDS as well as the according updates through the operators of the general Identity Provider. As this workflow is completely component-internal, proprietary or custom patterns might be used. The necessity for this internal endpoint is due to the requried higher trust in the Participant metadata. For instance, an incorrect VAT-ID or jurisdication has direct and concrete legal consequences, therefore a certain validation workflow at the Identity Proivder operator must be enabled. 
+The interactions with a ParIS can be distinguished into two main categories. The first one is related to the initial provisioning of Participant information during their onboarding in an IDS as well as the according updates through the operators of the general Identity Provider. As this workflow is completely component-internal, proprietary or custom patterns might be used. The necessity for this internal endpoint is due to the required higher trust in the Participant metadata. For instance, an incorrect VAT-ID or jurisdiction has direct and concrete legal consequences, therefore a certain validation workflow at the Identity Provider operator must be enabled. 
 
-In addtion, an IDS compliant endpoint must be exposed for the communciations with IDS Connectors. While this endpoint could also - given proper authentication and authorization procedures - serve for the purpose described above, its main concern is the provisioning of querying capabilities and to allow individual Participants to adjust their own Self-Description.
+In addition, an IDS compliant endpoint must be exposed for the communications with IDS Connectors. While this endpoint could also - given proper authentication and authorization procedures - serve for the purpose described above, its main concern is the provisioning of querying capabilities and to allow individual Participants to adjust their own Self-Description.
 
 
 ## Search and Querying
 
-Each ParIS instance must provide IDS compliant functions to dereference Participant identifiers. A dereferencation function accepts the Participant identifier, an IRI accroding to the IDS Information Model, and returns the related Self-Description document. In addtion, a ParIS may provide further search capabilities, like full-text search, attribute-based or facet search, or even expose expresive query language like SPARQL. In any case, the respective capabilities must be outlined in the Self-Description of the ParIS itself, to make them discoverable for IDS Connectors.
+Each ParIS instance must provide IDS compliant functions to dereference Participant identifiers. A dereferencation function accepts the Participant identifier, an IRI according to the IDS Information Model, and returns the related Self-Description document. In addition, a ParIS may provide further search capabilities, like full-text search, attribute-based or facet search, or even expose expressive query language like SPARQL. In any case, the respective capabilities must be outlined in the Self-Description of the ParIS itself, to make them discoverable for IDS Connectors.
 
 
 ## Life Cycle of Participant's Self-Description
@@ -37,4 +37,4 @@ In case a Participant temporarily or completely leaves an IDS, the according Sel
 
 ## Data Synchronization inside the Identity Provider
 
-The core attributes of an IDS Participant, their IDS Key, UUID, and the IRI identifier, need to be maintained comprehensivly between the different functional components of the Identity Provider. Apart of that, no further synchronization between different ParIS or Identity Provider instances are enforced.
+The core attributes of an IDS Participant, their IDS Key, UUID, and the IRI identifier, need to be maintained comprehensively between the different functional components of the Identity Provider. Apart of that, no further synchronization between different ParIS or Identity Provider instances are enforced.
