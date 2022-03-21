@@ -24,4 +24,4 @@ The basic App Store architecture is shown in Figure 3.5.3.1. In addition to the 
 The Container Management component depicted in Figure 3.5.3.1 is more related to the Connector, as it bundles the Data App with its dependencies to simplify the deployment and maintenance of apps.
 
 ![App Store Architecture](../../media/appstore-architecture.png)
-*Fig. 3.5.3.1: App Store Architecture*
+<br>*Fig. 3.5.3.1: App Store Architecture*
