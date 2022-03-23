@@ -3,15 +3,25 @@ Issue for this section: https://github.com/International-Data-Spaces-Association
 # App Store and Distribution of Apps
 
 ## Apps in the IDS
-Apps necessary for processing data, isolated from each other,
-What are apps used for?
--> convert data between formats
--> compute results from input data
--> persistentes Speichern von Daten: different storing options possible for connectors -> either storage within the connector with attached UC restrictions or external - only in encrypted version without access to plain data -> Database is part of core connector services, data app does not store data persistently but uses this Database
+Apps necessary for processing data, isolated from each other
 
-possible use cases:
-1. NDA mit PDFs in Datenbank -> UC abhängig von compliance der Nutzer der Daten (nur erzwingbar, dass Daten aus DB gelöscht werden - nicht verhinderbar, dass Nutzer die Daten rauszieht/abschreib/fotografiert, ... -> über rechtlichen Rahmen zu machen)
-2. Input-Daten fallen nicht einfach raus, nur Ergebnisse einer Auswertung (z.B. Videostream vom Parkplatz kommt rein -> Auswertung, wie viele Parkplätze frei sind kommen raus; Statusinformationen aus Maschinen in den Connector raus, dort monitoring und predictive maintenance vorhersagen -> nur die Warnung für Austauschen von Teilen kommt raus)
+What are apps used for?
+* convert data between formats
+* compute results from input data
+* persistent storing of data →  different storing options possible for connectors:
+  * either storage within the connector with attached UC restrictions or
+  * external - only in encrypted version without access to plain data
+  => Database is part of core connector services, data app should not store data persistently but uses this Database
+
+Possible reasonable use cases for Usage Control in the context of apps:
+* NDA with PDFs/files in data base
+  * Usage Control Policy: Delete Files after certain amount of time/date
+  * Enforcement depends on compliance of the person viewing the files: we can technically only enforce deletion from data in the database, not that a user copies/notes down data from the viewed files (the latter needs to be covered by legal means)
+* Use apps which do not display/provide the input data directly but only provide computation results
+  * Examples:
+    * Video stream from parking lot with Data App that derives how many places are free
+    * Status information from machines which are monitored and processed in data app → only predictive maintenance instructions or warnings leave the app
+  * Enforcement is done by ensuring that the app does not provide the input data (Certification of Apps) and making sure that input data is only stored in the connector and only processed by the respective (certified) app
 
 ## App Store
 * App = Container image (executable on Linux kernel, independent (brings all dependencies)) -> from developer
@@ -42,12 +52,13 @@ App Store offers the following interfaces:
 ![App Interactions](./media/app_interaction.png)
 
 Securing the app in the connector:
-container run-time responsible for ensuring the following aspects:
-* Integrity and authenticity of apps -> verified before start of app
-* Validation of license aspects (e.g. usage for time frame, ...)
-
-Routing responsible for controlling data flows between apps
--> essential question: which data flows are allowed/how to decide which flows are allowed
--> first approach: data provider receives an  overview of the data flows in the connector and what happens with their data in case of a transfer -> then they can decide whether they want to share or not
-
-Open point: which interfaces do the apps require (store this data, give me this data, transfer this information to app XY)
+* Container run-time responsible for ensuring the following aspects:
+  * Integrity and authenticity of apps -> verified before start of app
+  * Validation of license aspects (e.g. usage for time frame, ...)
+* Routing responsible for controlling data flows between apps
+  * Essential question: which data flows are allowed/how to decide which flows are allowed
+  * First approach: data provider receives an overview of the data flows in the connector and what happens with their data in case of a transfer -> then they can decide whether they want to share or not
+  * Open point: which interfaces do the apps require → Suggestion:
+    * store this data
+    * give me this data
+    * transfer this information to app X (on connector Y)
