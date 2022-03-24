@@ -2,19 +2,32 @@
 
 Security of data processing in an IDS component depends on the system security of the utilized component. The hardware and software components that are critical to ensure the confidentiality and integrity of the transmitted and processed data form the Trusted Computing Base (TCB). Different deployment scenarios and their respective TCBs are described in the [first subsection](#deployment-scenarios). The [following subsection](#hardware-security-features) provides some background on hardware security features that might be used for securing the platform. Finally, the [last subsection](#platform-security-requirements) provides an overview of essential security requirements and how to achieve them.
 
-TODO: Overall goal: Describe how to create and deploy a secure platform as a baseline for the different IDS connector trust levels. Deployment can be monolithic (one connector per machine), shared or distributed. We need to raise awareness of what security mechanisms can achieve and address limitations of trust mechanisms as well.
-
 ## Deployment Scenarios
-TODO: Deployment scenarios -> Overview illustrations (1:1 1:n m:n)
-* Connector as a single device
-* Multiple connectors per device
-* Distributed deployment (e.g., k8s)
-* Discussion on-premise and cloud scenarios (cloud is basically on-premise at another site and operator)
-* Deployment scenarios also depend on existing infrastructure and environment (existing modules, services, ...)
+In general, there are three different possibilities for the combinations of platform and connector service instances:
+* A 1:1 mapping with a connector being a single device consisting of one platform instance and one connector service instance
+* A 1:n mapping with multiple connectors on one physical device, i.e., a system with one platform instance and multiple connector service instances
+* A n:m mapping with multiple devices offering a distributed deployment for multiple connector service instances (e.g. with Kubernetes)
+
+The figure below shows the three options with their respective trusted computing bases:
+![Deployment Scenarios](./media/deployment_scenarios.png)
+#### _Fig. 4.1.3.1: Deployment Scenarios_
+
+The TCB consists of the following components:
+* All **hardware** components with access to unencrypted app data.
+* **Firmware / bootloader / UEFI** representing all software components used to bootstrap the system and initialize the hardware before starting the kernel.
+* Optionally a **hypervisor** which may be used to better isolate multiple connectors on a device by providing a Virtual Machine (VM) for each of them. The impact on the TCB is illustrated for the 1:n mapping in a comparison to a solution with OS-level virtualization, i.e., containers.
+* The **kernel** connects user space software to the hardware of the device.
+* A (container) **runtime** responsible for starting the execution of applications on the system.
+* The **connector core services** taking care of essential connector functionalities as explained in the [System Layer](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_2_IDS_Connector.md).
+* An arbitrary number of **apps** as introduced in the [System Layer](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_3_App_Store_and_Data_Apps.md).
+
+Additionally, the TCB may include **external components** in the surrounding infrastructure of a connector which are used for security-relevant tasks, e.g. an authorization server.
+
+It is important to note that from a component security perspective there is no specific category for the usage of cloud solutions in comparison to an on-premise deployment. In both cases, the TCB includes all components that are required to ensure the confidentiality and integrity of the transmitted and processed data and needs to fulfill all requirements defined in the certification criteria catalog. The only differences lie in the responsibility for the different layers of the software stack and ensuring their conformity.
 
 ## Hardware Security Features
 
-In the following, we provide a brief overview on three hardware security features that might help securing the TCB of an device. For complete fulfillment of certification requirements, a combination of the mentioned techniques might need to be applied.
+In the following, we provide a brief overview on three hardware security features that might help fulfilling the requirements introduced in the [subsection below](#platform-security-requirements). For complete fulfillment of certification requirements, a combination of the mentioned techniques might need to be applied.
 
 ### Hardware Security Module (HSM)
 A Hardware Security Module (HSM) is a physical device containing one or more secure cryptoprocessor. It typically provides secure key generation, storage and management and supports using those keys for performing encryption or digital signing. Additionally, most HSMs provide tamper protection, ranging from a notification of detected tampering attempts to deleting the keys upon tamper detection. A HSM can either be directly integrated or attached to the hardware of one device or deployed as a network device which is shared by multiple clients in the network. The components necessary to manage and access the HSM belong to the TCB of the device using the HSM, even if they are deployed on other devices in the network (e.g. in case of a HSM as a network device).
