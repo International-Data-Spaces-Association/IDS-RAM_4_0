@@ -9,9 +9,9 @@ A ParIS typically consists of the following functional building blocks, which ca
 
 - _Server_ to host the IDS Endpoints.
 - _Database_ to persist the RDF Self-Descriptions of the registered IDS Participants.
+- _IAM_ for checking the identity claims of clients and to validate their authorization using the IDS DAT. Can be located at the surrounding Identity Provider.
 - _Index_ (optional) to increase the speed for read requests.
 - _Website_ (optional) for human interactions with the ParIS.
-- _IAM_ (optional) for checking the identity claims of clients and to validate their authorization using the IDS DAT. Can be located at the surrounding Identity Provider.
 
 
 ## Endpoints
