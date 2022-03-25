@@ -1,6 +1,6 @@
 # Participant Information Service (ParIS)
 
-From a System Layer view, the internal architecture components and endpoints of a ParIS are very similar to the ones of an IDS Metadata Broker. Both need to receive IDS Self-Descriptions, need to persist them and make them available for other IDS Connectors to query them. The main difference is the type of Self-Description they manage - Connectors and Resources by the Metadata Brokers and Participants by the ParIS. 
+From a System Layer view, the internal architecture components and endpoints of a ParIS are very similar to the ones of an IDS Metadata Broker. Both need to receive, persist, and make IDS Self-Descriptions available for other IDS Connectors to query them. The main difference is the type of Self-Description they manage - Connectors and Resources by the Metadata Brokers and Participants by the ParIS. 
 
 
 ## Components
@@ -28,7 +28,7 @@ Each ParIS instance must provide IDS compliant functions to dereference Particip
 
 ## Life Cycle of Participant's Self-Description
 
-Similar to Connector and Resource Self-Descriptions, also Participant Self-Descriptions go through different lifecycle stages. The initial version is provided by the Participant itself, either directly as an IDS Information Model instance or as a filled form during the onboarding process. This SD is then, after the IDS identity of the new Participant has been created, populated at the according ParIS. 
+Similar to Connector and Resource Self-Descriptions, also Participant Self-Descriptions (SD) pass different lifecycle stages. The initial version is provided by the Participant itself, either directly as an IDS Information Model instance or as a filled form during the onboarding process. This SD is then, after the IDS identity of the new Participant has been created, populated at the according ParIS. 
 
 In case mistakes in this SD are noticed or attributes of the Participant change, both the operator of the Identity Provider as well as the Participant itself have the technical means to adjust the Self-Description. Note that the operator of the Identity Provider could also prohibit direct updates due to otherwise skipped validation workflows.
 
@@ -37,4 +37,4 @@ In case a Participant temporarily or completely leaves an IDS, the according Sel
 
 ## Data Synchronization inside the Identity Provider
 
-The core attributes of an IDS Participant, their IDS Key, UUID, and the IRI identifier, need to be maintained comprehensively between the different functional components of the Identity Provider. Apart of that, no further synchronization between different ParIS or Identity Provider instances are enforced.
+The core attributes of an IDS Participant, their IDS Key, UUID, and the IRI identifier, need to be maintained comprehensively between the different functional components of the Identity Provider. Apart from that, no further synchronization between different ParIS or Identity Provider instances are enforced.
