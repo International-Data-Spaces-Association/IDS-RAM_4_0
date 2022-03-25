@@ -4,7 +4,7 @@ While a Connector Self-Description basically contains descriptive information ab
 data assets, these also include Usage Control information in form of a Contract Offer. A Contract 
 Offer describes under what conditions the Data Provider is willing to make its data available to the 
 Data Consumer. This can range from simple access restrictions to complex pre- and post-duties. See 
-more details in Section [X](). // TODO Link to information layer explaining a contract offer.
+more details in Section [3.4](../3_4_Information_Layer). <!TODO Deep-Link to information layer explaining a contract offer.!>
 
 In a (semi-)automated negotiation process performed by the Usage Control frameworks of the 
 participating IDS Connectors, the Data Consumer and the Data Provider need to agree on a Data Usage
