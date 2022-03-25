@@ -13,7 +13,7 @@ more detail.
 
 ## Basic Flow
 
-Figure [AA](#_fig-aa-simple-contract-negotiation_) shows the most simple version of the sequence 
+Figure [3.3.3.1](#_fig-3331-simple-contract-negotiation_) shows the most simple version of the sequence 
 that is at least necessary to reach a Contract Agreement. In advance, the Data Provider has attached 
 a Contract Offer to a data offer. As described in Section [3.3.2](3_3_2_Data_Offering.md), this is 
 returned to the Data Consumer as part of the IDS Connector's Self-Description. However, the Data 
@@ -24,14 +24,14 @@ considered. The illustrated processes can run synchronously as well as asynchron
 cancelled at any time._
 
 ![Simple Contract Negotiation](media/policy-negotiation-sequence-1.png)
-#### _Fig. AA: Simple Contract Negotiation_
+#### _Fig. 3.3.3.1: Simple Contract Negotiation_
 
-In Figure [AA](#_fig-aa-simple-contract-negotiation_), the negotiation sequence is initiated by the 
+In Figure [3.3.3.1](#_fig-3331-simple-contract-negotiation_), the negotiation sequence is initiated by the 
 Data Consumer's IDS Connector sending a Contract Request to the Data Provider. The content of this 
 Contract Request can differ from the Contract Offer, or it can adopt it as it is. The 
 meta-information in the contract is modified accordingly (e.g., the date, the term, or the 
 signature). As soon as the Data Provider's IDS Connector receives the Contract Request, its validity 
-is checked by means of syntax, content, and signature. As Figure [AA](#_fig-aa-simple-contract-negotiation_) 
+is checked by means of syntax, content, and signature. As Figure [3.3.3.1](#_fig-3331-simple-contract-negotiation_) 
 concentrates on the simple flow, it covers no counter Contract Offers. Thus, the Contract Request is 
 either rejected or accepted.
 
@@ -62,23 +62,23 @@ Connector returns the triple signed Contract Agreement to the Data Consumer, tha
 all signatures to be sure that the Contract Agreement contains the requested content.
 
 ![Clearing House Involvement](media/policy-negotiation-sequence-4.png)
-#### _Fig. BB: Contract Agreement with Clearing House Involvement_
+#### _Fig. 3.3.3.2: Contract Agreement with Clearing House Involvement_
 
 ## Reversed Sequence
 
-Figure [CC](#_fig-cc-contract-negotiation---initiation-by-data-provider_) depicts a simple 
-negotiation flow as Figure [CC](#_fig-cc-contract-negotiation---initiation-by-data-provider_). 
+Figure [3.3.3.3](#_fig-cc-contract-negotiation---initiation-by-data-provider_) depicts a simple 
+negotiation flow as Figure [3.3.3.3](#_fig-3333-contract-negotiation---initiation-by-data-provider_). 
 In this case, however, the sequence is reversed and the Data Provider initiates the negotiation. 
 Nevertheless, it should be noted that, since the Data Provider is the one who makes the data offer, 
 it is always the one who signs the Contract Agreement last, and sends it to the Clearing House if 
 this is involved (as described in the previous subsection).
 
 ![Contract Negotiation: Initiation by Data Provider](media/policy-negotiation-sequence-2.png)
-#### _Fig. CC: Contract Negotiation - Initiation by Data Provider_
+#### _Fig. 3.3.3.3: Contract Negotiation - Initiation by Data Provider_
 
 ## Counter Offers
 
-Figure [DD](#_fig-dd-contract-negotiation---counter-offers_) illustrates a more complex negotiation 
+Figure [3.3.3.4](#_fig-3334-contract-negotiation---counter-offers_) illustrates a more complex negotiation 
 flow that covers counter Contract Offers and external input. As soon as the Data Provider's IDS 
 Connector receives a valid Contract Request, it may notify interested users or systems and provide 
 an interface for input. Thus, the IDS Connector, if it does not already do so by default, can be 
@@ -91,4 +91,4 @@ both IDS Connectors. How this Policy Enforcement will be ensured is explained in
 [3.3.6](3_3_6_Policy_Enforcement.md).
 
 ![Contract Negotiation: Counter Offers](media/policy-negotiation-sequence-3.png)
-#### _Fig. DD: Contract Negotiation - Counter Offers_
+#### _Fig. 3.3.3.4: Contract Negotiation - Counter Offers_
