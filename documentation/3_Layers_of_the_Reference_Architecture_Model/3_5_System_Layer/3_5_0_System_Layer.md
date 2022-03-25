@@ -1,6 +1,6 @@
 # System Layer
 
-The processes defined in the [Process Layer](../3_3_Process_Layer) are summarized in figure 3.5.0.1 as interactions between the IDS Components. Please note that the identity provider is not shown in the figure in order to maintain readability.
+The processes defined in the [Process Layer](../3_3_Process_Layer) are summarized in Figure 3.5.0.1 as interactions between the IDS Components. Please note that the Identity Provider is not shown in the figure in order to maintain readability.
 
 ![Interaction of technical components](./media/3.5.0.1_interaction_between_technical_components.png)
 #### _Fig. 3.5.0.1: Interaction of technical components_
