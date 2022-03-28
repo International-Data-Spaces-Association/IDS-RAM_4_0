@@ -51,7 +51,7 @@ sequence is never reactivated, but a new one can be started at any time.
 
 ## Clearing House
 
-In addition, for extra security, the approval of a Contract Request or Offer may be extended by
+In addition, for separate trust or for regulation in some data spaces, the approval of a Contract Request or Offer may be extended by
 involving the Clearing House. After a successful Contract Request validation, the Data Provider 
 signed and stored the Contract Agreement locally. Next, this is additionally sent to the Clearing
 House.
