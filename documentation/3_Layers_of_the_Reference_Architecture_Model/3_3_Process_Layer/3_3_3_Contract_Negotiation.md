@@ -54,7 +54,7 @@ sequence is never reactivated, but a new one can be started at any time.
 In addition, for separate trust or for regulation in some data spaces, the approval of a Contract Request or Offer may be extended by
 involving the Clearing House. After a successful Contract Request validation, the Data Provider 
 signed and stored the Contract Agreement locally. Next, this is additionally sent to the Clearing
-House.
+House (as shown in Figure [3.3.3.2](#_fig-3332-contract-agreement-with-clearing-house-involvement_)).
 
 After receiving the Contract Agreement from the Data Provider, the Clearing House first checks the 
 signature of both involved Connectors and then signs the Contract Agreement itself. The Provider 
