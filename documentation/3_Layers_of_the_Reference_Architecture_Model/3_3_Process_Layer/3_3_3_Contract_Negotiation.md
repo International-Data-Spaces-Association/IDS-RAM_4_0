@@ -66,8 +66,8 @@ all signatures to be sure that the Contract Agreement contains the requested con
 
 ## Reversed Sequence
 
-Figure [3.3.3.3](#_fig-cc-contract-negotiation---initiation-by-data-provider_) depicts a simple 
-negotiation flow as Figure [3.3.3.3](#_fig-3333-contract-negotiation---initiation-by-data-provider_). 
+Figure [3.3.3.3](#_fig-cc-contract-negotiation---initiation-by-data-provider_) depicts the simple 
+negotiation flow of Figure [3.3.3.1](#_fig-3331-contract-negotiation---initiation-by-data-provider_). 
 In this case, however, the sequence is reversed and the Data Provider initiates the negotiation. 
 Nevertheless, it should be noted that, since the Data Provider is the one who makes the data offer, 
 it is always the one who signs the Contract Agreement last, and sends it to the Clearing House if 
