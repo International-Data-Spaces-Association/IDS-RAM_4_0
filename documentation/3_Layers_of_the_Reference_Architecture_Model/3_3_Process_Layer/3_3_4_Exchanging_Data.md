@@ -17,9 +17,9 @@ upload or download, data transformation, or data query) via their IDS Connectors
 done is described in the following.
 
 ![Communication Phases](media/communication-phases.png)
-#### _Fig. XX: Communication Phases_
+#### _Fig. 3.3.4.1: Communication Phases_
 
-The invocation of a Data Operation is part of the Control Phase, as shown in Figure [XX](#_fig-xx-communication-phases_), and 
+The invocation of a Data Operation is part of the Control Phase, as shown in Figure [3.3.4.1](#_fig-3341-communication-phases_), and 
 initiated by a Connector that refers to a Contract Agreement. As the subsequent sequence should not 
 be bound to neither a communication protocol nor to a communication pattern, this can be implemented 
 differently, as stated in the following. For this to work, a Data Operation request requires 
@@ -49,9 +49,9 @@ applied systems and not to the Connector component.
 
 ### Data Transfer via the Same Infrastructure and Protocol
 
-Either synchronously or asynchronously, the Data Providing Connector may respond with the Data 
+Either synchronously or asynchronously, the Data Provider's Connector may respond with the Data 
 Operation result without using a proprietary system or protocol. In the course of this, all 
-information flows that are shown in Figure [XX](#_fig-xx-communication-phases_) 
+information flows that are shown in Figure [3.3.4.1](#_fig-3341-communication-phases_) 
 would run directly between the two Connectors using an IDS protocol.
 
 ### Data Transfer via Another Infrastructure or Protocol
@@ -60,10 +60,10 @@ Alternatively to the previously described process, after the Data Operation invo
 Consumer's Connector can take the provided information and establish a connection directly between 
 the Data Provider’s system acting as a data source, and a system on the consumer-side acting as the 
 data sink. This offers the possibility to establish and leave connections open, or to switch from 
-data pulling to data pushing easily. The sequence is depicted in Figure [YY](#_fig-yy-out-of-band-data-exchange_).
+data pulling to data pushing easily. The sequence is depicted in Figure [3.3.4.2](#_fig-3.3.4.2-out-of-band-data-exchange_).
 
 ![Out-of-band Data Exchange](media/data-transfer.png)
-#### _Fig. YY: Out-of-band Data Exchange_
+#### _Fig. 3.3.4.2: Out-of-band Data Exchange_
 
 ## Usage Control
 
