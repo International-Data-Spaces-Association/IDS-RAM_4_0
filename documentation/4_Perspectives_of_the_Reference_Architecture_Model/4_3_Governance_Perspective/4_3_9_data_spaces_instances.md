@@ -8,8 +8,8 @@ Consequently, the IDSA will consider (the governance of) its development and dep
 
 The governance of both intra and inter data space interoperability focuses on the set of commonly agreed principles and architectures, covering more than merely the technical aspects. A framework for addressing all aspects to be governed is provided by the new European Interoperability Framework (EIF) as developed by the European Commission. The EIF distinguishes four interoperability levels (legal, organizational, semantic, technical) under an overarching integrated governance approach (Fig [4.3.9.1](#interoperability-levels-as-distinguished-in-the-new-european-interoperability-framework.png)):
 
-![Interoperability levels as distinguished in the New European Interoperability Framework](\media\interoperability-levels-as-distinguished-in-the-new-european-interoperability-framework.png.png)
-Fig. 4.3.9.1: Interoperability levels as distinguished in the New European Interoperability Framework. 
+![Interoperability levels as distinguished in the New European Interoperability Framework](./media/interoperability-levels-as-distinguished-in-the-new-european-interoperability-framework.png.png)
+#### _Fig. 4.3.9.1: Interoperability levels as distinguished in the New European Interoperability Framework._
 
 For both intra and inter data space interoperability the IDSA has defined its approach on the governance for development and deployment on the various aspects for each of the interoperability levels in the IDSA Whitepaper ‘Governance for Data Spaces Instances’[^2]. It clarifies the roles and responsibilities. In certain cases, the data space instance itself will fill in domain-specific details, while in other cases, the IDSA can propose inter data space standards. 
 
