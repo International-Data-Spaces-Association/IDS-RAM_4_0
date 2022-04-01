@@ -25,11 +25,7 @@ The individual elements of the deployment are shown in Figure 3.5.2.1 and descri
 
 ## IDS Connector Functionalities
 
-The IDS Connector must include some essential functionality in its _Connector Core Service(s)_. The functionalities can be implemented in individual micro services or as a single comprehensive software block. In addition, the services do not have to be deployed in the same infrastructure. For example, it is possible to distinguish between the Data Plane and the Control Plane. 
-
-The Control Plane covers all aspects from identity management, over the creation and discovery of data offers, to the negotiation of contracts. Lastly, the Control Plane also triggers the Data Plane after negotiating used technologies first. 
-
-The Data Plane is treated separately from the Control Plane, as it can use a different transfer protocol. While the data offers and contracts are negotiated using e.g., an IDS protocol, the data transfer and storage of huge amounts of data can performed “out-of-band” with low latency using an appropriate technology. The modularity allows this to be substituted or augmented. Moreover, multiple transfer mechanisms to support diverse data types can be used in parallel. With this, the IDS Connector solves key aspects of how to handle streaming, large data transfer, and hyper scaling. For more details take a look at Section [3.3.4](../3_3_Process_Layer/3_3_4_Exchanging_Data.md). 
+The IDS Connector must include some essential functionality in its _Connector Core Service(s)_. The functionalities can be implemented in individual micro services or as a single comprehensive software block. In addition, the services do not have to be deployed in the same infrastructure. 
 
 ![Connector Functional View](media/3.5.2.2_connector_functional_view.png)
 #### _Fig. 3.5.2.2: Connector Functional View_
