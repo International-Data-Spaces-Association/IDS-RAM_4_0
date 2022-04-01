@@ -59,8 +59,8 @@ would run directly between the two Connectors using an IDS protocol.
 Alternatively to the previously described process, after the Data Operation invocation, the Data 
 Consumer's Connector can take the provided information and establish a connection directly between 
 the Data Provider’s system acting as a data source, and a system on the consumer-side acting as the 
-data sink. This offers the possibility to establish and leave connections open, or to switch from 
-data pulling to data pushing easily. The sequence is depicted in Figure [3.3.4.2](#_fig-3.3.4.2-out-of-band-data-exchange_).
+data sink. This offers the possibility for the Connector to establish and leave connections open, or 
+to switch from data pulling to data pushing easily. The sequence is depicted in Figure [3.3.4.2](#_fig-3.3.4.2-out-of-band-data-exchange_).
 
 ![Out-of-band Data Exchange](media/data-transfer.png)
 #### _Fig. 3.3.4.2: Out-of-band Data Exchange_
