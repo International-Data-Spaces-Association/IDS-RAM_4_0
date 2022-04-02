@@ -1,6 +1,7 @@
 # Securing Interaction between IDS Components
 
-Data transfer in the IDS needs be secured by protecting the communication between IDS components, i.e. enabling identification, authentication, and authorization for components as well as providing confidentiality and integrity protection for the transferred data. This chapter explains the following aspects about establishing and using a secure communication channel between IDS component:
+Data transfer in the IDS needs be secured by protecting the communication between IDS components, i.e. enabling identification, authentication, and authorization for components as well as providing confidentiality and integrity protection for the transferred data. This chapter explains the following aspects about establishing and using a secure communication channel between IDS components:
+
 * Ensuring availability of [all required information](preparation-of-required-information) on the component,
 * [Establishing of a secure communication channel](#establishment-of-a-secure-communication-channel), and
 * Using the communication channel for [data transfer](#data-transfer-using-this-communication-channel)
