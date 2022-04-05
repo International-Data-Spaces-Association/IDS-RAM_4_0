@@ -1,15 +1,19 @@
 # Identity and Trust Management
 
 The International Data Spaces allow participants a cross-company data exchange. In many cases, the participants intending to exchange data do not know enough about the other company and its utilized components to properly assess the consequences of such a data exchange. Thus, the IDS offers mechanisms to gain reliable information which help to establish trust and enable participants to make sovereign and informed decisions.
+Identity and trust management is rooted in the 
+
+[Chapter 3.5.1](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_1_Identity_Provider.md))
+
 
 ## Identities for Devices
 
 The IDS Connector is the central device to establish trust on a technical level and to ensure a secure data exchange across domain boundaries.
 In the IDS, each connector instance possesses it's own identity. Each connector instance is made up of several aspects:
-- The platform the IDS Connector instance depends on. A platform consists of hardware, firmware, operating system and (container) runtime environment.
-- The Connector Core Services software artefacts that provide management functionality and IDS interoperability.
-- The configuration of a IDS Connector (defined data routes, configured Usage Control framework).
-- The Data Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
+* The platform the IDS Connector instance depends on. A platform consists of hardware, firmware, operating system and (container) runtime environment.
+* The Connector Core Services software artefacts that provide management functionality and IDS interoperability.
+* The configuration of a IDS Connector (defined data routes, configured Usage Control framework).
+* The Data Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
 
 The IDS Connector identity serves to uniquely identify one instance of a service and app bundle on qualified platforms. The identity concept is equally used for all technical components in the IDS.
 
@@ -22,7 +26,7 @@ One component always is characterized by the combination of platform and service
 ![Components SW Stack](./media/SW_Stack_Components_connector_blueprint.png)
 
 
-### Component Identifier - Monika
+### Component Identifier
 The identity of a combination of platform and service instance is bound to an identifier for the service instance.
 
 * Each component gets a UID (Unique Identifier) bound to the service instance.
@@ -46,7 +50,6 @@ Each Service Instance needs to be mapped to one platform it utilizes:
 ![Identity mapping for different scenarios](./media/identity_mapping.png)
 (Comment: the platforms in the image may always be either physical devices or protected VMs)
 
-TODO: Mention shared identities for load balanced connector instances?
 ### Describing Metadata
 The IDS targets not only a secure exchange of data but also a trustworthy environment for data processing honoring the defined usage control policies. To achieve this goal, it is not sufficient to only know the identity of another IDS component, but additional information about the company operating the component and the utilized software stack is required.
 This information is provided in form of the following describing artifacts:
@@ -57,36 +60,6 @@ This information is provided in form of the following describing artifacts:
   * an arbitrary number of **App Manifests** per component identifying the utilized containers/apps.
 Signatures are utilized to represent the passed stages of the certification process (described in [Chapter 4.2.5](../4_2_Certification_Perspective/4_2_5_Processes.md)) and allow a validation of the correctness of the describing artifacts.
 In addition to these static artifacts, the connector operator may add additional attributes to the component's description or have them validated and registered at the DAPS.
-
-### Different Components in the IDS and their Role in Identity Management
-
-Several services and components are involved in issuing identities, adding dynamic attributes and enabling trust in the IDS:
-
-The **Certificate Authority (CA)**:
-
-* Issues identity certificates for connector instances by signing Certificate Signing Requests (CSRs) that have been handed in by valid connector instances.
-* Revokes certificates that become invalid.
-* Assures private keys are properly stored in hardware modules (such as a TPM or HSM) before signing CSRs.
-
-The **Dynamic Attribute Provisioning Service (DAPS)**:
-* Enriches connector identities by issuing identity claims to enrich IDS Connector identities.
-* Embedds them into a **Dynamic Attribute Token (DAT)** which is handed out to requesting IDS Connector instances.
-* Verifies the current status/validity of software manifests and descriptions.
-* Delivers dynamic attributes such as device location.
-* Serves claims such as valid transport cerificates.
-
-Some services do not provide means for trust establishment, but are purely serving informations that need to be verified in other ways:
-
-The **Participant Information System (ParIS)** :
-* Serves as an informative service to provide additional information about participants.
-* Does not provide verified information that should be used to build trust upon.
-
-The **Metadata Broker** :
-* Serves information about IDS connector instances and provides services.
-* Does not provide verified information that should be used to build trust upon.
-* Serves only information that is considered public.
-
-Most services run on top of a Connector instance (Clearing House, ParIS, Metadata Broker). The DAPS is used as part of the bootstrapping of trust and thus must be considered as an external service (such as the PKI services). Clearing House and Metadate Broker share functionality with the Connector itself (self-description, identity, audit logging, Usage Control).
 
 ### Interactions between IDS Connectors and Identity Components
 
@@ -103,8 +76,6 @@ Two cases must be evaluated:
 
 1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
 2. The connector uses a separate certificate for TLS connectors (e.g., issued by a CA such as Let's Encrypt). In this casem the corresponding IDS Connector must assure the certificate fingerprint matches the one that is embedded in the DAT.
-
-TODO: Define the DAT process to validate the fingerprint.
 
 
 ### Component Lifecycle -> potentially move to process layer
@@ -154,7 +125,7 @@ Rollen sollten hier immer in Bezug auf den IDS ausgestellt werden - ein Abbilden
 * Sicheres Generieren und Speichern von Private Key für Personen, der verwendet wird: Soft-Token, Smartcard, eID, ...
 * Wichtig: Details in RuleBook und IDS-G festlegen, sollte mit eIDAS aligned sein
 
-## Trust Bootstrapping and Trust Chains - Gerd
+## Trust Bootstrapping and Trust Chains
 Each component requires two certificates and keys:
 1. Platform Key: for the platform used
 2. TLS Key: for the service instance running
@@ -175,4 +146,4 @@ We have 2-3 parties involved in the trust bootstrapping and different guarantees
     * CA ensures that the platform key (attestation key - AK)/TLS key are truly protected by the TPM: for the AK by ensuring that the AK belongs to a valid EK, for TLS key by verifying signature from AK.
     * Additionally, the CA ensures that the request for the certificate was issued/approved by the operator specified in the organizations attributes;
     * Operator is responsible for only requesting certificates for TPMs under their control (ensured by processes assessed in the operational environment certification).
-  * Trust Anchors Certification Process:: User CA only issues certs for people truly fulfilling those roles; involved people only sign manifests and company descriptions following the standard procedure and if they are convinced everything in the description artifact is correct
+  * Trust Anchors Certification Process: User CA only issues certs for people truly fulfilling those roles; involved people only sign manifests and company descriptions following the standard procedure and if they are convinced everything in the description artifact is correct
