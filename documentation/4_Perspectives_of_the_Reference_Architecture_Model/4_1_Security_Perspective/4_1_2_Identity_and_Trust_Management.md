@@ -19,7 +19,6 @@ Other components (Broker, DAPS, ...) are represented by their Service (represent
 
 One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platform, the Connector Core Services and the deployed Data Apps.
 
-
 ![Components SW Stack](./media/SW_Stack_Components_connector_blueprint.png)
 
 
@@ -29,6 +28,7 @@ The identity of a combination of platform and service instance is bound to an id
 * Each component gets a UID (Unique Identifier) bound to the service instance.
 * This UID is defined by the operator of the component and provided to the CA with a request for an identity certificate.
 * The UID is a URL referencing the link at which a self-description of this component instance can be received.
+* TODO: Discusscion about UID: Can we define a URL? What about non http schemes? What about connectors not service http?
 * Each UID is mapped to a key pair which is typically used for TLS but possibly also data signing and other identity proofs.
 * The CA is not required/able to verify that this URL truly offers a valid self-description and utilizes the TLS key for the communication since the URL is typically not yet available as long as the provisioning has not been completed.  See URI verification below.
 * Each connector is able to verify the correct mapping of URL and utilized TLS key when querying the self-description.
@@ -68,7 +68,7 @@ To establish a trusted connection, each connector needs the identity information
 2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.
 3. When establishing communication, the DAT of both IDS Connector instances is exchanged. This is also matched with the used TLS certificate.
 
-To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information. to further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate.
+To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information. to further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate by matching it to the connectors identifier.
 Two cases must be evaluated:
 
 1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
@@ -86,6 +86,7 @@ Two cases must be evaluated:
 
 ### Technical Possibilities for Realizing the Concepts - beide
 
+The UID scheme is defined by the respective operating company. 
 * für Component UID legt der IDS im IDS-G ein Schema fest - genaue Umsetzung fürs Konzept irrelevant.
 * Nachweis über die Identität (Schlüssel - UID mapping & company Mapping) muss von CA ausgestellt werden - üblicherweise bisher als x509 Zertifikat, aber auch andere Ansätze denkbar
 * Metadaten (Software/Unternehmen - zertifizierte Eigenschaften Mapping ) in einer "signierten Datei" z.B. JWS, VCs, ... -> signierte Info mit langer Laufzeit -> technischen Standards im IDS-G festlegen
