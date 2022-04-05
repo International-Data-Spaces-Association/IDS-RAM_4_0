@@ -23,6 +23,8 @@ One component always is characterized by the combination of platform and service
 
 
 ### Component Identifier
+*TODO: integrate feedback from WG*
+
 The identity of a combination of platform and service instance is bound to an identifier for the service instance.
 
 * Each component gets a UID (Unique Identifier) bound to the service instance.
@@ -76,6 +78,7 @@ Two cases must be evaluated:
 
 
 ### Component Lifecycle -> potentially move to process layer
+*TODO: revise and integrate*
 
 | Phase | When does it happen | How is the component identity affected | What about the data? |
 | --- | --- | --- | --- |
@@ -85,6 +88,7 @@ Two cases must be evaluated:
 
 
 ### Technical Possibilities for Realizing the Concepts - beide
+*TODO: remove*
 
 The UID scheme is defined by the respective operating company. 
 * für Component UID legt der IDS im IDS-G ein Schema fest - genaue Umsetzung fürs Konzept irrelevant.
@@ -93,6 +97,8 @@ The UID scheme is defined by the respective operating company.
 * DAT-Token: OAuth-Token, VC, ... (Aktualität und ggf. weitere geprüfte EIgenschaften)-> signierte Info mit kurzer Laufzeit -> technischen Standards im IDS-G festlegen
 
 ## Identities for Participants (enterprises/organizations or Human Users) - Monika
+*TODO: provide short intro to topic, but no final concept*
+
 Diskussion über Identitäten für Teilnehmer eines Datenraums.
 Wofür bräuchte/will man das?
 -> Verantwortlichkeit für das Verhalten eines Konnektors
@@ -107,7 +113,7 @@ Für Unterschriften im "Namen des Unternehmens" - mit einem key Pair für "das U
 
 deshalb state-of-the-art: einzelne Personen im Unternehmen bekommen Identitäten und Schlüssel und können damit "Dinge unterschreiben"
 
-Konkret für den IDS wäre das Konzept:
+Konkret für den IDS wäre das Konzept: (*TODO: remove*)
 Abbildung des Zertifizierungskonzept und Trust-Management:
 * Personenzertifikate mit 4 Rollen:
   * Developer (Entwickler sowei Zuständiger für die Komponentenzertifizierung)
@@ -119,11 +125,14 @@ Prinzipiell sind weitere Rollen möglich, müssen halt IDS-weit anerkannt und ve
 Rollen sollten hier immer in Bezug auf den IDS ausgestellt werden - ein Abbilden von Unternehmensinternen Rollen ist bisher im IDS nicht vorgesehen aufgrund der Vielfalt in der Unternehmensstruktur.
 
 ### Technical Possibilities for Realizing the Concepts
+*TODO: remove*
 * Nachweis über die Identität (Key gehört zu Person) und Rolle (Person übt Rolle aus) -> beide Infos müssen dann von User CA verifizierbar zur Verfügung gestellt werden, klassisch als x509 Zertifikat, aber auch andere Ansätze denkbar
 * Sicheres Generieren und Speichern von Private Key für Personen, der verwendet wird: Soft-Token, Smartcard, eID, ...
 * Wichtig: Details in RuleBook und IDS-G festlegen, sollte mit eIDAS aligned sein
 
 ## Trust Bootstrapping and Trust Chains
+*TODO: make an overview table out of this*
+
 Each component requires two certificates and keys:
 1. Platform Key: for the platform used
 2. TLS Key: for the service instance running
