@@ -1,8 +1,12 @@
 Issue for this section: https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues/72
+# Securing Applications
 
-# App Store and Distribution of Apps
+## Securing the Connnector Core Services
+* which security requirements affect the application layer of the connector
 
-## Apps in the IDS
+## App Store and Distribution of Apps
+
+### Apps in the IDS
 Apps necessary for processing data, isolated from each other
 
 What are apps used for?
@@ -23,7 +27,7 @@ Possible reasonable use cases for Usage Control in the context of apps:
     * Status information from machines which are monitored and processed in data app → only predictive maintenance instructions or warnings leave the app
   * Enforcement is done by ensuring that the app does not provide the input data (Certification of Apps) and making sure that input data is only stored in the connector and only processed by the respective (certified) app
 
-## App Store
+### App Store
 * App = Container image (executable on Linux kernel, independent (brings all dependencies)) -> from developer
 * Metadata (Description) in App manifest including measurements and signatures used for integrity protection -> from developer, possibly from evaluator
 * App License - similar to usage control policies for other types of data -> from developer
@@ -48,7 +52,7 @@ App Store offers the following interfaces:
 
 ![App Store Interactions](./media/app_store_interaction.png)
 
-## Apps on a connector
+### Apps on a connector
 ![App Interactions](./media/app_interaction.png)
 
 Securing the app in the connector:
