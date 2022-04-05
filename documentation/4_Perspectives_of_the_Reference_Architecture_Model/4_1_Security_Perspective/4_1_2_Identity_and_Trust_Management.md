@@ -1,7 +1,7 @@
 # Identity and Trust Management
 
 The International Data Spaces allow participants a cross-company data exchange. In many cases, the participants intending to exchange data do not know enough about the other company and its utilized components to properly assess the consequences of such a data exchange. Thus, the IDS offers mechanisms to gain reliable information which help to establish trust and enable participants to make sovereign and informed decisions.
-Identity and trust management is rooted in the components described in ([Chapter 3.5.1](./3_5_1_Identity_Provider.md)).
+Identity and trust management is rooted in the components described in ([Chapter 3.5.1](./documentation/3_Layers_of_the_Reference_Architecture_Model/3_3_Process_Layer/3_3_1_Onboarding.md)).
 
 ## Identities for Devices
 
