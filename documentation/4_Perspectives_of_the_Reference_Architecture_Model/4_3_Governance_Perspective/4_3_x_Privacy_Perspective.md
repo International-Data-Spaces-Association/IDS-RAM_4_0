@@ -4,7 +4,9 @@ Enterprises are therefore advised well enough to start early on with good privac
 Company can do is the proper data classification and separation of data. The following is a list of more advanced privacy
 enhancing technologies that currently exists, but experts in any of these technologies are rare and hard to find.
 
-## PET (privacy Enhancing Technologies)
+## PET (Privacy Enhancing Technologies)
+
+see also (3) 
 
 ### Divide and conquer
 One of the things that every company can do: Data records are not stored together, but rather divided up into several chunks. 
@@ -12,8 +14,8 @@ correlation of data is then ensured by special pseudonymization/anonymization te
 attacker cannot draw further conclusions and the user/employee record stays protected.
 
 ### Obfuscation
-Adding random data or noise data to existing records in order to disturb ceartain kind of computations or to distract an potential
-attacker. Obfuscation is not a strong privacy-preserving technique, but allows to „cloak“ data with a ceratin degree of uncertaintiy.
+Adding random data or noise data to existing records in order to disturb certain kind of computations or to distract an potential
+attacker. Obfuscation is not a strong privacy-preserving technique, but allows to „cloak“ data with a certain degree of uncertainty.
 E.g. hashing content effectively hides that data content, but as soon as the initial data is known, hashing can be repeated and looses
 it’s protective power.
 
@@ -56,68 +58,54 @@ broker, but the message can be re-encrypted to a final recipient at a later poin
 
 
 
-# Minimum required risk mitigations
+## Minimum required risk mitigations
 
 While the above „hard“ privacy technologies are means that need to be tailored towards a specific use case, enterprise are 
 advised to not rely on these technologies only, but rather look out to strengthen their organization capabilities. 
 
-As already mentioned, applying a data classifictaion scheme that is aligned with the business goal helps. Companies have started to
+As already mentioned, applying a data classification scheme that is aligned with the business goal helps. Companies have started to
 assign the role of the Chief Information Security Officer (CISO) as a response to the increasing need to protect their company from
 cybersecurity attacks and fraud. In addition, companies should think about assigning the role of a Chief Privacy Officer (CPO) 
 to reflect on the increasing need to address risks in relation with privacy laws and regulations.
 
 When looking at the current state of technology, then companies should at least be familiar with the guidelines and rules that have been set 
-out by the OWASP TopTen privacy risks. Addressing these TopTen is certainly a good step into the right direction:
+out by the OWASP TopTen privacy risks(1). Addressing these TopTen is certainly a good step into the right direction:
 
 
-2021	Title  											F	R	T
-
-P1		Web Application Vulnerabilities 								H	VH	T
-
-	Apply SDLC principles and use external pentesters to boost application security
-
-P2		Operator-sided Data Leakage 										H	VH	O+T
-
-	Audit the operator on a regular basis / encrypt data
-
-P3		Insufficient Data Breach Response 									H	VH	O+T
-
-	create, maintain and test the incident response plan
-
-P4		Consent on Everything 												VH	H	O+T
-
-	consent should be voluntarily, collect for each purpose
-
-P5		Non-transparent Policies, Terms and Conditions 						VH	H	O
-
-	lack of transparency leads to distrust and a deep sense of insecurity
-
-P6		Insufficient Deletion of User Data 									H	H	O+T
-
-	deletion of data after use
-
-P7		Insufficient Data Quality											M	H	O+T
-
-	provide update forms / ask the user
-
-P8		Missing or Insufficient Session Expiration 								M	VH	T
-
-	automatically log our after x-hours / user education
-
-P9		Inability of Users to Access and Modify Data 							H	VH	O+T
-
-	provide easy to use ways to access / change or delete data / data structure model
-
-P10		Collection of Data Not Required for the User-Consented Purpose			H	H	O
-
-		define purpose and and collect / use only data needed / data minimization	
+| 2021	  | Title / Description                              | F   | R   | T
+| ------- |  ----------------------------------------------- | --- | --- | --- 
+| P1      | Web Application Vulnerabilities 				 | H   | VH  | T
+|         | Apply SDLC principles and use external pentesters to boost application security |   |   |
+| P2      | Operator-sided Data Leakage                      | H   |  VH   | O+T
+|         | Audit the operator on a regular basis / encrypt data |   |   |
+| P3      | Insufficient Data Breach Response                | H  | VH | O+T
+|         | create, maintain and test the incident response plan |   |   |
+| P4      | Consent on Everything                            | VH | H  | O+T
+|         | consent should be voluntarily, collect for each purpose |   |   |
+| P5      | Non-transparent Policies, Terms and Conditions   | VH  |  H   |  O
+|         | lack of transparency leads to distrust and a deep sense of insecurity | | |
+| P6      | Insufficient Deletion of User Data               | H | H | O+T
+|         | Deletion of data after use                       |   |   |
+| P7      | Insufficient Data Quality			             | M | H | 	O+T
+|         | provide update forms / ask the user              |   |   |
+| P8      | Missing or Insufficient Session Expiration       | M | VH | T
+|         | automatically log our after x-hours / user education |   |   |
+| P9      | Inability of Users to Access and Modify Data     | H | VH | O+T
+|         | provide easy to use ways to access / change or delete data / data structure model |   |   |
+| P10     | Collection of Data Not Required for the User-Consented Purpose | H | H | O
+|         | define purpose and and collect / use only data needed / data minimization |   |   |
 
 
-F = Frequency / T = Technical Measures / O = Organizational Measures
-Whereas Low is considered a an limited and calculated risks, and with high risks the impact is devastating.
+### Legend
+F = Frequency /
+T = Technical Measure /
+O = Organizational Measure /
+L = Low is considered as an limited and calculated risks /
+M = Medium risk/ frequency , impact is causing serious problems /
+H = High risks / frequency is likely to happen, and the impact is devastating 
+VH = Very high risk / frequency almost certain to happen, impact is devastating
 
-
-# Literature and Links
+## Literature and Links
 
 (1) https://owasp.org/www-project-top-10-privacy-risks/
 (2) Generally Accepted Privacy Principles
