@@ -3,7 +3,6 @@
 [TODO: add introduction]
 
 ## Approval of Evaluation Facilities
-[TODO: revise chapter on approval of evaluation facilities ]
 
 In order to ensure the high quality and transparency of the IDS certification process all Evaluation Facilites need to be approved by the impartial [Certification Body](https://github.com/International-Data-Spaces-Association/IDS-G/tree/main/glossary#certification-body) first. 
 
@@ -18,27 +17,24 @@ These phases will be described in the following sections.
 This phase serves to collect all important documents and information needed for a smooth approval process, but also to discuss the process flow. This phase also offers the opportunity to clarify any questions related to the process within an (optional) inquiry meeting. It begins with the completion of an application form and the signing of a contract between the potential Evaluation Facility and the IDS Certification Body.
 
 ### 2. Audit Phase
-The audit itself has the aim to check that the requirements for a proper IDS certification are implemented and effective by collecting evidence through interviews with employees and inspections in four different assessments:
+Each Evaluation Facility is audited in order to ensure that it will conduct evaluations in adherence with the IDS certification scheme. The audit has the aim to check that the requirements for a proper IDS certification are implemented and effective. It consists of collecting evidence in form of documentation and interviews with employees in four different assessments:
 
-ASSESSMENT (I) - Quality Management System
+1. Quality Management System
+2. Security Management System
+3. Competence of the Evaluators
+4. Testing equipment and its usage (only relevant for Component Certification)
 
-ASSESSMENT (II) - Security Management System
-
-ASSESSMENT (III) - Competence of the Evaluators
-
-ASSESSMENT (IV) - Equipment and its Handling (area of application: component certification)
-
-Based on the audit the Certification Body prepares a report including the deviations and potential improvements which will be communicated in a final discussion. Deviations related to the management System which could affect its effectiveness must be corrected before closing the audit phase within a two-month period at most, with exceptions for critical deviations. If necessary, the correction of the deviations can be verified by an additional audit.
+Based on the audit the Certification Body prepares a report including the deviations and potential improvements which will be communicated in a final discussion. Deviations related to the Management System which could affect its effectiveness must be corrected before closing the audit phase within a two-month period at most, with exceptions for critical deviations. If necessary, the correction of the deviations can be verified by an additional audit.
 
 ### 3. Approval Phase
-On the basis of the audit report, the certification body decides on the approval of the  applicant. The decision is made in an objective and comprehensible manner, i.e.  exclusively on the basis of the documented criteria.
-The certification body issues an approval statement after a positive decision has been made. The approval is limited in time (two years).
-If a negative approval decision is made the applicant is informed of the  reasons for the rejection before the application is formally rejected.
+On the basis of the audit report, the Certification Body decides on the approval of the applying Evaluation Facility. The decision is made in an objective and comprehensible manner, i.e.  exclusively on the basis of the documented criteria.
+In case of a positive decision, the Certification Body issues an approval statement. The approval is valid for a limited time period of two years.
+If a negative approval decision is made, the applying Evaluation Facility is informed of the reasons for the rejection before the application is formally rejected.
 
 
-For quality assurance of the certification process, regular renewal of the approval is necessary, as well as the execution of restriction, suspension or withdrawal of approval, if necessary.
+For quality assurance of the certification process, the approval regularly needs to be renewed. In addition, it is possible to restrict, suspend or withdraw approval in case of major compliance issues.
 
-The full approval scheme can be found [here](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/blob/main/documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/ApprovalScheme)
+The full approval scheme can be found [here](./ApprovalScheme)
 
 
 
