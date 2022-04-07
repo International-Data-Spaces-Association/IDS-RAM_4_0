@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2022-04-07T18:59:29.827Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="KkuqltrvQzUSfDCNY06J" version="17.4.1" type="github" pages="2">
-  <diagram id="prjZX4wkgA0BgJ7s4mOM" name="Page-1">
+<mxfile host="app.diagrams.net" modified="2022-04-07T19:01:13.989Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="05mRh4MBPIf7Jiuv2Pnp" version="17.4.1" type="github" pages="2">
+  <diagram id="prjZX4wkgA0BgJ7s4mOM" name="Components">
     <mxGraphModel dx="1298" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -119,7 +119,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="x9Ql52UNM8yiuvynAj79" name="Page-2">
+  <diagram id="x9Ql52UNM8yiuvynAj79" name="Sequence">
     <mxGraphModel dx="1483" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
