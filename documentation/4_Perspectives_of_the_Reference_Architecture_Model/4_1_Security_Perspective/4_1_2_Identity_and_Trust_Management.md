@@ -26,20 +26,20 @@ One component always is characterized by the combination of platform and service
 
 The identity of a combination of platform and service instance is bound to an identifier for the service instance.
 
-* Each component gets a UID (Unique Identifier) bound to the service instance.
+* Each component gets a unique identified (C_UID) bound to the service instance.
 * The uniqueness of this identifier is ensured by the Identity Provider.
-* Each UID is mapped to a key pair which is typically used for TLS but possibly also data signing and other identity proofs.
+* Each UID is mapped to a Connector Instance Key (CIK) pair which is typically used for TLS but possibly also data signing and other identity proofs.
 
 Each Service Instance needs to be mapped to one platform it utilizes:
 * Each platform blueprint gets a unique identifier during the component certification.
 * For a component with Trust level 1, the concrete platform instantiation (running version of this blueprint) does NOT get a UID as well as key and certificate for this platform instance. Instead the connector description solely references the (unique) identifier of the certified blueprint (and the operator needs to be trusted to ensure its correct instantiation).
-* For components with Trust Level 2 or 3, each platform instantiation needs to be uniquely identified with a UID. This UID is required to provide a mapping from service instance to platform UID.
-* Each platform UID is subject of a certificate for the utilized platform key(s) (e.g. AK of a TPM) which enable verification of the platform integrity.
-* One platform UID can map to (keys for) 1-n physical devices/protected VMs:
-  * If 1 physical device serves as the component platform: 1 UID is mapped to 1 platform key.
-  * For distributed platform setups (e.g. with kubernetes): 1 UID for the setup maps to n platform keys for the servers in this distributed platform.
-  * If connector is run in one protected VM (e.g. SEV SNP): 1 UID is mapped to 1 key for this SEV-SNP VM.
-  * If multiple protected VMs (e.g. SEV SNP) form a distributed platform setup: 1 UID for the setup maps to n platform keys for the VMs which comprise this setup.
+* For components with Trust Level 2 or 3, each platform instantiation needs to be uniquely identified with a UID (P_UID). This UID is required to provide a mapping from service instance to platform.
+* Each P_UID is subject of a certificate for the utilized platform key(s) (e.g. AK of a TPM) which enable verification of the platform integrity.
+* One P_UID can map to Platform Instance Keys (PIK) for 1-n physical devices/protected VMs:
+  * If 1 physical device serves as the component platform: 1 P_UID is mapped to 1 PIK.
+  * For distributed platform setups (e.g. with kubernetes): 1 P_UID for the setup maps to n PIKs for the servers in this distributed platform.
+  * If connector is run in one protected VM (e.g. SEV SNP): 1 P_UID is mapped to 1 PIK for this SEV-SNP VM.
+  * If multiple protected VMs (e.g. SEV SNP) form a distributed platform setup: 1 UID for the setup maps to n PIKs for the VMs which comprise this setup.
 
 ![Identity mapping for different scenarios](./media/identity_mapping.png)
 #### _Figure 4.1.2.2: Identities for IDS Connector Services and Platforms_
@@ -83,31 +83,31 @@ Two cases must be evaluated:
 
 ## Identities for Participants
 The IDS can have many participants interacting ranging from large enterprises and organizations to individuals. 
-Means for identifying those participants are required, since they are responsible for (at least) operating (or using) an IDS component (e.g., a connector) and thus the actions taken by this component and managing provided data (quality, content, updates, decision on usage policies)
+Means for identifying those participants are required, since they are responsible for (at least) operating (or using) an IDS component (e.g., a connector) and thus the actions taken by this component and managing provided data (quality, content, updates, decision on usage policies). Thus, each participants gets a unique identifier (O_UID). 
 
-Such an identity management can generally be based either on identities for the organizations themselves or for the human users working for this organizations. Identities are typically bound to private-public key pairs generated for each identity and confirmed by the Identity Provider. Respective processes are required to ensure correct mapping of the key pairs and the identities to be utilized in the IDS.
+Based on this, an identity management for participants can either be based on identities for the organizations themselves or for the human users working for this organizations. Identities are typically bound to private-public key pairs generated for each identity and confirmed by the Identity Provider. Respective processes are required to ensure correct mapping of the key pairs and the identities to be utilized in the IDS.
 
 ## Trust Bootstrapping and Trust Chains
-*TODO: make an overview table out of this*
+Identifying and authenticating an IDS connector requires an evaluation of many complementary aspects. The following table provides an overview of these aspects and the entities responsible for them.
 
-Each component requires two certificates and keys:
-1. Platform Key: for the platform used
-2. TLS Key: for the service instance running
-
-We have 2-3 parties involved in the trust bootstrapping and different guarantees for the different trust levels:
-* Connectors with Trust Level 1 (prev. Base Connectors):
-  * Certificate confirms that the key belongs to a TLS key under control of the operator specified in the organization attributes of the certificate
-  * Trust Anchors Provisionierung Gerät:
-    * CA ensures that the request for the certificate was issued/approved by the operator specified in the organizations attributes and that the operator has a currently valid operational environment certification;
-    * Operator is responsible for ensuring that only this service instance has access to the private key (ensured by processes assessed in the operational environment certification)
-  * Trust Anchors Certification Process: User CA only issues certs for people truly fulfilling those roles; involved people only sign manifests and company descriptions following the standard procedure and if they are convinced everything in the description artifact is correct
-    * Operator that the software described is truly running (no measurements) -> description of SW stack as part of self-description, not mandatory part of each communication
-
-* Connectors with Trust Level 2/3 (prev. Trust(+) Connectors)) - exemplary for a TPM:
-  * Certificate confirms that the key belongs to a platform/TLS key under control of the operator specified in the organization attributes of the certificate AND keys are protected by hardware mechanisms (inside the TPM):
-  * Trust Anchors  Provisionierung Gerät:
-    * TPM Manufacturer confirms that an Endorsement Key is placed in a TPM.
-    * CA ensures that the platform key (attestation key - AK)/TLS key are truly protected by the TPM: for the AK by ensuring that the AK belongs to a valid EK, for TLS key by verifying signature from AK.
-    * Additionally, the CA ensures that the request for the certificate was issued/approved by the operator specified in the organizations attributes;
-    * Operator is responsible for only requesting certificates for TPMs under their control (ensured by processes assessed in the operational environment certification).
-  * Trust Anchors Certification Process: User CA only issues certs for people truly fulfilling those roles; involved people only sign manifests and company descriptions following the standard procedure and if they are convinced everything in the description artifact is correct
+| High-Level Aspect | Detailed Aspect | Trust Level | Entity Responsible | Validation necessary for issuing proof | Proof the IDS connector needs to validate |
+| --- | --- | --- | --- | --- | --- |
+| Connector ID (C_UID) belongs to communication partner | C_UID is unique | all | CA | Before issuing Connector Identity Certificate, process depends on implementation of C_UID | Connector Identity Certificate |
+| | Mapping of C_UID to Connector Instance Key (CIK) | all | CA | - | Connector Identity Certificate, usage of key material by communication partner |
+| | Only the connector has access to CIK | 1 | Operator | - | - |
+| | | 2, 3 | CA and Hardware Manufacturer | CA verifies hardware protection for CIK (Trust chain to HW Manufacturer) | Connector Identity Certificate |
+| C_UID is used by certified connector stack | - | 1 | Operator | **No validation**, operator must only request certificates for instances of certified SW stacks | - | 
+| | Platform ID (P_UID) is unique | 2, 3 | CA | Before issuing connector identity certificate, process depends on implementation of P_UID | Platform Identity Certificate |
+| | Mapping of P_UID to Platform Instance Key (PIK) | 2, 3 | CA | - | Platform Identity Certificate |
+| | Only the identified platform has access to PIK | 2, 3 | CA and Hardware Manufacturer | CA verifies hardware protection for PIK (Trust chain to HW Manufacturer) | Platform Identity Certificate |
+| | Mapping C_UID to P_UID | 2, 3 | CA | Before issuing Connector Identity Certificate, CA ensures that the CIK is protected by the PIK | Mapping to P_UID in Connector Identity Certificate |
+| | Measurements for currently running software stack | 2, 3 | HW Trust Anchor, Certified Software | - | Measurements signed by PIK for platform and optionally service instance (in case of 1:1 mapping), Measurements signed by CIK for service instance (in case of multiple services on one platform) |
+| | Measurements belong to certified software stack | 2, 3 | Evaluation Facility and Certification Body | Part of Certification Process | Signed SW Manifests, Provided Measurements |
+| Connector with C_UID is operated by certified organization | C_UID belongs to component managed by a certified organization | all | CA | Before issuing Connector Identity Certificate, the CA validated that requesting organization has IDS Operational Environment Certification. | Connector Identity Certificate |
+| | Organization ID (O_UID) is unique | all | CA, Support Organization | Before issuing Connector Identity Certificate including O_UID, CA checks uniqueness with Support Organization | - |
+| | Mapping from C_UID to O_UID | all | CA | Before issuing Connector Identity Certificate, CA ensures that request for it was issued by respective organization | Connector Identity Certificate |
+| | O_UID belongs to certified organization | all | Evaluation Facility and Certification Body | Part of Certification Process | Signed Company Description, O_UID in Connector Identity Certificate |
+| Up-to-Date(ness of) Information | The provided certificates are still valid (not revoked). | all | CA | In case of revocation, the CA updates its revocation services (e.g. OCSP server). | Revocation status, e.g. from OCSP Server. |
+| | The certification for the software stack is still valid (not revoked). | 2, 3 | DAPS | In case of revocation or update of the certification, the DAPS updates the status stored for the respective metadata. | Dynamic Attribute Token (DAT) including revocation status of SW Manifests |
+| | The certification for the organization is still valid (not revoked). | all | DAPS | In case of revocation or update of the certification, the DAPS updates the status stored for the respective metadata. | Validate Dynamic Attribute Token (DAT) and check contained revocation status of Company Description |
+| | Additional dynamic attributed for the IDS Connector | all | DAPS | Before adding or changing attributes for a connector in the DAPS, the DAPS provider validates the correctness of the provided information (details depend on type of attribute). | Dynamic Attribute Token (DAT) |
