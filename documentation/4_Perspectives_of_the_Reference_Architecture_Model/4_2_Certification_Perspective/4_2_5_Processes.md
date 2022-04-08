@@ -34,6 +34,7 @@ The certification follows the same process for all certification profiles in Ope
     of the evaluation report by the certification body, which issues a
     certificate if the result of the evaluation process is positive.
 
+However, the details for each phase differ slightly between the Assurance Levels as described below and illustrated in the figures.
 For Assurance Level 1, the Applicant must apply directly to the Certification Body to trigger the start of the certification process. Once the Certification Body accepts the application, the Applicant is responsible for the Evaluation Phase by conducting a self-assessment and providing the results to the Certification Body. In the Certification Phase, the Certification Body reviews the self-assessment and issues the certificate, if the self-assessment meets the defined requirements.
 
 ![image](https://user-images.githubusercontent.com/77682996/155738445-479e9507-7415-4e16-b0dd-6d159d3d8528.png)
