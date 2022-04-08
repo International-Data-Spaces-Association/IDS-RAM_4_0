@@ -10,7 +10,7 @@ A distributed network like the International Data Spaces relies on the connectio
 On the System Layer, the roles specified on the Business Layer and the processes defined in the Process Layer are mapped onto a concrete data and service architecture, resulting in what can be considered the technical core of the International Data Spaces.
 
 The IDS consists of the following core components:
-- the [Identity Provider](./3_5_1_Identity_Provider.md) (consisting of DAPS and [ParIS](3_5_1_2_ParIS.md)),
+- the [Identity Provider](./3_5_1_Identity_Provider.md) (consisting of CA, DAPS and ParIS),
 - the [IDS Connector](./3_5_2_Connector.md),
 - the [App Store and Data Apps](./3_5_3_App_Store_and_Data_Apps.md),
 - the [Metadata Broker](./3_5_4_Metadata_Broker.md),
