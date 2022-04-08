@@ -1,18 +1,26 @@
 # Operational Environment Certification
 
-[TODO: revise and add overview on different levels]
+Participants in the International Data Spaces share valuable data. It is essential that all participant's organizational processes and operational environments are trustworthy. This trustworthiness is evaluated in the IDS Operational Environment Certification.
 
-Participants in the International Data Spaces collaborate by exchanging
-and sharing valuable data. For this collaboration, the IDS provides a
-trusted business ecosystem. Furthermore, it is essential for the
-International Data Spaces and its reputation that the participants
-themselves are trustworthy. This is achieved by evaluating each
-participant regarding fulfillment of defined levels of security,
-including infrastructure reliability and process compliance.
 
-To build this trust in a structured way, the International Data Spaces
-has established a well-defined process for participant certification. An
-in-depth description of the certification process (also with regard to
-each role) can be found in Part 2 of the White Paper Certification[^4].
-The participant certification criteria catalog is available for free to
-all IDSA members.
+Central elements of the IDS Operational Environment Certification are the different Trust Levels and Assurance Levels. The IDS established these levels to offer suitable certification profiles for different use case requirements.
+
+On one side, the following three Trust Levels are established: 
++ Trust Level 1: Entry into data sharing
++ Trust Level 2: Providing reliable services
++ Trust Level 3: Offering trust-building services
+
+Higher Trust Level represent the increasing amount of criteria which needs to be fulfilled for a successful certification.
+
+On the other side, the following three Assurance Levels are established:
++ Assurance Level 1: Self-Assessment
++ Assurance Level 2: External evaluation of corporate policies and processes
++ Assurance Level 3: External audit of measures controlling the adherence to corporate policies
+
+Higher Assurance Level represent the increasing demand for more reliable evidence that needs to be presented in different evaluation methods to prove compliance with the certification criteria. 
+
+The following figure illustrates all possible combinations of assurance and trust level, that an applicant can choose from. The combinations not marked with a tick, e.g. Assurance Level 1 and Trust Level 3 can not be selected, due to incompatible purposes.
+![Operational Environment Certification Matrix](./media/2022_Operational_Environment_Certification_Matrix.png)
+#### _Fig. 4.2.3.1: Overview on Certification Levels for Operational Environment Certification_
+
+An in-depth description of the Operational Environment Certification can be found in the [IDS Certification Scheme](./CertificationScheme). The Criteria Catalogue for Operational Environment Certification can be requested on the [IDSA homepage](https://internationaldataspaces.org/publications/white-papers/).
