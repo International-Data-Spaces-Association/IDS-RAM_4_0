@@ -37,11 +37,12 @@ The certification follows the same process for all certification profiles in Ope
 However, the details for each phase differ slightly between the Assurance Levels as described below and illustrated in the figures.
 For Assurance Level 1, the Applicant must apply directly to the Certification Body to trigger the start of the certification process. Once the Certification Body accepts the application, the Applicant is responsible for the Evaluation Phase by conducting a self-assessment and providing the results to the Certification Body. In the Certification Phase, the Certification Body reviews the self-assessment and issues the certificate, if the self-assessment meets the defined requirements.
 
-![image](https://user-images.githubusercontent.com/77682996/155738445-479e9507-7415-4e16-b0dd-6d159d3d8528.png)
+![image](https://raw.githubusercontent.com/International-Data-Spaces-Association/IDS-RAM_4_0/79589bebf8bcfd15d5f547cb50effa6a16a7e25e/documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/media/Certification%20assurance%20level%201.png?token=ASQVSNBC5LZ7OC3IWLPKWS3CKBH3O)
 
 Assurance Level 2 and 3 require an independent Evaluation Facility to conduct the evaluation of the component or operational environment. The Applicant must contract an Evaluation Facility which was approved as described in the first section of this chapter. Together, Applicant and Evaluation Facility finalize the application for certification with the Certification Body. Afterwards, the Evaluation Facility is responsible for carrying out the evaluation according to the IDS certification schema. The Evaluation Facility documents their progress and findings in an evaluation report which is passed on to the Certification Body at the end of the Evaluation Phase. In the Certification Phase, the Certification Body examines the evaluation report and issues a certificate, if the evaluation was conducted properly and led to a positive evaluation result.
 
-![image](https://user-images.githubusercontent.com/77682996/155738509-f4477f71-aeb8-4de2-bbf1-53373ae919c5.png)
+![image](https://raw.githubusercontent.com/International-Data-Spaces-Association/IDS-RAM_4_0/79589bebf8bcfd15d5f547cb50effa6a16a7e25e/documentation/4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/media/Certification%20assurance%20level%202.png?token=ASQVSNGSBPULZQEXQ4KIWLDCKBH3O)
+
 After a successfully completed evaluation process, the Certification
 Body awards an International Data Spaces certificate to the Applicant.
 This certificate has a limited validity period. In order to renew a
