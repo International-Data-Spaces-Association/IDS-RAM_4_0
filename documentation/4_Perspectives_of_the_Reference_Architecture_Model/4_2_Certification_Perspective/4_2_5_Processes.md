@@ -1,6 +1,6 @@
 # Certification Processes
 
-Participants and core components within the IDS ecosystem shall fulfill common requirements to ensure the security of data being processed in the IDS. Therefore, the certification of operational environments (as explained in [Chapter 4.2.3](../4_2_3_Operational_Environment_Certification.md) and core components (as explained in [Chapter 4.2.4](../4_2_4_Component_Certification.md) is mandatory. Involved partners are the Applicant, Evaluation Facility and the Certification Body which were introduced in [Chapter 4.2.2](../4_2_2_Roles.md). ```
+Participants and core components within the IDS ecosystem shall fulfill common requirements to ensure the security of data being processed in the IDS. Therefore, the certification of operational environments (as explained in [Section 4.2.3](../4_2_3_Operational_Environment_Certification.md) and core components (as explained in [Section 4.2.4](../4_2_4_Component_Certification.md) is mandatory. Involved partners are the Applicant, Evaluation Facility and the Certification Body which were introduced in [Section 4.2.2](../4_2_2_Roles.md). ```
 
 ## Approval of Evaluation Facilities
 [TODO: Add chapter on approval of evaluation facilities ]
