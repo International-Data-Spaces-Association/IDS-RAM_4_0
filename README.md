@@ -3,9 +3,9 @@
 Welcome to the IDS RAM 4.0 repository of the [IDSA](../../../idsa). This repository is the working 
 version of the IDS RAM 4.0. It was initialized with [IDS RAM 3.0](https://internationaldataspaces.org/download/16630/).
 
-Most relevnat contant is already added to this repository, but some aspects are still in progress. You can today:
+Most relevant content is already added to this repository, but some aspects are still in progress. You can today:
 - Read the [current version in Markdown](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/tree/main/documentation)
-- Reaise an [issue](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues) on existing content or new content
+- Raise an [issue](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues) on existing content or new content
 - Check the open [pull requests](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/pulls)
 
 
