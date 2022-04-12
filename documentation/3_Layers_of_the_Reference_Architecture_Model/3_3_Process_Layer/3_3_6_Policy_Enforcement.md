@@ -7,14 +7,14 @@ To enforce data usage restrictions, a system’s actions need to be monitored an
 ## Policy Enforcement Point (PEP)
 **The Policy Enforcement Point (PEP)** has two main tasks. First, it is the entry point for enforcement, meaning it is the point where data or metadata is stopped and transferred to the PDP, the PDP makes a decision and returns it to the PEP. Secondly, the PEP will subsequently manipulate or lock the data according to the decision.
 
-![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/media/Communication-PEP-and-PDP.drawio.png)
+![image](media/Communication-PEP-and-PDP.drawio.png)
 
 _Figure 3.3.6.1: Communication Policy Enforcement Point and Policy Decision Point_
 
 ## Policy Decision Point (PDP)
-As mentioned before, the **Policy Decision Point (PDP)** makes the decision based on the data sent by the PEP and the deposited policies. The policies specifies the conditions and obligations. The result of the evaluation is send to the PEP for enforcement (see Figure 3.3.6.1). The PDP also interprets the policies in terms of context information and instructions. This means the policy decision may also depend on additional information that is not present in the intercepted system action itself. This includes information about the context, such as data flows or the geographical location of an entity. It is also possible to specify pre- or post-conditions that have to hold before (e.g., integrity check of the environment) and after (e.g., data item is deleted after usage) decision-making. In addition, it is possible to define on-conditions that have to hold during usage (e.g., only during business hours). These conditions usually specify constraints and permissions that have to be fulfilled before, during, and after using data (see Figure 3.3.6.2). This is linked to the other components presented in this section.
+As mentioned before, the **Policy Decision Point (PDP)** makes the decision based on the data sent by the PEP and the deposited policies. The policies specifies the conditions and obligations. The result of the evaluation is send to the PEP for enforcement (see [Figure 3.3.6.1](media/Communication-PEP-and-PDP.drawio.png)). The PDP also interprets the policies in terms of context information and instructions. This means the policy decision may also depend on additional information that is not present in the intercepted system action itself. This includes information about the context, such as data flows or the geographical location of an entity. It is also possible to specify pre- or post-conditions that have to hold before (e.g., integrity check of the environment) and after (e.g., data item is deleted after usage) decision-making. In addition, it is possible to define on-conditions that have to hold during usage (e.g., only during business hours). These conditions usually specify constraints and permissions that have to be fulfilled before, during, and after using data (see [Figure 3.3.6.2](media/usage-control-conditions.drawio.png)). This is linked to the other components presented in this section.
 
-![image](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/media/usage-control-conditions.drawio.png)
+![image](media/usage-control-conditions.drawio.png)
 
 _Figure 3.3.6.2: Usage Control Pre-, On-, and Post-Conditions_
 
