@@ -1,8 +1,21 @@
 Issue for this section: https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues/72
 # Securing Applications
 
-## Securing the Connnector Core Services
-* which security requirements affect the application layer of the connector
+Building on a secure platform, all applications deployed on the connector need to integrate into the utilized security mechanisms and fulfill security requirements themselves.
+In the following, we separately address the connector core services and control apps which typically have higher privileges and can be used to configure the platform, and the adapter and data apps which can be deployed on the connector to process data.
+
+## Securing Connector Core Services and Control Apps
+* which security requirements affect the application layer of the connector:
+  * Securing communication - see 4.1.5 for IDS communication and remote attestation
+  * Realization/Support for usage control - see 4.1.6.
+  * Proper securing of interfaces: User Identity and Access Management
+  * possibly secure configuration of platform
+  * Logging of relevant aspects (Data access, ...)
+  * Trust 2&3: using keys protected by hardware mechanisms (requires interaction with platform)
+
+
+## Secure Usage of Adapter and Data Apps
+
 
 ## App Store and Distribution of Apps
 
