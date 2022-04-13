@@ -24,12 +24,9 @@ The organization needs to either request an IDS Connector from a Software Provid
 Each IDS Connector that participates in an IDS ecosystem must have a unique identity in the IDS which is issued or confirmed by the IDS Identity Provider.
 The required trust anchors for the Identity Provider (e.g. root certificate for CA) must be provisioned onto the connector to enable verification of identity information provided by communication partners.
 
-Additionally, each connector shall provide a Self-Description for other IDS Participants to read. The respective organization needs to create this description at the beginning of the IDS Connector configuration and provisioning process.
-It also requires proof of the certification levels for the organization and the technical component provided in form of signed metadata.
+Additionally, each connector shall provide a Self-Description for other IDS Participants to read. The respective organization needs to create this description at the beginning of the IDS Connector configuration and provisioning process. For higher Trust Levels (see [Section 4.2.4](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_4_Component_Certification.md)), signed metadata shall be provisioned onto the connector which can be used for proving the certification levels of the IDS connector and the organization operating it.
 
 Another mandatory step for the organization is to configure and connect their own existing systems to the IDS Connector. Therefore it is important that the appropriate IDS metadata (Usage Policies, etc.) is created and that data exchange is enabled (for details see section [3.3.4](../3_3_4_Exchanging_Data.md)). IDS Apps can be used for this purpose, see section [3.3.5](../3_3_5_Publishing_and_using_Data_Apps.md). 
-
-If needed, the organization can install and configure Data Apps acquired from an IDS App Store.
 
 ###  Availability Setup
 
