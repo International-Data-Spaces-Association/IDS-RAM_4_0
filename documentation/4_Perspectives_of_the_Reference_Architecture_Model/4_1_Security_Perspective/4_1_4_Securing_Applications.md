@@ -1,6 +1,6 @@
 # Securing Applications
 
-Building on a secure platform, all applications deployed on the connector need to integrate into the utilized security mechanisms and fulfill security requirements themselves.
+A secure platform is needed to guarantee the secure and isolated execution of all applications. This platform provides security mechanisms and enable applications to fulfill their security requirements. Building on a secure platform, all applications deployed on the connector need to integrate into the utilized security mechanisms and fulfill security requirements themselves.
 
 ## Security Measures in the Platform
 Security measures in the platform are responsible for ensuring a secure deployment of provided applications.
@@ -15,15 +15,15 @@ Additionally, the platform enforces isolation, communication routes and privileg
 ## Connector Core Services and Control Apps
 The Connector Core Services (or respective Core Services for other IDS components) and Control Apps are responsible for offering IDS-specific interfaces, configuring the entire connector stack securely and managing data exchange and processing on the connector.
 These applications often have higher privileges on the IDS Connector which are required to use and configure functionalities offered by runtime and kernel of the platform.
-Thus, the criteria for the certification of an IDS connector apply for these applications and need to be fulfilled by the combination of platform, Connector Core Service and (optionally) Control App.
+The criteria for the certification of an IDS connector apply for these applications and need to be fulfilled by the combination of platform, Connector Core Services and (optionally) Control App.
 During certification, the applications must be evaluated as a part of the overall security concept for the connector software stack applications. They need to at least address/cover the following security requirements:
 
-* Authentication and authorization for external interfaces
-* Ensuring integrity and confidentiality for all communication channels and sessions (see also [Section 4.1.5](./4_1_5_Securing_Interaction_between_IDS_components.md))
-* Supporting negotiation and enforcement of usage control policies (see also [Section 4.1.6](./4_1_6_Usage_Control.md))
-* Securely configuring the entire connector stack including the allowed communication routes between apps
-* Logging relevant aspects, e.g., configuration changes, access control decisions, access to data resources
-* For higher Trust Levels: Interacting with responsible kernel/runtime component for using key material protected by hardware mechanisms
+* Authentication and authorization for external interfaces.
+* Ensuring integrity and confidentiality for all communication channels and sessions (see also [Section 4.1.5](./4_1_5_Securing_Interaction_between_IDS_components.md)).
+* Supporting negotiation and enforcement of usage control policies (see also [Section 4.1.6](./4_1_6_Usage_Control.md)).
+* Securely configuring the entire connector stack including the allowed communication routes between apps.
+* Logging relevant aspects, e.g., configuration changes, access control decisions, access to data resources.
+* For higher Trust Levels: Interacting with responsible kernel/runtime component for using key material protected by hardware mechanisms.
 
 To reduce the attack surface, different functionalities should be split into modular and isolated applications interacting only via defined interfaces. The privileges for the applications should be reduced to those required for the respective functionality in accordance with the principle of least privilege.
 
