@@ -4,7 +4,7 @@ Issue for this section: https://github.com/International-Data-Spaces-Association
 Building on a secure platform, all applications deployed on the connector need to integrate into the utilized security mechanisms and fulfill security requirements themselves.
 In the following, we separately address the connector core services and control apps which typically have higher privileges and can be used to configure the platform, and the adapter and data apps which can be deployed on the connector to process data.
 
-## Securing Connector Core Services and Control Apps
+## Connector Core Services and Control Apps
 The Connector Core Services (or respective Core Services for other IDS components) and Control Apps are responsible for offering IDS-specific interfaces, configuring the entire connector stack securely and managing data exchange and processing on the connector.
 These applications often have higher privileges on the connector required to use and configure functionalities offered by the Kernel in the connector platform.
 To reduce the attack surface, different functionalities should be split into modular and isolated applications interacting only via defined interfaces. The privileges for the applications should be reduced to those required for the respective functionality in accordance with the principle of least privilege.
@@ -17,12 +17,8 @@ It is important that the privileged applications are considered as a part of the
 * Decisions or actions taken by the applications which are relevant for a latter re-construction of events and achieving non-repudiation, e.g., configuration changes or decisions on data access,  need to be logged. This can be achieved by a specific logging container or by integrating into the logging framework utilized by the platform. In both cases, the integrity of the audit logs needs to be ensured.
 * For higher Trust Levels, the key material utilized for fulfilling the aforementioned requirements needs to be protected by hardware mechanisms and used through the respective kernel or runtime applications.
 
-## Secure Usage of Adapter and Data Apps
-
-
-## App Store and Distribution of Apps
-
-### Apps in the IDS
+## Apps in the IDS
+*TODO: check whether these points are already in App Chapter*
 Apps necessary for processing data, isolated from each other
 
 What are apps used for?
@@ -33,24 +29,16 @@ What are apps used for?
   * external - only in encrypted version without access to plain data
   => Database is part of core connector services, data app should not store data persistently but uses this Database
 
-Possible reasonable use cases for Usage Control in the context of apps:
-* NDA with PDFs/files in data base
-  * Usage Control Policy: Delete Files after certain amount of time/date
-  * Enforcement depends on compliance of the person viewing the files: we can technically only enforce deletion from data in the database, not that a user copies/notes down data from the viewed files (the latter needs to be covered by legal means)
-* Use apps which do not display/provide the input data directly but only provide computation results
-  * Examples:
-    * Video stream from parking lot with Data App that derives how many places are free
-    * Status information from machines which are monitored and processed in data app → only predictive maintenance instructions or warnings leave the app
-  * Enforcement is done by ensuring that the app does not provide the input data (Certification of Apps) and making sure that input data is only stored in the connector and only processed by the respective (certified) app
+3 types of apps: adapter, data, control apps
 
-### App Store
+### Distribution of Apps via the App Store
 * App = Container image (executable on Linux kernel, independent (brings all dependencies)) -> from developer
 * Metadata (Description) in App manifest including measurements and signatures used for integrity protection -> from developer, possibly from evaluator
 * App License - similar to usage control policies for other types of data -> from developer
   * Pay once and use on own connectors -> no policy to be attached to app
   * Usage on a specific connector instance
-  * Usage for a certain amount of time (e.g. usage on own conectors for a year)
-  * Processing of amount x of data (Anzahl Datenpakete, Menge der Daten in Größe)
+  * Usage for a certain amount of time (e.g. usage on own connectors for a year)
+  * Processing of amount x of data (number of packets, size of transferred data)
   * Free version of apps
 
 App Store offers the following interfaces:
@@ -68,7 +56,8 @@ App Store offers the following interfaces:
 
 ![App Store Interactions](./media/app_store_interaction.png)
 
-### Apps on a connector
+### Adapter and Data Apps
+
 ![App Interactions](./media/app_interaction.png)
 
 Securing the app in the connector:
