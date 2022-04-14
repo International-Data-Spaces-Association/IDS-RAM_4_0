@@ -17,44 +17,33 @@ It is important that the privileged applications are considered as a part of the
 * Decisions or actions taken by the applications which are relevant for a latter re-construction of events and achieving non-repudiation, e.g., configuration changes or decisions on data access,  need to be logged. This can be achieved by a specific logging container or by integrating into the logging framework utilized by the platform. In both cases, the integrity of the audit logs needs to be ensured.
 * For higher Trust Levels, the key material utilized for fulfilling the aforementioned requirements needs to be protected by hardware mechanisms and used through the respective kernel or runtime applications.
 
-## Apps in the IDS
-*TODO: check whether these points are already in App Chapter*
-Apps necessary for processing data, isolated from each other
+### Security measures for SW artefact types
+#### Security measures performed by the platform
+* Connector Core Services and Control Apps
+  * Connector certification
+  * Authenticity verification and integrity check
+* Data Apps
+  * App certification
+    * Automated test suite
+    * Optionally, manual verification
+  * Authenticity verification and integrity check 
+  * Access control for App interfaces, limitation to allowed data routes
+   
+#### Security measures performed by SW artefact
+* Connector Core Services and Control Apps
+  * Authentication and Authorization for external interfaces 
+  * Provide protected external interfaces (to feed data into Data Apps)
+* Data Apps  
+  * Data Apps are protected by the Core Services or the platform.   
 
-What are apps used for?
-* convert data between formats
-* compute results from input data
-* persistent storing of data →  different storing options possible for connectors:
-  * either storage within the connector with attached UC restrictions or
-  * external - only in encrypted version without access to plain data
-  => Database is part of core connector services, data app should not store data persistently but uses this Database
-
-3 types of apps: adapter, data, control apps
 
 ### Distribution of Apps via the App Store
-* App = Container image (executable on Linux kernel, independent (brings all dependencies)) -> from developer
-* Metadata (Description) in App manifest including measurements and signatures used for integrity protection -> from developer, possibly from evaluator
 * App License - similar to usage control policies for other types of data -> from developer
   * Pay once and use on own connectors -> no policy to be attached to app
   * Usage on a specific connector instance
   * Usage for a certain amount of time (e.g. usage on own connectors for a year)
   * Processing of amount x of data (number of packets, size of transferred data)
   * Free version of apps
-
-App Store offers the following interfaces:
-* one for uploading apps:
-  * input: app, manifest (pre-evaluated apps contain the respective information already), license
-  * App store triggers test service (automated test suite):
-    * more details?
-    * test service adds signature, if tests are successfully passed
-  * after successful response from app store, the apps are added to the app store database
-* one for searching apps in the app store (GUI and search engines from FIT)
-* one for downloading apps
-  * input: identifier for the app to be downloaded
-  * app store takes care of money transaction
-  * provides app parts for download
-
-![App Store Interactions](./media/app_store_interaction.png)
 
 ### Adapter and Data Apps
 
