@@ -12,7 +12,7 @@ Additionally, the platform enforces isolation, communication routes and privileg
 * limited to a pre-defined set of options,
 * or validated by certified code (in the Connector Core Services or platform component) before coming into effect.
 
-## Security Measures in Connector Core Services and Control Apps
+## Connector Core Services and Control Apps
 The Connector Core Services (or respective Core Services for other IDS components) and Control Apps are responsible for offering IDS-specific interfaces, configuring the entire connector stack securely and managing data exchange and processing on the connector.
 These applications often have higher privileges on the IDS Connector which are required to use and configure functionalities offered by runtime and kernel of the platform.
 Thus, the criteria for the certification of an IDS connector apply for these applications and need to be fulfilled by the combination of platform, Connector Core Service and (optionally) Control App.
@@ -27,6 +27,6 @@ During certification, the applications must be evaluated as a part of the overal
 
 To reduce the attack surface, different functionalities should be split into modular and isolated applications interacting only via defined interfaces. The privileges for the applications should be reduced to those required for the respective functionality in accordance with the principle of least privilege.
 
-## Security Measures in Adapter and Data Apps
+## Adapter and Data Apps
 In contrast to Connector Core Services and Control Apps, Adapter and Data Apps are unprivileged and isolated containers which cannot modify the connector functionalities but rely on them to provide their app functionality. They need to fulfill specific app requirements, e.g. containing all necessary dependencies to form an independent container, conducting input validation for offered interfaces, and having a description matching the functionality provided by the application.
 However, they rely on the certified connector for securing communication channels to the outside world as well as authentication and authorization of users requesting access to provided interfaces.
