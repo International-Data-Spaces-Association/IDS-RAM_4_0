@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-25T12:37:30.330Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="HcJb4VENWpXQNIfmuk7K" version="17.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-04-25T14:20:52.510Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="UleFmMALuJr3YBDQfpIx" version="17.4.6" type="github" pages="2">
   <diagram id="prjZX4wkgA0BgJ7s4mOM" name="Components">
     <mxGraphModel dx="1038" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -12,7 +12,7 @@
         <mxCell id="6n9kSi0VYIb2uczXsFoc-5" value="IDS App" style="swimlane;" parent="6n9kSi0VYIb2uczXsFoc-1" vertex="1">
           <mxGeometry x="451" y="60" width="119" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="6n9kSi0VYIb2uczXsFoc-8" value="UC Container" style="swimlane;fontSize=12;startSize=23;" parent="6n9kSi0VYIb2uczXsFoc-1" vertex="1">
+        <mxCell id="6n9kSi0VYIb2uczXsFoc-8" value="Policy Engine " style="swimlane;fontSize=12;startSize=23;" parent="6n9kSi0VYIb2uczXsFoc-1" vertex="1">
           <mxGeometry x="30" y="281" width="360" height="200" as="geometry" />
         </mxCell>
         <mxCell id="6n9kSi0VYIb2uczXsFoc-15" value="&lt;font face=&quot;Verdana&quot; color=&quot;#ffffff&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 12px&quot;&gt;PEP&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2001A;strokeColor=#E2001A;" parent="6n9kSi0VYIb2uczXsFoc-8" vertex="1">
@@ -63,7 +63,7 @@
         <mxCell id="6n9kSi0VYIb2uczXsFoc-4" value="IDS Connector Core" style="swimlane;startSize=23;" parent="6n9kSi0VYIb2uczXsFoc-1" vertex="1">
           <mxGeometry x="30" y="40" width="360" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="6n9kSi0VYIb2uczXsFoc-13" value="Routing Logic" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="6n9kSi0VYIb2uczXsFoc-4" vertex="1">
+        <mxCell id="6n9kSi0VYIb2uczXsFoc-13" value="Data&lt;br&gt;Exchange" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="6n9kSi0VYIb2uczXsFoc-4" vertex="1">
           <mxGeometry y="60" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6n9kSi0VYIb2uczXsFoc-11" value="&lt;font face=&quot;Verdana&quot; color=&quot;#ffffff&quot; size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 12px&quot;&gt;IDS PEP&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2001A;strokeColor=#E2001A;" parent="6n9kSi0VYIb2uczXsFoc-4" vertex="1">
