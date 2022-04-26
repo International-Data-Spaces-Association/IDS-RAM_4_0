@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-26T08:15:02.165Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="9yCMqtZTBzq2IyvwIxGt" version="17.4.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-04-26T08:37:57.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="8bt-sNLc_UazfrRVmMSN" version="17.4.6" type="github" pages="2">
   <diagram id="Bwy1RGPkQCuEFayL15Xs" name="PIP">
     <mxGraphModel dx="1038" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -91,7 +91,7 @@
         <mxCell id="RF8snPdWfNuigciAskbA-1" value="&lt;b style=&quot;color: rgb(255 , 255 , 255) ; font-family: &amp;#34;verdana&amp;#34;&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;Local IDS Execution Point&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#771C2C;strokeColor=#771C2C;" parent="SADj77r_zIr8-Nl6ouj9-1" vertex="1">
           <mxGeometry x="240" y="200" width="100" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="RF8snPdWfNuigciAskbA-2" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#666666;shape=mxgraph.azure.server_rack" parent="SADj77r_zIr8-Nl6ouj9-1" vertex="1">
+        <mxCell id="RF8snPdWfNuigciAskbA-2" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#BDBDBD;shape=mxgraph.azure.server_rack" parent="SADj77r_zIr8-Nl6ouj9-1" vertex="1">
           <mxGeometry x="270" y="280" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="SADj77r_zIr8-Nl6ouj9-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;entryX=-0.01;entryY=0.571;entryDx=0;entryDy=0;entryPerimeter=0;" parent="SADj77r_zIr8-Nl6ouj9-1" source="SADj77r_zIr8-Nl6ouj9-4" target="RF8snPdWfNuigciAskbA-1" edge="1">
@@ -115,7 +115,7 @@
             <mxPoint x="530" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sjlCLNNr7LCzrAA94Rj9-1" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#666666;shape=mxgraph.azure.server_rack" parent="1" vertex="1">
+        <mxCell id="sjlCLNNr7LCzrAA94Rj9-1" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#BDBDBD;shape=mxgraph.azure.server_rack" parent="1" vertex="1">
           <mxGeometry x="630" y="270" width="40" height="40" as="geometry" />
         </mxCell>
       </root>
