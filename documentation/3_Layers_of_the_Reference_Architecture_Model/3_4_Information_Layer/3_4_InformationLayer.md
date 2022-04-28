@@ -11,8 +11,8 @@ Data Owners. The Information Model therefore supports the description,
 publication and identification of data products and reusable data
 processing software (both referred to hereinafter as Digital
 Resources, or simply Resources). Once the relevant Resources
-are identified, they can be exchanged and consumed via semantically
-annotated, easily discoverable services. Apart from those core
+are identified, they can be exchanged and consumed via 
+easily discoverable services. Apart from those core
 commodities, the Information Model describes essential constituents of
 the International Data Spaces, its participants, its infrastructure
 components, and its processes.
@@ -24,13 +24,13 @@ Group 4.[^1]
 
 The Information Model is a generic model, with no commitment to any
 particular domain. Domain modeling is delegated to shared vocabularies
-and data schemata, as provided e.g. by domain-specific communities of
+and data schemata, as provided, e.g., by domain-specific communities of
 the International Data Spaces. The Information Model does not provide a
 meta-model for defining custom datatypes comparable to standards such as
 OData[^2] or OPC-UA[^3]. Concerns beyond the scope of modeling Digital
 Resources and their interchange are considered out of scope. The
 Information Model therefore does not deal with the side effects of data
-exchange (e.g. in scenarios in which data is used for time-critical
+exchange (e.g., in scenarios in which data is used for time-critical
 machine operations).
 
 ### Model Representations
@@ -44,7 +44,7 @@ reference="fig:Representations_of_the_Information_Model"}. Every
 representation depicts the complete Information Model in its particular
 way. Among the different representations, the Declarative Representation
 (IDS Vocabulary) is the only normative specification of the Information
-Model. As such, it is accompanied by a set of auxiliary resources (e.g.
+Model. As such, it is accompanied by a set of auxiliary resources (e.g.,
 guidance documents, reference examples, validation tools, and editing
 tools intended to support a competent, appropriate, and consistent usage
 of the IDS Vocabulary).
@@ -56,7 +56,7 @@ high-level overview of the main, largely invariant concepts, with no
 commitment to a particular technology or domain. It targets a general
 audience, management boards, and media, as it provides basic information
 and promotes a shared understanding of the concepts by means of a
-textual document and a plausible visual notation. If available,
+textual document and a plausible visual notation. Where available,
 references to related elements of the Declarative Representation and a
 Programmatic Representation are provided, encouraging the reader to take
 a look at these alternative implementations.
@@ -67,14 +67,14 @@ The Declarative Representation (IDS Vocabulary) provides a normative
 view of the Information Model of the International Data Spaces.[^4] It
 has been developed along the analysis, findings, and requirements of the
 Conceptual Representation. Based on a stack of W3C Semantic Web
-technology standards[^5] and standard modeling vocabularies (DCAT[^6],
-ODRL[^7], SKOS[^8], etc.), it provides a formal, machine-interpretable
+technology standards[^5] and standard modeling vocabularies (the Data Catalog Vocabulary DCAT[^6],
+the Open Digital Rights Language ODRL[^7], the Simple Knowledge Organization System SKOS[^8], etc.), it provides a formal, machine-interpretable
 specification of concepts envisaged by the Conceptual Representation,
-residing at the persistent namespace URI <https://w3id.org/idsa/core/>.
+residing at the persistent namespace URI <https://w3id.org/idsa/core/> according to best practices for publishing linked data[^bp-ld].
 Furthermore, it details and formally defines entities of the
 International Data Spaces in order to be able to share, search for, and
-reason upon the structured metadata describing these entities. As such,
-it comprises a complete referential model allowing the derivation of a
+reason upon the structured metadata describing these entities. The IDS Vocabulary is defined using RDF Schema[^rdfs] and the OWL Web Ontology Language[^owl]; additionally, descriptions of Digital Resources can be validated against SHACL shapes[^shacl] that express syntactic and semantic conditions. Queries against, e.g., Data Resources listed in the Data Catalogue of a Connector or Broker, or against Software Resources available from an App Store, can be formulated in query languages such as SPARQL[^sparql].  Thus, the
+Declarative Representation comprises a complete referential model allowing the derivation of a
 number of Programmatic Representations. The IDS Vocabulary is typically
 used and instantiated by knowledge engineers, ontology experts, or
 information architects. It defines a fairly minimal, domain-agnostic
@@ -109,30 +109,24 @@ width="6.53in" height="2.83in"}
 In the following, the pivotal concept of a Digital Resource is
 introduced, segregated into modules in accordance with the
 separation of concerns principle (SoC principle). To do so, a
-basic concern hexagon is gradually augmented by individual modeling
-aspects, resulting in a detailed version of the hexagon at the end of
-this section. To motivate acceptance and demonstrate the adequacy of the
-concern hexagon, a set of illustrative examples is introduced for each
-concern. The examples are motivated by a fictional scenario of observing
-traffic conditions at defined locations along the European highways for
-purposes of traffic control, predictive road maintenance, toll fee
-optimization, and so on.
+set of six broad concerns (“concern hexagon”) is provided.
 
 #### Version Note
 
 Since version 3.0 of the IDS-RAM, this section of the document has
-undergone minor changes, mainly providing more complete pointers to
-external standards reused by the Information Model. Full versioning
-information is available from the repository hosting the source of the
-normative Declarative Representation.[^10]
+been reduced to the same high level of abstraction as the other sections.
+Full versioning
+information is available from the repository that hosts the source code of the
+normative Declarative Representation as well as documentation covering further details on the Conceptual Representation.[^10]
+The remaining text has been edited to better present the Information Layer in the context of the other layers, and to provide up-to-date pointers to external standards reused.
 
 #### (Digital) Resource
 
 A (Digital) Resource in the context of the International Data Spaces is
-a uniquely identifiable, valuable, digital (i.e. non-physical) commodity
+a uniquely identifiable, valuable, digital (i.e., non-physical) commodity
 that can be traded and exchanged between remote participants using the
 IDS infrastructure. Following the web resource paradigm[^11], the
-abstract content of a Resource is provided in a variety of
+abstract content of a Resource may be provided in a variety of
 representations. Examples of Resources are documents, time series of
 sensor values, messages, image file archives, or media streams.
 Resources are subject to forwarding, processing, and/or consumption,
