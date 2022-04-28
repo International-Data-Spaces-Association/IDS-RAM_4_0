@@ -127,7 +127,7 @@ a uniquely identifiable, valuable, digital (i.e., non-physical) commodity
 that can be traded and exchanged between remote participants using the
 IDS infrastructure. Following the web resource paradigm[^11], the
 abstract content of a Resource may be provided in a variety of
-representations. Examples of Resources are documents, time series of
+representations. Examples of Resources include documents, time series of
 sensor values, messages, image file archives, or media streams.
 Resources are subject to forwarding, processing, and/or consumption,
 with a particular demand for modeling related, complementary aspects
@@ -143,8 +143,7 @@ clarity and consistency. Similar to the principle a microscope works,
 each concern follows a particular, analytical point of view, while other
 concerns can temporarily be disregarded. This principle can be applied
 to information modeling, aiming at a thorough understanding of the
-domain and fostering modularity and re-usability of the resulting (sub-)
-models. Accordingly designed, these models may evolve independently of
+domain and fostering modularity and re-usability of the resulting (sub-)models. Accordingly designed, these models may evolve independently of
 each other and can be updated by different agents at different times. As
 any modification of a single element of the overall model does not
 require a change in other, logically unrelated parts, the development
@@ -160,31 +159,66 @@ width="3.64in" height="2.67in"}
 
 To illustrate the main modeling [c]{.underline}oncerns of Digital
 Resources in a way easy to memorize, the mnemonic hexagonal arrangement
-of [c]{.underline}arbon atoms can be used (C-Hexagon), as shown in
+of [c]{.underline}arbon atoms can be used (“C-Hexagon”), as shown in
 Figure
 [2](#fig:Outline_of_the_ConcernBasic_concern_hexagon){reference-type="ref"
-reference="fig:Outline_of_the_ConcernBasic_concern_hexagon"}. As a
-Resource's content is its most essential aspect, Content is located at
-the top of the hexagon. This content is interpretable by references to a
-shared, formally defined Concept, whereas links to a particular
-*C*ontext (in terms of time, place, or real-world entities) make the
-content potentially relevant for certain Data Consumers. So the upper
-part of the C-Hexagon deals with the what aspects, independently of
+reference="fig:Outline_of_the_ConcernBasic_concern_hexagon"}.
+
+As a
+Resource's content is its most essential aspect, *C*ontent is located at
+the top of the hexagon. The *Content* concern deals with 
+1. the description of a Resource's abstract substance, 
+2. its serialization as a representation in a machine-interpretable format, and 
+3. the materializations of these representations at certain points in time as one or more instances (e.g., values or artifacts).
+
+Content is interpretable by references to a
+shared, formally defined *C*oncept, which may cover the meaning, annotation and interpretation of entities by, e.g., 
+1. natural language keywords, 
+2. terms defined in curated sources such as controlled vocabularies, or
+3. types defined in type systems or ontologies.
+
+On the other hand, links to a particular
+*C*ontext (in terms of, e.g.,
+* time, 
+* place, or 
+* real-world entities)
+make the
+Content potentially relevant for certain Data Consumers.
+
+Thus, the upper
+part of the C-Hexagon deals with the “what” aspects, independently of
 Data Exchange, Data Sharing or Data Utilization. The lower part relates
-to the how aspects; i.e. how the content is exchanged
-(*C*ommunication) and under which conditions (*C*ommodity). The
+to the “how” aspects; i.e., how the content is exchanged
+(*C*ommunication) and under which conditions (*C*ommodity). 
+
+The *Communication* concern deals with means to communicate a Resource's Content in one of the Representations
+available, e.g., 
+* by sending messages in some communication protocol
+* to a resource or service endpoint or to an IDS Connector
+* in order to perform an operation.
+
+The *Commodity* concern helps to address the value and utility of a Resource in terms of, e.g.,
+* its provenance,
+* its quality, and
+* the (usage) policies attached to it, e.g., the obligation to pay a certain price for its consumption.
+
+The 
 *C*ommunity of Trust concern refers to the distinctive feature of the
 International Data Spaces being an ecosystem of certified participants
-and components that exchange and share Digital Resources in accordance
-with usage policies ensuring data sovereignty.
+operating certified components, such as Connectors. Using such components, Participants exchange and share Digital Resources in a secure and trusted way in accordance
+with contracts composed of usage policies, thus ensuring data sovereignty.
+::: Center
+![Detailed Concern Hexagon](./media/image53.png){#fig:Detailed_Concern_Hexagon}
+:::
 
 The level of detail differs across the individual concerns. The
 selection of their constituting aspects may change in light of new
-requirements and insights. Modeling concerns may inform, but do not
+requirements and insights; Fig. [3](#fig:Detailed_Concern_Hexagon){reference-type="ref"
+reference="fig:Detailed_Concern_Hexagon"} suggests one such expansion of the C-Hexagon to one more level of detail.
+
+Modeling concerns may inform, but do not
 necessarily correspond to any physical organization of the model (e.g.,
-modules or directories). Some of the models listed below directly map to
-the above mentioned concerns, while others take a more detailed
-perspective on particular aspects.
+modules or directories).
 
 [^1]: IDSA members may find further information at
     https://industrialdataspace.jiveon.com/community/workinggroups/architecture/swg4-information-model/.
@@ -197,11 +231,11 @@ perspective on particular aspects.
 
 [^5]: https://www.w3.org/standards/semanticweb/
 
-[^6]: https://www.w3.org/TR/vocab-dcat-2/
+[^6]: Data Catalog Vocabulary (DCAT) - Version 2. W3C Recommendation 04 February 2020. https://www.w3.org/TR/vocab-dcat-2/
 
-[^7]: https://www.w3.org/TR/odrl-model/
+[^7]: ODRL Information Model 2.2. W3C Recommendation 15 February 2018. https://www.w3.org/TR/odrl-model/
 
-[^8]: https://www.w3.org/TR/skos-reference/
+[^8]: SKOS Simple Knowledge Organization System Reference. W3C Recommendation 18 August 2009. https://www.w3.org/TR/skos-reference/
 
 [^9]: https://github.com/International-Data-Spaces-Association/IDS-G/blob/master/repositories/README.md
 
