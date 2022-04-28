@@ -237,7 +237,15 @@ modules or directories).
 
 [^8]: SKOS Simple Knowledge Organization System Reference. W3C Recommendation 18 August 2009. https://www.w3.org/TR/skos-reference/
 
-[^9]: https://github.com/International-Data-Spaces-Association/IDS-G/blob/master/repositories/README.md
+[^rdfs]: RDF Schema 1.1. W3C Recommendation 25 February 2014. https://www.w3.org/TR/rdf-schema/
+
+[^owl]: OWL 2 Web Ontology Language Document Overview (Second Edition). W3C Recommendation 11 December 2012. https://www.w3.org/TR/owl2-overview/
+
+[^shacl]: Shapes Constraint Language (SHACL). W3C Recommendation 20 July 2017. https://www.w3.org/TR/shacl/
+
+[^sparql]: SPARQL 1.1 Query Language. W3C Recommendation 21 March 2013. https://www.w3.org/TR/sparql11-query/
+
+[^9]: Known implementations are listed at https://github.com/International-Data-Spaces-Association/InformationModel/.
 
 [^10]: In the repository referenced in section 3.4.2.2, see the
     top-level file *CHANGELOG.md*.
