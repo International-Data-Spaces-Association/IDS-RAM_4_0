@@ -245,6 +245,8 @@ modules or directories).
 
 [^sparql]: SPARQL 1.1 Query Language. W3C Recommendation 21 March 2013. https://www.w3.org/TR/sparql11-query/
 
+[^bp-ld]: Best Practices for Publishing Linked Data. W3C Working Group Note 09 January 2014. http://www.w3.org/TR/ld-bp/
+
 [^9]: Known implementations are listed at https://github.com/International-Data-Spaces-Association/InformationModel/.
 
 [^10]: In the repository referenced in section 3.4.2.2, see the
