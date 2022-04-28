@@ -39,8 +39,7 @@ The Information Model has been specified at three levels of
 formalization. Each level corresponds to a digital representation,
 ranging from this high-level, conceptual document down to the level of
 operational code, as depicted in Figure
-[1](#fig:Representations_of_the_Information_Model){reference-type="ref"
-reference="fig:Representations_of_the_Information_Model"}. Every
+[3.4.1](#_fig-341-representations-of-the-information-model_). Every
 representation depicts the complete Information Model in its particular
 way. Among the different representations, the Declarative Representation
 (IDS Vocabulary) is the only normative specification of the Information
@@ -98,11 +97,10 @@ allows developers to easily create instances of the Information Model
 that are compliant with the IDS Vocabulary, relieving them from the
 intricacies of ontology processing.
 
-::: Center
-![Representations of the Information
-Model](./media/image31.png){#fig:Representations_of_the_Information_Model
-width="6.53in" height="2.83in"}
-:::
+
+![Representations of the Information Model](./media/image31.png)
+
+#### _Fig. 3.4.1: Representations of the Information Model_
 
 ### Conceptual Representation of a Digital Resource in the IDS
 
@@ -149,20 +147,17 @@ any modification of a single element of the overall model does not
 require a change in other, logically unrelated parts, the development
 and maintenance of models can be substantially simplified.
 
-::: Center
-![Outline of the Concern-Basic concern
-hexagon](./media/image32.png){#fig:Outline_of_the_ConcernBasic_concern_hexagon
-width="3.64in" height="2.67in"}
-:::
+
+![Outline of the Concern-Basic concern hexagon](./media/image32.png)
+
+#### _Fig. 3.4.2: Outline of the Concern-Basic concern hexagon_
 
 #### Concern Hexagon
 
 To illustrate the main modeling [c]{.underline}oncerns of Digital
 Resources in a way easy to memorize, the mnemonic hexagonal arrangement
 of [c]{.underline}arbon atoms can be used (“C-Hexagon”), as shown in
-Figure
-[2](#fig:Outline_of_the_ConcernBasic_concern_hexagon){reference-type="ref"
-reference="fig:Outline_of_the_ConcernBasic_concern_hexagon"}.
+Figure [3.4.2](#_fig-342-outline-of-the-concern-basic-concern-hexagon_).
 
 As a
 Resource's content is its most essential aspect, *C*ontent is located at
@@ -207,14 +202,15 @@ The
 International Data Spaces being an ecosystem of certified participants
 operating certified components, such as Connectors. Using such components, Participants exchange and share Digital Resources in a secure and trusted way in accordance
 with contracts composed of usage policies, thus ensuring data sovereignty.
-::: Center
-![Detailed Concern Hexagon](./media/image53.png){#fig:Detailed_Concern_Hexagon}
-:::
+
+![Detailed Concern Hexagon](./media/image53.png)
+
+#### _Fig. 3.4.3: Detailed Concern Hexagon_
+
 
 The level of detail differs across the individual concerns. The
 selection of their constituting aspects may change in light of new
-requirements and insights; Fig. [3](#fig:Detailed_Concern_Hexagon){reference-type="ref"
-reference="fig:Detailed_Concern_Hexagon"} suggests one such expansion of the C-Hexagon to one more level of detail.
+requirements and insights; Fig. [3.4.3](#_fig-343-detailed-concern-hexagon_) suggests one such expansion of the C-Hexagon to one more level of detail.
 
 Modeling concerns may inform, but do not
 necessarily correspond to any physical organization of the model (e.g.,
