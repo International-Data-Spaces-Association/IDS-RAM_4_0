@@ -88,7 +88,7 @@ The IDS Broker manages Connector self-descriptions that can contain usage polici
 
 ##### **CONNECTOR**
 
-The Connector is the main technical component for implementing Usage Control. Hence, Usage Control enhanced Connectors, such as the Trusted Connector, contain relevant components to perform Usage Control enforcement as Data Consumer (PEPs, such as the Apache Camel Interceptor; PDPs, PMPs). However, PMPs and PDPs do not need to be part of the Connector. In addition, Connectors as Data Providers should provide the technology-dependent policies to the data they provide – for all kinds of systems and enforcement technologies that are part of the ecosystem.
+The Connector is the main technical component for implementing Usage Control. Hence, Usage Control enhanced Connectors, such as the Trusted Connector, contain relevant components to perform Usage Control enforcement as Data Consumer (PEPs, Interceptors; PDPs, PMPs). However, PMPs and PDPs do not need to be part of the Connector. In addition, Connectors as Data Providers should provide the technology-dependent policies to the data they provide – for all kinds of systems and enforcement technologies that are part of the ecosystem.
 
 ##### **CLEARING HOUSE**
 
@@ -160,23 +160,23 @@ Instances of the Trusted Connector enable remote integrity verification, so the 
 
 The Trusted Connector guarantees a controlled execution environment for data services and supports the creation of trusted relationships. A general constraint is one that remains for all deployed IT systems: As long as physical or logical access is granted to administrators, protection against data theft by malicious partners is almost impossible to prevent. The International Data Spaces is seen as a network of partners that are provided with the technical means to fulfill their obligations and support in deciding what partners to trust and to define reasonable access conditions.
 
-#### **APACHE CAMEL INTERCEPTOR (EXAMPLE)**
+#### **MESSAGE ROUTER and INTERCEPTOR (EXAMPLE)**
 
-An IDS Connector may use Apache Camel to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a dominant paradigm of Apache Camel for connecting different nodes in a route definition. The basic idea of a pipeline is that Apache Camel uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](https://user-images.githubusercontent.com/69632955/150939403-107db526-d0a6-47f4-85d3-30a2b29e4f9b.png)).
+An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](https://user-images.githubusercontent.com/69632955/150939403-107db526-d0a6-47f4-85d3-30a2b29e4f9b.png)).
 
 ![image](https://user-images.githubusercontent.com/69632955/150939403-107db526-d0a6-47f4-85d3-30a2b29e4f9b.png)
 
-_Figure 4.1.6.6: Apache Camel pipeline (example)_
+_Figure 4.1.6.6: Message Router pipeline (example)_
 
-In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](https://user-images.githubusercontent.com/69632955/150939429-92add160-5c72-42fa-8b07-6716921caebf.png) shows as example of how developers can do this. Apache Camel offers the possibility to integrate interceptors that it executes every time before and after a processor is working.
+In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](https://user-images.githubusercontent.com/69632955/150939429-92add160-5c72-42fa-8b07-6716921caebf.png) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
 
 As the International Data Spaces provides an Information Model (see [Section 3.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/)), additional metadata enhances the data transferred via the route, thereby enabling better Usage Control enforcement. The Connector attaches the metadata to the data package, as explained in [Section 3.4](../../3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/). In addition, a PIP is able to resolve more metadata during the decision-making process if necessary.
 
 ![image](https://user-images.githubusercontent.com/69632955/150939429-92add160-5c72-42fa-8b07-6716921caebf.png)
 
-_Figure 4.1.6.7: Intercepting Apache Camel data flows_
+_Figure 4.1.6.7: Intercepting Message Router data flows_
 
-This paradigm also works across company borders, as data always flows through the IDS Connector and the Apache Camel interceptor, respectively (as shown in [Figure 4.1.6.8](https://user-images.githubusercontent.com/69632955/150939461-58fc264c-db41-4d40-bad1-e6e73f08d620.png)). When reaching the receiving Connector, the respective policy to protect the data is automatically instantiated.
+This paradigm also works across company borders, as data always flows through the IDS Connector and the Interceptor Pattern, respectively (as shown in [Figure 4.1.6.8](https://user-images.githubusercontent.com/69632955/150939461-58fc264c-db41-4d40-bad1-e6e73f08d620.png)). When reaching the receiving Connector, the respective policy to protect the data is automatically instantiated.
 
 Depending on the policies available, this way of enforcement is not enough to cover all possible use cases and full Usage Control.
 
