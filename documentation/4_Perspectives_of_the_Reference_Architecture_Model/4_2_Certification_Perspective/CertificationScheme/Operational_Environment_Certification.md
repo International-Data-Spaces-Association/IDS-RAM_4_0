@@ -1,4 +1,6 @@
-**PART 2 -** OPERATIONAL ENVIRONMENT CERTIFICATION
+# Operational Environment Certification
+
+[TODO: revise]
 
 One of the Industrial Data Space goals is to evolve to- wards a global
 de-facto standard for cross-industrial and cross-company information

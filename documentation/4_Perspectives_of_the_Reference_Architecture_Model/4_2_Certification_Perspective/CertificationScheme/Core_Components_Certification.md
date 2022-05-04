@@ -1,4 +1,4 @@
-**PART 3 --** CORE COMPONENTS CERTIFICATION
+# Core Component Certification
 
 [*TODO: Update chapter with new naming;*
 

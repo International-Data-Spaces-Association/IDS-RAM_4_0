@@ -1,41 +1,17 @@
 # IDSA Certification Scheme / WHITE PAPER CERTIFICATION
 
-The IDSA Certification Scheme consist of the follwing sections
+In the new version (3.0) the IDSA Certification Scheme shall consist of the following sections:
 
-# CONTENT
+## 0. [IDS Introduction](./IDS_Introduction.md) (tbd)
+## 1. Introduction to Certification:
+Read the content of the IDS-RAM Certification Perspective Section (except for 4.2.1. Aspects addressed by layers of IDS RAM)
+    [4.2. Intro section](../4_2_Certification_Perspective.md)
+    [4_2_2_Roles.md](../4_2_2_Roles.md)
+    [4_2_3_Operational_Environment_Certification.md](../4_2_3_Operational_Environment_Certification.md)
+    [4_2_4_Component_Certification.md](../4_2_4_Component_Certification.md)
+    [4_2_5_Processes.md: Approval Scheme and Certification Process](../4_2_5_Processes.md)
 
-## [INTRODUCTION](./Introduction.md)
-
-## [**PART 1 --** CERTIFICATION FRAMEWORK](./Certification-Framework.md)
-
-* International Data Spaces Association
-* Certification Body
-* Evaluation Facility
-* Applicant
-* Identity Provider
-
-## [**PART 2 --** OPERATIONAL ENVIRONMENT CERTIFICATION](./Operational-Environment-Certification.md)
-
-* Evaluation Depth
-* Security Requirement Extent
-* Certification Criteria Catalogue
-* Piloting of Certification Criteria
-* Participants Overview
-
-## [**PART 3 --** CORE COMPONENTS CERTIFICATION](./Core-Components-Certification.md)
-
-* Assurance Levels
-* Security Profiles
-* Certification Criteria Catalogue
-* Piloting of Certification Criteria
-* Component Overview
-
-## [**PART 4 --** HOW-TO: IDS CERTIFICATION PROCESS](./Certification-Process.md)
-
-* Application Stage
-* Evaluation Stage
-* Certification Stage
-
-## [**PART 5 --** FUTURE WORK](./Future-Work.md)
-
-## [References](References.md)
+## 2. [Roles and Responsibilities](./Certification_Roles_and_Responsibilities.md)
+## 3. [Operational Environment Certification](./Operational_Environment_Certification.md)
+## 4. [Core Component Certification](./Core_Component_Certification.md)
+## 5. [Processes](./Processes.md)

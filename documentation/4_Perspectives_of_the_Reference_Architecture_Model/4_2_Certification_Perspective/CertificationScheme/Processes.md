@@ -1,4 +1,5 @@
-**PART 4 --** HOW-TO: IDS CERTIFICATION PROCESS
+# Processes for IDS Certification
+[TODO: revise]
 
 Participants and core components within the IDS ecosystem shall
 provide sufficiently high degree of security regarding the integrity
