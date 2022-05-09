@@ -43,7 +43,7 @@ The IDSA is not actively involved in a participant or core component certificati
 
 ## Certification Body
 
-The IDS Certification Body is appointed by the International Data Spaces Association and amon gother things regularly aligns with the IDSA to manage the certification process, defines the standardized evaluation procedures and supervises the actions of the Evaluation Facilities. Currently, the IDSA Head Office acts as the Certification Body.
+The IDS Certification Body is appointed by the International Data Spaces Association and among other things regularly aligns with the IDSA to manage the certification process, defines the standardized evaluation procedures and supervises the actions of the Evaluation Facilities. Currently, the IDSA Head Office acts as the Certification Body.
 
 Its responsibilities include:
 
