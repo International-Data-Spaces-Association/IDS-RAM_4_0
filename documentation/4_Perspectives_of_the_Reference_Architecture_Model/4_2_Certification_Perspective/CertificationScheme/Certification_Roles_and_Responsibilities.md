@@ -48,53 +48,53 @@ The IDS Certification Body is appointed by the International Data Spaces Associa
 Its responsibilities include:
 
 -   Formulating and defining the certification scheme in cooperation with the International Data Spaces Association, including the evaluation procedures, operational environment and core component certification approaches as well as their underlying criteria catalogues.
+
 -   To provide and enable the functionality of the checklist approach. (Connector Certification, Trust Level 1, Assureance Level 1).
 -   - For the checklist-approach certification no Evaluation Facility is needed. The Certification Body provides a portal, where applicants can conduct a self-assessment of their connector by answering a questionnaire.
 -   - The answers will be evaluated by the Certification Body directly.  It will inform the applicant about the outcome directly and issue the certificate if the answers have been according to the IDS Certification Scheme. 
+
 -   Approval of the Evaluation Facilites. 
 -   - For the Assurance Level 2, Evaluation Facilites are needed. They evaluate the components in detail and make sure that they act according to the IDS Certification Scheme. 
 -   - Before they start evaluating, the Certification Body ensures, that the evaluation facility's tools and tests are valid. This is beeing done within the approval process. During dedicated workshops the Certification Body examinates the skills of the evaluators. 
+
 -   Monitoring the performance of the Evaluation Facilites.
 -   - To ensure highest quality of the certification process the Certification Body participates in the evaluations on a selective basis.
 -   - The Certification Body also reminds the Evaluation Facility to get re-approved after two years if no evaluation has been conducted during that period.
 -   - Whenever new guidelines are developed and published by the association, the Certification Body informs the Evaluation Facilities. 
--   Keeping track of the certification processes currently in progress and communicating them transparently at the IDSA website.
+-   -   Decision about approval or exclusion of Evaluation Facilities for/from executing IDS evaluations (based on ongoing monitoring and [CRIT-EF]).
+
+- Issuing the certificates to the applicants. 
+- - Reviewing and commenting on the evaluation reports received from Evaluation Facilities.
+-   - Making final decision about the award or denial of a certificate and publishing the awarded certificates.
+-   - Keeping track of the certification processes currently in progress and communicating them transparently at the IDSA website.
+-   The Certification Body only grants the certificate (called evaluation certificate subsequently) only if both the Evaluation Facility and the experts of the Certification Body have come to the conclusion that all preconditions are fulfilled. The certification body sends the certificate directly to the applicant, at the same time informing the Evaluation Facility of its decision. 
+
 -   Guiding applicants through the certification process.
 -   - The Certification provides and maintans the list of approved Evaluation Facilites on the IDSA website.
--   - By contacting "supportoffice@internationaldataspaces.org" applicants can reach out for support on the whole certification process. 
-
-## Evaluation Facility
-
--   Ensuring correct implementation and execution of the Industrial Data Space certification scheme, including the supervision of ongoing evaluations.
-
--   Ensuring continuous adherence to the Industrial Data Space certification scheme following up on changes und updates received from the IDSA.
-
--   Analyzing existing "base" certificates (e.g. for organizations or for software and hardware security components) to determine their validity and sufficiency, and deciding about their acceptance within the Industrial Data Space certification scheme.
-
--   Reviewing and commenting on the evaluation reports received from Evaluation Facilities.
-
--   Approval of applications for certification.
-
--   Making final decision about the award or denial of a certificate and publishing the awarded certificates.
-
--   Authorization/triggering of the generation and revocation of a X.509 certificate. These certificates digitally represent the evaluation certificate and enable automated trust checks between partners prior to data transfer within the Industrial Data Space.
-
--   Decision about approval or exclusion of Evaluation Facilities for/from executing Industrial Data Space evaluations (based on ongoing monitoring and [CRIT-EF]).
+-   - By contacting supportoffice@internationaldataspaces.org applicants can reach out for support on the whole certification process. 
 
 -   Ongoing monitoring of certification-relevant external developments (e.g. new attack patterns which might circumvent certified security measures).
 
--   Providing input based on the practical quality assurance experiences to future updates of the Industrial Data Space certification scheme to the International Data Spaces Association.
+-   Analyzing existing "base" certificates (e.g. for organizations or for software and hardware security components) to determine their validity and sufficiency, and deciding about their acceptance within the Industrial Data Space certification scheme.
 
-The Certification Body only grants the certificate (called evaluation certificate subsequently) only if both the Evaluation Facility and the experts of the Certification Body have come to the conclusion that all preconditions are fulfilled.
+-   Ensuring continuous adherence to the IDS certification scheme following up on changes und updates received from the Certification Body and the IDS Association.
 
-An Evaluation Facility is contracted by an Applicant and is as such responsible for carrying out the detailed technical and/or organizational evaluation work during a certification. The Evaluation Facility issues an evaluation report for the participant or core component, listing details regarding the per- formed evaluation actions as well as information regarding the confirmed security level.
+-   Providing input based on the practical quality assurance experiences to future updates of the IDS certification scheme to the International Data Spaces Association.
+
+
+## Evaluation Facility
+
+There are two types of Evaluation Facilites: One for IDS components and one for the operational environment. An organization usually performs only one type, but it is possible to have both functions. As written in the previouse section an approval process needs to be conducted to become an official IDS Evaluation Facility. Further, the Organization is beeing approved to perform evaluations for specific assurance levels of the IDS certification. This means, that an Evaluation Facility that is approved to conduct evaluations for instance for assurance level 2 is only allowed to evaluate components or operational environment for the assurance level 2. 
+Once an Evaluation Facility is approved it can be contracted by an Applicant and is as such responsible for carrying out the detailed technical and/or organizational evaluation work during the certification process for either the IDS component or the operational environment in its assurance level scope. After the process, the Evaluation Facility issues an evaluation report listing details regarding the performed evaluation actions as well as information regarding the confirmed security level.
 The depth and scope of the performed evaluation actions depend on the desired level of security. These security levels are specified in more detail in Part 2 and 3 of this document.
 
 The responsibilities of the Evaluation Facility include:
 
--   Obtaining approval by the Certification Body to perform evaluations, based on an approval process with criteria defining personnel competencies and organizational requirements [CRIT-EF].
+-   Obtaining approval by the Certification Body to perform evaluations, based on an approval process with criteria defining personnel competencies and organizational requirements (see section above).
 
--   Applying the criteria specified in the Industrial Data Space certification scheme according to generally accepted standards and best practices (including the execution of any necessary tests and on-site checks).
+-   Applying the criteria specified in the IDS certification scheme according to generally accepted standards and best practices (including the execution of any necessary tests and on-site checks).
+
+-   Organizes and conducts the evaluations independently and communicates with the applicant directly. The Evaluation Facility is therefore responsible for the evaluation whereby the Certification Body has the function of a supervisior. 
 
 -   Documenting the results in an evaluation report.
 
@@ -102,7 +102,9 @@ The responsibilities of the Evaluation Facility include:
 
 The term Evaluation Facility is used throughout the document to refer both to authorized auditors for management system evaluations (i.e., participant certifications), as well as approved evaluators for product evaluations (i.e., core component certifications). Hence, multiple approved Evaluation Facilities will exist in the Industrial Data Space certification scheme, but in each evaluation only one Evaluation Facility will be involved.
 
-The flexibility of the certification approaches defined in Part 2 and 3 of this document allows for a wide range of evaluation experts to participate in the Industrial Data Space certification scheme, such as software penetration testers, common criteria specialists, ISO 27001 auditors and accounting firms. As such, it is fully expected that all certification levels defined in this document and therefore the needs of startup companies and SMEs as well as those of large corporations will be sufficiently addressed.
+The flexibility of the certification approaches defined in Part 2 and 3 of this document allows for a wide range of evaluation experts to participate in the Industrial Data Space certification scheme, such as software penetration testers, common criteria specialists, ISO 27001 auditors and accounting firms. As such, it is fully expected that all certification levels defined in this document and therefore the needs of startup companies and SMEs as well as those of large corporations will be sufficiently addressed (PLEASE CHECK).
+
+
 
 ## Applicant
 
