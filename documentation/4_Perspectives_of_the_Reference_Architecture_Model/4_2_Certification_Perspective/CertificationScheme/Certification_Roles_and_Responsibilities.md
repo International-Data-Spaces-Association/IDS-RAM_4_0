@@ -43,11 +43,25 @@ The IDSA is not actively involved in a participant or core component certificati
 
 ## Certification Body
 
-The IDS Certification Body is appointed by the International Data Spaces Association and regularly aligns with the IDSA to manage the certification process, defines the standardized evaluation procedures and supervises the actions of the Evaluation Facilities.
+The IDS Certification Body is appointed by the International Data Spaces Association and amon gother things regularly aligns with the IDSA to manage the certification process, defines the standardized evaluation procedures and supervises the actions of the Evaluation Facilities. Currently, the IDSA Head Office acts as the Certification Body.
 
 Its responsibilities include:
 
--   Formulating and defining the certification scheme in cooperation with the International Data Spaces Association, including the evaluation procedures, participant and core component certification approaches as well as their underlying criteria catalogues.
+-   Formulating and defining the certification scheme in cooperation with the International Data Spaces Association, including the evaluation procedures, operational environment and core component certification approaches as well as their underlying criteria catalogues.
+-   To provide and enable the functionality of the checklist approach. (Connector Certification, Trust Level 1, Assureance Level 1).
+-   - For the checklist-approach certification no Evaluation Facility is needed. The Certification Body provides a portal, where applicants can conduct a self-assessment of their connector by answering a questionnaire.
+-   - The answers will be evaluated by the Certification Body directly.  It will inform the applicant about the outcome directly and issue the certificate if the answers have been according to the IDS Certification Scheme. 
+-   Approval of the Evaluation Facilites. 
+-   - For the Assurance Level 2, Evaluation Facilites are needed. They evaluate the components in detail and make sure that they act according to the IDS Certification Scheme. 
+-   - Before they start evaluating, the Certification Body ensures, that the evaluation facility's tools and tests are valid. This is beeing done within the approval process. During dedicated workshops the Certification Body examinates the skills of the evaluators. 
+-   Monitoring the performance of the Evaluation Facilites.
+-   - To ensure highest quality of the certification process the Certification Body participates in the evaluations on a selective basis.
+-   - The Certification Body also reminds the Evaluation Facility to get re-approved after two years if no evaluation has been conducted during that period.
+-   - Whenever new guidelines are developed and published by the association, the Certification Body informs the Evaluation Facilities. 
+-   Keeping track of the certification processes currently in progress and communicating them transparently at the IDSA website.
+-   Guiding applicants through the certification process.
+-   - The Certification provides and maintans the list of approved Evaluation Facilites on the IDSA website.
+-   - By contacting "supportoffice@internationaldataspaces.org" applicants can reach out for support on the whole certification process. 
 
 ## Evaluation Facility
 
