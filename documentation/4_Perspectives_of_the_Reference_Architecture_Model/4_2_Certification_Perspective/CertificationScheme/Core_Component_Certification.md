@@ -33,8 +33,12 @@
 
 *TODO: Remove section on "Piloting of Certification Criteria"*]
 
+
+## Intro
+[*TODO: revise*]
+
 To secure the intended cross-industrial and cross-company information
-exchange, the Indus- trial Data Space core components must provide the
+exchange, the Industrial Data Space core components must provide the
 required functionality and an appropriate level of security. As such,
 the core component certification is interoperability- and
 security-focused, while aiming to strengthen the development and
@@ -57,6 +61,7 @@ Figure 5: Certification Approach for core components of the Industrial
 Data Space
 
 ## Assurance Levels
+[*TODO: update to assurance level 1-3; include Verweis auf Test Specifications -> Nadja*]
 
 The depth and rigor of an evaluation consists of the following three
 assurance levels as defined by the Industrial Data Space certification
@@ -85,7 +90,12 @@ components and an in- depth source code review will be performed by an
 evaluation facility. Furthermore, the development process will be
 evaluated, including an audit of the development site.
 
-##  Security Profiles
+## Trust Levels and Profiles for Components
+[*TODO: pot. image to show the different certification types -> Monika*]
+![Overview different component certifications](./media/types_of_component_certification.png)
+
+### Connectors
+[*TODO: update auf Trust Level 1-3*]
 
 Whenever two components establish a communication channel, it's up
 to them to decide which information they will send to the
@@ -127,7 +137,55 @@ TPM or a hardware-backed isolation environment) and supports remote
 integrity verification (i.e., remote attestation). All key material
 is stored in dedicated hardware isolated areas.
 
+#### Connector
+[*TODO: merge with above*]
+Being the point of access to the Industrial Data Space, the Connector
+provides a controlled environment for processing and exchanging
+data, ensuring secure transfer of data from the data provider to the
+data consumer. As such, the necessary trust in the correct and
+complete implementation of the functionality required by the IDS
+Reference Architecture Model and the Connector specification can only
+be ensured by independent evaluation and certification from an
+approved evaluation facility and the certification body of the
+Industrial Data Space.
+
+#### Connector-based Components (Broker, App Store, ...)
+[*TODO: explain how those build on the connector certification levels*]
+
+A Broker service does not have access to primary data, but only to
+metadata provided by data providers, which is generally considered
+less sensitive. Likewise, Broker services do not assign or enforce
+access rights, but merely support data exchange. Nevertheless,
+integrity and availability of metadata (i.e., correct and secure
+storing and handling of meta- data) is of high importance for the
+Industrial Data Space. Compatibility with the required functionality
+as defined by the certification body is therefore evaluated and
+certified.
+
+#### Data Apps and Services
+[*TODO: revise*]
+Data Apps and Services have direct contact with primary data, which
+means that a compromised Data App or Service may compromise the integrity of data. However, confidentiality and availability of data is
+ensured by the measures defined in the Security Architecture of the
+Industrial Data Space, which strongly limit the potential damage
+caused by
+
+Data Apps and Services. Also, Apps and Services will typically use the
+security features provided by the Connector. Therefore, not every Data
+App or Service to be made available in the Industrial Data Space
+requires a medium or high assurance level certification. However,
+the automated test suite mentioned above for the basic security
+level will be integrated in the upload process of each Industrial
+Data Space App Store.
+
+#### DAPS
+
+#### Certificate Authority
+[*TODO: keine zertifizierung für Komponenten, aber Op.Env und Ca-specific certification*]
+
+
 ##  Certification Criteria Catalogue
+[*TODO: update -> Nadja*]
 
 The catalogue of certification criteria for the IDS core components
 [CRIT-C] was defined as part of the Fraunhofer research project
@@ -182,97 +240,7 @@ to the
 Secure Implementation level, supported by relevant Guidance
 Documents, Verification & Validation approaches, as well as a Secure
 Defect Management & Secure Update Management.³
-
-## Piloting of Certification Criteria
-
-In order to verify the completeness and applicability of the
-catalogue of certification criteria for the IDS core component
-»Connector« to real-world implementations, as well as the
-IDS-readiness of these implementations, piloting workshops with
-various IDSA members (e.g. Fraunhofer AISEC, T-Systems, Cybus) were
-conducted. The workshops were organized by the WG Certification,
-bringing together Fraunhofer IDS certification experts, developers and
-product owners. While Fraunhofer had the best knowledge about
-certification requirements, the developers and product owners
-(consisting at least of the project manager and lead developer)
-brought their in-depth knowledge about real-world implementations of
-connector components as well as a business/market perspective to the
-table.
-
-During these 2-day workshops led by Fraunhofer FOKUS, the Connector
-implementation was evaluated by going through the catalogue step by
-step and looking into the implemented measures meeting the
-requirements as well as the existing developer documentation. This
-approach enabled all parties to get a better sense of the status of
-the IDS-readiness of the implementation under evaluation. The results
-of the workshop were recorded by the evaluation lead and distributed
-to the developer. The anonymized results were reported back to the WG
-Certification.
-
-In regard to the completeness and applicability of the requirements
-themselves, the in-depth discussions during the workshops in some
-cases led to an adjustment of the wording of a requirement, the
-addition of new requirements or the removal of non-applicable
-requirements (either entirely or for a specific Security Profile). As
-such, each piloting workshop led to a new version of the requirements
-catalogue.
-
 ³ US Cert: Build Security In: Modeling Tools, 2013
-
-## Component Overview
-
-This chapter summarizes the Industrial Data Space core components as
-assessed in [IDSRA, 4.2] that are targets of the component
-certification.
-
-#### Connector
-
-Being the point of access to the Industrial Data Space, the Connector
-provides a controlled environment for processing and exchanging
-data, ensuring secure transfer of data from the data provider to the
-data consumer. As such, the necessary trust in the correct and
-complete implementation of the functionality required by the IDS
-Reference Architecture Model and the Connector specification can only
-be ensured by independent evaluation and certification from an
-approved evaluation facility and the certification body of the
-Industrial Data Space.
-
-#### Broker
-
-A Broker service does not have access to primary data, but only to
-metadata provided by data providers, which is generally considered
-less sensitive. Likewise, Broker services do not assign or enforce
-access rights, but merely support data exchange. Nevertheless,
-integrity and availability of metadata (i.e., correct and secure
-storing and handling of meta- data) is of high importance for the
-Industrial Data Space. Compatibility with the required functionality
-as defined by the certification body is therefore evaluated and
-certified.
-
-#### Apps and Services
-
-Data Apps and Services have direct contact with primary data, which
-means that a compromised Data App or Service may compromise the integrity of data. However, confidentiality and availability of data is
-ensured by the measures defined in the Security Architecture of the
-Industrial Data Space, which strongly limit the potential damage
-caused by
-
-Data Apps and Services. Also, Apps and Services will typically use the
-security features provided by the Connector. Therefore, not every Data
-App or Service to be made available in the Industrial Data Space
-requires a medium or high assurance level certification. However,
-the automated test suite mentioned above for the basic security
-level will be integrated in the upload process of each Industrial
-Data Space App Store.
-
-#### App Store
-
-While the App Store itself does not have direct contact with primary
-data, the Apps and Services they provide do. Compromised security of
-the App Store, particularly of the test suite used during app and
-service upload, could lead to the circulation of compromised Apps and
-Services. Compatibility with the required functionality and security
-features is therefore to be evaluated and certified.
 
 #### Hardware
 
