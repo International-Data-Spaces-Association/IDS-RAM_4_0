@@ -47,27 +47,34 @@ The IDS Certification Body is appointed by the International Data Spaces Associa
 
 Its responsibilities include:
 
--   Formulating and defining the certification scheme in cooperation with the International Data Spaces Association, including the evaluation procedures, operational environment and core component certification approaches as well as their underlying criteria catalogues.
+-   Maintaining the IDS Certification Scheme:
+    - The Certification Body and (other) members of the International Data Spaces Association collaborate in the Working Group Certification to formulate and define the IDS Certification Scheme and its utilized criteria catalogues. 
+    - In particular, the Certification Body in collaboration with the IDSA is responsible for defining the evaluation procedures and operational environment and core component certification approaches based on those criteria catalogues.
 
--   To provide and enable the functionality of the checklist approach. (Connector Certification, Trust Level 1, Assureance Level 1).
--   - For the checklist-approach certification no Evaluation Facility is needed. The Certification Body provides a portal, where applicants can conduct a self-assessment of their connector by answering a questionnaire.
--   - The answers will be evaluated by the Certification Body directly.  It will inform the applicant about the outcome directly and issue the certificate if the answers have been according to the IDS Certification Scheme. 
+-   Offering certification for Assurance Level 1:
+    - For Assurance Level 1 for Core Component as well as for Operational Environment Certification, no Evaluation Facility is needed. The Certification Body provides a portal, where Applicants can conduct a self-assessment of their component or operational environment by answering a questionnaire or filling out provided forms for the self-assessment.
+    - For components, the Applicant additionally needs to provide information about the results of the automated tests required for Assurance Level 1.
+    - The answers will be evaluated by the Certification Body directly.
+    - It will make a decision about the award or denial of the desired certification based on the requirements and their acceptance criteria defined the IDS Certification Scheme.
 
--   Approval of the Evaluation Facilites. 
--   - For the Assurance Level 2, Evaluation Facilites are needed. They evaluate the components in detail and make sure that they act according to the IDS Certification Scheme. 
--   - Before they start evaluating, the Certification Body ensures, that the evaluation facility's tools and tests are valid. This is beeing done within the approval process. During dedicated workshops the Certification Body examinates the skills of the evaluators. 
+-   Approval of Evaluation Facilites: 
+   - For the Assurance Level 2 and 3, Evaluation Facilities are needed. They evaluate the components or operational environments in detail and make sure that they fulfill the requirements defined in the IDS Certification Scheme.
+   - Before a company may act as an Evaluation Facility, the Certification Body ensures that the company is able to realize the IDS Certification Scheme and take on the role of an Evaluation Facility.
+   - Within the approval process, the Certification Body checks legal requirements, existing management processes and the competence of the potential evaluators based on provided documentation.
+   - Additionally, the competence of the Evaluation Facility and the usage of adequate tooling is assessed in dedicated workshops with the Certification Body.
 
--   Monitoring the performance of the Evaluation Facilites.
--   - To ensure highest quality of the certification process the Certification Body participates in the evaluations on a selective basis.
--   - The Certification Body also reminds the Evaluation Facility to get re-approved after two years if no evaluation has been conducted during that period.
--   - Whenever new guidelines are developed and published by the association, the Certification Body informs the Evaluation Facilities. 
--   -   Decision about approval or exclusion of Evaluation Facilities for/from executing IDS evaluations (based on ongoing monitoring and [CRIT-EF]).
+-   Supervising evaluations conducted by the Evaluation Facilities:
+   - To ensure high quality and comparability of the conducted evaluation, the Certification Body oversees all evaluations and closely observes the performed evaluations on a sample basis.
+   - The Certification Body also reminds the Evaluation Facility to get re-approved after two years.
+   - Whenever new guidelines are developed and published by the association, the Certification Body informs the Evaluation Facilities.
+   -   In case of issues with the work of an Evaluation Facility, the Certification Body decides about the exclusion of Evaluation Facilities from executing IDS evaluations (based on ongoing monitoring and [CRIT-EF]).
 
-- Issuing the certificates to the applicants. 
-- - Reviewing and commenting on the evaluation reports received from Evaluation Facilities.
--   - Making final decision about the award or denial of a certificate and publishing the awarded certificates.
--   - Keeping track of the certification processes currently in progress and communicating them transparently at the IDSA website.
--   The Certification Body only grants the certificate (called evaluation certificate subsequently) only if both the Evaluation Facility and the experts of the Certification Body have come to the conclusion that all preconditions are fulfilled. The certification body sends the certificate directly to the applicant, at the same time informing the Evaluation Facility of its decision. 
+- Issuing the certificates for components and operational environments:
+   - The Certification Body keeps track of all certifications currently in progress.
+   - In the last step of the Certification Process, the Certification Body reviews the information from the Certification Portal for Assurance Level 1 or the evaluation reports received from Evaluation Facilities for Assurance Level 2 or 3.
+   -  It makes the final decision about the award or denial of a certificate and only grants the certificate if the Evaluation Facility (for Assurance Level 2 and 3) and the experts of the Certification Body have come to the conclusion that all preconditions are fulfilled.
+   - Afterwards, the Certification Body informs the Applicants and the responsible Evaluation Facility of its decision.
+   - The Certification Body is responsible for providing the Applicants with the awarded certificates and maintaining a list of all currently valid certificates on its website.
 
 -   Guiding applicants through the certification process.
 -   - The Certification provides and maintans the list of approved Evaluation Facilites on the IDSA website.
