@@ -68,7 +68,7 @@ The following examples illustrate security requirements that cannot be achieved 
 
 » **USAGE SCOPE:** Data may only serve as input for data pipes within the Connector; it must never leave the Connector and be sent to an external endpoint.
 
-It is important to note that the purpose of Data Usage Control is to allow the specification of such constraints and enforcing them in the respective system. A precondition of Data Usage Control is that the enforcement mechanism itself is trusted; i.e., Data Usage Control itself does not establish trust in an endpoint, but rather builds upon an existing trust relationship and facilitates enforcement of legal or technical requirements, such as Service Level Agreements (SLAs) or data privacy regulations. Thus, users must be aware that Data Usage Control will only provide certain enforcement guarantees if applied on highly trusted platforms, such as Level 2 Certified Connectors in the International Data Spaces  [Section 3.2](../../3_Layers_of_the_Reference_Architecture_Model/3_2_Functional_Layer))
+It is important to note that the purpose of Data Usage Control is to allow the specification of such constraints and enforcing them in the respective system. A precondition of Data Usage Control is that the enforcement mechanism itself is trusted; i.e., Data Usage Control itself does not establish trust in an endpoint, but rather builds upon an existing trust relationship and facilitates enforcement of legal or technical requirements, such as Service Level Agreements (SLAs) or data privacy regulations. Thus, users must be aware that Data Usage Control will only provide certain enforcement guarantees if applied on highly trusted platforms, such as Trusted Connectors in the International Data Spaces  [Section 3.2](../../3_Layers_of_the_Reference_Architecture_Model/3_2_Functional_Layer))
 
 #### **ORGANIZATIONAL RULES AND LEGAL CONTRACTS**
 
@@ -88,7 +88,7 @@ The IDS Broker manages Connector self-descriptions that can contain usage polici
 
 ##### **CONNECTOR**
 
-The Connector is the main technical component for implementing Usage Control. Hence, Usage Control enhanced Connectors, such as the Level 2 Certified Connector, contain relevant components to perform Usage Control enforcement as Data Consumer (PEPs, Interceptors; PDPs, PMPs). However, PMPs and PDPs do not need to be part of the Connector. In addition, Connectors as Data Providers should provide the technology-dependent policies to the data they provide – for all kinds of systems and enforcement technologies that are part of the ecosystem.
+The Connector is the main technical component for implementing Usage Control. Hence, Usage Control enhanced Connectors, such as the Trusted Connector, contain relevant components to perform Usage Control enforcement as Data Consumer (PEPs, Interceptors; PDPs, PMPs). However, PMPs and PDPs do not need to be part of the Connector. In addition, Connectors as Data Providers should provide the technology-dependent policies to the data they provide – for all kinds of systems and enforcement technologies that are part of the ecosystem.
 
 ##### **CLEARING HOUSE**
 
@@ -162,25 +162,25 @@ The Trusted Connector guarantees a controlled execution environment for data ser
 
 #### **MESSAGE ROUTER and INTERCEPTOR (EXAMPLE)**
 
-An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](https://user-images.githubusercontent.com/69632955/150939403-107db526-d0a6-47f4-85d3-30a2b29e4f9b.png)).
+An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](media/message-router-and-interceptor1.png)).
 
-![image](https://user-images.githubusercontent.com/69632955/150939403-107db526-d0a6-47f4-85d3-30a2b29e4f9b.png)
+![image](media/message-router-and-interceptor1.png)
 
 _Figure 4.1.6.6: Message Router pipeline (example)_
 
-In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](https://user-images.githubusercontent.com/69632955/150939429-92add160-5c72-42fa-8b07-6716921caebf.png) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
+In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](media/message-router-and-interceptor2.png) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
 
 As the International Data Spaces provides an Information Model (see [Section 3.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/)), additional metadata enhances the data transferred via the route, thereby enabling better Usage Control enforcement. The Connector attaches the metadata to the data package, as explained in [Section 3.4](../../3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/). In addition, a PIP is able to resolve more metadata during the decision-making process if necessary.
 
-![image](https://user-images.githubusercontent.com/69632955/150939429-92add160-5c72-42fa-8b07-6716921caebf.png)
+![image](media/message-router-and-interceptor2.png)
 
 _Figure 4.1.6.7: Intercepting Message Router data flows_
 
-This paradigm also works across company borders, as data always flows through the IDS Connector and the Interceptor Pattern, respectively (as shown in [Figure 4.1.6.8](https://user-images.githubusercontent.com/69632955/150939461-58fc264c-db41-4d40-bad1-e6e73f08d620.png)). When reaching the receiving Connector, the respective policy to protect the data is automatically instantiated.
+This paradigm also works across company borders, as data always flows through the IDS Connector and the Interceptor Pattern, respectively (as shown in [Figure 4.1.6.8](media/Data-flow-across-company-borders.png)). When reaching the receiving Connector, the respective policy to protect the data is automatically instantiated.
 
 Depending on the policies available, this way of enforcement is not enough to cover all possible use cases and full Usage Control.
 
-![image](https://user-images.githubusercontent.com/69632955/150939461-58fc264c-db41-4d40-bad1-e6e73f08d620.png)
+![image](media/Data-flow-across-company-borders.png)
 
 _Figure 4.1.6.8: Data flow across company borders_
 
@@ -216,15 +216,15 @@ The PEP resides within the message routing component of the Connector (or Data A
 
 Data provenance information is queried at a Privacy Dashboard, which is accessible via a Clearing House. The Privacy Dashboard returns a provenance graph for the unique identifier of data content. There are two options for storing data provenance information:
 
-» Centralized architecture (see [Figure 4.1.6.11](https://user-images.githubusercontent.com/69632955/150939507-4e3e3678-f129-4995-9b0b-967ad25f96ac.png)): A Provenance Storage Point (ProSP) is attached to the Clearing House. After data usage or a data flow has been observed by the data flow tracking component inside the Connector, the transaction is logged at this ProSP.
+» Centralized architecture (see [Figure 4.1.6.11](media/provenance-tracking-architecture1.png)): A Provenance Storage Point (ProSP) is attached to the Clearing House. After data usage or a data flow has been observed by the data flow tracking component inside the Connector, the transaction is logged at this ProSP.
 
-» Distributed architecture (see [Figure 4.1.6.12](https://user-images.githubusercontent.com/69632955/150939530-5668702a-8c29-4061-9162-28716e144d99.png)): Each Connector is equipped with a ProSP, which is directly connected to the data flow tracking component. The Clearing House accommodates only a stateless Provenance Collection Point (ProCP), which aggregates provenance information coming in from the distributed ProSPs whenever a query occurs at the Privacy Dashboard.
+» Distributed architecture (see [Figure 4.1.6.12](media/provenance-tracking-architecture2.png)): Each Connector is equipped with a ProSP, which is directly connected to the data flow tracking component. The Clearing House accommodates only a stateless Provenance Collection Point (ProCP), which aggregates provenance information coming in from the distributed ProSPs whenever a query occurs at the Privacy Dashboard.
 
-![image](https://user-images.githubusercontent.com/69632955/150939507-4e3e3678-f129-4995-9b0b-967ad25f96ac.png)
+![image](media/provenance-tracking-architecture1.png)
 
 _Figure 4.1.6.11: Architecture with centralized component for provenance information storage_
 
-![image](https://user-images.githubusercontent.com/69632955/150939530-5668702a-8c29-4061-9162-28716e144d99.png)
+![image](media/provenance-tracking-architecture2.png)
 
 _Figure 4.1.6.12: Architecture with distributed component for provenance information storage_
 
