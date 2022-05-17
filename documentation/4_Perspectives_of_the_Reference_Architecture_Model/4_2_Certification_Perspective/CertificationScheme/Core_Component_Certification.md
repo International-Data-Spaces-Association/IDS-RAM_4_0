@@ -256,3 +256,8 @@ Trusted Platform Modules certified in accordance with the Protection
 Profiles BSI- CC-PP-0030-2008 or ANSSI-CC-PP-2015/07). Certification activities of the Industrial Data Space regarding these
 components will be limited to checking the validity of existing base
 certificates.
+
+##  IDS Reference Testbed
+[*TODO: revise -> Sonia*]
+The IDS Reference Testbed can serve to improve efficiency in preparing certification, specifically at the component level. The certification of the IDS-components is executed using the IDS Reference Testbed, the same testbed which is publicly available for or-ganizations to test their implementations. This ensures that the technical certification of the IDS components is transparent and that most issues can be resolved by the companies before the actual certification process. Therefore reducing costs and efforts. 
+Finally, existing (open-source) implementation of the IDS components can be integrated into the testbed to further help the companies to get familiar with the IDS requirements. In certain cases, companies might use one of the available implementations as basis for their solution. 
