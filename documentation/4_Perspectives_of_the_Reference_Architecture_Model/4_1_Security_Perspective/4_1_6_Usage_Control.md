@@ -162,17 +162,17 @@ The Trusted Connector guarantees a controlled execution environment for data ser
 
 #### **MESSAGE ROUTER and INTERCEPTOR (EXAMPLE)**
 
-An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](media/message-router-and-interceptor1.png)).
+An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](media/intercepting-data-flow-data-flow.drawio.png)).
 
-![image](media/message-router-and-interceptor1.png)
+![image](media/intercepting-data-flow-data-flow.drawio.png)
 
 _Figure 4.1.6.6: Message Router pipeline (example)_
 
-In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](media/message-router-and-interceptor2.png) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
+In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](media/intercepting-data-flow-interceptor-data-flow.drawio.png) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
 
 As the International Data Spaces provides an Information Model (see [Section 3.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/)), additional metadata enhances the data transferred via the route, thereby enabling better Usage Control enforcement. The Connector attaches the metadata to the data package, as explained in [Section 3.4](../../3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/). In addition, a PIP is able to resolve more metadata during the decision-making process if necessary.
 
-![image](media/message-router-and-interceptor2.png)
+![image](media/intercepting-data-flow-interceptor-data-flow.drawio.png)
 
 _Figure 4.1.6.7: Intercepting Message Router data flows_
 
