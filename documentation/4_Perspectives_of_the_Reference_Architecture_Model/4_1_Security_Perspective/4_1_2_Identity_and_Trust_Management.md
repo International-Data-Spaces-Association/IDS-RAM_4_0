@@ -9,12 +9,12 @@ The IDS Connector is the central device to establish trust on a technical level 
 In the IDS, each connector instance possesses it's own identity. Each connector instance is made up of several aspects:
 * The platform the IDS Connector instance depends on. A platform consists of hardware, firmware, operating system and (container) runtime environment.
 * The Connector Core Services software artefacts that provide management functionality and IDS interoperability.
-* The configuration of a IDS Connector (defined data routes, configured Usage Control framework).
-* The Data Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
+* The configuration of an IDS Connector (defined data routes, configured Usage Control framework).
+* The IDS Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
 
 The IDS Connector identity serves to uniquely identify one instance of a service and app bundle on qualified platforms. The identity concept is equally used for all technical components in the IDS.
 
-The service instance for a connector is typically a Service including core services, some usage control framework and applications (Data Apps).
+The service instance for a connector is typically a Service including core services, some usage control framework and applications (IDS Apps).
 Other components (Broker, DAPS, ...) are represented by their Service (represented by one or multiple containers) running on a comparable platform.
 
 One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platform, the Connector Core Services and the deployed Data Apps.
@@ -32,7 +32,7 @@ The identity of a combination of platform and service instance is bound to an id
 
 Each Service Instance needs to be mapped to one platform it utilizes:
 * Each platform blueprint gets a unique identifier during the component certification.
-* For a component with Trust level 1, the concrete platform instantiation (running version of this blueprint) does NOT get a UID as well as key and certificate for this platform instance. Instead the connector description solely references the (unique) identifier of the certified blueprint (and the operator needs to be trusted to ensure its correct instantiation).
+* For a component with Trust level 1, the concrete platform instantiation (running version of this blueprint) does NOT get a UID as well as key and certificate for this platform instance. Instead, the connector description solely references the (unique) identifier of the certified blueprint (and the operator needs to be trusted to ensure its correct instantiation).
 * For components with Trust Level 2 or 3, each platform instantiation needs to be uniquely identified with a UID (P_UID). This UID is required to provide a mapping from service instance to platform.
 * Each P_UID is subject of a certificate for the utilized platform key(s) (e.g. AK of a TPM) which enable verification of the platform integrity.
 * One P_UID can map to Platform Instance Keys (PIK) for 1-n physical devices/protected VMs:
@@ -67,11 +67,11 @@ To establish a trusted connection, each connector needs the identity information
 2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.
 3. When establishing communication, the DAT of both IDS Connector instances is exchanged. This is also matched with the used TLS certificate.
 
-To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information. to further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate by matching it to the connectors identifier.
+To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information. To further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate by matching it to the connectors identifier.
 Two cases must be evaluated:
 
 1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
-2. The connector uses a separate certificate for TLS connectors (e.g., issued by a CA such as Let's Encrypt). In this casem the corresponding IDS Connector must assure the certificate fingerprint matches the one that is embedded in the DAT.
+2. The connector uses a separate certificate for TLS connectors (e.g., issued by a CA such as Let's Encrypt). In this case, the corresponding IDS Connector must assure the certificate fingerprint matches the one that is embedded in the DAT.
 
 ### Component (Identity) Lifecycle
 
