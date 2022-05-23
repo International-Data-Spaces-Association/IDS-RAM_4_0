@@ -1,7 +1,7 @@
 # Identity and Trust Management
 
 The International Data Spaces allow participants a cross-company data exchange. In many cases, the participants intending to exchange data have no prior knowledge about the other company and its utilized components to properly assess the consequences of such a data exchange. Thus, the IDS offers mechanisms to gain reliable information which help to establish trust and enable participants to make sovereign and informed decisions.
-Identity and trust management is rooted in the components described in ([Chapter 3.5.1](/documentation/3_Layers_of_the_Reference_Architecture_Model/3_3_Process_Layer/3_3_1_Onboarding.md)).
+Identity and trust management is rooted in the components described in ([Chapter 3.5.1](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_1_Identity_Provider.md)).
 
 ## Identities for Devices
 
@@ -12,7 +12,9 @@ In the IDS, each connector instance possesses it's own identity. Each connector 
 * The configuration of an IDS Connector (defined data routes, configured Usage Control framework).
 * The IDS Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
 
-The IDS Connector identity serves to uniquely identify one instance of a service and app bundle on qualified platforms. The identity concept is equally used for all technical components in the IDS.
+The IDS Certification (explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md) is always conducted for a blueprint of the platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
+
+The IDS Connector identity serves to uniquely identify one such instance of Connector Core Services with their IDS Apps on qualified platforms. The identity concept is equally used for all technical components in the IDS.
 
 The service instance for a connector is typically a Service including core services, some usage control framework and applications (IDS Apps).
 Other components (Broker, DAPS, ...) are represented by their Service (represented by one or multiple containers) running on a comparable platform.
