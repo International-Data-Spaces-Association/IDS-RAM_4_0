@@ -58,6 +58,8 @@ This information is provided in form of the following describing artifacts:
 Signatures are utilized to represent the passed stages of the certification process (described in [Chapter 4.2.5](../4_2_Certification_Perspective/4_2_5_Processes.md)) and allow a validation of the correctness of the describing artifacts.
 In addition to these static artifacts, the connector operator may add additional attributes to the component's description or have them validated and registered at the DAPS.
 
+Manifest information for each artefact, such as manifests for all software components, operating system or apps are attached to the artefact itself and will be provided by the IDS Connector that hosts the artefact. Verified Company Descriptions are also provided by IDS Connectors itself, since the ParIS only provides unverified information. Dynamic attributes for each IDS Connector as well as revocation information for Software Manifests are provied by the DAPS.
+
 ### Interactions between IDS Connectors and Identity Components
 
 To establish a trusted connection, each connector needs the identity information of the corresponding connector to perform access and usage control decisions. The interactions can be depicted as follows:
