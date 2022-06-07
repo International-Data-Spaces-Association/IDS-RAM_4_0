@@ -113,32 +113,20 @@ The flexibility of the certification approaches defined in Part 2 and 3 of this 
 
 
 ## Applicant
-[*old*]
+The Applicant plays an active part in the certification process. He or she triggers the process actively by submitting an application to the Certification Body (for Assurance Level 1) or one of the approved IDS Evaluation Facilities (for Assurance Level 2 oder 3). This applies to organizations/individuals that develop software components intended to be deployed within the International Data Spaces (i.e., prospective Software Providers) and to organizations that intend to operate components in the IDS.
 
-The Applicant plays an active part in the certification process. As such, the responsibilities of the respective organization include:
+As such, the responsibilities of the respective organization include:
 
--   Contract an approved (by the Certification Body) Evaluation Facility to carry out the evaluation according to the Industrial Data Space certification scheme.
+-   Actively triggering the certification process
+    -   for a certification at Assurance Level 1: applying at the Certification Body directly. the applicant can choose the self-assessment approach, where no Evaluation Facility is required. The applicant needs to visit the IDSA Website (Link Here) to registeres to the "IDS Certification Portal" for triggering the start of the certification for IDS components with the Assurance Level 1. By filling out a questionnaire with true/false and open questions the applicant assures the IDS conformity of the component. The IDS Certification Body is responsible for checking and assessing the answers given by the applicant. In case of a positive outcome, the Certification Body provides the certificate directly to the applicant. 
 
--   Formally apply for certification (with the Certification Body) in order to trigger the start of the certification process.
+    -   for a certification at Assurance Level 2 or 3: applying at one of the approved IDS Evaluation Facilites. The Applicant can choose the Evaluation Facility upon his demands. The certification process will be then organized mainly by the chosen Evaluation Facility whereas the Certification Body will be informed only of the process led by the Evaluation Facility. After the evaluation of the components took place, the Evaluation Facility provides the report to the Certification Body that assesses the report and decides if the certificate can be issued to the applicant or not. 
 
--   Provide the necessary resources in terms of financing and personnel.
+-   Providing all necessary material needed for the evaluation and certification of its component or organization and supports with questions or issues arising.
 
 -   Communicate swiftly with and provide all necessary information and evidence to the Evaluation Facility and the Certification Body.
 
 -   React adequately to findings occurring during the course of the evaluation.
-
-All Applicants need to actively submit an application to start the certification process and have the duties as listed above. This applies to both organizations that develop software components intended to be deployed within the Industrial Data Space (i.e., prospective software providers) and to organizations that intend to become participants in the Industrial Data Space. During the certification process, the primary focus of the evaluation will be either on the product or on the organization itself.
-
-[*new proposal Natalia*]
-
-The Applicant is not just the subject of the evaluation and certification process, but plays an active part in it.
-An Applicant needs to actively submit an application to trigger the certification process. This applies to organizations/individuals that develop software components intended to be deployed within the International Data Spaces (i.e., prospective Software Providers) and to organizations that intend to operate components in the IDS.
-An Applicant needs to actively submit an application to an Evaluation Facility to trigger the certification process for any component intended to get certified with a higher trust level than 1.
-This applies to organizations/individuals that develop software components intended to be deployed within the International Data Spaces (i.e., prospective Software Providers) and to organizations that intend to operate components in the IDS.
-During the certification process, the Applicant provides all necessary material needed for the evaluation and certification of its component or organization and supports with questions or issues arising.
-The Applicant can choose the Evaluation Facility upon his demands. The certification process will be then organized mainly by the chosen Evaluation Facility whereas the Certification Body will be informed only of the process started by the Evaluation Facility. 
-If the component or operational environment is meant to be certified for trust level 1, the applicant can chosse the "self-assessment" approach, where NO Evaluation Facility is required.
-Here, the applicant needs to visit the IDSA Website (Link Here) to registeres to the "IDS Certification Portal" for triggering the start of the certification for IDS components with the trust level 1. By filling out a questionnaire with true/false and open questions the applicant assures the IDS conformity of the component. Here, the IDS Certification Body is responsible for checking and assessing the answers given by the applicant. In case of a positive outcome, the Certification Body provides the certificate directly to the applicant. 
 
 ## Issuance of Certificates
 
