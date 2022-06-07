@@ -4,19 +4,6 @@
 
 *TODO: Integrate the following details regarding the different levels:*
 
-**Assurance Levels**
-* Assurance Level 1: Checklist self-assessment and automated interoperability testing
-	* This level is targeted at developers looking for a low entrance barrier into the IDS.
-	* The effort and costs in this level are very low for the applicant due to the self-assessment approach.
-	* The interoperability is verified via statements made by the developer in a checklist and an automated test suite without any involvement of an external evaluation facility.
-* Assurance Level 2: External concept review including functional and security testing
-	* Starting in level 2, external evaluation facilities are tasked with the evaluation, to ensure an independent evaluation result.
-	* Level 2 is the right balance between an independent review and the corresponding costs.
-	* The external concept review includes the examination of documentation as well as the testing the Connector, to ensure the correct implementation of the functional and security requirements.
-* Assurance Level 3: External evaluation including concept review, testing and source code audit
-	* For use cases that require a high evaluation guarantee, such as the exchange of very sensitive data, higher efforts and costs will be required to ensure the customers needs in regard to security assurances are met.
-	* As such, level 3 includes an in-depth source code review as well as a review of the development process (including an audit of the development site) in addition to the evaluation performed for level 2.
-
 **Trust Levels**
 * Trust Level 1: Data space interoperability
 	* Basic level security profile to participate in a data space
@@ -38,7 +25,7 @@
 [*TODO: revise*]
 
 To secure the intended cross-industrial and cross-company information
-exchange, the Industrial Data Space core components must provide the
+exchange, the core components of the International Data Spaces must provide the
 required functionality and an appropriate level of security. As such,
 the core component certification is interoperability- and
 security-focused, while aiming to strengthen the development and
@@ -46,49 +33,57 @@ maintenance process of these components.
 
 Similar to the participant certification, a matrix certification
 approach as shown in Figure 5 was defined for the core components of
-the Industrial Data Space. This ensures on the one hand a low entry
+the IDS. This ensures on the one hand a low entry
 barrier specifically suitable for SMEs and on the other hand a
 scalable certification to meet high information security
 requirements.
 
-| | **Checklist Approach** | **Concept Review** | **High Assurance Evaluation** |
+| | **Assurance Level 1** | **Assurance Level 2** | **Assurance Level 3** |
 | --- | --- | --- | --- |
-|  **Base Security Profile** | :heavy_check_mark: | :heavy_check_mark: | - |
-|  **Trust Security Profile** | - | :heavy_check_mark: | :heavy_check_mark: |
-|  **Trust+ Security Profile** | - | :heavy_check_mark: | :heavy_check_mark: |
+|  **Trust Level 1** | :heavy_check_mark: | :heavy_check_mark: | - |
+|  **Trust Level 2** | - | :heavy_check_mark: | :heavy_check_mark: |
+|  **Trust Level 3** | - | :heavy_check_mark: | :heavy_check_mark: |
 
-Figure 5: Certification Approach for core components of the Industrial
-Data Space
+Figure 5: Certification Approach for IDS core components
 
 ## Assurance Levels
 [*TODO: update to assurance level 1-3; include Verweis auf Test Specifications -> Nadja*]
 
 The depth and rigor of an evaluation consists of the following three
-assurance levels as defined by the Industrial Data Space certification
+assurance levels as defined by the International Data Spaces certification
 scheme:
 
-#### Checklist Approach
+#### Assurance Level 1: Checklist self-assessment and automated interoperability testing
 
-The core component must fulfill security features (security
-requirements, security properties, security functions) as defined by
-the corresponding checklist. The vendor of the component validates the
-claims made about the implementation. Additionally, an automated test
-suite will be used to verify the component's security features.
+This level is targeted at developers looking for a low entrance barrier into the IDS.
+The effort and costs in this level are therefore very low for the applicant due to the self-assessment approach.
+Nevertheless, the core component must fulfill security features (security
+requirements, security properties, security functions) as defined by the corresponding criteria catalogue.
+The compliance of the implementation with these criteria is confirmed via statements made 
+by the developer in a checklist and additionally verified via an automated test 
+suite without any involvement of an external evaluation facility.
+As seen in the above figure, Assurance Level 1 can only be combined with Trust Level 1, 
+as a compliance verification of an evaluation facility is required for the higher trust levels.
 
-#### Concept Review
+#### Assurance Level 2: External concept review including functional and security testing
 
-Instead of the checklist approach, an in-depth re- view by an
-Industrial Data Space evaluation facility is necessary. The review
-includes an evaluation of the provided concept as well as practical
-functional and security tests.
+Starting with Assurance Level 2, external evaluation facilities are tasked with the evaluation, 
+to ensure an independent evaluation result.
+This external concept review includes the examination of documentation as well as the 
+practical testing of the Connector, to ensure the correct implementation of the functional and security requirements.
+Level 2 strikes the right balance between an independent review and the corresponding costs.
+This level can be combined with all three trust levels.
 
-#### High Assurance Evaluation
+#### Assurance Level 3: External evaluation including concept review, testing and source code audit
 
-For the third level, in addition to the functional and security tests,
-the vendor must provide the source code of all security relevant
-components and an in- depth source code review will be performed by an
-evaluation facility. Furthermore, the development process will be
+For use cases that require a high evaluation guarantee, such as the exchange of very sensitive data, 
+higher efforts and costs will be required to ensure the customers needs in regard to security assurances are met.
+
+As such, the vendor must provide the source code of all security relevant
+components, so that an IDS evaluation facility can perform an in-depth source code review, 
+in addition to functional and security tests. Furthermore, the development process will be
 evaluated, including an audit of the development site.
+
 
 ## Trust Levels and Profiles for Components
 [*TODO: pot. image to show the different certification types -> Monika*]
@@ -106,11 +101,11 @@ information. As with the participant certification, this approach
 enables the data owner and data consumer to specify the security
 profile required for the core components used during data exchange.
 
-For this purpose, the Industrial Data Space certification scheme
+For this purpose, the IDS certification scheme
 defines three security profiles for the core components defined in the
 section Component Overview of this paper.
 
-#### Base Security Profile
+#### Trust Level 1
 
 This profile includes basic security requirements: limited isolation
 of software components, secure communication including encryption and
@@ -122,7 +117,7 @@ integrity protection for containers is not provided. This security
 profile is therefore meant for communication inside of a single
 security domain.
 
-#### Trust Security Profile
+#### Trust Level 2
 
 This profile includes strict isolation of software components
 (apps/services), secure storage of crypto- graphic keys in an isolated
@@ -130,7 +125,7 @@ environment, secure communication including encryption, authentication and integ
 control and trusted update mechanisms. All data stored on persistent
 media or trans- mitted via networks must be encrypted.
 
-#### Trust+ Security Profile
+#### Trust Level 3
 
 This profile requires hardware based trust anchors (in the form of a
 TPM or a hardware-backed isolation environment) and supports remote
@@ -139,7 +134,7 @@ is stored in dedicated hardware isolated areas.
 
 #### Connector
 [*TODO: merge with above*]
-Being the point of access to the Industrial Data Space, the Connector
+Being the point of access to the International Data Spaces, the Connector
 provides a controlled environment for processing and exchanging
 data, ensuring secure transfer of data from the data provider to the
 data consumer. As such, the necessary trust in the correct and
@@ -147,7 +142,7 @@ complete implementation of the functionality required by the IDS
 Reference Architecture Model and the Connector specification can only
 be ensured by independent evaluation and certification from an
 approved evaluation facility and the certification body of the
-Industrial Data Space.
+IDS.
 
 #### Connector-based Components (Broker, App Store, ...)
 [*TODO: explain how those build on the connector certification levels*]
@@ -158,7 +153,7 @@ less sensitive. Likewise, Broker services do not assign or enforce
 access rights, but merely support data exchange. Nevertheless,
 integrity and availability of metadata (i.e., correct and secure
 storing and handling of meta- data) is of high importance for the
-Industrial Data Space. Compatibility with the required functionality
+IDS. Compatibility with the required functionality
 as defined by the certification body is therefore evaluated and
 certified.
 
@@ -167,16 +162,15 @@ certified.
 Data Apps and Services have direct contact with primary data, which
 means that a compromised Data App or Service may compromise the integrity of data. However, confidentiality and availability of data is
 ensured by the measures defined in the Security Architecture of the
-Industrial Data Space, which strongly limit the potential damage
+IDS, which strongly limit the potential damage
 caused by
 
 Data Apps and Services. Also, Apps and Services will typically use the
 security features provided by the Connector. Therefore, not every Data
-App or Service to be made available in the Industrial Data Space
+App or Service to be made available in the IDS
 requires a medium or high assurance level certification. However,
 the automated test suite mentioned above for the basic security
-level will be integrated in the upload process of each Industrial
-Data Space App Store.
+level will be integrated in the upload process of each IDS App Store.
 
 #### DAPS
 
@@ -216,12 +210,13 @@ Each criteria section targets a set of evaluation goals:
    processes during the development of the component, e.g. design
    documentation, physical security measures and test processes.
 
-To reduce the financial entry barrier not only for Industrial Data
-Space participants but also for the developers of core components, the
-component certification approach is designed to use existing certification schemes whenever reasonable. Where such certification
+To reduce the financial entry barrier not only for IDS participants but 
+also for the developers of core components, the
+component certification approach is designed to use existing certification 
+schemes whenever reasonable. Where such certification
 schemes do not exist or aren't widely recognized, e.g., for
-Industrial Data Space-specific aspects, criteria defined within the
-Industrial Data Space certification scheme will be employed.
+IDS-specific aspects, criteria defined within the
+International Data Spaces certification scheme will be employed.
 
 The functional and security requirements of the core components to be
 evaluated will be defined based on the IDS Reference Architecture
@@ -248,14 +243,14 @@ For certain security profiles as defined in the IDS Reference
 Architecture Model, additional hardware security components are
 required to achieve an appropriate level of protection for access to
 sensitive data. In addition to the core software components of the
-Industrial Data Space, these hardware components must therefore also
+IDS, these hardware components must therefore also
 be considered in the context of certification. In the interest of
 trust- worthiness, and to avoid double certification, the use of
 third-party certified hardware components will be required (e.g.,
 Trusted Platform Modules certified in accordance with the Protection
-Profiles BSI- CC-PP-0030-2008 or ANSSI-CC-PP-2015/07). Certification activities of the Industrial Data Space regarding these
-components will be limited to checking the validity of existing base
-certificates.
+Profiles BSI- CC-PP-0030-2008 or ANSSI-CC-PP-2015/07). 
+Certification activities of the International Data Spaces regarding these
+components will be limited to checking the validity of existing base certificates.
 
 ##  IDS Reference Testbed
 [*TODO: revise -> Sonia*]
