@@ -1,45 +1,24 @@
-# Roles and Responsibilities in IDS Certification
+# 2. Roles and Responsibilities in IDS Certification
 
-[TODO: revise]
-
-Participants and core components shall provide a sufficiently high degree of security regarding the integrity, confidentiality and availability of information exchanged in the Industrial Data Space.
-Therefore, an evaluation and certification of the core components as well as of the technical and organizational security measures is mandatory for participating in the Industrial Data Space.
-
-This requirement for compliance necessitates the definition of a framework in order to ensure a consistent and comparable evaluation and certification process amongst all Industrial Data Space participants and core components. Hence, a certification scheme has been defined following best practices from other internationally accredited certifications.
-All certification-related roles described in this paper are specific to the Industrial Data Space, i.e. terms such as "Certification Body" should not be misunderstood to refer to an existing organization already granting certificates. As part of the scheme implementation in 2018, the roles defined here will be assigned to actual organizations.
+The IDS Certification Framework foresees four entities as depicted in Figure 2.1 which are responsible for defining necessary assets and realizing certification for operational environments and core components.
+All certification-related roles described in this section are specific to the Internation Data Spaces, i.e. terms such as "Certification Body" should not be misunderstood to refer to an existing organization already granting certificates. As part of the scheme implementation, the roles defined here will be assigned to actual organizations.
 
 ![Role and responsibilities](./media/Certification_scheme_overview.png)
-Figure 1: International Data Spaces Certification - Roles &
-Responsibilities
+Figure 2.1: International Data Spaces Certification - Roles & Responsibilities
 
 ## International Data Spaces Association
 
-The Industrial Data Space initially originated as a German research initiative. Nevertheless, the initiative driven forward by the International Data Spaces Association (IDSA) always had a wider scope in mind, by addressing more and more international members and component developers, as the initiative keeps growing. As such, the initial development of operation of the Industrial Data Space certification scheme will mainly be led by German IDSA members. However, for a future internationalization of the IDS certification, a two-phase process has been designed:
-
--   Phase 1 - Increasing number of international members and developers:
-
-To ensure an economically sound and from the applicant\'s point of view, sufficiently accessible certification, the evaluation step of a certification will be conducted by an evaluation facility located in the applicant\'s country of residence. The certification step, carried out by the Certification Body, together with the approval of international evaluation facilities, however will remain located solely within a single entity. This aims to ensure that the overall framework governance for the certification scheme stays manageable.
-
--   Phase 2 - Increasing overall number of members and developers:
-
-At this stage, individual certification bodies in the member countries will be commissioned in order to avoid a bottleneck situation, arising from a single certification body. As such, both the evaluation and the certification will be conducted by organizations located in the applicant's country of residence. Once this happens, mutual control processes must be established to ensure that the evaluation and certification processes are equivalent in all member nations. This will be a prerequisite for mutually recognizing the IDS certificates issued by the other nations. These costly measures will be justified,
-once a substantial market position for the Industrial Data Space in a number of nations has been reached.
-
-The International Data Spaces Association appoints the IDS Certification Body.
-
-Its responsibilities in the context of the certification scheme include:
-
--   Defining the requirements for the Certification Body and verification of the required technical competencies.
-
--   Monitoring of the Certification Body to ensure a consistent level of quality for the certification of Industrial Data Space participants and core components.
-
--   Monitoring of the current regulatory and legal requirements to evaluate and react to possible influences to the certification scheme.
-
--   Provisioning of recommendations to the Certification Body based on the results of its monito- ring activities.
-
--   Continuous improvement of the defined certification scheme including the incorporation of the feedback provided by the Certification Body.
-
-The IDSA is not actively involved in a participant or core component certification and the approval of Evaluation Facilities for performing Industrial Data Space evaluations.
+The International Data Spaces Association (IDSA) is an initiative of many international companies and organizations which collaborate to make the vision of the International Data Spaces reality. It defines the framework and reference architecture for setting up data spaces for secure and sovereign data exchange and processing.
+With respect to the certification, the IDSA and its Working Group Certification have the following responsibilities:
+* Defining and Enhancing the IDS Certification Framework:
+  - Definition of the different types of certification, the utilized Criteria Catalogs, and the Certification Processes to be followed.
+  - Monitoring of the current regulatory and legal requirements to evaluate and react to possible influences to the certification scheme.
+  - Continuous improvement of the defined certification scheme including the incorporation of the feedback provided by the Certification Body.
+* Appointing and Supervising the IDS Certification Body which governs the implementation of the certification scheme based on the defined framework:
+  - Defining the requirements for the Certification Body and verification of the required technical competencies.
+  - Monitoring of the Certification Body to ensure a consistent level of quality for the IDS certification of operational environments and core components.
+  - Provisioning of recommendations to the Certification Body based on the results of its monitoring activities.
+For the initial phase of implementing certification, it has been decided that the IDSA will take on the role of the Certification Body as described below. When those two roles separate in the future, the IDSA will no longer be actively involved in the conducted operational environment or core component certification and the approval of Evaluation Facilities.
 
 ## Certification Body
 
@@ -48,26 +27,28 @@ The IDS Certification Body is appointed by the International Data Spaces Associa
 Its responsibilities include:
 
 -   Maintaining the IDS Certification Scheme:
-    - The Certification Body and (other) members of the International Data Spaces Association collaborate in the Working Group Certification to formulate and define the IDS Certification Scheme and its utilized criteria catalogues. 
-    - In particular, the Certification Body in collaboration with the IDSA is responsible for defining the evaluation procedures and operational environment and core component certification approaches based on those criteria catalogues.
+    - Providing feedback to the IDS Certification Scheme and further developing the utilized criteria catalogs in collaboration with in the Working Group Certification.
+    - Defining the evaluation procedures and operational environment and core component certification approaches based on those criteria catalogs (taking into consideration feedback from the IDSA and its Working Group Certification).
 
--   Offering certification for Assurance Level 1:
-    - For Assurance Level 1 for Core Component as well as for Operational Environment Certification, no Evaluation Facility is needed. The Certification Body provides a portal, where Applicants can conduct a self-assessment of their component or operational environment by answering a questionnaire or filling out provided forms for the self-assessment.
-    - For components, the Applicant additionally needs to provide information about the results of the automated tests required for Assurance Level 1.
-    - The answers will be evaluated by the Certification Body directly.
-    - It will make a decision about the award or denial of the desired certification based on the requirements and their acceptance criteria defined the IDS Certification Scheme.
+-   Offering certification for Assurance Level 1 (where no Evaluation Facility is needed):
+    - providing a Certification Portal where Applicants can conduct a self-assessment of their component or operational environment by answering a questionnaire or filling out provided forms for the self-assessment.
+    - For components, providing means for the applicant to transfer information about the results of the automated tests required for Assurance Level 1.
+    - Evaluating the answers and test results provided by the applicant.
+    - Making a decision about the award or denial of the desired certification based on the requirements and their acceptance criteria defined the IDS Certification Scheme.
 
--   Approval of Evaluation Facilites: 
-    - For the Assurance Level 2 and 3, Evaluation Facilities are needed. They evaluate the components or operational environments in detail and make sure that they fulfill the requirements defined in the IDS Certification Scheme.
-    - Before a company may act as an Evaluation Facility, the Certification Body ensures that the company is able to realize the IDS Certification Scheme and take on the role of an Evaluation Facility.
-    - Within the approval process, the Certification Body checks legal requirements, existing management processes and the competence of the potential evaluators based on provided documentation.
-    - Additionally, the competence of the Evaluation Facility and the usage of adequate tooling is assessed in dedicated workshops with the Certification Body.
+-   Approval of Evaluation Facilities (required for Assurance Level 2 and 3, further defined in the [Approval Scheme](../ApprovalScheme/README.md)):
+    - Ensuring that the company is able to realize the IDS Certification Scheme and take on the role of an Evaluation Facility before allowing it to act as such.
+    - Conducting the approval by checking legal requirements, existing management processes and the competence of the potential evaluators based on provided documentation.
+    - Conducting workshops with the Evaluation Facilities to assess their competence and the usage of adequate tooling (for component certification)
+    - Making a decision about the approval of an Company as an Evaluation Facility (possibly after defined corrective measures have been implemented).
+    - Informing Evaluation Facilities about changes in the IDS Certification Scheme and aligned relevant documents and conducting an Ad Hoc Approval if necessary.
+    - Reminding Evaluation Facilities of the necessary re-approval after two years and conducting this Re-Approval.
 
--   Supervising evaluations conducted by the Evaluation Facilities:
-    - To ensure high quality and comparability of the conducted evaluation, the Certification Body oversees all evaluations and closely observes the performed evaluations on a sample basis.
-    - The Certification Body also reminds the Evaluation Facility to get re-approved after two years.
-    - Whenever new guidelines are developed and published by the association, the Certification Body informs the Evaluation Facilities.
-    -   In case of issues with the work of an Evaluation Facility, the Certification Body decides about the exclusion of Evaluation Facilities from executing IDS evaluations (based on ongoing monitoring and [CRIT-EF]).
+-   Supervising and monitoring evaluations conducted by the Evaluation Facilities (Assurance Level 2 and 3):
+    - Overseeing all evaluations to ensure high quality and comparability of the conducted evaluations.
+    - Supporting Evaluation Facilities with decisions on the focus of the evaluations and arising questions.
+    - Reviewing the final evaluation reports from the Evaluation Facilities, providing feedback to the Evaluation Facilities and making a decision about the award or denial of the desired certification based on the requirements and their acceptance criteria defined the IDS Certification Scheme.
+    - Conducting Ad Hoc Approvals and deciding about the exclusion of an Evaluation Facilities from executing IDS evaluations in case of quality or compliance issues with the work of the Evaluation Facility (based on ongoing monitoring and the requirements defined in the [Approval Scheme](../ApprovalScheme/README.md)).
 
 - Issuing the certificates for components and operational environments:
     - The Certification Body keeps track of all certifications currently in progress.
@@ -78,7 +59,7 @@ Its responsibilities include:
 
 -   Guiding applicants through the certification process.
     - The Certification provides and maintans the list of approved Evaluation Facilites on the IDSA website.
-    - By contacting supportoffice@internationaldataspaces.org applicants can reach out for support on the whole certification process. 
+    - By contacting supportoffice@internationaldataspaces.org applicants can reach out for support on the whole certification process.
 
 -   Ongoing monitoring of certification-relevant external developments (e.g. new attack patterns which might circumvent certified security measures).
 
@@ -91,7 +72,7 @@ Its responsibilities include:
 
 ## Evaluation Facility
 
-There are two types of Evaluation Facilites: One for IDS components and one for the operational environment. An organization usually performs only one type, but it is possible to have both functions. As written in the previouse section an approval process needs to be conducted to become an official IDS Evaluation Facility. Further, the Organization is beeing approved to perform evaluations for specific assurance levels of the IDS certification. This means, that an Evaluation Facility that is approved to conduct evaluations for instance for assurance level 2 is only allowed to evaluate components or operational environment for the assurance level 2. 
+There are two types of Evaluation Facilites: One for IDS components and one for the operational environment. An organization usually performs only one type, but it is possible to have both functions. As written in the previouse section an approval process needs to be conducted to become an official IDS Evaluation Facility. Further, the Organization is being approved to perform evaluations for specific assurance levels of the IDS certification. This means, that an Evaluation Facility that is approved to conduct evaluations for instance for assurance level 2 is only allowed to evaluate components or operational environment for the assurance level 2.
 Once an Evaluation Facility is approved it can be contracted by an Applicant and is as such responsible for carrying out the detailed technical and/or organizational evaluation work during the certification process for either the IDS component or the operational environment in its assurance level scope. After the process, the Evaluation Facility issues an evaluation report listing details regarding the performed evaluation actions as well as information regarding the confirmed security level.
 The depth and scope of the performed evaluation actions depend on the desired level of security. These security levels are specified in more detail in Part 2 and 3 of this document.
 
@@ -101,7 +82,7 @@ The responsibilities of the Evaluation Facility include:
 
 -   Applying the criteria specified in the IDS certification scheme according to generally accepted standards and best practices (including the execution of any necessary tests and on-site checks).
 
--   Organizes and conducts the evaluations independently and communicates with the applicant directly. The Evaluation Facility is therefore responsible for the evaluation whereby the Certification Body has the function of a supervisior. 
+-   Organizes and conducts the evaluations independently and communicates with the applicant directly. The Evaluation Facility is therefore responsible for the evaluation whereby the Certification Body has the function of a supervisior.
 
 -   Documenting the results in an evaluation report.
 
@@ -118,9 +99,9 @@ The Applicant plays an active part in the certification process. He or she trigg
 As such, the responsibilities of the respective organization include:
 
 -   Actively triggering the certification process
-    -   for a certification at Assurance Level 1: applying at the Certification Body directly. the applicant can choose the self-assessment approach, where no Evaluation Facility is required. The applicant needs to visit the IDSA Website (Link Here) to registeres to the "IDS Certification Portal" for triggering the start of the certification for IDS components with the Assurance Level 1. By filling out a questionnaire with true/false and open questions the applicant assures the IDS conformity of the component. The IDS Certification Body is responsible for checking and assessing the answers given by the applicant. In case of a positive outcome, the Certification Body provides the certificate directly to the applicant. 
+    -   for a certification at Assurance Level 1: applying at the Certification Body directly. the applicant can choose the self-assessment approach, where no Evaluation Facility is required. The applicant needs to visit the IDSA Website (Link Here) to registeres to the "IDS Certification Portal" for triggering the start of the certification for IDS components with the Assurance Level 1. By filling out a questionnaire with true/false and open questions the applicant assures the IDS conformity of the component. The IDS Certification Body is responsible for checking and assessing the answers given by the applicant. In case of a positive outcome, the Certification Body provides the certificate directly to the applicant.
 
-    -   for a certification at Assurance Level 2 or 3: applying at one of the approved IDS Evaluation Facilites. The Applicant can choose the Evaluation Facility upon his demands. The certification process will be then organized mainly by the chosen Evaluation Facility whereas the Certification Body will be informed only of the process led by the Evaluation Facility. After the evaluation of the components took place, the Evaluation Facility provides the report to the Certification Body that assesses the report and decides if the certificate can be issued to the applicant or not. 
+    -   for a certification at Assurance Level 2 or 3: applying at one of the approved IDS Evaluation Facilites. The Applicant can choose the Evaluation Facility upon his demands. The certification process will be then organized mainly by the chosen Evaluation Facility whereas the Certification Body will be informed only of the process led by the Evaluation Facility. After the evaluation of the components took place, the Evaluation Facility provides the report to the Certification Body that assesses the report and decides if the certificate can be issued to the applicant or not.
 
 -   Providing all necessary material needed for the evaluation and certification of its component or organization and supports with questions or issues arising.
 
