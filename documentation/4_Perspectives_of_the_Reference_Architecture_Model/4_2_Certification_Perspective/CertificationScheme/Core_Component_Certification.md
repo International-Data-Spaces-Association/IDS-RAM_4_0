@@ -1,53 +1,36 @@
 # Core Component Certification
 
-[*TODO: Update chapter with new naming;*
-
-*TODO: Integrate the following details regarding the different levels:*
-
-**Trust Levels**
-* Trust Level 1: Data space interoperability
-	* Basic level security profile to participate in a data space
-    * Minimal agreed cybersecurity requirements to ensure the trustworthiness of the ecosystem as a whole
-	* Verified interoperability with IDS-components and compliance to the basic rules of a data space
-* Trust Level 2: Feature complete for data usage control
-	* Provision of a common foundation for trusted data exchange including the enforcement of Usage Policies in a trusted environment
-	* Remote Attestation as a way to prove the integrity of a software stack and ensure that the certified software stack is truly deployed
-	* Additional cybersecurity requirements are verified
-* Trust Level 3: Additional protection from internal attacks
-	* Addition of advanced cybersecurity measures that are not commonly required
-	* Support of protection against malicious administrators (internal attacks)
-	* Provision of an additional level of trust and verification for the data provider as well as the data consumer
-
-*TODO: Remove section on "Piloting of Certification Criteria"*]
-
-
 ## Intro
-[*TODO: revise*]
+[*TODO: check revision -> Monika*]
 
-To secure the intended cross-industrial and cross-company information
-exchange, the core components of the International Data Spaces must provide the
-required functionality and an appropriate level of security. As such,
-the core component certification is interoperability- and
+To ensure the core values of the International Data Spaces - data 
+sovereignty and data security - each IDS component is expected to 
+behave in adherence with IDS specifications and to protect the data 
+which is transferred and processed by these components. 
+
+This allows for trustful cross-company information exchange, using 
+secure components, which meet a list of certification criteria to evaluate 
+the compliance with the required functionality, interoperability and level of security. 
+This evaluation is conducted in the IDS Core Component Certification.
+
+Each certified component will provide the required functionality and an 
+appropriate level of security for specific use cases. As such,
+the core component certification is IDS-functionality-, interoperability- and
 security-focused, while aiming to strengthen the development and
 maintenance process of these components.
 
-Similar to the participant certification, a matrix certification
-approach as shown in Figure 5 was defined for the core components of
-the IDS. This ensures on the one hand a low entry
-barrier specifically suitable for SMEs and on the other hand a
-scalable certification to meet high information security
-requirements.
+A component certification will therefore allow IDS participants to assess the 
+possible consequences of secure data sharing and provide transparent 
+information about possible guarantees with regards to data sovereignty.
 
-| | **Assurance Level 1** | **Assurance Level 2** | **Assurance Level 3** |
-| --- | --- | --- | --- |
-|  **Trust Level 1** | :heavy_check_mark: | :heavy_check_mark: | - |
-|  **Trust Level 2** | - | :heavy_check_mark: | :heavy_check_mark: |
-|  **Trust Level 3** | - | :heavy_check_mark: | :heavy_check_mark: |
+Within the next two subsections, the assurance and trust levels 
+for each component type are defined. In the final two subsections, the 
+criteria catalogue as well as the reference testbed are outlined.
 
-Figure 5: Certification Approach for IDS core components
 
 ## Assurance Levels
-[*TODO: update to assurance level 1-3; include Verweis auf Test Specifications -> Nadja*]
+[*TODO: check update to assurance level 1-3 -> Monika*]
+[*TODO: include Verweis auf Test Specifications -> Nadja*]
 
 The depth and rigor of an evaluation consists of the following three
 assurance levels as defined by the International Data Spaces certification
@@ -84,56 +67,30 @@ components, so that an IDS evaluation facility can perform an in-depth source co
 in addition to functional and security tests. Furthermore, the development process will be
 evaluated, including an audit of the development site.
 
+Assurance Level 3 can only be combined with the Trust Levels 2 and 3.
+
 
 ## Trust Levels and Profiles for Components
 [*TODO: pot. image to show the different certification types -> Monika*]
 ![Overview different component certifications](./media/types_of_component_certification.png)
 
-### Connectors
-[*TODO: update auf Trust Level 1-3*]
-
+[*TODO: Is the first part of this statement still correct?  -> Monika*]
 Whenever two components establish a communication channel, it's up
 to them to decide which information they will send to the
 communication partner. Therefore, the identity and certification level
 (for both the participant and the component) must be provided by each
 component in the form of a digital certificate containing this
 information. As with the participant certification, this approach
-enables the data owner and data consumer to specify the security
-profile required for the core components used during data exchange.
+enables the data owner and data consumer to specify the assurance and trust level 
+required by each core component used during data exchange.
 
-For this purpose, the IDS certification scheme
-defines three security profiles for the core components defined in the
-section Component Overview of this paper.
+For this purpose, the IDS certification scheme defines, in addition to the above assurance 
+levels, trust levels for each core component type. These trust levels per component type 
+are described in the following subsections.
 
-#### Trust Level 1
+### Connectors
 
-This profile includes basic security requirements: limited isolation
-of software components, secure communication including encryption and
-integrity protection, mutual authentication between components, as
-well as basic access control and logging. However, neither the
-protection of security related data (key material, certificates) nor
-trust verification are required. Persistent data is not encrypted and
-integrity protection for containers is not provided. This security
-profile is therefore meant for communication inside of a single
-security domain.
-
-#### Trust Level 2
-
-This profile includes strict isolation of software components
-(apps/services), secure storage of crypto- graphic keys in an isolated
-environment, secure communication including encryption, authentication and integrity protection, access and resource control, usage
-control and trusted update mechanisms. All data stored on persistent
-media or trans- mitted via networks must be encrypted.
-
-#### Trust Level 3
-
-This profile requires hardware based trust anchors (in the form of a
-TPM or a hardware-backed isolation environment) and supports remote
-integrity verification (i.e., remote attestation). All key material
-is stored in dedicated hardware isolated areas.
-
-#### Connector
-[*TODO: merge with above*]
+[*TODO: Is the Connector specification still the correct reference?  -> Monika*]
 Being the point of access to the International Data Spaces, the Connector
 provides a controlled environment for processing and exchanging
 data, ensuring secure transfer of data from the data provider to the
@@ -143,6 +100,68 @@ Reference Architecture Model and the Connector specification can only
 be ensured by independent evaluation and certification from an
 approved evaluation facility and the certification body of the
 IDS.
+
+For the Connector, three Trust Levels have been defined as part of 
+the IDS Certification Scheme. 
+
+#### Trust Level 1: Data space interoperability
+
+Trust Level 1 offers a basic level security profile in order to 
+participate in a data space, with only a minimal set of 
+agreed cybersecurity requirements to ensure the trustworthiness 
+of the ecosystem as a whole. 
+The base requirements includes limited isolation of software 
+components, secure communication including encryption and
+integrity protection, mutual authentication between components, as
+well as basic access control and logging. 
+However, neither the protection of security related data 
+(key material, certificates) nor trust verification are required. 
+Persistent data is not encrypted and integrity protection for 
+containers is not provided. 
+
+This security profile is therefore meant for communication inside of a 
+single security domain. Nevertheless, interoperability with IDS-components 
+and compliance to the basic rules of a data space is verified. 
+
+#### Trust Level 2: Feature complete for data usage control
+Trust Level 2 provides a common foundation for trusted data exchange 
+including the enforcement of Usage Policies in a trusted environment, as well 
+as Remote Attestation as a way to prove the integrity of a software stack 
+and ensure that the certified software stack is truly deployed.
+On top of that, additional cybersecurity requirements are verified during 
+the evaluation, including but not limited to strict isolation of software components
+(apps/services), secure storage of cryptographic keys in an isolated
+environment, secure communication including encryption, authentication 
+and integrity protection, access and resource control, usage
+control and trusted update mechanisms.
+
+#### Trust Level 3: Additional protection from internal attacks
+Trust Level 3 requires additional advanced cybersecurity measures that are not 
+commonly required, specifically the support of protection against malicious 
+administrators (i.e. protection against internal attacks) an the provision of an 
+additional level of trust and verification for the data provider as well as the data consumer.
+
+[*TODO: Is this paragraph still correct for Level 3? If not, delete or move to Level 2?  -> Monika*]
+This profile requires hardware based trust anchors (in the form of a
+TPM or a hardware-backed isolation environment) and supports remote
+integrity verification (i.e., remote attestation). All key material
+is stored in dedicated hardware isolated areas.
+
+Similar to the participant certification, a matrix certification
+approach as shown in Figure 5 was defined for the Connector certification. 
+This ensures on the one hand a low entry
+barrier specifically suitable for SMEs and on the other hand a
+scalable certification to meet high information security
+requirements.
+
+| | **Assurance Level 1** | **Assurance Level 2** | **Assurance Level 3** |
+| --- | --- | --- | --- |
+|  **Trust Level 1** | :heavy_check_mark: | :heavy_check_mark: | - |
+|  **Trust Level 2** | - | :heavy_check_mark: | :heavy_check_mark: |
+|  **Trust Level 3** | - | :heavy_check_mark: | :heavy_check_mark: |
+
+Figure 5: Certification Approach for IDS Connectors
+
 
 #### Connector-based Components (Broker, App Store, ...)
 [*TODO: explain how those build on the connector certification levels*]
@@ -180,6 +199,8 @@ level will be integrated in the upload process of each IDS App Store.
 
 ##  Certification Criteria Catalogue
 [*TODO: update -> Nadja*]
+
+The criteria that make up each of the three trust levels for a Connector are defined in such a way that they are specific enough to ensure interoperability with the functional requirements of an IDS Connector, yet general enough, to allow the use of a Connector in different deployment scenarios without having to define different criteria catalogues for each separate use case.
 
 The catalogue of certification criteria for the IDS core components
 [CRIT-C] was defined as part of the Fraunhofer research project
@@ -245,7 +266,7 @@ required to achieve an appropriate level of protection for access to
 sensitive data. In addition to the core software components of the
 IDS, these hardware components must therefore also
 be considered in the context of certification. In the interest of
-trust- worthiness, and to avoid double certification, the use of
+trustworthiness, and to avoid double certification, the use of
 third-party certified hardware components will be required (e.g.,
 Trusted Platform Modules certified in accordance with the Protection
 Profiles BSI- CC-PP-0030-2008 or ANSSI-CC-PP-2015/07). 
