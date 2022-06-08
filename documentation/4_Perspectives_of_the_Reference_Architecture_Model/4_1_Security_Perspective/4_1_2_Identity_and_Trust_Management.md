@@ -7,17 +7,15 @@ Identity and trust management is rooted in the components described in ([Chapter
 
 The IDS Connector is the central device to establish trust on a technical level and to ensure a secure data exchange across domain boundaries.
 In the IDS, each connector instance possesses it's own identity. Each connector instance is made up of several aspects:
-* The platform the IDS Connector instance depends on. A platform consists of hardware, firmware, operating system and (container) runtime environment.
-* The Connector Core Services software artefacts that provide management functionality and IDS interoperability.
+* The platform the IDS Connector instance depends on. A platform consists of hardware, firmware, operating system and (container) run-time environment.
+* The Connector Core Services software artifacts that provide management functionality and IDS interoperability.
 * The configuration of an IDS Connector (defined data routes, configured Usage Control framework).
 * The IDS Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
+[Section 3.5.2](../../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_2_0_Connector.md) provides more details for the different parts of a connector.
 
-The IDS Certification (explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md) is always conducted for a blueprint of the platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
+The IDS Certification (explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md) is always conducted for a blueprint of the entire stack consisting of platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
 
-The IDS Connector identity serves to uniquely identify one such instance of Connector Core Services with their IDS Apps on qualified platforms. The identity concept is equally used for all technical components in the IDS.
-
-The service instance for a connector is typically a Service including core services, some usage control framework and applications (IDS Apps).
-Other components (Broker, DAPS, ...) are represented by their Service (represented by one or multiple containers) running on a comparable platform.
+The IDS Connector identity serves to uniquely identify one such instance of the Connector Core Services with their IDS Apps on qualified platforms. The identity concept is equally used for other technical components such as Broker, DAPS, ... in the IDS which have their own Core Services (represented by one or multiple containers) running on a comparable platform.
 
 One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platform, the Connector Core Services and the deployed Data Apps.
 
@@ -30,11 +28,11 @@ The identity of a combination of platform and service instance is bound to an id
 
 * Each component gets a unique identified (C_UID) bound to the service instance.
 * The uniqueness of this identifier is ensured by the Identity Provider.
-* Each UID is mapped to a Connector Instance Key (CIK) pair which is typically used for TLS but possibly also data signing and other identity proofs.
+* Each C_UID is mapped to a Connector Instance Key (CIK) pair which is typically used for TLS but possibly also data signing and other identity proofs.
 
 Each Service Instance needs to be mapped to one platform it utilizes:
 * Each platform blueprint gets a unique identifier during the component certification.
-* For a component with Trust level 1, the concrete platform instantiation (running version of this blueprint) does NOT get a UID as well as key and certificate for this platform instance. Instead, the connector description solely references the (unique) identifier of the certified blueprint (and the operator needs to be trusted to ensure its correct instantiation).
+* For a component with Trust level 1, the concrete platform instantiation (running version of this blueprint) does NOT get a specific platform UID (P_UID) as well as key and certificate for this platform instance. Instead, the connector description solely references the (unique) identifier of the certified blueprint (and the operator needs to be trusted to ensure its correct instantiation).
 * For components with Trust Level 2 or 3, each platform instantiation needs to be uniquely identified with a UID (P_UID). This UID is required to provide a mapping from service instance to platform.
 * Each P_UID is subject of a certificate for the utilized platform key(s) (e.g. AK of a TPM) which enable verification of the platform integrity.
 * One P_UID can map to Platform Instance Keys (PIK) for 1-n physical devices/protected VMs:
@@ -81,13 +79,13 @@ Two cases must be evaluated:
 
 | Phase | When does it happen | How is the component identity affected | What about the data? |
 | --- | --- | --- | --- |
-| **Provisioning** | New component becomes available when an operator provisions a new instance of the blueprint (on a new device, a new service-instance in the cluster, ...) | A component identity is issued by the Identity Provider | No data is available on a newly provisioned component, but arbitrary data can be added afterwards. |
-| **Maintaining** | New versions of utilized software are distributed, configuration of the component changes | As long as the trust level of the SW stack AND the operator remains unchanged, the overall connector identity does NOT need to change. In case significant attributes of the component (e.g. trust level) change, the identity as the sum of all attributes changes but the unique identifier may be used further. | Data already stored on the connector MUST adhere to the defined UC policies so update or migration strategies need to ensure their fulfillment by deleting/removing/making data inaccessible. |
-| **Out of service (Decommissioning)** | Component is sold/transferred to another operator, component is not offered/available any longer | The component identity needs to be decommissioned, certificate(s) of the component(s) is(are) revoked. | All data currently on/in the connector needs to be removed (if necessary transfer them to other connectors beforehand). |
+| **Provisioning** | New components become available when an operator provisions a new instance of the blueprint (on a new device, a new service-instance in the cluster, ...). Provisioning of a new component may consist of a new platform AND service instance or only a new service instance on an already provisioned platform. | A component identity is issued by the Identity Provider: One C_UID for each new Core Connector Services and a P_UID for the platform instances if necessary | No data is available on a newly provisioned component, but arbitrary data can be added afterwards. |
+| **Maintaining** | New versions of utilized software are distributed, configuration of the component changes | As long as the trust level of the SW stack AND the operator remain unchanged, the overall connector identity does NOT need to change. In case significant attributes of the component (e.g. trust level) change, the identity as the sum of all attributes changes but the unique identifiers may be used further. | Data already stored on the connector MUST adhere to the defined Usage Control policies so update or migration strategies need to ensure their fulfillment by deleting/removing/making data inaccessible. |
+| **Out of service (Decommissioning)** | Component is sold/transferred to another operator, component is not offered/available any longer | The component identity needs to be decommissioned (either only the C_UID or C_UID and P_UID), certificate(s) of the component(s) is(are) revoked. | All data currently on/in the connector needs to be removed (if necessary transfer them to other connectors beforehand). |
 
 ## Identities for Participants
-The IDS can have many participants interacting ranging from large enterprises and organizations to individuals. 
-Means for identifying those participants are required, since they are responsible for (at least) operating (or using) an IDS component (e.g., a connector) and thus the actions taken by this component and managing provided data (quality, content, updates, decision on usage policies). Thus, each participants gets a unique identifier (O_UID). 
+The IDS can have many participants interacting ranging from large enterprises and organizations to individuals.
+Means for identifying those participants are required, since they are responsible for (at least) operating (or using) an IDS component (e.g., a connector) and thus the actions taken by this component and managing provided data (quality, content, updates, decision on usage policies). Thus, each participants gets a unique identifier (O_UID).
 
 Based on this, an identity management for participants can either be based on identities for the organizations themselves or for the human users working for this organizations. Identities are typically bound to private-public key pairs generated for each identity and confirmed by the Identity Provider. Respective processes are required to ensure correct mapping of the key pairs and the identities to be utilized in the IDS.
 
@@ -100,7 +98,7 @@ Identifying and authenticating an IDS connector requires an evaluation of many c
 | | Mapping of C_UID to Connector Instance Key (CIK) | all | CA | - | Connector Identity Certificate, usage of key material by communication partner |
 | | Only the connector has access to CIK | 1 | Operator | - | - |
 | | | 2, 3 | CA and Hardware Manufacturer | CA verifies hardware protection for CIK (Trust chain to HW Manufacturer) | Connector Identity Certificate |
-| C_UID is used by certified connector stack | - | 1 | Operator | **No validation**, operator must only request certificates for instances of certified SW stacks | - | 
+| C_UID is used by certified connector stack | - | 1 | Operator | **No validation**, operator must only request certificates for instances of certified SW stacks | - |
 | | Platform ID (P_UID) is unique | 2, 3 | CA | Before issuing connector identity certificate, process depends on implementation of P_UID | Platform Identity Certificate |
 | | Mapping of P_UID to Platform Instance Key (PIK) | 2, 3 | CA | - | Platform Identity Certificate |
 | | Only the identified platform has access to PIK | 2, 3 | CA and Hardware Manufacturer | CA verifies hardware protection for PIK (Trust chain to HW Manufacturer) | Platform Identity Certificate |
