@@ -13,7 +13,7 @@ In the IDS, each connector instance possesses it's own identity. Each connector 
 * The IDS Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
 [Section 3.5.2](../../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_2_0_Connector.md) provides more details for the different parts of a connector.
 
-The IDS Certification (explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md) is always conducted for a blueprint of the entire stack consisting of platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
+The IDS Certification is explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md). It is always conducted for a blueprint of the entire stack consisting of platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
 
 The IDS Connector identity serves to uniquely identify one such instance of the Connector Core Services with their IDS Apps on qualified platforms. The identity concept is equally used for other technical components such as Broker, DAPS, ... in the IDS which have their own Core Services (represented by one or multiple containers) running on a comparable platform.
 
@@ -40,6 +40,7 @@ Each Service Instance needs to be mapped to one platform it utilizes:
   * For distributed platform setups (e.g. with kubernetes): 1 P_UID for the setup maps to n PIKs for the servers in this distributed platform.
   * If connector is run in one protected VM (e.g. SEV SNP): 1 P_UID is mapped to 1 PIK for this SEV-SNP VM.
   * If multiple protected VMs (e.g. SEV SNP) form a distributed platform setup: 1 UID for the setup maps to n PIKs for the VMs which comprise this setup.
+  * Valid P_UIDs are mapped to a C_UID in the DAPS. The platform information is verified by another IDS Connector using remote attestation. 
 
 ![Identity mapping for different scenarios](./media/identity_mapping.png)
 #### _Figure 4.1.2.2: Identities for IDS Connector Services and Platforms_
@@ -69,7 +70,8 @@ To establish a trusted connection, each connector needs the identity information
 2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.
 3. When establishing communication, the DAT of both IDS Connector instances is exchanged. This is also matched with the used TLS certificate.
 
-To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information. To further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate by matching it to the connectors identifier.
+To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information. To further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate by matching it to the connectors identifier. The ParIS only serves untrusted information and thus is not part of this interaction. 
+
 Two cases must be evaluated:
 
 1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
@@ -87,7 +89,7 @@ Two cases must be evaluated:
 The IDS can have many participants interacting ranging from large enterprises and organizations to individuals.
 Means for identifying those participants are required, since they are responsible for (at least) operating (or using) an IDS component (e.g., a connector) and thus the actions taken by this component and managing provided data (quality, content, updates, decision on usage policies). Thus, each participants gets a unique identifier (O_UID).
 
-Based on this, an identity management for participants can either be based on identities for the organizations themselves or for the human users working for this organizations. Identities are typically bound to private-public key pairs generated for each identity and confirmed by the Identity Provider. Respective processes are required to ensure correct mapping of the key pairs and the identities to be utilized in the IDS.
+Based on this, an identity management for participants can either be based on identities for the organizations themselves or for the human users working for this organizations. Identities are typically bound to private-public key pairs generated for each identity and confirmed by the Identity Provider. Respective processes are required to ensure correct mapping of the key pairs and the identities to be utilized in the IDS. This, however, requires a CA that provides identity certificates for employees of Participants. This is yet to be defined in detail. 
 
 ## Trust Bootstrapping and Trust Chains
 Identifying and authenticating an IDS connector requires an evaluation of many complementary aspects. The following table provides an overview of these aspects and the entities responsible for them.
