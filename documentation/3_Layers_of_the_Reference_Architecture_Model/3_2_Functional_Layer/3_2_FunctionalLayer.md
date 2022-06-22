@@ -13,20 +13,19 @@ shows the functional architecture of the International Data Spaces,
 subdividing the requirements into six groups of software functionality
 to be provided by the IDS. These six groups comply with the strategic
 requirements outlined in Section
-[subsec:Goals_of_IDS](#subsec:Goals_of_IDS).
+[Goals of the International Data Spaces](../../1_Introduction1_1_Goals_of_the_International_Data_Spaces.md).
 
 The following subsections give a brief summary of these functional
-requirements. The full list of functional requirements can be found in a
-separate document entitled Functional Overview.
+requirements.
 
-### Trust {#subsec:functional_layer_trust}
+### Trust 
 
 Although requirements related to trust are usually non-functional, they
 are addressed by the Functional Layer, since they represent fundamental
 features of the International Data Spaces. The Trust group
 comprises three main aspects (roles, identity management, and user
 certification), which are complemented by governance aspects (see
-Section 4.3).
+Section on [Data Governance](../../4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_1_Layers.md).
 
 #### Roles
 
@@ -34,7 +33,7 @@ Each role in the International Data Spaces has certain rights and
 duties. For example, the Identity Provider is responsible for offering
 services to create, maintain, manage, monitor, and validate identity
 information of and for participants in the International Data Spaces.
-More information about the roles is given in Section 3.1.
+More information about the roles is given in the [Business Layer](#).
 
 #### Identity Management
 
@@ -47,7 +46,7 @@ conditions being applied here; e.g., security profiles).
 
 Each participant in the International Data Spaces must undergo
 certification in order to establish trust among all participants. More
-information about the certification process is given in Section 4.2.
+information about the certification process is given in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_Certification_Perspective.md).
 
 ### Security and Data Sovereignty
 
@@ -61,15 +60,15 @@ communication  security by design; and technical certification.
 
 #### Authentication & Authorization
 
-Each Connector must have a valid X.509 certificate. With the help of
+Each Connector must have a valid X.509 certificate (or equivalent). With the help of
 this certificate, each participant in the International Data Spaces that
 operates an endpoint is able to verify the identity of any other
 participant. Certain conditions (e.g. security profiles) may also apply
-here. More information about authentication is given in Section 4.1.
+here. More information about authentication is given in the[Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
 
 The Connector serving as the data source must be able to verify the
 receiving Connector's capabilities and security features as well as its
-identity. More information about authorization is given in Section 4.1.
+identity. More information about authorization is given in the [Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
 
 #### Usage Policies & Usage Enforcement
 
@@ -79,7 +78,7 @@ Each participant can define usage policies and attach them to outbound
 data. Policies might include restrictions, such as disallowing
 persistence of data, or disallowing transfer of data to other parties,
 for example. More information about usage policies and usage enforcement
-is given in Section 4.1.
+is given in the [Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
 
 #### Trustworthy Communication & Security by Design
 
@@ -95,14 +94,14 @@ other and from the Connector). Data Providers and Data Consumers can
 decide about the level of security to be applied for their respective
 Connectors by deploying Connectors supporting the selected security
 profile. More information about trustworthy communication and security
-by design is given in Section 4.1.
+by design is given in  the [Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
 
 #### Technical Certification
 
 The core components of the International Data Spaces, and especially the
 Connectors, require certification from the Certification Body in order
 to establish trust among all participants. More information about
-technical certification is given in Section 4.2.
+technical certification is given in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_Certification_Perspective.md).
 
 ### Ecosystem of Data
 
@@ -122,7 +121,8 @@ syntax and serialization as well as the semantics of data sources.
 Furthermore, metadata should describe the application domain of the data
 source. The operator of a Connector must be able to define the price,
 the pricing model, and the usage policies regarding certain data. More
-information about data source description is given in Section 3.4.
+information about data source description is given in the
+[Information Layer](#).
 
 #### Brokering
 
@@ -133,7 +133,7 @@ must be able to browse and search metadata in the metadata repository,
 provided the participant has the right to access the metadata.
 Furthermore, each participant must be able to browse the list of
 participants registered at a broker. More information about brokering is
-given in Section 3.5.2.
+given in the [Process Layer](#).
 
 #### Vocabularies
 
@@ -145,7 +145,8 @@ central servers that store vocabularies and enable collaboration.
 Collaboration may comprise search, selection, matching, updating,
 requests for changes, version management, deletion, duplicate
 identification, and unused vocabularies. Vocabulary hubs need to be
-managed. More information about vocabularies is given in Section 3.4.
+managed. More information about vocabularies is given in the
+[Information Layer](#).
 
 ### Standardized Interoperability
 
@@ -237,8 +238,7 @@ process must be simple and standardized.
 
 Governance in the International Data Spaces comprises five aspects: data
 as an economic good, data ownership, data sovereignty, data quality, and
-data provenance. More information about governance is given in Section
-4.3.
+data provenance. More information about governance is given in [Governance Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_1_Layers.md).
 
 #### Legal aspects
 
