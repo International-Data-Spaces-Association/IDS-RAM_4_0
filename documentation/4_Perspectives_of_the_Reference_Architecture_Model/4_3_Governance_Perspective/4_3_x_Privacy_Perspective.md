@@ -1,12 +1,12 @@
 # Privacy consequences
 
-Enterprises are therefore advised well enough to start early on with good privacy practices. One of the activities that every
+Enterprises are advised well enough to start early on with good privacy practices. One of the activities that every
 Company can do is the proper data classification and separation of data. The following is a list of more advanced privacy
 enhancing technologies that currently exists, but experts in any of these technologies are rare and hard to find.
 
 ## PET (Privacy Enhancing Technologies)
 
-see also (3) 
+Please also refer to [the publication of the European Union Agency for Cybersecurity](https://www.enisa.europa.eu/publications/data-protection-engineering). 
 
 ### Divide and conquer
 One of the things that every company can do: Data records are not stored together, but rather divided up into several chunks. 
@@ -69,7 +69,7 @@ cybersecurity attacks and fraud. In addition, companies should think about assig
 to reflect on the increasing need to address risks in relation with privacy laws and regulations.
 
 When looking at the current state of technology, then companies should at least be familiar with the guidelines and rules that have been set 
-out by the OWASP TopTen privacy risks(1). Addressing these TopTen is certainly a good step into the right direction:
+out by the [OWASP TopTen privacy risks]((https://owasp.org/www-project-top-10-privacy-risks/)). Addressing these TopTen is certainly a good step into the right direction:
 
 
 | 2021	  | Title / Description                              | F   | R   | T
@@ -104,9 +104,3 @@ L = Low is considered as an limited and calculated risks /
 M = Medium risk/ frequency , impact is causing serious problems /
 H = High risks / frequency is likely to happen, and the impact is devastating 
 VH = Very high risk / frequency almost certain to happen, impact is devastating
-
-## Literature and Links
-
-(1) https://owasp.org/www-project-top-10-privacy-risks/
-(2) Generally Accepted Privacy Principles
-(3) https://www.enisa.europa.eu/publications/data-protection-engineering
