@@ -1,4 +1,4 @@
-# Privacy in the Connected World
+# Privacy in the connected world
 
 ## Digital Services and Markets
 
@@ -10,9 +10,10 @@ On the upside this information gathering allows to analyze and human behavior fo
 this data can be exploited by entities to gain an advantage over competitors in the market, and most importantly, 
 by combining several sources, behavior can be traced back or attributed to a single person. 
 
-The digital markets act thus looks out to enforce privacy by so called „soft“ privacy means, which is based on compliance, 
-consent, controls and audits. If a user has given consent to a certain type of data processing, companies make sure that
-their service offering complies with the the official regulations. Service provider are seen as „trusted“ entities.
+The [digital markets act](https://www.consilium.europa.eu/media/56086/st08722-xx22.pdf) thus looks out to enforce privacy 
+by so called „soft“ privacy means, which is based on compliance, consent, controls and audits. If a user has given 
+consent to a certain type of data processing, companies make sure that their service offering complies with 
+the the official regulations. Service provider are seen as „trusted“ entities.
 
 Personal data is characterized by asymmetric interest. For each single person it’s own data is very important and
 valued high. For companies a single dataset is rather uninteresting, but rather Metadata is available and can be gathered 
@@ -24,7 +25,7 @@ be expected to be very low. Individuals will thus not be able to „sell“ thei
 (e.g. VIP persons need additional protection). Unfortunately, for this kind of special data, it is in consequence highly desirable 
 to apply stronger protective means.
 
-For these cases so called „hard“ privacy means need to be enforced, which go beyond the standard GDPR regulations. These
+For these cases so called „hard“ privacy means need to be enforced, which go beyond the standard [GDPR](#) regulations. These
 technologies do not establish „trusted“ entities, instead data is protected by reducing and minimizing data and trusted parties,
 possibly working in/on encrypted data and platforms.
 
@@ -53,7 +54,7 @@ it must be ensured that the results conform to the privacy regulations of the EU
 intra-company work council, which has to be involved whenever data is collected and possible surveillance scenarios emerge.
 
 Secondly, protecting the privacy of the workforce also protects the customers. As an example: a military camp has been discovered
-in the internet only because the location of fitness trackers of the employees have been mapped to a card. The regular updates
+in the internet only because the location of fitness trackers of the employees have been mapped to a card [reference required](#). The regular updates
 showed the running path in the midst of a forest, where usually no such activities would take place. In addition in cybersecurity 
 settings operators of service providers usually have access to the data of the customer. Protecting the privacy of the workforce 
 minimizes the impact of potential fraud or blackmailing. Furthermore good security practices like four-eye principle and separation 
