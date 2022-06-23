@@ -12,7 +12,7 @@ fundamental measure to establish trust among all participants
 functioning of the International Data Spaces, such as the Broker Service
 Provider, the App Store Provider, the Identity Provider, or the Clearing
 House). The Certification Scheme applied in the participant evaluation
-process is described in detail in Section 4.2.
+process is described in detail in the [Certification Perspective](#).
 
 There are four categories of roles:
 
@@ -41,7 +41,7 @@ In addition, Data Providers and Data Consumers may apply business models
 #### Data Owner
 
 As the legal situation regarding data ownership is very complicated (as
-discussed in section 4.3.4), the term 'Data Owner' is not used in a
+discussed in the Governance Perspective in the section on [Data Ownership](#)), the term 'Data Owner' is not used in a
 legal understanding in this document. The Reference Architecture Model
 takes an operational data management perspective, defining a Data Owner
 as a legal entity or natural person creating data and/or executing
@@ -68,8 +68,7 @@ In cases in which the Data Owner does not act as the Data Provider at
 the same time, the only activity of the Data Owner is to authorize a
 Data Provider to make its data available to be used by a Data Consumer.
 Any such authorization should be documented by a contract, which should
-include data usage policy information for the data provided (see.
-Section 4.1.3.6). The contract needs not necessarily be a paper
+include data usage policy information for the data provided (see [Security Perspective](#)). The contract needs not necessarily be a paper
 document, but may be an electronic file as well.
 
 #### Data Provider
@@ -146,7 +145,7 @@ provider of the web-based software system would be the Data Consumer.
 
 App Providers develop Data Apps to be used in the International Data
 Spaces. To be deployable, a Data App has to be compliant with the system
-architecture of the International Data Spaces (see Section 3.5). In
+architecture of the International Data Spaces (see [System Layer](#)). In
 addition, Data Apps can be certified by a Certification Body in order to
 increase trust in these applications (especially with regard to Data
 Apps processing sensitive information). Each Data App must be published
@@ -186,8 +185,8 @@ and providing metadata. The Broker Service Provider must provide an
 interface for Data Providers to send their metadata. The metadata should
 be stored in an internal repository for being queried by Data Consumers
 in a structured manner. While the core of the metadata model must be
-specified by the International Data Spaces (i.e., by the Information
-Model, see Section 3.4), a Broker Service Provider may extend the
+specified by the International Data Spaces (i.e., by the [Information
+Model](#)), a Broker Service Provider may extend the
 metadata model to manage additional metadata elements.
 
 After the Broker Service Provider has provided the Data Consumer with
@@ -230,7 +229,7 @@ Spaces), a Dynamic Attribute Provisioning Service (DAPS, managing the
 dynamic attributes of the participants), and a service named Dynamic
 Trust Monitoring (DTM, for continuous monitoring of the security and
 behavior of the network. More details about identity management can be
-found in section 4.1.
+found in the [Security Perspective](#).
 
 #### App Store Provider
 
@@ -239,7 +238,7 @@ deployed inside the Connector, the core technical component required for
 a participant to join the International Data Spaces. Data Apps
 facilitate data processing workflows. They may be certified by a
 Certification Body, following the certification procedures defined in
-Section 4.2.
+the [Certification Perspective](#).
 
 The App Store is responsible for managing information about Data Apps
 offered by App Providers (see below). The App Store should provide
@@ -253,7 +252,7 @@ ontologies, reference data models, or metadata elements) that can be
 used to annotate and describe datasets. In particular, the Vocabulary
 Provider provides the Information Model of the International Data
 Spaces, which is the basis for the description of data sources (see
-Section 3.4). In addition, other domain specific vocabularies can be
+[Information Layer](#)). In addition, other domain specific vocabularies can be
 provided.
 
 #### Category 3: Software / Service Provider
@@ -299,7 +298,7 @@ transferred to an external Service Provider.
 
 A Software Provider provides software for implementing the functionality
 required by the International Data Spaces (i.e., through software
-components, as described in Section 3.5). Unlike Data Apps, software is
+components, as described in the [System Layer](#)). Unlike Data Apps, software is
 not provided by the App Store, but delivered over the Software
 Providers' usual distribution channels, and used on the basis of
 individual agreements between the Software Provider and the user (e.g.,
@@ -329,8 +328,7 @@ Bodies make sure that only compliant organizations are granted access to
 the trusted business ecosystem. In this process, the Certification Body
 supervises the actions and decisions of the Evaluation Facilities.
 
-The Certification Scheme applied in the process is described in Section
-4.2.
+The Certification Scheme applied in the process is described in the [Certification Perspective]().
 
 #### International Data Spaces Association (IDSA)
 
