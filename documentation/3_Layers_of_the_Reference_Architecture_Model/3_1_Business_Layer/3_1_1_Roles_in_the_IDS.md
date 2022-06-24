@@ -28,7 +28,7 @@ cycle. IDS objects that participants in the IDS have to handle are:
 5.  **App**: applications that can be deployed inside the connector.
     Apps facilitate data processing workflows. They may be certified by
     a Certification Body, following the certification procedures defined
-    in Section 4.2.
+    in the [Certification Perspective](#).
 
 6.  **Transaction**: comprises all activities performed in the course of
     a data exchange
@@ -155,7 +155,7 @@ The **Data Creator** creates data, e.g. by generating data such as from
 a sensor or accessing data in backend IT systems.
 
 As the legal situation regarding data ownership is very complicated (as
-discussed in section 4.3.4), the term '**Data Owner'** is not used in a
+discussed in the [Governance Perspective](#)), the term '**Data Owner'** is not used in a
 legal understanding in this document. The Reference Architecture Model
 takes an operational data management perspective, defining a Data Owner
 as a legal entity or natural person executing control over data. This
@@ -193,8 +193,8 @@ In cases in which the Data Owner does not act as the Data Provider at
 the same time, the only activity of the Data Owner is to authorize a
 Data Provider to make its data available to be used by a Data Consumer.
 Any such authorization should be documented by a contract, which should
-include data usage policy information for the data provided (see.
-Section 4.1.3.6). The contract needs not necessarily be a paper
+include data usage policy information for the data provided (see
+[Usage Control in IDS](#)). The contract needs not necessarily be a paper
 document, but may be an electronic file as well.
 
 At the end of a complete or partial data transaction, for example, the
@@ -292,8 +292,8 @@ providing metadata. The Data Broker must provide an interface for Data
 Creators to send their metadata. The metadata should be stored in an
 internal repository for being queried by Data Consumers in a structured
 manner. While the core of the metadata model must be specified by the
-International Data Spaces (i.e. by the Information Model, see Section
-3.4), a Data Broker may extend the metadata model to manage additional
+International Data Spaces (i.e. by the Information Model, see
+  [Information Layer](#)), a Data Broker may extend the metadata model to manage additional
 metadata elements.
 
 After the Data Broker has provided the Data Consumer with the metadata
@@ -372,7 +372,7 @@ Vocabularies can be used to annotate and describe data assets. These
 data assets may comprise at least:
 
 -   **Information Model** of the International Data Spaces, which is the
-    basis for the description of data sources (see Section 3.4). There
+    basis for the description of data sources (see [Information Layer](#)). There
     is only one information model in the IDS governed by the IDSA.
 
 -   **Domain-specific vocabularies**: They are essential for the
@@ -453,7 +453,7 @@ Spaces), a Dynamic Attribute Provisioning Service (DAPS, managing the
 dynamic attributes of the participants), and a service named Dynamic
 Trust Monitoring (DTM, for continuous monitoring of the security and
 behavior of the network. More details about identity management can be
-found in section 4.1.
+found in the [security perspective](#).
 
 Typically, identities are created by the Identity Authority, then acting
 as an **Identity Creator**. In the sense of a directory, the authority
@@ -481,7 +481,7 @@ the App Developer typically covers the basic roles **App Creator** and,
 as long as the data app is not created on behalf, **App Owner**.
 
 To be deployable, a data app has to be compliant with the system
-architecture of the International Data Spaces (see Section 3.5). In
+architecture of the International Data Spaces (see [system layer](#)). In
 addition, data Apps can be certified by a Certification Body in order to
 increase trust in these applications (especially with regard to Data
 Apps processing sensitive information).
@@ -495,7 +495,7 @@ model) with regard to its semantics, functionality, interfaces, etc.
 
 A Connector Developer provides software for implementing the
 functionality required by the International Data Spaces (i.e., through
-software components, as described in Section 3.5). Unlike Data Apps,
+software components, as described in the [system layer](#)). Unlike Data Apps,
 software is not provided by the App Store, but delivered over the
 Connector Developer's usual distribution channels, and used on the basis
 of individual agreements between the Connector Developer and the user
@@ -535,8 +535,7 @@ supervises the actions and decisions of the Evaluation Facilities.
 Thus, from the technical perspective, the basic roles **Connector
 Certifier**, **App Certifier** and **Service Certifier**.
 
-The Certification Scheme applied in the process is described in Section
-4.2.
+The Certification Scheme applied in the process is described in the [Certification Perspective](#).
 
 ##### Standardization Organization
 
