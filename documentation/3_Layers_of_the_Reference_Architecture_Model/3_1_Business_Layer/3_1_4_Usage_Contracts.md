@@ -4,7 +4,8 @@ A legally valid contract is the foundation of any business transaction.
 The IDS cannot, and does not intend to, replace legal contracts or
 licensing agreements. Instead, the IDS provides a technical framework
 for technically enforced agreements in addition to existing, legally
-binding contracts.
+binding contracts. The connection of legally binding contracts and Usage
+Contracts is part of the [IDSA Rulebook](#).
 
 Many details of a business relationship cannot be modeled in
 machine-readable form. Nevertheless, the IDS specifies methods to define
