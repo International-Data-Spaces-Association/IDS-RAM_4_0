@@ -8,9 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - none
+- Business Layer: Adding Participant Information Service
+- Business Layer: Adding activities in relation to roles.
 
 ### Changed
 - none
+- Business Layer: editorial changes.
 
 ### Removed
 - none
@@ -20,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - none
+- Business Layer: fixed consistency in Role Interaction table.
 
 ### Security
 - none
