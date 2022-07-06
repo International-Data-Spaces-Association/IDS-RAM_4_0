@@ -1,5 +1,12 @@
 # Rules of Procedure for the IDS Certification of IDS Operational Environments and IDS Core Components
 
+## Change History
+| Version | Date | Changes |
+| --- | --- | --- |
+| Version 1.2 | June 2022 | Small changes, updated wording |
+| Version 1.1. |  Sept 2020 | made wording consistent, updated change certification, generalized references to accreditation bodies.|
+| Version 1.0 | 2019 | Initial version. |
+
 ## Preamble
 Certification according to the International Data Spaces Certification Scheme (IDS-CS) is available to all organizations participating in the IDS and developers of IDS core components.
 IDS-CS is a certification scheme developed by the Working Group Certification on behalf of the International Data Spaces Association.
@@ -34,7 +41,7 @@ The vertical dimension is the increasing extent of the organizational security r
 2. The **core component certification** is interoperability and security oriented and aims at checking the development and maintenance process as well as the implementation of a component.
 The component certification approach is represented by two dimensions:
 The depth of testing during evaluation increases with each of the three defined assurance levels.
-The three defined security profiles likewise increase with the security needs of the data owner or data consumer in the IDS.
+The three defined trust levels likewise increase with the security needs of the data owner or data consumer in the IDS.
 
 ### §1.3 Relationship to DIN EN ISO/IEC 17065 and 27001     
 1. These rules of procedure are a certification program in the sense of ISO/IEC 17065.
@@ -78,7 +85,7 @@ They shall carry out their duties in a non-discriminatory and impartial manner.
 5. The evaluation facility may use its own or external evaluators to carry out the evaluation.
 For external evaluators, the same competence requirements apply as in §2.4 for evaluators employed by the evaluation facility.
 6. The evaluation facility shall demonstrate and maintain adequate liability insurance.
-7. In principle, an evaluation facility may only carry out evaluations for the IDS if it has been recognised by the IDS certification body.
+7. In principle, an evaluation facility may only carry out evaluations for the IDS if it has been recognized by the IDS certification body.
 
 ### §2.4 Evaluators     
 1. Evaluators are natural persons who carry out evaluations for an evaluation facility in accordance with these rules of procedure.
@@ -156,10 +163,10 @@ The charges shall be laid down in the contract with the applicant.
 ### §3.2 The applicant\'s obligations to cooperate      
 1. The applicant shall carry out the cooperation activities required for proper evaluation and certification or, if applicable, those contractually agreed at his own expense.
 2. In particular, the applicant shall be obliged to provide the Evaluation Facility with or allow inspection of sufficient documentation on the evaluation item.
-  * a. In the case of operational environment certification, the documentation shall include a role or service description as well as the technical and organizational measures taken by the applicant in accordance with the IDS criteria catalogue.
-  * b. In the case of component certification, the object of the manufacturer documentation is, in addition to an architectural description, in particular the source code and the organizational measures for secure software development in accordance with the IDS criteria catalogue.
+  * a. In the case of operational environment certification, the documentation shall include a role or service description as well as the technical and organizational measures taken by the applicant in accordance with the IDS criteria catalog.
+  * b. In the case of component certification, the object of the manufacturer documentation is, in addition to an architectural description, in particular the source code and the organizational measures for secure software development in accordance with the IDS criteria catalog.
 3. The applicant assures the evaluation facility and certification body that the measures specified in the documentation have been fully implemented.
-4. Where the applicant seeks recognition of existing certificates for his component or organization, he shall communicate the request for recognition before the start of the evaluation, specifying the exact designation of the certificate to be recognised and the component for which recognition is sought, and submit the documents relevant for the assessment of recognition.
+4. Where the applicant seeks recognition of existing certificates for his component or organization, he shall communicate the request for recognition before the start of the evaluation, specifying the exact designation of the certificate to be recognized and the component for which recognition is sought, and submit the documents relevant for the assessment of recognition.
 
 ### §3.3 Procedure of the evaluation     
 1. The evaluation shall be based on the clearly defined description of the evaluation item in the contract and shall include at least one evaluation of the documentation provided by the applicant (para. 2), inquires and interviews (para. 3) and an on-site evaluation (para. 4). In the case of component certification, technical tests (para. 5) shall be carried out.
@@ -171,32 +178,32 @@ Where a personal interview would be disproportionate, it may take the form of vi
 4. The on-premise evaluation shall include at least an evaluation of the procedures on the premises of the applicant or its subcontractors.
 5. In the case of component certification, appropriate functional and security tests are conducted.
 6. The evaluation covers all requirements of the IDS for the selected certification level.
-7. The evaluation should be carried out on a sample basis. In relation to a request (e.g. secure passwords), a sample of activities is to be evaluated in order to fulfil a requirement (e.g. password length).
+7. The evaluation should be carried out on a sample basis. In relation to a request (e.g. secure passwords), a sample of activities is to be evaluated in order to fulfill a requirement (e.g. password length).
 With regard to the implementation of individual activities, a sample of elements (e.g. individual passwords) shall be evaluated.
 8. The sample shall be selected in such a way that the evaluation of the selected activities or elements provides an indication of the compliance with the requirement.
 
 ### §3.4 Recognition of certificates     
 1. The certification body shall recognize relevant certificates for the object of evaluation or individual components thereof.
 The evaluation of the covered criteria for the component named in the certificate is then not necessary.
-However, it is necessary to evaluate criteria not covered by this certificate as well as the interaction of the recognised component with other components, in particular the interfaces relevant to that interaction.
+However, it is necessary to evaluate criteria not covered by this certificate as well as the interaction of the recognized component with other components, in particular the interfaces relevant to that interaction.
 2. If the applicant seeks recognition, the evaluation facility shall evaluate without delay whether and to what extent recognition can be granted.
 3. The evaluation facility shall ask the certification body for a preliminary ruling on the recognition of certificates. The request shall be accompanied at least by the particulars and documents referred to in § 3.2 (4).
 
 ### §3.5 Assessment and evaluation report     
 1. On the basis of the evaluation, the evaluator shall prepare an assessment of the operational environment\'s or the component\'s compliance with the requirements of the IDS in relation to a specific certification level.
-This requires both an assessment of the fulfilment of the individual requirements of the IDS and of the fulfilment of the requirements of the IDS as a whole, each relating to a specific certification level.
+This requires both an assessment of the fulfillment of the individual requirements of the IDS and of the fulfillment of the requirements of the IDS as a whole, each relating to a specific certification level.
 2. If individual organizational requirements of the IDS certification for the certification level applied for are not met, these may be offset by other measures if the operational environment or the component thereby achieves the overall level of protection of the certification level applied for.
 If the evaluation facility accepts such compensation, this shall be justified separately to the certification body in the statement of the overall result.
 3. The evaluation facility shall draw up an evaluation report on the basis of the evaluation.
 The audit report shall include at least the following information:
 * a. the subject matter of the audit;
 * b. a description of the timing and scope of the audit, including the locations and premises where the audit was conducted;
-* c. a brief description of the implementation of each IDS requirement;
-* d. the reasoned assessment regarding the fulfilment or non-compliance of the individual IDS requirements for the certification level concerned;
-* e. the measures by which the evaluation facility has verified the fulfilment, in particular information on the evaluation method pursuant to § 3.3 paras. 2 to 6 and - if necessary for understanding - a justification for its use;
+* c. a brief description ( a few sentences or keywords) of the implementation of each IDS requirement;
+* d. the reasoned assessment regarding the fulfillment or non-compliance of the individual IDS requirements for the certification level concerned;
+* e. the measures by which the evaluation facility has verified the fulfillment, in particular information on the evaluation method pursuant to § 3.3 paras. 2 to 6 and - if necessary for understanding - a justification for its use;
 * f. the indication of the certificates to be recognized as well as a statement on the evaluation of the interaction of the components;
 * g. a justification of the equivalence of certificates to be recognized within the meaning of § 4.5.
-* h. the overall result with regard to the fulfilment or non-fulfilment of the IDS requirements for a specific certification level;
+* h. the overall result with regard to the fulfillment or non-fulfillment of the IDS requirements for a specific certification level;
 * i.the justification of the overall result;
 * j. a list of the audited documentation;
 * k. the declaration of the applicant in accordance with section 3.2(3);
@@ -238,7 +245,7 @@ In particular, it shall prepare documentation of the changes to the technical an
 ### §4.2 Requirements for certification     
 1. The granting of the certificate requires an evaluation of the participating organization\'s operational environment or component by an evaluation facility in accordance with these rules of procedure.
 The applicant shall designate the evaluation facility.
-2. Recognised evaluation facilities are listed in a list maintained by the certification body within the meaning of § 2.6.
+2. recognized evaluation facilities are listed in a list maintained by the certification body within the meaning of § 2.6.
 3. After signing of the contract, the certification body appoints a responsible certifier to the applicant and the evaluation facility.
 4. The evaluation facility appoints to the certification body the responsible (principal) evaluator whom it has entrusted with the evaluation.
 5. The certifier coordinates the evaluation object, the scope, the duration and the schedule of the evaluation with the responsible evaluator and the applicant.
@@ -252,20 +259,20 @@ However, it may not carry out any evaluation procedures or intervene in the eval
 3. In consultation with the evaluation facility, the certification body may collect information and evidence from the applicant insofar as this is necessary for the certification decision.
 
 ### §4.4 Recognition of IDS certificates     
-1. The certification body shall recognise IDS certificates for components of the participating organization or component to the extent of their validity and certification level, provided that they have been issued in accordance with these Rules of Procedure.
+1. The certification body shall recognize IDS certificates for components of the participating organization or component to the extent of their validity and certification level, provided that they have been issued in accordance with these Rules of Procedure.
 2. In the event of recognition, the certificate may be issued for the full period of validity in accordance with § 5.3.
-The certificate shall be revoked if a recognised certificate expires.
-This shall not apply if the relevant component is immediately re-certified and the certificate can be recognised, or if the component is immediately included in the certificate for the operational environment or component by a change certification according to § 4.9.
-3. The certification body shall monitor the validity of the recognised certificates. It shall inform the applicant in good time of the imminent expiry of the validity periods of recognised certificates.
+The certificate shall be revoked if a recognized certificate expires.
+This shall not apply if the relevant component is immediately re-certified and the certificate can be recognized, or if the component is immediately included in the certificate for the operational environment or component by a change certification according to § 4.9.
+3. The certification body shall monitor the validity of the recognized certificates. It shall inform the applicant in good time of the imminent expiry of the validity periods of recognized certificates.
 
 ### §4.5 Recognition of other certificates     
 1. The certification body may recognize other certificates if they are materially and procedurally equivalent to an IDS certificate.
-The certification body determines the certification level at which the certificate is recognised.
+The certification body determines the certification level at which the certificate is recognized.
 2. A material equivalence exists if the other certificate is based on requirements that are comparable to or exceed those of the IDS with regard to the certification level.
 3. A procedural equivalence exists if the other certificate was granted in a certification procedure that offers a comparable guarantee for the proper evaluation and certification in accordance with these procedural rules.
-4. The following certificates are generally considered to be materially and procedurely equivalent:
+4. The following certificates are generally considered to be materially and procedurally equivalent:
   * certificates according to ISO 27001;
-  * certificates according to ISO 27001 based on ITGrundschutz;
+  * certificates according to ISO 27001 based on IT Grundschutz;
   * certificates according to ISO 15408;
   * certificates according to IEC 62443.
 5. The certification body shall justify the recognition, in particular with regard to the certification level.
@@ -273,18 +280,18 @@ The certification body determines the certification level at which the certifica
 
 ### §4.6 Decision of the certification body     
 1. The certification body shall decide on the award of the certificate on the basis of the evaluation report, the assessment by the certifier and, if necessary, further findings.
-2. The certificate must be issued to the extent requested if the participant or component fulfils the corresponding IDS requirements.
-3. In the event of deviations from the requirements, the certificate for the participants may be issued provisionally for up to six months if this is linked to a fixed catalogue of measures whose implementation is checked.
+2. The certificate must be issued to the extent requested if the operational environment or component fulfills the corresponding IDS requirements.
+3. In the event of deviations from the requirements, the certificate for the operational environments may be issued provisionally for up to six months if this is linked to a fixed catalog of measures whose implementation is checked.
 Significant deviations do not permit provisional certification.
-A principle granting of the certificate for participants or components with restrictions is not possible.
-4. If a participant or component does not meet the IDS requirements, the issuance of the certificate shall be refused.
+A principle granting of the certificate for operational environments or components with restrictions is not possible.
+4. If an operational environment or component does not meet the IDS requirements, the issuance of the certificate shall be refused.
 5. Reasons shall be given where the decision falls short of the application.
 6. The certification decision shall be announced to the applicant.
 The certification decision shall contain all information on recognized certificates and the information pursuant to § 4.5 para. 5.
 
 ### §4.7 Rectification of defects     
 1. The certification body may give the applicant the opportunity, before or after a decision to grant the certificate has been taken, to rectify the situation and to modify his application for certification.
-2. If the participant or the component fulfills the IDS requirements according to the original or modified certification application due to the subsequent improvement, the certificate must be issued accordingly.
+2. If the operational environment or the component fulfills the IDS requirements according to the original or modified certification application due to the subsequent improvement, the certificate must be issued accordingly.
 
 ### §4.8 Objection     
 1. The applicant may lodge an appeal with the certification body against a decision by which he is adversely affected.
@@ -340,7 +347,7 @@ The certificates must be easily accessible.
 ### §5.3 Period of validity. Renewed certification      
 1. The certificate is issued for a maximum period of validity of two years for components and three years for the operational environments of participating organizations.
 The period begins with the date of issue stated in the certificate.
-2. The applicant may request, before or after the period of validity has expired, that the operational environment or component be reevaluated and recertified in accordance with these rules of procedure.
+2. The applicant may request, before or after the period of validity has expired, that the operational environment or component be reevaluated and re-certified in accordance with these rules of procedure.
 3. The rules for the (first) evaluation and certification apply to the renewed evaluation and certification.
 The applicant may appoint the evaluation facility which carried out the previous evaluation or another evaluation facility.
 If the test reports of the previous tests are available and the evaluation object is unchanged with respect to the last evaluation, the evaluation may be reduced to a re-assessment of the evaluation object with respect to developments in the state of the art and the IDS.
