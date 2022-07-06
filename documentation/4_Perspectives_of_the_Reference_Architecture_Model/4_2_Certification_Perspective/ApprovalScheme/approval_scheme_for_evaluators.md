@@ -1,5 +1,12 @@
  # IDS Certification: Approval Scheme for Evaluation Facilities
-Version 1.2 as approved by WG Certification in September 2021
+
+## Change History
+| Version | Date | Changes |
+| --- | --- | --- |
+| Version 1.3 | June 2022 | Small changes in section "System Audits and Technical Assessments", updated wording and references (participant -> operational environment certification and level names), added change history |
+| Version 1.2 | Sept 2021 | Changes discussed in WG meeting on 16.09.2021 ( including notifications in case an evaluator leaves an EF; restriting major changes to the certification scheme; detailing ad hoc approvals and restriction, suspension or withdrawal of approval; extending QMS and ISMS requirements) |
+| Version 1.1 | End of 2020 | Revised approval scheme, added section on restriction, suspension or withdrawal of approval |
+| Version 1.0 | 2019 | Initial approval scheme |
 
 ## Introduction
 In principle, an evaluation facility can only carry out expert evaluations for the IDS if it has been approved by the IDS certification body.
@@ -11,14 +18,14 @@ The specific requirements for IDS evaluation facilities as defined in [17025-Cri
 
 The approval of an organization as an IDS evaluation facility is carried out at the instigation of the owner or company management of the organization. Approval is granted to organizations operated by natural or legal persons under civil law.
 
-Approval as an evaluation facility takes place when it has been established that all requirements for the area of application applied for (i.e. component or participant certification) have been met (see Chapter Approval Phase).
+Approval as an evaluation facility takes place when it has been established that all requirements for the area of application applied for (i.e. component or operational environment certification) have been met (see Chapter Approval Phase).
 As a rule, at least two professionally qualified employees per area of application applied for must be named by the applying organization.
 
 ## Approval Scheme
 The approval scheme for evaluation facilities documented in this chapter describes the respective areas of application for the evaluation facilities in the International Data Spaces certification scheme.
-Specifically, it is possible to be approved as an evaluation facility for Participant Certification and/or Component certification.
+Specifically, it is possible to be approved as an evaluation facility for Operational Environment Certification and/or Component certification.
 
-The evaluation facilities shall comply with the requirements of the criteria catalogue based on the DIN EN ISO/ IEC 17025 list [17025-Criteria-IDS] <Footnote 1>, the requirements of the Participant Certification Criteria Catalogue, Member Level [ISMS Requirements] <Footnote 2> of the International Data Spaces as well as have the necessary expertise in the relevant area of application
+The evaluation facilities shall comply with the requirements of the criteria catalogue based on the DIN EN ISO/ IEC 17025 list [17025-Criteria-IDS] <Footnote 1>, the requirements of the Operational Environment Certification Criteria Catalogue, Trust Level 2 [ISMS Requirements] <Footnote 2> of the International Data Spaces as well as have the necessary expertise in the relevant area of application
 
 An evaluation facility shall employ at least two persons whose competence has been verified by the International Data Spaces Certification Body.
 Evaluations may only be carried out by evaluators whose professional competence has been established in the context of a competence assessment (see Chapter Competence Assessment) by the International Data Spaces Certification Body.
@@ -26,18 +33,18 @@ Evaluations may only be carried out by evaluators whose professional competence 
 In the interest of competition, the long-term objective is to have more than one active, approved evaluation facility per area of application, so that component developers and participants can exercise their contractual freedom in this respect.
 
 ## Benefits of Approval as an IDS Evaluation Facility
-In order to carry out an IDS certification, the applicant requires an evaluation facility that performs the evaluation of the participant or component to be certified. The evaluation facility is selected by the applicant and commissioned (generally at the applicant's expense).
+In order to carry out an IDS certification, the applicant requires an evaluation facility that performs the evaluation of the operational environment or component to be certified. The evaluation facility is selected by the applicant and commissioned (generally at the applicant's expense).
 An evaluation facility can only carry out evaluations within the IDS certification scheme if it has been approved as an expert body by the IDS certification body.
 
 Approved evaluation facilities play an active role in strengthening the security and interoperability of the International Data Spaces and are the only companies entitled to carry out evaluations within the certification scheme.
 
-By subjecting the trustworthiness and competence of the IDS evaluation facilities to an initial check and subsequent continuous monitoring, the validity and worth of the certificates issued within the IDS for participants and components is ensured.
+By subjecting the trustworthiness and competence of the IDS evaluation facilities to an initial check and subsequent continuous monitoring, the validity and worth of the certificates issued within the IDS for operational environments and components is ensured.
 
 ## Areas of Application
-The IDS approval scheme covers the areas of participant evaluation and component evaluation.
+The IDS approval scheme covers the areas of operational environment evaluation and component evaluation.
 
-The participant evaluations to be performed for the International Data Spaces serve the purpose of proving the trustworthiness of participating organizations by evaluating their fulfillment of a set of technical as well as procedural requirements documented in the corresponding criteria catalog.
-For the participant, the certificate is the most essential prerequisite for gaining access to International Data Spaces.
+The operational environment evaluations to be performed for the International Data Spaces serve the purpose of proving the trustworthiness of participating organizations by evaluating their fulfillment of a set of technical as well as procedural requirements documented in the corresponding criteria catalog.
+For the operational environment, the certificate is the most essential prerequisite for gaining access to International Data Spaces.
 
 The component evaluations to be performed for the International Data Spaces serve the purpose of proving the trustworthiness of developed components by evaluating their fulfillment of a set of functional and security requirements documented in the corresponding criteria catalog.
 The certificate is the most essential access requirement for the use of a specific component implementation in the International Data Spaces.
@@ -47,8 +54,8 @@ This is ensured and continuously monitored as part of a two-stage approval proce
 During initial approval, the evaluation facility shall prove their professional competence in the selected field(s) of application and additionally conduct a successful trial evaluation of a participating organization or component, while being monitored by the certification body.
 All designated evaluators shall play an equally active role in this trial evaluation.<Footnote 3>
 
-The competencies to be demonstrated for the area of participant certification depend on the evaluation level of the examinations to be carried out by the evaluation facility (i.e. Management System and/or Control Framework).
-The competencies to be demonstrated for the area of component certification depend on the evaluation level of the examinations to be carried out by the evaluation facility (i.e. Checklist Approach, Concept Review and/or High Assurance Evaluation).
+The competencies to be demonstrated for the area of operational environment certification depend on the assurance level of the examinations to be carried out by the evaluation facility (i.e. Assurance Level 2 and/or Assurance Level 3).
+The competencies to be demonstrated for the area of component certification depend on the assurance level of the examinations to be carried out by the evaluation facility (i.e. Assurance Level 2 and/or Assurance Level 3).
 
 ## Approval Process
 ### Necessary Documents for Application
@@ -69,7 +76,7 @@ Necessary documents to apply for approval are:
     The respective accreditation must have been conducted by an accreditation body, which is part of the International Accreditation Forum (IAF).
 - **Information Security Management**
     - System documentation of the information security management system (incl. network topology).
-    - A written statement on all individual aspects of physical and organizational security (incl. plan of site), defined in the criteria catalogue for Participant Certification, Member Level [ISMS_Requirements] or an equivalent, relevant standard, including information on what actions the applicant has taken to meet the individual aspects of the requirements and where the actions are documented in the ISMS documentation.
+    - A written statement on all individual aspects of physical and organizational security (incl. plan of site), defined in the criteria catalogue for Operational Environment Certification, Assurance Level 2 [ISMS_Requirements] or an equivalent, relevant standard, including information on what actions the applicant has taken to meet the individual aspects of the requirements and where the actions are documented in the ISMS documentation.
     - As an alternative for the documentation and statements regarding Information Security Management, the Certification Body recognizes an existing certification according to ISO/IEC 27001 or an equivalent, relevant standard.
     - As an alternative for the documentation and statements regarding Information Security Management, the Certification Body recognizes relevant accreditations for the Evaluation Facility as a certification body for schemes underlying the IDS certification, such as ISO/IEC 27001 or ISO/IEC 17025. The respective accreditation must have been conducted by an accreditation body, which is part of the International Accreditation Forum (IAF).
 
@@ -98,8 +105,9 @@ A system audit may include the following steps:
 | The evaluation facility ensures that the personnel selected by the certification body is available to be interviewed during the system audit. | A member of the audit team conducts interviews with the selected personnel. |
 | In addition, the evaluation body ensures that the technical equipment required for testing can be inspected and assessed on site (area of application: component certification). | The test equipment and its handling is assessed (area of application: component certification).|
 | The evaluation facility fulfills the requirements for the security of facility and documents the respective regulations, specifications and processes. The evidence and documentation is to be submitted to the certification body at the time of application. | The certification body examines the provided documents.|
-| The evaluation facility ensures that the technical supervisors on site can be questioned on the date of the audit and that the team of auditors are able to assess the premises of the evaluation facility, including all relevant rooms within the scope of the audit. | The team of auditors examines the measures and processes on site, interviews the technical experts, inspects the premises of the evaluation facility as well as the rooms and equipment relevant for the security of the facility.|
+| The evaluation facility ensures that the technical supervisors on site can be questioned on the date of the audit and that the team of auditors are able to assess the premises of the evaluation facility, including all relevant rooms as defined by the evaluation facility within the scope of the audit. | The team of auditors examines the measures and processes on site, interviews the technical experts, inspects the premises of the evaluation facility as well as the rooms and equipment relevant for the security of the facility.|
 | | All findings are presented and discussed at the end of the audit.|
+| | The results of the audit are documented in a written audit report that may identify necessary corrective measures as discussed and must not be changed after written handover.|
 
 ### Phases of the Approval Process
 The approval process for evaluation facilities is divided into the following three phases.
@@ -215,7 +223,7 @@ In addition, the evaluators shall meet the following minimum requirements for th
 - Experience in vulnerability analysis and penetration testing and
 - Basic knowledge of cryptography (from test depth Concept Review).
 
-For the area of application participant certification, additional requirements are:
+For the area of application operational environment certification, additional requirements are:
 - Experience performing assessments according to ISO 27001, IT-Grundschutz or comparable standards.
 
 ### Personal Requirements
@@ -255,6 +263,6 @@ A suitability audit of the new premises must be carried out before the evaluatio
 | Reference ID | Referemce Content |
 | --- | --- |
 | \[17025\] | DIN EN ISO/IEC 17025:2018-03 General requirements for the competence of testing and calibration laboratories, https://www.beuth.de/en/standard/din-en-iso-iec-17025/278030106 |
-| \[17025-Criteria_IDS\] | International Data Space Association, 17025-Criteria, Version 0.3 Requirements for IDS Evaluation Facilities - 17025-Checklist |
+| \[17025-Criteria_IDS\] | International Data Space Association, Requirements for IDS Evaluation Facilities Checklist (based on IEC 17025), Version 1.3 |
 | \[BSI_CC_EF-Approval\] | Bundesamt für Sicherheit in der Informationstechnik: Zertifizierung und Anerkennung - Geltungsbereich Common Criteria (CC) und Information Technology Security Evaluation Criteria (ITSEC), https://www.bsi.bund.de/DE/Themen/ZertifizierungundAnerkennung/Stellen/ITSEC_CC/cc_itsec_node.html |
-| \[ISMS_Requirements\]	| International Data Space Association, Criteria Catalogue for Participant Certification, https://industrialdataspace.jiveon.com/docs/DOC-1799 |
+| \[ISMS_Requirements\]	| International Data Space Association, Criteria Catalogue for Operational Environment Certification, v1.1.0 |
