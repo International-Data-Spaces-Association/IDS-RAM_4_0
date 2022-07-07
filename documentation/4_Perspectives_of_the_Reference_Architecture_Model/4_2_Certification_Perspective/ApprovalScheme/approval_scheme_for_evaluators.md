@@ -14,7 +14,7 @@ As such, the information in this document is addressed at organizations that hav
 
 This document defines the rules (areas of application, required evidence) as well as the approval steps.
 These rules and processes are in part based on the approval scheme of the BSI for Common Criteria Evaluation Facilities [BSI_CC_EF-Approval].
-The specific requirements for IDS Evaluation Facilities as defined in [17025-Criteria] are based on DIN EN ISO/IEC 17025 [17025], in order to facilitate an eventual accreditation of the IDS certification scheme by national accreditation bodies.
+The specific requirements for IDS Evaluation Facilities as defined in [17025-Criteria] are based on DIN EN ISO/IEC 17025 [17025], in order to facilitate an eventual accreditation of the IDS Certification Scheme by national accreditation bodies.
 
 The approval of an organization as an IDS Evaluation Facility is carried out at the instigation of the owner or company management of the organization. Approval is granted to organizations operated by natural or legal persons under civil law.
 
@@ -33,8 +33,8 @@ Evaluations may only be carried out by evaluators whose professional competence 
 In the interest of competition, the long-term objective is to have more than one active, approved Evaluation Facility per area of application, so that component developers and participants can exercise their contractual freedom in this respect.
 
 ## Benefits of Approval as an IDS Evaluation Facility
-In order to carry out an IDS certification, the Applicant requires an Evaluation Facility that performs the evaluation of the operational environment or component to be certified. The Evaluation Facility is selected by the Applicant and commissioned (generally at the Applicant's expense).
-An Evaluation Facility can only carry out evaluations within the IDS certification scheme if it has been approved as an expert body by the IDS Certification Body.
+In order to carry out an IDS Certification, the Applicant requires an Evaluation Facility that performs the evaluation of the operational environment or component to be certified. The Evaluation Facility is selected by the Applicant and commissioned (generally at the Applicant's expense).
+An Evaluation Facility can only carry out evaluations within the IDS Certification Scheme if it has been approved as an expert body by the IDS Certification Body.
 
 Approved Evaluation Facilities play an active role in strengthening the security and interoperability of the International Data Spaces and are the only companies entitled to carry out evaluations within the certification scheme.
 
@@ -71,13 +71,13 @@ Necessary documents to apply for approval are:
     The catalog [17025-Criteria-IDS] is made available for free by the International Data Spaces Certification Body and shall be sent back to the Certification Body for further processing in electronic, editable form.
     - [Extension of the mentions of ISO/IEC 17025 in the paragraph to]: ISO/IEC 17025 or an equivalent, relevant standard
     - As an alternative for the documentation and statements regarding a quality management system, the Certification Body recognizes an existing certification according to ISO/IEC 17025 or an equivalent, relevant standard.
-    - As an alternative for the documentation and statements regarding a quality management system, the Certification Body recognizes relevant accreditations for the Evaluation Facility as a Certification Body for schemes underlying the IDS certification, such as ISO/ IEC 27001 or ISO/IEC 17025.
+    - As an alternative for the documentation and statements regarding a quality management system, the Certification Body recognizes relevant accreditations for the Evaluation Facility as a Certification Body for schemes underlying the IDS Certification, such as ISO/ IEC 27001 or ISO/IEC 17025.
     The respective accreditation must have been conducted by an accreditation body, which is part of the International Accreditation Forum (IAF).
 - **Information Security Management**
     - System documentation of the information security management system (incl. network topology).
     - A written statement on all individual aspects of physical and organizational security (incl. plan of site), defined in the criteria catalog for Operational Environment Certification, Assurance Level 2 [ISMS_Requirements] or an equivalent, relevant standard, including information on what actions the Applicant has taken to meet the individual aspects of the requirements and where the actions are documented in the ISMS documentation.
     - As an alternative for the documentation and statements regarding Information Security Management, the Certification Body recognizes an existing certification according to ISO/IEC 27001 or an equivalent, relevant standard.
-    - As an alternative for the documentation and statements regarding Information Security Management, the Certification Body recognizes relevant accreditations for the Evaluation Facility as a Certification Body for schemes underlying the IDS certification, such as ISO/IEC 27001 or ISO/IEC 17025. The respective accreditation must have been conducted by an accreditation body, which is part of the International Accreditation Forum (IAF).
+    - As an alternative for the documentation and statements regarding Information Security Management, the Certification Body recognizes relevant accreditations for the Evaluation Facility as a Certification Body for schemes underlying the IDS Certification, such as ISO/IEC 27001 or ISO/IEC 17025. The respective accreditation must have been conducted by an accreditation body, which is part of the International Accreditation Forum (IAF).
 
 In addition to the documents and evidence mentioned above, at least two experienced evaluators shall be list per area of application.
 The technical qualification of the designated evaluators must be demonstrated by the Evaluation Facility.
@@ -172,16 +172,14 @@ An assessment by means of a trial evaluation does not take place in the case of 
 During a renewal audit, the focus will be on the changes since the last audit.
 
 #### Ad Hoc Approval
-The assessment for an Ad Hoc Approval is necessary, when significant changes of the Evaluation Facility or of the IDS certification standards occur, which could have an impact on the given approval.
+The assessment for an Ad Hoc Approval is necessary, when significant changes of the Evaluation Facility or of the IDS Certification standards occur, which could have an impact on the given approval.
 The scenario for the Evaluation Facility includes e.g. changes regarding processes, persons, responsibilities, location or physical environment like laboratories.
-The scenario for the IDS certification standards
-includes major changes to the requirements catalogs or the certification procedure.
+The scenario for the IDS Certification standards includes major changes to the requirements catalogs or the certification procedure.
 
 Unlike the (Re-)Approval, the Ad Hoc Approval mainly consists of the check of documents prefilled by the Evaluation Facility which explain the significance of the changes and whether they affect the ability of the Evaluation Facility to conduct evaluations.
 The review of the documents is conducted by the Certification Body.
 
-Based on these documents, the
-Certification Body decides, if a more detailed audit is necessary because the validity of the approval is at risk.
+Based on these documents, the Certification Body decides, if a more detailed audit is necessary because the validity of the approval is at risk.
 In this case, the next re-approval would be moved forward.
 
 ## Restriction, Suspension or Withdrawal of Approval
@@ -214,7 +212,7 @@ The requirements outlines in the following two sections shall already be met whe
 - Basic knowledge of IT security
 - Knowledge of the English languages
 - Basic knowledge of project management
-- Knowledge of the IDS certification process
+- Knowledge of the IDS Certification process
 
 In addition, the evaluators shall meet the following minimum requirements for the area of application Component Certification:
 - Knowledge of site security, network security and security management (e.g. ISO 27001 or IT- Grundschutz),
@@ -255,7 +253,7 @@ A suitability audit of the new premises must be carried out before the Evaluatio
 | --- | --- |
 | Footnote 1 | For bodies accredited in accordance with ISO/IEC 17025, this requirement shall be deemed to have been fulfilled after submission of the accreditation decision. |
 | Footnote 2 | Companies certified according to ISO/IEC 27001 shall be deemed to have fulfilled this requirement upon presentation of the certificate, if the scope of the certificate covers the Evaluation Facility activities of the company.|
-| Footnote 3 | Alternatively, the evidence of competence for the applying Evaluation Facility and their designated evaluators may be provided by demonstrably performed evaluations in the schemes underlying the IDS certification, such as ISO/IEC 27001 or ISO/IEC 62443. |
+| Footnote 3 | Alternatively, the evidence of competence for the applying Evaluation Facility and their designated evaluators may be provided by demonstrably performed evaluations in the schemes underlying the IDS Certification, such as ISO/IEC 27001 or ISO/IEC 62443. |
 | Footnote 4 |The price list will be published on the IDSA website. It will take into account the different scopes of application and will include a staggering according to the different certification levels.|
 
 ## References
