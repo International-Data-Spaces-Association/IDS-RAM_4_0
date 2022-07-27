@@ -85,7 +85,7 @@ They shall carry out their duties in a non-discriminatory and impartial manner.
 5. The evaluation facility may use its own or external evaluators to carry out the evaluation.
 For external evaluators, the same competence requirements apply as in §2.4 for evaluators employed by the evaluation facility.
 6. The evaluation facility shall demonstrate and maintain adequate liability insurance.
-7. In principle, an evaluation facility may only carry out evaluations for the IDS if it has been recognized by the IDS certification body.
+7. An evaluation facility may only carry out evaluations for the IDS if it has been recognized by the IDS certification body.
 
 ### §2.4 Evaluators     
 1. Evaluators are natural persons who carry out evaluations for an evaluation facility in accordance with these rules of procedure.
@@ -101,10 +101,13 @@ In particular, evaluators must have sufficient knowledge of the following subjec
   * f. Cryptography;
   * g. Vulnerability analysis and penetration tests;
   * h. Tool knowledge (in particular development tools, analysis, and attack tools).
-*Requirement (d) is relevant only within the scope of the operational environment certification.*
-*Requirements (e) to (h) are only relevant within the scope of component certification.*      
-4. Evaluators must have at least four years (full-time equivalent) experience in the field of information technology and at least two years (full-time equivalent) experience in the field of testing IT products or information security.
-The activity as IT security officer or consultant in the aforementioned areas is not an activity within the meaning of sentence 1.
+
+    *Requirement (d) is relevant only within the scope of the operational environment certification.*
+
+    *Requirements (e) to (h) are only relevant within the scope of component certification.*      
+
+4. Evaluators must have at least four years (full-time equivalent) experience in the field of information technology and at least two years (full-time equivalent) experience in the field of testing IT products or information security. The activity as IT security officer or consultant in the aforementioned areas is not an activity within the meaning of sentence 1.
+
 5. Evaluators must also have the necessary personal ability and reliability to carry out the evaluation.
 These include:
   * a. Ability to deal with conflicts;
@@ -131,7 +134,7 @@ The certification body shall keep a list of the evaluation facilities it approve
 
 ### §2.7 Independence and impartiality. Risk of conflict of interest     
 1. The certification body and evaluation facilities, certifiers and evaluators are independent if they are free from external and internal influence, in particular from financial influence.
-2. Certification body, evaluation facilities, certifiers and evaluators shall be impartial if they carry out their certification and evaluation activities objectively in accordance with these rules of procedure and do not allow them selves to be guided by any irrelevant, in particular economic or personal, interests.
+2. Certification body, evaluation facilities, certifiers and evaluators shall be impartial if they carry out their certification and evaluation activities objectively in accordance with these rules of procedure and do not allow themselves to be guided by any irrelevant, in particular economic or personal, interests.
 3. Certification body and evaluation facilities shall ensure the independence and impartiality of the certifiers and evaluators through appropriate organizational measures.
 They obligate the certifiers and evaluators contractually to maintain their independence.
 In meeting the requirements of sentence 1 and sentence 2, the following principles in particular shall be taken into account:
@@ -143,7 +146,7 @@ In meeting the requirements of sentence 1 and sentence 2, the following principl
 4. Certification body, evaluation facilities, certifiers and evaluators may not take action in the event of a conflict of interest.
 This applies in particular if the certification body, evaluation facilities, certifier or evaluators design, implement or offer core components or parts of core components within the last two years before or during the evaluation or certification procedure or advise providers of IDS services or agree to the future performance of such an activity with a provider of IDS services.
 
-###  §2.8 Charges
+###  §2.8 Costs
 The certification body and the evaluation facility may charge appropriate fees for their activities.
 The charges shall be laid down in the contract with the applicant.
 
@@ -198,13 +201,13 @@ If the evaluation facility accepts such compensation, this shall be justified se
 The audit report shall include at least the following information:
 * a. the subject matter of the audit;
 * b. a description of the timing and scope of the audit, including the locations and premises where the audit was conducted;
-* c. a brief description ( a few sentences or keywords) of the implementation of each IDS requirement;
+* c. a brief description (a few sentences or keywords) of the implementation of each IDS requirement;
 * d. the reasoned assessment regarding the fulfillment or non-compliance of the individual IDS requirements for the certification level concerned;
 * e. the measures by which the evaluation facility has verified the fulfillment, in particular information on the evaluation method pursuant to § 3.3 paras. 2 to 6 and - if necessary for understanding - a justification for its use;
 * f. the indication of the certificates to be recognized as well as a statement on the evaluation of the interaction of the components;
 * g. a justification of the equivalence of certificates to be recognized within the meaning of § 4.5.
 * h. the overall result with regard to the fulfillment or non-fulfillment of the IDS requirements for a specific certification level;
-* i.the justification of the overall result;
+* i. the justification of the overall result;
 * j. a list of the audited documentation;
 * k. the declaration of the applicant in accordance with section 3.2(3);
 * l. the declaration of the evaluator that he has met the requirements of these Rules of Procedure for independence and impartiality and that there is no cause for concern of bias.
@@ -219,7 +222,7 @@ The final version of the evaluation report may only be submitted to the applican
 
 ### 3.6 Change Certification     
 1. Change Certifications can be carried out at the applicant\'s request.
-2. During a change certification the certification body must determine whether the certified operational environment or component continues to meet the IDS requirements of the originally certified certification level after changes have been made.
+2. During a change certification, the certification body must determine whether the certified operational environment or component continues to meet the IDS requirements of the originally certified certification level after changes have been made.
 3. For small changes, e.g. bug fixes or security patches for components, the change can be certified with minimal effort in form of a maintenance certification.
 For larger changes, e.g. to management processes of an organization or larger source code modifications for a component, a re-certification must be conducted.
 4. For a maintenance certification, the evaluation facility evaluates the documented changes to determine whether they may result in a violation of the certified IDS requirements.
@@ -415,7 +418,7 @@ At the request of the applicant, a change certification may be conducted.
 ### §2.5 Accreditation      
 1. The certification body and the evaluation facility shall demonstrate compliance with the requirements of these procedural rules, in particular their technical suitability, by means of accreditation.
 2. The certification body requires the accreditation of a National Accreditation Body (NAB), that is a member of the International Accreditation Forum (IAF), for certifications according to these procedural rules.
-3. As long as the respective NAB does not have a specific accreditation procedure for the IDS Certification Body, the following accreditations shall be considered accreditations for the Certification Body within the meaning of these Rules of Procedure:
+3. As long as the respective NAB does not have a specific accreditation procedure for the IDS certification body, the following accreditations shall be considered accreditations for the certification body within the meaning of these Rules of Procedure:
   * a. Accreditation at the NAB according to ISO/IEC 17065 for IT security (ISO/IEC 15408, ETSI EN 319 401);
   * b. Accreditation by NAB according to ISO/IEC 17021 for information security management systems according to ISO/IEC 27001.
 4. The certification body may only carry out certifications in accordance with these procedural rules if a valid accreditation exists.
