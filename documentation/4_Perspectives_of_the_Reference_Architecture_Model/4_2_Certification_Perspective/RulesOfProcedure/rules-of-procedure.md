@@ -232,7 +232,7 @@ The scope of the re-certifications shall be such that the changes to the operati
 Appropriate sampling shall be used to determine whether the operational environment or component as a whole continues to meet the IDS requirements.
 6. The applicant is obliged to cooperate in accordance with § 3.2.
 In particular, it shall prepare documentation of the changes to the technical and organizational measures in accordance with § 3.2 Para. 2.
-7. The evaluation facility prepares a evaluation report and sends it to the certification body.
+7. The evaluation facility prepares an evaluation report and sends it to the certification body.
 
 ## 4. The certification procedure   
 ### §4.1 Contractual basis      
