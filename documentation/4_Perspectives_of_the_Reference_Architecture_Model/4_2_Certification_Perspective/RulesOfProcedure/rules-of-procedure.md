@@ -78,7 +78,7 @@ They shall carry out their duties in a non-discriminatory and impartial manner.
 8. The certification body shall ensure that the certifiers it employs meet the requirements set out in paragraphs 2 to 7.
 
 ### §2.3 Evaluation facility      
-1. Independent and technically suitable evaluation facilities can be commissioned to evaluate the operational environment of a participating organization or the components of a manufacturer in order to issue an IDS certificate.
+1. Independent and technically suitable evaluation facilities can be commissioned by the applicant to evaluate the operational environment of a participating organization or the components of a manufacturer in order to receive an IDS certificate from the IDSA certification body.
 2. An evaluation facility is a legal entity or part of a legal entity that employs evaluators to conduct evaluations in accordance with these rules of procedure.
 3. The evaluation facility shall carry out its activities in a non-discriminatory and impartial manner in accordance with section 2.7 subsections 1 and 2 and shall have the necessary resources for the evaluation.
 4. The evaluation facility shall ensure the confidentiality of information on and arising from the evaluation procedures.
@@ -116,11 +116,11 @@ These include:
   * d. Basic knowledge of project management    
 6. Evaluators must be independent within the meaning of § 2.7 (3) and perform their duties in a non-discriminatory and impartial manner. They shall not evaluate an organization or component if there is a risk of a conflict of interest within the meaning of Art. 2.7 paragraph 4.
 
-### §2.5 Accreditation      
+### §2.5 Approval      
 1. The certification body and the evaluation facility shall demonstrate compliance with the requirements of these procedural rules, in particular, their technical suitability, within the scope of the commission or by means of recognition.
 2. The certification body must be commissioned by the International Data Spaces Association (IDSA) to carry out certifications in accordance with these rules of procedure.
 3. The certification body may only carry out certifications in accordance with these rules of procedure if a valid commission has been received.
-4. Evaluation facilities require recognition by the IDS certification body for performing evaluations in accordance with these procedural rules.
+4. Evaluation facilities require approval by the IDS certification body for performing evaluations in accordance with these procedural rules.
 5. The professional suitability of the certification body and the evaluation facilities only exists in the temporal and material scope of the assignment or approval.
 The temporal scope of the assignment of the certification body and the recognition of the evaluation facilities shall include the completion of the evaluation and certification procedure.
 
@@ -198,9 +198,9 @@ This requires both an assessment of the fulfillment of the individual requiremen
 2. If individual organizational requirements of the IDS certification for the certification level applied for are not met, these may be offset by other measures if the operational environment or the component thereby achieves the overall level of protection of the certification level applied for.
 If the evaluation facility accepts such compensation, this shall be justified separately to the certification body in the statement of the overall result.
 3. The evaluation facility shall draw up an evaluation report on the basis of the evaluation.
-The audit report shall include at least the following information:
-* a. the subject matter of the audit;
-* b. a description of the timing and scope of the audit, including the locations and premises where the audit was conducted;
+The evaluation report shall include at least the following information:
+* a. the subject matter of the evaluation;
+* b. a description of the timing and scope of all performed on-site audits and evaluations, including the locations and premises where they were conducted;
 * c. a brief description (a few sentences or keywords) of the implementation of each IDS requirement;
 * d. the reasoned assessment regarding the fulfillment or non-compliance of the individual IDS requirements for the certification level concerned;
 * e. the measures by which the evaluation facility has verified the fulfillment, in particular information on the evaluation method pursuant to § 3.3 paras. 2 to 6 and - if necessary for understanding - a justification for its use;
@@ -208,7 +208,7 @@ The audit report shall include at least the following information:
 * g. a justification of the equivalence of certificates to be recognized within the meaning of § 4.5.
 * h. the overall result with regard to the fulfillment or non-fulfillment of the IDS requirements for a specific certification level;
 * i. the justification of the overall result;
-* j. a list of the audited documentation;
+* j. a list of the reviewed documentation;
 * k. the declaration of the applicant in accordance with section 3.2(3);
 * l. the declaration of the evaluator that he has met the requirements of these Rules of Procedure for independence and impartiality and that there is no cause for concern of bias.
 4. The evaluation report may contain additional hints.
@@ -248,7 +248,7 @@ In particular, it shall prepare documentation of the changes to the technical an
 ### §4.2 Requirements for certification     
 1. The granting of the certificate requires an evaluation of the participating organization\'s operational environment or component by an evaluation facility in accordance with these rules of procedure.
 The applicant shall designate the evaluation facility.
-2. recognized evaluation facilities are listed in a list maintained by the certification body within the meaning of § 2.6.
+2. Recognized evaluation facilities are listed in a list maintained by the certification body within the meaning of § 2.6.
 3. After signing of the contract, the certification body appoints a responsible certifier to the applicant and the evaluation facility.
 4. The evaluation facility appoints to the certification body the responsible (principal) evaluator whom it has entrusted with the evaluation.
 5. The certifier coordinates the evaluation object, the scope, the duration and the schedule of the evaluation with the responsible evaluator and the applicant.
@@ -388,7 +388,7 @@ The certification body shall clearly describe to the applicant under which aspec
 The time limit may be extended at the request of the applicant.
 5. The certification body may suspend the certificate for the duration of the assessment procedure.
 In the case of suspension, the certification mark shall not be used. The applicant shall inform its customers of the suspension.
-6.  The certification body shall take the necessary measures to comply with the IDS on the basis of its findings, if necessary on the basis of the interim audit report.
+6.  The certification body shall take the necessary measures to ensure compliance with the IDS on the basis of its findings, if necessary on the basis of the intermediate evaluation report.
 It can restrict, suspend, or revoke the certificate.
 The certification body shall give the applicant the opportunity to comment before taking its decision.
 The decision shall state the reasons on which it is based and shall be communicated to the applicant in text form.
