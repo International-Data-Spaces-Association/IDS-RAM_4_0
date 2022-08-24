@@ -200,7 +200,7 @@ If the Evaluation Facility accepts such compensation, this shall be justified se
 3. The Evaluation Facility shall draw up an evaluation report on the basis of the evaluation.
 The evaluation report shall include at least the following information:
 * a. the subject matter of the evaluation;
-* b. a description of the timing and scope of the evaluation, including the locations and premises where they were conducted;
+* b. a description of the timing and scope of the evaluation, including the locations and premises where it was conducted;
 * c. a brief description (a few sentences or keywords) of the implementation of each IDS requirement;
 * d. the reasoned assessment regarding the fulfillment or non-compliance of the individual IDS requirements for the Trust Level concerned;
 * e. the measures by which the Evaluation Facility has verified the fulfillment, in particular information on the evaluation method pursuant to § 3.3 paras. 2 to 6 and - if necessary for understanding - a justification for its use;
