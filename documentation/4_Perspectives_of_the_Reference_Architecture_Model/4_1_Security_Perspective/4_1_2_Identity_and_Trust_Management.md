@@ -70,12 +70,12 @@ To establish a trusted connection, each connector needs the identity information
 2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.
 3. When establishing communication, the DAT of both IDS Connector instances is exchanged. This is also matched with the used TLS certificate.
 
-To avoid the possibility of abusing a DAT by an attacker, these DATs must be treated as confidential information (only discosing it to other communication partners at will). To further protect from attacks performed with leaked DATs, each Connector has to validate the presented certificate by matching it to the connectors identifier. The ParIS only serves untrusted information and thus is not part of this interaction. The DAT will be refreshed on a regular basis, since the token lifetime is limited to a short timeframe. The device identity will be provisioned and refreshed only after expiration (with a long time frame) or in case of revocation. 
+To reduce the risk of an attacker abusing a DAT, these DATs should only be disclosed to other communication partnes at will.
+To further protect from attacks performed with leaked DATs, each Connector has to validate the certificate used for the TLS connection against the DAT in one of the following two ways:
+* Option 1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
+* Option 2. The connector uses a separate certificate for TLS connections (e.g., issued by a CA such as Let's Encrypt). In this case, the corresponding IDS Connector must assure the certificate fingerprint matches the one that is embedded in the DAT.
 
-Two cases must be evaluated:
-
-1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
-2. The connector uses a separate certificate for TLS connections (e.g., issued by a CA such as Let's Encrypt). In this case, the corresponding IDS Connector must assure the certificate fingerprint matches the one that is embedded in the DAT.
+The ParIS only serves untrusted information and thus is not part of this interaction. The DAT will be refreshed on a regular basis, since the token lifetime is limited to a short timeframe. The device identity will be provisioned and refreshed only after expiration (with a long time frame) or in case of revocation. 
 
 ### Component (Identity) Lifecycle
 
