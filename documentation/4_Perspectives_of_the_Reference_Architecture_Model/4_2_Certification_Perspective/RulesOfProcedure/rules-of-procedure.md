@@ -41,7 +41,7 @@ The vertical dimension is the increasing extent of the organizational security r
 2. The **core Component Certification** is interoperability and security oriented and aims at checking the development and maintenance process as well as the implementation of a component.
 The Component Certification approach is represented by two dimensions:
 The depth of testing during evaluation increases with each of the three defined Assurance Levels.
-The three defined trust levels likewise increase with the security needs of the data owner or data consumer in the IDS.
+The three defined Trust Levels likewise increase with the security needs of the data owner or data consumer in the IDS.
 
 ### §1.3 Relationship to DIN EN ISO/IEC 17065 and 27001     
 1. These Rules of Procedure are a certification program in the sense of ISO/IEC 17065.
@@ -200,7 +200,7 @@ If the Evaluation Facility accepts such compensation, this shall be justified se
 3. The Evaluation Facility shall draw up an evaluation report on the basis of the evaluation.
 The evaluation report shall include at least the following information:
 * a. the subject matter of the evaluation;
-* b. a description of the timing and scope of all performed on-site audits and evaluations, including the locations and premises where they were conducted;
+* b. a description of the timing and scope of the evaluation, including the locations and premises where they were conducted;
 * c. a brief description (a few sentences or keywords) of the implementation of each IDS requirement;
 * d. the reasoned assessment regarding the fulfillment or non-compliance of the individual IDS requirements for the Trust Level concerned;
 * e. the measures by which the Evaluation Facility has verified the fulfillment, in particular information on the evaluation method pursuant to § 3.3 paras. 2 to 6 and - if necessary for understanding - a justification for its use;
