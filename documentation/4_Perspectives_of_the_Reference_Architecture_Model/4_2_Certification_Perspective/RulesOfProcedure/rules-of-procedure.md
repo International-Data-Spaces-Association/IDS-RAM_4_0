@@ -36,8 +36,8 @@ The certificate is the most important prerequisite for a component being used wi
 
 ### §1.2 Subject of the evaluation and certification     
 1. The certification approach for **operational environments** is represented by two dimensions:
-The horizontal dimension is the evaluation depth that describes the level of detail at which the evaluation takes place.
-The vertical dimension is the increasing extent of the organizational security requirements to be met.
+The horizontal dimension is the evaluation depth that describes the level of detail at which the evaluation takes place (Assurance Level).
+The vertical dimension is the increasing extent of the organizational security requirements to be met (Trust Level).
 2. The **core Component Certification** is interoperability and security oriented and aims at checking the development and maintenance process as well as the implementation of a component.
 The Component Certification approach is represented by two dimensions:
 The depth of testing during evaluation increases with each of the three defined Assurance Levels.
@@ -157,7 +157,7 @@ The charges shall be laid down in the contract with the Applicant.
   * a. the evaluation item with an indication of all relevant locations;
   * b. the IDS certification criteria in the applicable version;
   * c. these procedural rules as the procedural regulation governing evaluation and certification;
-  * d. the evaluation contract (scope of the evaluation, location of the evaluation, planned evaluation duration, evaluation report) including a statement of the Trust Level applied for by the Applicant;
+  * d. the evaluation contract (scope of the evaluation, location of the evaluation, planned evaluation duration, evaluation report) including a statement of the Trust and Assurance Level applied for by the Applicant;
   * e. the Applicant\'s obligations to cooperate.
 
 *In the case of Component Certification, the description of the evaluation item shall specify in particular which components the component comprises.*
@@ -180,7 +180,7 @@ In any case, those concerning central aspects should be conducted as oral interv
 Where a personal interview would be disproportionate, it may take the form of videoconferencing.
 4. The on-premise evaluation shall include at least an evaluation of the procedures on the premises of the Applicant or its subcontractors.
 5. In the case of Component Certification, appropriate functional and security tests are conducted.
-6. The evaluation covers all requirements of the IDS for the selected Trust Level.
+6. The evaluation covers all requirements of the IDS for the selected Trust and Assurance Level.
 7. The evaluation should be carried out on a sample basis. In relation to a request (e.g. secure passwords), a sample of activities is to be evaluated in order to fulfill a requirement (e.g. password length).
 With regard to the implementation of individual activities, a sample of elements (e.g. individual passwords) shall be evaluated.
 8. The sample shall be selected in such a way that the evaluation of the selected activities or elements provides an indication of the compliance with the requirement.
@@ -193,8 +193,8 @@ However, it is necessary to evaluate criteria not covered by this certificate as
 3. The Evaluation Facility shall ask the Certification Body for a preliminary ruling on the recognition of certificates. The request shall be accompanied at least by the particulars and documents referred to in § 3.2 (4).
 
 ### §3.5 Assessment and evaluation report     
-1. On the basis of the evaluation, the evaluator shall prepare an assessment of the operational environment\'s or the component\'s compliance with the requirements of the IDS in relation to a specific Trust Level.
-This requires both an assessment of the fulfillment of the individual requirements of the IDS and of the fulfillment of the requirements of the IDS as a whole, each relating to a specific Trust Level.
+1. On the basis of the evaluation, the evaluator shall prepare an assessment of the operational environment\'s or the component\'s compliance with the requirements of the IDS in relation to a specific Trust and Assurance Level.
+This requires both an assessment of the fulfillment of the individual requirements of the IDS and of the fulfillment of the requirements of the IDS as a whole, each relating to a specific Trust and Assurance Level.
 2. If individual organizational requirements of the IDS Certification for the Trust Level applied for are not met, these may be offset by other measures if the operational environment or the component thereby achieves the overall level of protection of the Trust Level applied for.
 If the Evaluation Facility accepts such compensation, this shall be justified separately to the Certification Body in the statement of the overall result.
 3. The Evaluation Facility shall draw up an evaluation report on the basis of the evaluation.
@@ -242,7 +242,7 @@ In particular, it shall prepare documentation of the changes to the technical an
   * b. the IDS certification criteria in the applicable version;
   * c. the Evaluation Facility which is to carry out the evaluation;
   * d. these procedural rules as the procedural regulation applicable to the certification;
-  * e. the certification application including details of the Trust Level applied for;
+  * e. the certification application including details of the Trust and Assurance Level applied for;
   * f. the Applicant\'s obligations to cooperate.
 
 ### §4.2 Requirements for certification     
@@ -270,7 +270,7 @@ This shall not apply if the relevant component is immediately re-certified and t
 
 ### §4.5 Recognition of other certificates     
 1. The Certification Body may recognize other certificates if they are materially and procedurally equivalent to an IDS certificate.
-The Certification Body determines the Trust Level at which the certificate is recognized.
+The Certification Body determines the Trust and Assurance Level at which the certificate is recognized.
 2. A material equivalence exists if the other certificate is based on requirements that are comparable to or exceed those of the IDS with regard to the Trust Level.
 3. A procedural equivalence exists if the other certificate was granted in a certification procedure that offers a comparable guarantee for the proper evaluation and certification in accordance with these procedural rules.
 4. The following certificates are generally considered to be materially and procedurally equivalent:
@@ -278,7 +278,7 @@ The Certification Body determines the Trust Level at which the certificate is re
   * certificates according to ISO 27001 based on IT Grundschutz;
   * certificates according to ISO 15408;
   * certificates according to IEC 62443.
-5. The Certification Body shall justify the recognition, in particular with regard to the Trust Level.
+5. The Certification Body shall justify the recognition, in particular with regard to the Trust and Assurance Level.
 6. In the event of recognition, § 4.4 paras. 2 to 3 apply accordingly.
 
 ### §4.6 Decision of the Certification Body     
@@ -321,7 +321,7 @@ Section 3.6 shall apply to evaluation within the framework of change certificati
   * b. the certification item, if applicable as a short designation;
   * c. the Certification Body;
   * d. the designation of the applied version of the IDS certification criteria, if applicable as a short designation;
-  * e. the Trust Level;
+  * e. the Trust and Assurance Level;
   * f. a unique certificate number;
   * g. the period of validity of the certificate;
   * h. an appendix containing the information pursuant to para. 3;
