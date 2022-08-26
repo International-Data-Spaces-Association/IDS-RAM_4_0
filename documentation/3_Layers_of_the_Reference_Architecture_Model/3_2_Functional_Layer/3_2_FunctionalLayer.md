@@ -64,7 +64,7 @@ Each Connector must have a valid X.509 certificate (or equivalent). With the hel
 this certificate, each participant in the International Data Spaces that
 operates an endpoint is able to verify the identity of any other
 participant. Certain conditions (e.g. security profiles) may also apply
-here. More information about authentication is given in the[Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
+here. More information about authentication is given in the [Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
 
 The Connector serving as the data source must be able to verify the
 receiving Connector's capabilities and security features as well as its
@@ -94,7 +94,7 @@ other and from the Connector). Data Providers and Data Consumers can
 decide about the level of security to be applied for their respective
 Connectors by deploying Connectors supporting the selected security
 profile. More information about trustworthy communication and security
-by design is given in  the [Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
+by design is given in the [Security Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
 
 #### Technical Certification
 
