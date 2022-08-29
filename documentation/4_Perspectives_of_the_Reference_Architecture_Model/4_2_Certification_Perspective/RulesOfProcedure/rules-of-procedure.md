@@ -38,7 +38,7 @@ The certificate is the most important prerequisite for a component being used wi
 1. The certification approach for **operational environments** is represented by two dimensions:
 The horizontal dimension is the evaluation depth that describes the level of detail at which the evaluation takes place (Assurance Level).
 The vertical dimension is the increasing extent of the organizational security requirements to be met (Trust Level).
-2. The **core Component Certification** is interoperability and security oriented and aims at checking the development and maintenance process as well as the implementation of a component.
+2. The **Core Component Certification** is interoperability and security oriented and aims at checking the development and maintenance process as well as the implementation of a component.
 The Component Certification approach is represented by two dimensions:
 The depth of testing during evaluation increases with each of the three defined Assurance Levels.
 The three defined Trust Levels likewise increase with the security needs of the data owner or data consumer in the IDS.
