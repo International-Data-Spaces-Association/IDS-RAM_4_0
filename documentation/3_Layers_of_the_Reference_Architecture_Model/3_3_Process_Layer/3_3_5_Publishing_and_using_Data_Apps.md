@@ -19,3 +19,4 @@ If the participant finds a suitable IDS App in an IDS App Store, e.g. matching i
 
 ![RetrieveIDSApp](./media/retrieve-ids-app-process.png)
 #### _Fig. 3.3.5.4: "Retrieve IDS App" Process_
+

@@ -1,21 +1,5 @@
 # SECURITY PERSPECTIVE
 
-[TODO: revise]
-
-As stated in Section 1.1, one strategic requirement of the
-International Data Spaces is to provide secure data supply
-chains. This is critical for establishing and maintaining trust
-among Participants that want to exchange and share data
-and use Data Apps. The IDS Security Architecture provides
-means to identify Participants,, protect communication and
-data exchange transactions, and control the use of data after
-it has been exchanged.
-For these purposes, the International Data Spaces defines
-a Trusted Connector as an extension of the Base Connector
-(see Section 3.5). The IDS Connector ensures that the spec-
-ifications and requirements of the Security Architecture ma-
-terialize in everyday interactions and operations in the Inter-
-national Data Spaces. The security aspects described in the
-following constitute the basis of the IDS Connector. The dif-
-ferences between a Trusted Connecter and a Base Connector
-are detailed in the Security Profiles subsection 4.1.3.3.6.
+As stated in [Section 1.1](../../1_Introduction/1_1_Goals_of_the_International_Data_Spaces.md), one strategic requirement of the International Data Spaces is to provide secure data supply chains. This is critical for establishing and maintaining trust among Participants that want to exchange and share data and use Data Apps. The IDS Security Architecture provides means to identify devices in the IDS, protect communication and data exchange transactions, and control the use of data after it has been exchanged.
+IDS Connectors ensure that the specifications and requirements of the Security Architecture materialize in everyday interactions and operations in the International Data Spaces. The [first section](./4_1_1_Security_Aspects_Addressed_by_the_Different_Layers.md) further explains the relations of the Security Perspective and the different layers of the IDS RAM. The remaining aspects for the security perspective are separated into multiple sections: 
+Identity and trust management for devices and involved entities in the IDS is explained in [Section 4.1.2](./4_1_2_Identity_and_Trust_Management.md). Security requirements and concepts for different aspects and layers of an IDS connector are explained as well: They are split into security measures necessary on the platform layer in [Section 4.1.3](./4_1_3_Securing_the_Platform.md) and on the application layer in [Section 4.1.4](./4_1_4_Securing_Applications.md). The security of communication between multiple secured components is addressed in [Section 4.1.5](./4_1_5_Securing_Interaction_between_IDS_components.md). Finally, [Section 4.1.6](./4_1_6_Usage_Control.md) concludes the security perspective by explaining usage control and its realization based on a properly secured IDS component.
