@@ -1,4 +1,4 @@
-## Blockchain {#subsec:blockchain}
+## Blockchain ##
 
 The core purpose of the International Data Spaces is to enable
 controlled exchange and sharing of data between organizations --
@@ -12,11 +12,11 @@ in the IDS ecosystem, while data sovereignty is ensured at any time.
 In the use cases of the International Data Spaces, two basic patterns of
 data sharing can be found:
 
--   Data is shared to feed new, data-driven services, such as using the
+- Data is shared to feed new, data-driven services, such as using the
     data in a new app, smart algorithm, or other digital service in
     which data of different sources/providers is combined.
 
--   Data is shared for some form of business process synchronization,
+- Data is shared for some form of business process synchronization,
     such as using the data to execute transactions (e.g. exchange
     orders), enable production (e.g. exchange product data), check
     quality (e.g. monitor the temperature of perishable goods), or
@@ -29,13 +29,13 @@ organizations.
 
 Two examples:
 
--   As perishable goods were exposed to improper ambient temperatures,
+- As perishable goods were exposed to improper ambient temperatures,
     the company ordering the goods refuses acceptance. The temperature
     data thereby becomes a shared data asset that can be stored in a
     shared environment which acts as a trusted record keeper of such
     quality data.
 
--   Several companies want to share their capabilities in order to
+- Several companies want to share their capabilities in order to
     produce a certain type of good. In this case, the capability of each
     company becomes a shared data asset to be stored in shared 'yellow
     pages' accessible for all participants in the ecosystem.
@@ -55,11 +55,9 @@ In general, the use of Blockchain technology can ensure data consistency
 and transparency in combination with the general IDS approach for data
 sovereignty and secure data exchange and sharing. In contrast, typical
 Data Lakes focus on the integration of data for the purpose of knowledge
-extraction (see Figure
-[4](#fig:_general_architectural_patterns_for_data_exchange_and_data_sharing){reference-type="ref"
-reference="fig:_general_architectural_patterns_for_data_exchange_and_data_sharing"}).
-
+extraction (see Figure below).
 
 ![ General architectural patterns for data exchange and data
-sharing](../media/image15.png){#fig:_general_architectural_patterns_for_data_exchange_and_data_sharing
-}
+sharing](../media/image15.png)
+*Figure: General architectural patterns for data exchange and data
+sharing*

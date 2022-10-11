@@ -1,4 +1,4 @@
-## Contribution of the International Data Spaces to Industry 4.0 and the Data Economy {#subsec:contribution_to_industry40}
+## Contribution of the International Data Spaces to Industry 4.0 and the Data Economy ##
 
 By proposing an architecture for secure data exchange and trusted data
 sharing, the International Data Spaces contributes to the design of
@@ -6,9 +6,8 @@ enterprise architectures in commercial and industrial digitization
 scenarios. It does so by bridging the gaps between research, industrial
 stakeholders, political stakeholders, and standards bodies. The
 architecture is designed with the objective to overcome the differences
-between top-down approaches and bottom-up approaches. Figure
-[5](#fig:5_Typical_enterprise_architecture_stack){reference-type="ref"
-reference="fig:5_Typical_enterprise_architecture_stack"} shows a typical
+between top-down approaches and bottom-up approaches. The figure
+below shows a typical
 architecture stack of the digital industrial enterprise. The
 International Data Spaces connects the lower-level architectures for
 communication and basic data services with more abstract architectures
@@ -16,30 +15,26 @@ for smart data services. It therefore supports the establishment of
 secure data supply chains from data source to data use, while at the
 same time making sure data sovereignty is guaranteed for data owners.
 
-
 ![ Typical enterprise architecture
-stack](../media/image16.png){#fig:5_Typical_enterprise_architecture_stack
-}
-
+stack](../media/image16.png)
+*Figure: Typical enterprise architecture
+stack*
 
 In broadening the perspective from an individual use case scenario to a
 platform landscape view, the International Data Spaces positions itself
 as an architecture that links different cloud platforms through policies
 and mechanisms for secure data exchange and trusted data sharing (or, in
-other words, through the principle of data sovereignty). 
+other words, through the principle of data sovereignty).
 
 Over the IDS Connector, the International Data Space's central
 component, industrial data clouds, as well as individual enterprise
 clouds, on-premises applications and individual, connected devices can
-be connected to the International Data Spaces (see Figure
-[6](#fig:6_International_Data_Spaces_connecting_different_cloud_platforms){reference-type="ref"
-reference="fig:6_International_Data_Spaces_connecting_different_cloud_platforms"}).
-
+be connected to the International Data Spaces.
 
 ![ International Data Spaces connecting different cloud
-platforms](../media/image17.png){#fig:6_International_Data_Spaces_connecting_different_cloud_platforms
-}
-
+platforms](../media/image17.png)
+*Figure: International Data Spaces connecting different cloud
+platforms*
 
 With this integrating ambition, the International Data Spaces initiative
 positions itself in the context of cognate initiatives on both national
@@ -51,31 +46,33 @@ working group.
 The International Data Spaces initiative has established, and will
 continue to establish, liaisons with other initiatives, among them
 
--   Alliance for Internet of Things Innovation,
+- Alliance for Internet of Things Innovation,
 
--   Big Data Value Association,
+- Big Data Value Association,
 
--   Data Market Austria,
+- Data Market Austria,
 
--   Data Trading Alliance
+- Data Trading Alliance
 
--   eCl\@ss,
+- eCl@ss,
 
--   FIWARE Foundation,
+- FIWARE Foundation,
 
--   Industrial Internet Consortium,
+- Gaia-X AISBL
 
--   iSHARE
+- Industrial Internet Consortium,
 
--   Industrial Valuechain Initative
+- iSHARE
 
--   OPC Foundation,
+- Industrial Valuechain Initative
 
--   Plattform Industrie 4.0,
+- OPC Foundation,
 
--   Standardization Council Industrie 4.0, and
+- Plattform Industrie 4.0,
 
--   World Wide Web Consortium.
+- Standardization Council Industrie 4.0, and
+
+- World Wide Web Consortium.
 
 Furthermore, the International Data Spaces initiative seeks
 collaboration and exchange of ideas with existing research and
@@ -85,9 +82,3 @@ industry, politics, and standards bodies, aligning the requirements of
 the economy and society, and fostering ties with other initiatives, the
 International Data Spaces can be considered a unique initiative in the
 landscape of *Industry 4.0*.
-
-[^1]: https://www.digitale-technologien.de/DT/Redaktion/DE/Downloads/Publikation/SSWII_Programmbroschuere.pdf
-
-[^2]: https://www.ishareworks.org/
-
-[^3]: https://www.internationaldataspaces.org/ressource-hub/publications-ids/
