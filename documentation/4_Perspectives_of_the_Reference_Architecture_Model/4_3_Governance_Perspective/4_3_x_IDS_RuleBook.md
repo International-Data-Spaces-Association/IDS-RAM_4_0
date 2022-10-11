@@ -1,10 +1,10 @@
-## IDS Rulebook
+## IDSA Rulebook
 
 It is all about data. If you are going to build or use data driven ecosystems
 or data driven business models, you should strongly consider data sovereignty[^1]
 – and therefore the [IDSA rulebook](https://internationaldataspaces.org/download/19008/).
 
-This rulebook addresses:
+This Rulebook addresses:
 
 1. peer to peer data sharing
 
@@ -40,14 +40,14 @@ IDSA already counts over one-hundred member organizations from twenty countries.
 all these companies. Members, guest and data sovereignty suppliers and appliers, will fulfil the
 common value proposition of generating business value from data.
 
-#### The Purpose and Scope of the rule book
+#### The Purpose and Scope of the Rulebook
 
-Rules of the game: The purpose of this rule book is, to describe clearly what rules and guidance
+Rules of the game: The purpose of this Rulebook is, to describe clearly what rules and guidance
 all participants have to follow to achieve the goal of the common interplay in upcoming data
 economies. This governance framework including the functional, technical, operational, and legal
 agreements. They are binding for all roles and their interaction in the dedicated environment:
 
-1. The IDSA Support Organization: Responsible e.g. for maintaining the rule book and for
+1. The IDSA Support Organization: Responsible e.g. for maintaining the Rulebook and for
 supporting its application. The IDSA Support Organization as an enabler for the orchestration
 of the processes and as general governance instance a foundation for the realization of
 internal structures and interfaces to other parties
@@ -58,7 +58,7 @@ needed by all participant. They build the source of common agreements.
 3. All users of IDSA data sovereignty getting guidance on how to proceed within this framework
 for the realization of use cases on the foundation of a trustworthy infrastructure and governance
 
-4. The interaction of all is structured and guided within this rule book.
+4. The interaction of all is structured and guided within this Rulebook.
 
 ![Overview Rulebook scope and goals](./media/Overview_Rulebook_scope_and_goals.png)
 
@@ -72,7 +72,7 @@ the relevant processes, e.g. admission and withdrawal of participants.
 
 Cross Industry Approach: This approach on data sovereignty is not industry specific,
 it is applicable in all economic sectors. Therefore, sector specific rules are not
-described in the rulebook. In consequence, all rules and guidelines could be applied
+described in the Rulebook. In consequence, all rules and guidelines could be applied
 in all economic sectors and – more over – across these sectors to establish data
 exchange among different industries. IDS is a horizontal approach. On its foundation
 data sovereignty call build in and across all industries.
@@ -92,8 +92,8 @@ data sovereignty services
 what legal environment is valid, what legal boundaries are out there, what is to be committed
 and from what commitments and laws the dedicated data exchange can benefit
 
-5. Commercial assumptions: This rule book defines not a commercial business model, but it is
-enabling several ones. Commercial Agreements are not part of the rule book, but we make some
+5. Commercial assumptions: This Rulebook defines not a commercial business model, but it is
+enabling several ones. Commercial Agreements are not part of the Rulebook, but we make some
 commercial assumptions à Essential services (low profit), base services (enabling functionality)
 cash cow services on top of that. à Commercial agreements will be done separately.
 
@@ -130,7 +130,7 @@ provides all information.
 
 ### Guiding principles
 
-Guiding principles were leading the team in structuring the complete IDS ecosystem, it´s roles and this rule book.
+Guiding principles were leading the team in structuring the complete IDS ecosystem, it´s roles and this Rulebook.
 
 -	Do not reinvent the wheel
 
