@@ -1,4 +1,4 @@
-## Publishing and using IDS Apps
+### Publishing and using IDS Apps ##
 
 IDS Apps can be used by IDS Connectors for specific data processing or transformation tasks. They can perform tasks of different complexity, ranging from simple data transformation to complex data analytics. An example of data transformation may be a IDS App parsing a single string field with address information and producing a data structure consisting of street name and number, zip code, name of the city, and name of the country.
 

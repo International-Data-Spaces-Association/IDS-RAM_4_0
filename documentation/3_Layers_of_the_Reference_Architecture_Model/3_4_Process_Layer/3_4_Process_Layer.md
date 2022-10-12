@@ -1,8 +1,9 @@
-# Process Layer
+## Process Layer ##
 
 The Process Layer specifies the interactions taking place between the different components of the International Data Spaces. It thereby provides a dynamic view of the Reference Architecture Model.
 
 The following processes and their sub-processes are described:
+
 1. **Onboarding**, i.e. what to do to be granted access to the International Data Spaces as a Data Provider or Data Consumer.
 2. **Data Offering**, i.e. offering data or searching for a suitable data.
 3. **Contract Negotiation**, i.e. accept data offers by negotiating the usage policies.

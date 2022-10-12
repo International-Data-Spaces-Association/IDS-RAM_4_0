@@ -1,4 +1,4 @@
-## Information Layer
+## Information Layer ##
 
 The Information Layer specifies the Information Model, the
 domain-agnostic, common language of the International Data Spaces. The
@@ -20,7 +20,7 @@ components, and its processes.
 The Information Model is evolved and maintained by the IDSA Sub-Working
 Group 4.[^1]
 
-### Scope
+### Scope ###
 
 The Information Model is a generic model, with no commitment to any
 particular domain. Domain modeling is delegated to shared vocabularies
@@ -33,7 +33,7 @@ Information Model therefore does not deal with the side effects of data
 exchange (e.g., in scenarios in which data is used for time-critical
 machine operations).
 
-### Model Representations
+### Model Representations ###
 
 The Information Model has been specified at three levels of
 formalization. Each level corresponds to a digital representation,
@@ -48,7 +48,7 @@ guidance documents, reference examples, validation tools, and editing
 tools intended to support a competent, appropriate, and consistent usage
 of the IDS Vocabulary).
 
-#### Conceptual Representation
+#### Conceptual Representation ####
 
 The Conceptual Representation of the Information Model presents a
 high-level overview of the main, largely invariant concepts, with no
@@ -60,7 +60,7 @@ references to related elements of the Declarative Representation and a
 Programmatic Representation are provided, encouraging the reader to take
 a look at these alternative implementations.
 
-#### Declarative Representation
+#### Declarative Representation ####
 
 The Declarative Representation (IDS Vocabulary) provides a normative
 view of the Information Model of the International Data Spaces.[^4] It
@@ -82,7 +82,7 @@ vocabularies in order to express domain-specific facts. According to the
 common practice, existing domain vocabularies and standards are reused
 where possible, fostering acceptance and interoperability.
 
-#### Programmatic Representation
+#### Programmatic Representation ####
 
 The Programmatic Representation of the Information Model targets
 Software Providers by supporting seamless integration of the Information
@@ -102,14 +102,14 @@ intricacies of ontology processing.
 
 #### _Fig. 3.4.1: Representations of the Information Model_
 
-### Conceptual Representation of a Digital Resource in the IDS
+### Conceptual Representation of a Digital Resource in the IDS ###
 
 In the following, the pivotal concept of a Digital Resource is
 introduced, segregated into modules in accordance with the
 separation of concerns principle (SoC principle). To do so, a
 set of six broad concerns (“concern hexagon”) is provided.
 
-#### Version Note
+#### Version Note ####
 
 Since version 3.0 of the IDS-RAM, this section of the document has
 been reduced to the same high level of abstraction as the other sections.
@@ -118,7 +118,7 @@ information is available from the repository that hosts the source code of the
 normative Declarative Representation as well as documentation covering further details on the Conceptual Representation.[^10]
 The remaining text has been edited to better present the Information Layer in the context of the other layers, and to provide up-to-date pointers to external standards reused.
 
-#### (Digital) Resource
+#### (Digital) Resource ####
 
 A (Digital) Resource in the context of the International Data Spaces is
 a uniquely identifiable, valuable, digital (i.e., non-physical) commodity
@@ -133,7 +133,7 @@ with a particular demand for modeling related, complementary aspects
 specified here by applying the separation of concerns (SoC)
 paradigm[^12].
 
-#### Separation of Concerns (SoC)
+#### Separation of Concerns (SoC) ####
 
 Following the separation of concerns design principle, only one
 dimension of a subject matter is considered at a time, for the sake of
@@ -152,7 +152,7 @@ and maintenance of models can be substantially simplified.
 
 #### _Fig. 3.4.2: Outline of the Concern-Basic concern hexagon_
 
-#### Concern Hexagon
+#### Concern Hexagon ####
 
 To illustrate the main modeling [c]{.underline}oncerns of Digital
 Resources in a way easy to memorize, the mnemonic hexagonal arrangement
@@ -162,18 +162,21 @@ Figure [3.4.2](#_fig-342-outline-of-the-concern-basic-concern-hexagon_).
 As a
 Resource's content is its most essential aspect, *C*ontent is located at
 the top of the hexagon. The *Content* concern deals with 
+
 1. the description of a Resource's abstract substance, 
 2. its serialization as a representation in a machine-interpretable format, and 
 3. the materializations of these representations at certain points in time as one or more instances (e.g., values or artifacts).
 
 Content is interpretable by references to a
 shared, formally defined *C*oncept, which may cover the meaning, annotation and interpretation of entities by, e.g., 
+
 1. natural language keywords, 
 2. terms defined in curated sources such as controlled vocabularies, or
 3. types defined in type systems or ontologies.
 
 On the other hand, links to a particular
 *C*ontext (in terms of, e.g.,
+
 * time, 
 * place, or 
 * real-world entities)
@@ -188,17 +191,18 @@ to the “how” aspects; i.e., how the content is exchanged
 
 The *Communication* concern deals with means to communicate a Resource's Content in one of the Representations
 available, e.g., 
+
 * by sending messages in some communication protocol
 * to a resource or service endpoint or to an IDS Connector
 * in order to perform an operation.
 
 The *Commodity* concern helps to address the value and utility of a Resource in terms of, e.g.,
+
 * its provenance,
 * its quality, and
 * the (usage) policies attached to it, e.g., the obligation to pay a certain price for its consumption.
 
-The 
-*C*ommunity of Trust concern refers to the distinctive feature of the
+The *C*ommunity of Trust concern refers to the distinctive feature of the
 International Data Spaces being an ecosystem of certified participants
 operating certified components, such as Connectors. Using such components, Participants exchange and share Digital Resources in a secure and trusted way in accordance
 with contracts composed of usage policies, thus ensuring data sovereignty.
@@ -206,7 +210,6 @@ with contracts composed of usage policies, thus ensuring data sovereignty.
 ![Detailed Concern Hexagon](./media/image53.png)
 
 #### _Fig. 3.4.3: Detailed Concern Hexagon_
-
 
 The level of detail differs across the individual concerns. The
 selection of their constituting aspects may change in light of new
