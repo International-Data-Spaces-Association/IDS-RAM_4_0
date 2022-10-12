@@ -1,6 +1,6 @@
-### Governance Aspects Addressed by the Different Layers of the IDS-RAM
+### Governance Aspects Addressed by the Different Layers of the IDS-RAM ###
 
-#### Business Layer
+#### Business Layer ####
 
 The Business Layer (see Chapter 3.1) facilitates the development and use
 of new, digital business models to be applied by the Participants in the
@@ -10,7 +10,7 @@ considering the business point of view regarding data ownership, data
 provision, and data consumption, and by describing core service concepts
 such as data brokerage.
 
-#### Functional Layer
+#### Functional Layer ####
 
 The Functional Layer (see Chapter 3.2) defines the functional
 requirements of the International Data Spaces, and the concrete features
@@ -23,17 +23,7 @@ the relation to governance is obvious, also the functionality of certain
 technical core components (e.g., the App Store or the Connector) relates
 to the Governance Perspective.
 
-#### Process Layer
-
-Providing a dynamic view of the architecture, the Process Layer (see
-Chapter 3.3) describes the interactions taking place between the
-different components of the International Data Spaces. The three major
-processes described in the Process Layer section (onboarding, exchanging
-data, and publishing and using Data Apps) are directly related to the
-Governance Perspective, as they define its scope regarding the technical
-architecture.
-
-#### Information Layer
+#### Information Layer ####
 
 The Information Layer (see Chapter 3.4) specifies the Information Model,
 which provides a common vocabulary for Participants to express their
@@ -43,7 +33,17 @@ establishing individual agreements and contracts. The vocabulary plays a
 key role in the Governance Perspective because of its relevance for
 describing data by metadata in the International Data Spaces.
 
-#### System Layer
+#### Process Layer ####
+
+Providing a dynamic view of the architecture, the Process Layer (see
+Chapter 3.3) describes the interactions taking place between the
+different components of the International Data Spaces. The three major
+processes described in the Process Layer section (onboarding, exchanging
+data, and publishing and using Data Apps) are directly related to the
+Governance Perspective, as they define its scope regarding the technical
+architecture.
+
+#### System Layer ####
 
 The System Layer (see Chapter 3.5) relates to the Governance Perspective
 due to its technical implementation of different security levels for

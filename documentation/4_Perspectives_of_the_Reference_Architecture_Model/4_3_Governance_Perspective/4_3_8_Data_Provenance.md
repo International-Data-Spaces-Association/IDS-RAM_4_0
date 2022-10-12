@@ -1,4 +1,4 @@
-### Data Provenance
+### Data Provenance ###
 
 By creating transparency and offering clearing functionality, the
 International Data Spaces provides a way to track the provenance and

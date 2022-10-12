@@ -1,4 +1,4 @@
-### Data as an Economic Good
+### Data as an Economic Good ###
 
 As data can be decoupled from specific hardware and software
 implementations, it turns into an independent economic good. While this

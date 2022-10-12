@@ -1,4 +1,4 @@
-## IDSA Rulebook
+### IDSA Rulebook ###
 
 It is all about data. If you are going to build or use data driven ecosystems
 or data driven business models, you should strongly consider data sovereignty[^1]
@@ -16,7 +16,7 @@ This Rulebook addresses:
 
 5. Data driven business models
 
-## Goals and scope of the IDSA Rulebook
+#### Goals and scope of the IDSA Rulebook ####
 
 The overall goal is to make more data available to more organizations and ecosystems being aware,
 that data availability and exchange become a critical success factor for national and international
@@ -32,6 +32,7 @@ or shared. It thereby constitutes the basis for developing and offering smart se
 establishing innovative business processes.
 
 ![Overview IDS enabled ecosystems](./media/Overview_IDS_enabled_ecosystems.png)
+*Figure: Overview IDS enabled ecosystems*
 
 The IDS initiative aims at defining the technical base and set of agreements for secure and trusted
 data spaces, in which companies of any size and from any industry can manage their data assets in a
@@ -40,7 +41,7 @@ IDSA already counts over one-hundred member organizations from twenty countries.
 all these companies. Members, guest and data sovereignty suppliers and appliers, will fulfil the
 common value proposition of generating business value from data.
 
-#### The Purpose and Scope of the Rulebook
+#### The Purpose and Scope of the Rulebook ####
 
 Rules of the game: The purpose of this Rulebook is, to describe clearly what rules and guidance
 all participants have to follow to achieve the goal of the common interplay in upcoming data
@@ -61,14 +62,14 @@ for the realization of use cases on the foundation of a trustworthy infrastructu
 4. The interaction of all is structured and guided within this Rulebook.
 
 ![Overview Rulebook scope and goals](./media/Overview_Rulebook_scope_and_goals.png)
+*Figure: Overview Rulebook scope and goals*
 
-####	Scope / Non Scope in detail
+#### Scope / Non Scope in detail ####
 
 The IDSA Rulebook defines structures and processes for the implementation of the
 IDS-Reference Architecture Model in real-world scenarios. This includes the
 realization of the essential service as well as the definition of processes for
 the relevant processes, e.g. admission and withdrawal of participants.
-
 
 Cross Industry Approach: This approach on data sovereignty is not industry specific,
 it is applicable in all economic sectors. Therefore, sector specific rules are not
@@ -77,8 +78,8 @@ in all economic sectors and – more over – across these sectors to establish 
 exchange among different industries. IDS is a horizontal approach. On its foundation
 data sovereignty call build in and across all industries.
 
-
 The scope of this document in detail covers:
+
 1. Functional agreements: Guidance on functionality of common services as well as definition,
 processes and services of dedicated roles
 
@@ -103,20 +104,18 @@ Liaisons agreements are about guiding principles guard railing for these collabo
 provides processes and measures to actively contribute to liaisons and to provide value for
 the IDSA Liaison partners.
 
-
-###	How to use IDS? Competitive Advantage with Data Sovereignty!
+#### How to use IDS? Competitive Advantage with Data Sovereignty ####
 
 Using IDS, IDS based frameworks, services and offerings means, to make use of trusted data
 sovereignty for your business or your own offerings. So, using IDS in detail is depending on
 the role, you are going to play in the dedicated data driven continuum.
 
-
 Overall, there are some rules and guidelines in common:
 
-1.	Life cycle is defined: There is a common definition on life cycle agreements for IDS based assets,
+1. Life cycle is defined: There is a common definition on life cycle agreements for IDS based assets,
 e.g. the IDS standards and services. See attachment “Operational Agreements, Life Cycle”
 
-2.	Processes: There are some common definitions of necessary processes e.g. for development,
+2. Processes: There are some common definitions of necessary processes e.g. for development,
 certification, onboarding, operation and usage. See attachment “Operational Agreements. Processes”
 
 Typical roles anticipated in an IDS based data driven continuum are described in more detail. Included
@@ -125,29 +124,27 @@ App-Provider, Appstore Provider, and basic roles like ID Provider, Certification
 House and Vocabulary Provider.
 
 In summary, using IDS and make use of data sovereignty as competitive advantage for the own business
-is quite easy, because everything is well prepared. The guiding website https://www.internationaldataspaces.org
+is quite easy, because everything is well prepared. The guiding website <https://www.internationaldataspaces.org>
 provides all information.
 
-### Guiding principles
+#### Guiding principles ####
 
 Guiding principles were leading the team in structuring the complete IDS ecosystem, it´s roles and this Rulebook.
 
--	Do not reinvent the wheel
+- Do not reinvent the wheel
 
--	Integrate into existing systems,
+- Integrate into existing systems,
 
--	Integrate or use existing standards,
+- Integrate or use existing standards,
 
--	Be industry agnostic, but applicable in all verticals as horizontal standard
+- Be industry agnostic, but applicable in all verticals as horizontal standard
 
--	Be easy usable and applicable by individual companies and initiatives/ecosystems
+- Be easy usable and applicable by individual companies and initiatives/ecosystems
 
--	Overall: Create a new global open standard for data sovereignty:
+- Overall: Create a new global open standard for data sovereignty:
 
 Open standard generally implies: 1) free to use for everyone (although in some sectors this is interpreted in different ways ...),
 2) an open process through which everyone can participate, 3) transparent decision making (preferably by
 consensus or otherwise through a pre-defined structure).
-
-
 
 [^1]: https://github.com/International-Data-Spaces-Association/IDS-G/tree/master/glossary#data-sovereignty

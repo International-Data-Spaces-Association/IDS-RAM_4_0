@@ -1,4 +1,4 @@
-### Data Quality
+### Data Quality ###
 
 Because of the correlation between good data quality and maximizing the
 value of data as an economic good, the International Data Spaces

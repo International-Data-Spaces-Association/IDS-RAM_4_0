@@ -1,14 +1,14 @@
-### Data Governance
+### Data Governance ###
 
-#### Key Roles and Correlating Data Governance and Management Activities
+#### Key Roles and Correlating Data Governance and Management Activities ####
 
 The following subsections list what data governance / data management
 activities central roles in the IDS ecosystem are occupied with, and
 what IDS components are involved.
 
-##### Data Owner / Data Provider
+##### Data Owner / Data Provider #####
 
-###### DG/DM activities
+**DG/DM activities**
 
 - Define usage constraints for data resources
 - Publish metadata including usage constraints to Broker
@@ -20,66 +20,69 @@ what IDS components are involved.
 - Describe the data source
 - Authorize Data Provider, if Data Provider is not the Data Owner
 
-###### Enabling/Supporting IDS Component
+**Enabling/Supporting IDS Component**
+
 - IDS Connector
 - Catalogue of rules allowing Data Owners to configure usage conditions related to their own requirements
--  Define pricing model and pricing (see section 3.4.3.9)
+- Define pricing model and pricing (see section 3.4.3.9)
 
+##### Data Consumer #####
 
+**DG/DM activities**
 
-##### Data Consumer}}} &
-
-###### DG/DM activities
 - Use data in compliance with usage constraints}
 - Search for existing datasets by making an inquiry at a Broker Service Provider
 - Nominate Data Users (if needed)
--  Receive information about data transaction from Clearing House
+- Receive information about data transaction from Clearing House
 - Monitor policy enforcement
 
-###### Enabling/Supporting IDS Component:
+**Enabling/Supporting IDS Component:**
+
 - IDS Connector
 - Catalogue of rules to act in compliance with usage constraints specified by Data Owner
 
-##### Broker Service Provider
+##### Meta Data Broker Service Provider #####
 
-###### DG/DM activities
+**DG/DM activities**
+
 - Match demand and supply of data
 - Provide Data Consumer with metadata
 
-###### Enabling/Supporting IDS Component:
-- Broker Service Provider component
+**Enabling/Supporting IDS Component:**
+
+- Meta Data Broker Service Provider component
 - Core of the metadata model must be specified by the International Data Spaces (by the Information Model)
 - Provide registration interface for Data Provider
 - Provide query interface for Data Consumer
 - Store metadata in internal repository for being queried by Data Consumers
 
+##### Clearing House #####
 
+**Data-related activities**
 
-##### Clearing House
-###### Data-related activities
 - Monitor and log data transactions and data value chains
--  Monitor policy enforcement
--  Provide data accounting platform
+- Monitor policy enforcement
+- Provide data accounting platform
 
-###### Enabling/Supporting IDS Component:
+**Enabling/Supporting IDS Component:**
 
 - Clearing House component
 - Logging data
 
+##### App Store Provider #####
 
+**Data-related activities**
 
-##### App Store Provider
-###### Data-related activities
--  Offer Data Services (e.g. for data visualization, data quality, data transformation, data governance)
+- Offer Data Services (e.g. for data visualization, data quality, data transformation, data governance)
 - Provide Data Apps
 - Provide metadata and a contract based on the metadata for app user
 
-###### Enabling/Supporting IDS Component:
--  App Store Provider component
--  Interfaces for publishing and retrieving Data Apps plus corresponding data
+**Enabling/Supporting IDS Component:**
 
+- App Store Provider component
+- Interfaces for publishing and retrieving Data Apps plus corresponding data
 
-#### IDS Data Governance Model
+#### IDS Data Governance Model ####
 
 The IDS Data Governance Model defines a framework of decision-making
 rights and processes with regard to the definition, creation,

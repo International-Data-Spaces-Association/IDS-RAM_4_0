@@ -1,4 +1,4 @@
-### Data Sovereignty
+### Data Sovereignty ###
 
 Data sovereignty is a natural person's or corporate entity's capability
 of being entirely self-determined with regard to its data. The Reference
