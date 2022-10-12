@@ -1,6 +1,6 @@
-### **DATA USAGE CONTROL**
+### Data Usage Control ###
 
-#### **INTRODUCTION**
+#### Introduction ####
 
 In information security, Access Control restricts access to resources. Authorization is the process of granting permission to resources. There are several models of Access Control, such as Discretionary Access Control (DAC), Mandatory Access Control (MAC), Role-Based Access Control (RBAC), Attribute-Based Access Control (ABAC), etc. RBAC and ABAC are the most frequently used models.
 
@@ -70,7 +70,8 @@ The following examples illustrate security requirements that cannot be achieved 
 
 It is important to note that the purpose of Data Usage Control is to allow the specification of such constraints and enforcing them in the respective system. A precondition of Data Usage Control is that the enforcement mechanism itself is trusted; i.e., Data Usage Control itself does not establish trust in an endpoint, but rather builds upon an existing trust relationship and facilitates enforcement of legal or technical requirements, such as Service Level Agreements (SLAs) or data privacy regulations. Thus, users must be aware that Data Usage Control will only provide certain enforcement guarantees if applied on highly trusted platforms, such as Trusted Connectors in the International Data Spaces  [Section 3.2](../../3_Layers_of_the_Reference_Architecture_Model/3_2_Functional_Layer))
 
-#### **ORGANIZATIONAL RULES AND LEGAL CONTRACTS**
+#### Organizational Rules and Legal Contracts ####
+
 
 Data Usage Control can be implemented by means of a machine-readable contract, which is expected to be fulfilled by a party. It is a way to track and trace data as it is used within different systems and to collect evidence of the violation of agreed usage constraints. With that in mind, solutions range from organizational rules or legal contracts to completely technical ways of enforcing usage restrictions. For example, an organizational rule (e.g. a company policy) could state that employees must not use removable storage devices, such as USB sticks. Similarly, a technical form of enforcement, such as group policies specified by the Windows operating system, can prevent employees from using removable storage devices. In some scenarios, organizational rules, legal contracts, and technical rules can be used interchangeably. In other scenarios, the three forms can be used to complement each other. In the long run, it can be expected that organizational rules and legal contracts will increasingly be replaced by technical forms of enforcement (as illustrated in [Figure 4.1.6.3](media/Technical_vs_Organizational.drawio.png)).
 
@@ -78,31 +79,31 @@ Data Usage Control can be implemented by means of a machine-readable contract, w
 
 _Figure 4.1.6.3: Technical enforcement vs. organizational/legal enforcement_
 
-#### **ROLES INVOLVED IN USAGE CONTROL**
+#### Roles involved in Usage Control ####
 
 Usage Control is a cross-sectional concept and technology, which involves several IDS roles.
 
-##### **BROKER**
+##### Meta Data Broker #####
 
 The IDS Broker manages Connector self-descriptions that can contain usage policies. Therefore the Broker must be able to support usage policies. In addition the Connector self-description itself may be subject of usage policies.
 
-##### **CONNECTOR**
+##### Connector #####
 
 The Connector is the main technical component for implementing Usage Control. Hence, Usage Control enhanced Connectors, such as the Trusted Connector, contain relevant components to perform Usage Control enforcement as Data Consumer (PEPs, Interceptors; PDPs, PMPs). However, PMPs and PDPs do not need to be part of the Connector. In addition, Connectors as Data Providers should provide the technology-dependent policies to the data they provide – for all kinds of systems and enforcement technologies that are part of the ecosystem.
 
-##### **CLEARING HOUSE**
+##### Clearing House #####
 
 By means of Data Provenance Tracking (as described in the next section), it is possible to track the usage of data and the enforcement of usage restrictions. The Clearing House is able to use this data later on.
 
-##### **APP STORE**
+##### App Store #####
 
 Data Apps can take advantage of Usage Control technology. The IDS App Store needs to be able to provide information as to whether a Data App implements such technology.
 
-##### **APP PROVIDER**
+##### App Provider #####
 
 For Data Apps to take advantage of Usage Control technology, App Providers need to implement certain components, such as control points (i.e., PEPs), into their application.
 
-#### **IDS USAGE CONTROL LANGUAGE**
+#### IDS Usage Control Language ####
 
 The IDS Information Model is a modular meta-model (ontology) describing the capabilities of IDS infrastructure components, such as the Connector or the Data Endpoints. Descriptions of data provided by Data Endpoints are published at dedicated Broker registries, allowing potential Data Consumers to search for and identify data that is relevant (semantics) and applicable (quality) for their particular purpose, and to assess in advance data’s affordability (price) and usability (restrictions).
 
@@ -120,7 +121,7 @@ For example, the ODRL Constraint class expresses logical conditions that govern 
 
 _Figure 4.1.6.5: Examples of mapping among policy language levels_
 
-#### **IDS USAGE CONTROL POLICIES AND POLICY CLASSES**
+#### IDS Usage Control Policies and Policy Classes ####
 
 IDS Policy Classes are atomic policy templates that refer to specific restrictions on data usage. They are specified in IDS Usage Control Language and define the relevant operands, operators, values and data types for addressing such restrictions. Listing these predefined templates not only supports the stakeholders to know how to specify specific usage restrictions using IDS Usage Control Language, but also let them trace the usage control coverage of their systems. This means that they will know in advance which restrictions may be specified and they can plan the enforcement of these restrictions.
 
@@ -130,7 +131,7 @@ These Policy Classes can be instantiated and combined to form an identified IDS 
 
 Overall, an IDS Contract wraps a usage policy with additional information about the involved parties (i.e. the Data Provider and the Data Consumer) and the contract metadata (e.g. issued date). After a successful Contract Negotiation process, the involved parties agree on a set of usage restrictions (i.e. usage policy) as part of their Contract Agreement. Thus, they must assure that these usage restrictions are enforced into their systems (i.e. Connectors). The [Usage Control in IDS](https://internationaldataspaces.org/data-sovereignty-updated-position-paper-on-data-usage-control-in-the-ids/) provides the possibilities to support the IDS Participants to specify and negotiate their usage policies as well as technically enforcing them via various technologies (e.g. [MYDATA Control Technologies](https://www.mydata-control.de/), LUCON, etc.)
 
-#### **MANAGEMENT**
+#### Management ####
 
 A Policy Management Point (PMP) is responsible for the management of usage policies. Hence, the component is concerned with the policy’s lifecycle. This includes instantiation, deployment, and revocation of usage restrictions, as well as conflict detection and resolution.
 
@@ -142,7 +143,7 @@ There are two ways to make usage restriction information available:
 
 The management of usage policies becomes especially important when data is to be exchanged across system boundaries. Every time data crosses system boundaries, the target system must be prepared for the protection of incoming data (i.e. it has to deploy the corresponding policy).
 
-#### **USAGE CONTROL IN A CONNECTOR**
+#### Usage Control in a Connector ####
 
 Usage Control only makes sense in an ecosystem where a certain level of trust can be established and maintained for all participants. To enable the establishment of trusted relationships, the central technological components used for data processing and data exchange need to be trustworthy. The IDS Connector is the central component for data exchange and data processing in the International Data Spaces, and thus a central component that needs to be trusted.
 
@@ -160,7 +161,7 @@ Instances of the Trusted Connector enable remote integrity verification, so the 
 
 The Trusted Connector guarantees a controlled execution environment for data services and supports the creation of trusted relationships. A general constraint is one that remains for all deployed IT systems: As long as physical or logical access is granted to administrators, protection against data theft by malicious partners is almost impossible to prevent. The International Data Spaces is seen as a network of partners that are provided with the technical means to fulfill their obligations and support in deciding what partners to trust and to define reasonable access conditions.
 
-#### **MESSAGE ROUTER and INTERCEPTOR (EXAMPLE)**
+#### Message Router and Interceptor (Example) ####
 
 An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](media/intercepting-data-flow-data-flow.drawio.png)).
 
@@ -184,7 +185,7 @@ Depending on the policies available, this way of enforcement is not enough to co
 
 _Figure 4.1.6.8: Data flow across company borders_
 
-#### **CONTEXT INFORMATION AND OBLIGATION FULLFILLMENT**
+#### Context Information and Obligation Fulfillment ####
 
 Context information is the information such as time, location, states of systems, etc, that is required for the evaluation of a usage policy. In IDS, one can basically distinguish two types of information; the local information that is obtained from the IDS Connector and the global information (see [Figure 4.1.6.9](media/Context-information-and-execution-point-PIP.drawio.png)). The information that can be obtained from a resource inside the IDS Connector itself, such as a system state, is referred to as an IDS local context information. On the other hand, the information that contains, for example, information from the IDS ParIS or the state of a payment that is provided by an IDS compliant resource is referred to as an IDS global context information. The IDS Usage Control language provides ways to address and use these context infomation. For example, They shall be provided by an IDS Policy Information Point (IDS PIP). A Usage Control technology can then use these context information for enforcement by connecting the PIPs.
 
@@ -198,7 +199,7 @@ Moreover, an IDS Contract can contain obligations that have to be fulfilled. For
 
 _Figure 4.1.6.10: IDS Execution Point_
 
-#### **DATA PROVENANCE TRACKING**
+#### Data Provenance Tracking ####
 
 Data provenance tracking is closely related, but also complementary to distributed Data Usage Control. It has its origins in the domain of scientific computing, where it was introduced to trace the lineage of data. Data Provenance Tracking thereby allows finding out when, how and by whom data was modified, and which other data influenced the process of creating new data items.
 
@@ -206,11 +207,11 @@ This kind of traceability is similar to the data protection requirements a data 
 
 However, while distributed Data Usage Control is concerned with the enforcement of rights and duties when exchanging data across system boundaries, the focus of Data Provenance Tracking is on transparency and accountability. In other words: While a Policy Enforcement Point (PEP) serving for distributed Data Usage Control in most cases needs to be able to proactively intercept data usage actions within the control flow (i.e. preventive enforcement), a PEP for data provenance tracking only needs to passively observe, interpret and log data exchange transactions and data usage for retrospective examination (in terms of Usage Control, this kind of enforcement is denoted as “detective enforcement”). Despite this fact, a data provenance tracking infrastructure can be built upon the same PEPs as distributed Data Usage Control. Furthermore, Data Provenance Tracking does not require a policy specification language, but rather a specification of how observed actions are to be interpreted in terms of data flow or data usage (i.e., a so-called data flow semantics specification). By this, data provenance tracking maintains a data flow model that keeps track of the particular representations of data items. This kind of information can also be leveraged for Data Usage Control enforcement; i.e., the data flow model is implemented as a Policy Information Point (PIP).
 
-##### **OPERATING PRINCIPLE**
+##### Operating Principle #####
 
 The operating principle of data provenance tracking is very similar to the operating principle of distributed Data Usage Control. Data Provenance Tracking relies on passive monitoring technology (e.g., PEPs), which deliver events indicating data usage or data flows for being logged. For this, a PEP needs to convey a semantic description of the data usage or data flows its events indicate. The Data Provenance Tracking infrastructure provides a data flow tracking component, which understands such semantics specifications. The PEP also needs to forward events together with metadata (including a unique identifier of the data’s content), so that logged transactions can be attributed to data content when data provenance is aggregated or queried.
 
-##### **ARCHITECTURE**
+##### Architecture #####
 
 The PEP resides within the message routing component of the Connector (or Data App). It is registered at the data flow tracking component via a registry component (i.e., a local Policy Management Point, PMP). The same applies for the data flow tracking component. Thereby a PEP can query the local PMP for the communication interface of the local data flow tracking component, which is then used to deploy semantics specifications for its observed events and to forward actual events during operation.
 
@@ -228,36 +229,35 @@ _Figure 4.1.6.11: Architecture with centralized component for provenance informa
 
 _Figure 4.1.6.12: Architecture with distributed component for provenance information storage_
 
-##### **COMMUNICATION**
+##### Communication #####
 
 The local data flow tracking component inside the Connector has to be able to communicate with the centralized data provenance infrastructure (i.e., ProSP or ProCP). For this, a so-called Root-PMP is attached to the Clearing House. Here, the central components register their communication interfaces, and so do the local PMPs of the Connectors. Using these interfaces, provenance information is passed on to the central ProSP/ProCP.
 
 Analogous to this hierarchical communication infrastructure, the provenance information of each unit of data content is a tree, a so-called provenance graph. It is either maintained at a central ProSP or at the distributed ProSPs located inside the Connectors. In the latter case, a centralized ProCP at the Clearing House aggregates the various sub-trees for a unique data content identifier from distributed ProSPs (i.e. it consolidates the provenance information by merging the subtrees).
 
-##### **INTEGRATION WITH DISTRIBUTED USAGE CONTROL**
+##### Integration with Distributed Usage Control #####
 
 In complex Usage Control scenarios, such as establishing data sovereignty for managing globally distributed supply chains, data is passed on from one Data Consumer to another. Depending on the usage policy in place, data may be forwarded in its original form, or it may be somehow processed, aggregated, or anonymized before being forwarded. This indicates the relevance of establishing transparency concerning data flows and data usage in compliance with usage policies, business contracts, or legal regulations. For this purpose, distributed Data Usage Control and Data Provenance Tracking complement each other. As explained before, the PEPs used for Usage Control (detective enforcement) can also serve as a basis for Data Provenance Tracking, whereas in turn data provenance information can be fed back into Usage Control enforcement (i.e., a PDP can query for all locations of representations of some given data content protected by a usage policy).
 
 Further synergies can be exploited by employing the same communication infrastructure for distributed Data Usage Control and Data Provenance Tracking. The hierarchical PMP structure (as described in the previous section) can also enable Usage Control components to interact across different IDS Connectors (e.g., for shipping policies to other Connectors, deploying and revoking policies, etc.).
 
-#### **DATA PROVENANCE TRACKING ADDRESSED BY THE DIFFERENT LAYERS**
+#### Data Provenance Tracking addressed by the different Layers ####
 
-##### **BUSINESS LAYER**
+##### Business Layer #####
 
 Data Provenance Tracking primarily supports the work of the Clearing House. It provides the means to establish a centralized audit log aggregating tracking information concerning data exchange transactions and data usage.
 
-##### **FUNCTIONAL LAYER**
+##### Functional Layer #####
 
 Data Provenance Tracking does not directly affect the core functionality of the IDS, since it is typically implemented on top of a Usage control infrastructure, or based on passive monitoring technology. However, data provenance tracking may enhance the functionality of the IDS by offering functions for clearing and accounting, provided tracking is sufficiently accurate (e.g., in terms of delivering concrete numbers of data users or a concrete duration of data use). Data Apps might also be considered as content/data the usage of which can be tracked by data provenance technology.
 
-##### **PROCESS LAYER**
+##### Information Layer #####
+
+Data Provenance Tracking can be orchestrated for different purposes. Regarding the IDS, the most important goals are establishing transparency and being able to prove compliance to contracts, agreements, or legal regulations. Reliability of content is a secondary goal of data provenance tracking in the IDS. While making the lineage of data traceable is the original purpose of Data Provenance Tracking, this requires ei- ther specific, data provenance enabled Data Apps or the use of dedicated PEPs for these Data Apps.
+##### Process Layer #####
 
 Data Provenance Tracking is integrated in the “Exchange Data” process (or, to be more precise, in the “Query Data” sub-process). Data Provenance Tracking components in the Connector of the Data Provider as well as in the Connector of the Data Consumer signal to the data provenance storage component at the Clearing House that data has been successfully sent or received, respectively. This signaling is implemented based on events intercepted by PEPs for distributed Data Usage Control.
 
-##### **INFORMATION LAYER**
-
-Data Provenance Tracking can be orchestrated for different purposes. Regarding the IDS, the most important goals are establishing transparency and being able to prove compliance to contracts, agreements, or legal regulations. Reliability of content is a secondary goal of data provenance tracking in the IDS. While making the lineage of data traceable is the original purpose of Data Provenance Tracking, this requires ei- ther specific, data provenance enabled Data Apps or the use of dedicated PEPs for these Data Apps.
-
-##### **SYSTEM LAYER**
+##### System Layer #####
 
 Reliability of data provenance information strongly depends on trustworthy Connectors and Data Apps (including their PEPs). It is recommended to integrate Data Provenance Tracking into Trusted Connectors and to certify Data Apps that are enabled for data provenance tracking and Data Usage Control.
