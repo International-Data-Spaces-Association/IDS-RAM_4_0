@@ -1,4 +1,4 @@
-# Certification Perspective
+## Certification Perspective##
 
 Data security and data sovereignty are the fundamental value propositions of the International Data Spaces. Data sovereignty can be defined as a natural person's or legal entity's capability of being in full control of its data. To enable this control, each participant needs to follow the agreed rules for the IDS and requires reliable information about the guarantees offered by potential business partners. The adherence to rules is ensured by the certification which affects different layers of the IDS RAM as described in [Section 4.2.1](./4_2_1_Certification_Aspects_Addressed_by_Different_Layers_of_IDS-RAM.md).
 The certification based on the defined standards is conducted by the three roles explained in [Section 4.2.2](./4_2_2_Roles.md).

@@ -1,22 +1,25 @@
-# Certification Processes
+### Certification Processes ###
 
 Participants and core components within the IDS ecosystem shall fulfill common requirements to ensure the security of data being processed in the IDS. Therefore, the certification of operational environments (as explained in [Section 4.2.3](../4_2_3_Operational_Environment_Certification.md)) and core components (as explained in [Section 4.2.4](../4_2_4_Component_Certification.md)) is mandatory. Involved partners are the Applicant, Evaluation Facility and the Certification Body which were introduced in [Section 4.2.2](../4_2_2_Roles.md).
 
-## Approval of Evaluation Facilities
+#### Approval of Evaluation Facilities ####
 
-In order to ensure the high quality and transparency of the IDS certification process all Evaluation Facilites need to be approved by the impartial [Certification Body](https://github.com/International-Data-Spaces-Association/IDS-G/tree/main/glossary#certification-body) first. 
+In order to ensure the high quality and transparency of the IDS certification process all Evaluation Facilites need to be approved by the impartial [Certification Body](https://github.com/International-Data-Spaces-Association/IDS-G/tree/main/glossary#certification-body) first.
 
 The approval process is structured in the same way for both types of future Evaluation Facilities (operational environment and components) and includes the following phases:
+
 1. Preparatory Phase
 2. Audit Phase
 3. Approval Phase
 
-These phases will be described in the following sections. 
+These phases will be described in the following sections.
 
-### 1. Preparatory Phase:
+##### 1. Preparatory Phase: #####
+
 This phase serves to collect all important documents and information needed for a smooth approval process, but also to discuss the process flow. This phase also offers the opportunity to clarify any questions related to the process within an (optional) inquiry meeting. It begins with the completion of an application form and the signing of a contract between the potential Evaluation Facility and the IDS Certification Body.
 
-### 2. Audit Phase
+##### 2. Audit Phase #####
+
 Each Evaluation Facility is audited in order to ensure that it will conduct evaluations in adherence with the IDS certification scheme. The audit has the aim to check that the requirements for a proper IDS certification are implemented and effective. It consists of collecting evidence in form of documentation and interviews with employees in four different assessments:
 
 1. Quality Management System
@@ -26,19 +29,17 @@ Each Evaluation Facility is audited in order to ensure that it will conduct eval
 
 Based on the audit the Certification Body prepares a report including the deviations and potential improvements which will be communicated in a final discussion. Deviations related to the Management System which could affect its effectiveness must be corrected before closing the audit phase within a two-month period at most, with exceptions for critical deviations. If necessary, the correction of the deviations can be verified by an additional audit.
 
-### 3. Approval Phase
+##### 3. Approval Phase #####
+
 On the basis of the audit report, the Certification Body decides on the approval of the applying Evaluation Facility. The decision is made in an objective and comprehensible manner, i.e.  exclusively on the basis of the documented criteria.
 In case of a positive decision, the Certification Body issues an approval statement. The approval is valid for a limited time period of two years.
 If a negative approval decision is made, the applying Evaluation Facility is informed of the reasons for the rejection before the application is formally rejected.
-
 
 For quality assurance of the certification process, the approval regularly needs to be renewed. In addition, it is possible to restrict, suspend or withdraw approval in case of major compliance issues.
 
 The full approval scheme can be found [here](./ApprovalScheme)
 
-
-
-## Certification Process for Operational Environments and Core Components
+#### Certification Process for Operational Environments and Core Components ####
 
 The certification follows the same process for all certification profiles in Operational Environment and Component Certification. It consists of the following three phases:
 
