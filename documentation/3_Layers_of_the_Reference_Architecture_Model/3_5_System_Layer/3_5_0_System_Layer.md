@@ -1,4 +1,4 @@
-# System Layer
+## System Layer ##
 
 The processes defined in the [Process Layer](../3_3_Process_Layer) are summarized in Figure 3.5.0.1 as interactions between the IDS Components. Please note that the Identity Provider is not shown in the figure in order to maintain readability.
 

@@ -1,6 +1,6 @@
-# IDS Connector
+### IDS Connector ###
 
-The International Data Spaces network is constituted by the total of its IDS Connectors. Each IDS Connector allows the exchange of data via the Data Endpoints it exposes. Applying this principle, there is no need for a central instance for data storage. An IDS Connector must be reachable by IDS connectors from other organisations. Due to organizational security policies, this may require changing firewall policies or establishing a demilitarized zone (DMZ). It should be possible to reach an IDS Connector using the standard Internet Protocol (IP), and to operate it in any appropriate environment. A Participant may operate multiple IDS Connectors (e.g., to meet load balancing or data partitioning requirements). IDS Connectors can be operated on-premises or in a cloud environment. 
+The International Data Spaces network is constituted by the total of its IDS Connectors. Each IDS Connector allows the exchange of data via the Data Endpoints it exposes. Applying this principle, there is no need for a central instance for data storage. An IDS Connector must be reachable by IDS connectors from other organisations. Due to organizational security policies, this may require changing firewall policies or establishing a demilitarized zone (DMZ). It should be possible to reach an IDS Connector using the standard Internet Protocol (IP), and to operate it in any appropriate environment. A Participant may operate multiple IDS Connectors (e.g., to meet load balancing or data partitioning requirements). IDS Connectors can be operated on-premises or in a cloud environment.
 
 The IDS Connector Architecture uses application container management technology to ensure an isolated and secure environment for individual IDS Apps and IDS Connector functionalities. An IDS App matches an application which offers an API to store, access, or process data. To ensure privacy of sensitive data, its processing should take place as close to the data source as possible. Any data preprocessing (e.g., filtering, anonymization, or analysis) should be performed by the backend services or IDS Apps. Only data intended for being made available to other Participants should be offered by Connectors.
 
@@ -8,14 +8,15 @@ IDS Apps are services for realizing business logic inside the IDS Connector. IDS
 
 The [IDS App Store](3_5_3_App_Store_and_Data_Apps.md), [Metadata Broker](3_5_4_Broker.md), and [Clearing House](3_5_5_Clearing_House.md) are based on the IDS Connector architecture (which is described in detail in the following section) in order to support secure and trusted data exchange with these services.
 
-## IDS Connector Architecture
+#### IDS Connector Architecture ####
 
-The Connector consists of one or more computers/virtual machines, operating systems running on them, an Application Container Management, and the Connector Core Service(s) built on top of it. 
+The Connector consists of one or more computers/virtual machines, operating systems running on them, an Application Container Management, and the Connector Core Service(s) built on top of it.
 
 ![Connector Architecture](media/3.5.2.1_connector_architecture.png)
 #### _Fig. 3.5.2.1: Connector Architecture_
 
 The individual elements of the deployment are shown in Figure 3.5.2.1 and described below:
+
 - _Application Container Management_: In most cases, the deployment of the Connector Core Service(s) and selected IDS Apps is based on application containers. See Section [3.5.2.3](#special-connectors) for specialized IDS Connectors. IDS Apps are isolated from each other by containers in order to prevent unintended interdependencies. Using Application Container Management, extended control of IDS Apps and containers can be enforced. During development, and in case of systems with limited resources, Application Container Management can be omitted.  
 - A _Certified Core Container_ contains one _Connector Core Service_ which provides components like Data Management, Metadata Management, Contract and Policy Management, IDS App Management, IDS Protocols Authentication, and many more. Detailed explanations to the IDS Connector's functionalities are given in the following Section [3.5.2.2](#ids-connector-functions).
 - An _Certified App Container_ is a certified container downloaded from the App Store, providing a specific IDS App to the IDS Connector.
@@ -23,7 +24,7 @@ The individual elements of the deployment are shown in Figure 3.5.2.1 and descri
 - An _IDS App_ defines a public API, which is invoked from the IDS Connector. This API is formally specified in a meta-description that is imported during the deployment phase of an IDS App. The tasks to be executed by IDS Apps may vary. IDS Apps can be implemented in any programming language and target different runtime environments. Existing components can be reused to simplify a migration from other integration platforms. A detailed description of how to use IDS Apps can be found in Section [3.3.5](../../3_3_Process_Layer/3_3_5_Publishing_and_using_Data_Apps.md), the deployment of IDS Apps is explained in Section [3.5.3](3_5_3_App_Store_and_Data_Apps.md).
 - The _Runtime_ of a Custom/Certified App/Certified Core Container depends on the selected technology and programming language. The Runtime, along with the application, constitutes the main part of a container. Different containers may use different runtimes. What runtimes are available depends only on the base operating system of the host computer. From the runtimes available, a service architect may select the one deemed most suitable.
 
-## IDS Connector Functionalities
+#### IDS Connector Functionalities ####
 
 The IDS Connector must include some essential functionality in its _Connector Core Service(s)_. The functionalities can be implemented in individual micro services or as a single comprehensive software block. In addition, the services do not have to be deployed in the same infrastructure. 
 
@@ -36,10 +37,13 @@ The components are described below:
 
 - The _Authentication Service_ holds the necessary information to authenticate the IDS Connector from/to other backend systems and/or authorize the system access from/to the IDS Connector from other IDS participants. For security reasons, a clear separation of the internal and external access credentials is recommended. 
 The _Authentication Service_ provides interfaces for configuration and to connect custom authentication services. In order to authorize incoming and outgoing connections it holds
+
 	- the Key/Trust Store for the _IDS Protocol(s)_, 
 	- the credentials for the access of the _Data Management_ and _Data Exchange_ to external systems, and 
 	- the information for the access control of the _Data Exchange_ and _Data Management_ to the IDS.
+
 This is shown via the solid line inside the IDS Connector. 
+
 - The _Data Exchange_ component provides or requires interfaces to exchange data with other IDS Participants (providers/consumers). It can be deployed on another infrastructure than the IDS Protocol(s) component and it is possible to have more then one Data Exchange component to support multiple protocol bindings. The _Data Exchange_ component does not support IDS-specific interfaces nor does it interpret the IDS Information Model.
 - The _IDS Protocol(s)_ component supports at least one IDS specific interface defined in [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G) to realize the processes defined in the Section [3.3](../../3_3_Process_Layer). All components interact with the IDS Protocol component as shown by the dashed lines.
 - The _Remote Attestation_ component is used to increase the trust between the participating components. It can be used to detect whether the software has been modified at the other party's end (see Section [4.1](../../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective) for more information). The component is needed for certification level 2 or higher (see Section [4.2.4](../../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_4_Component_Certification.md)).
@@ -55,7 +59,7 @@ This is shown via the solid line inside the IDS Connector.
 
 There may be different types of implementations of an IDS Connector, based on different technologies and depending on what specific functionality is required regarding the purpose of the Connector. IDS Connectors are distinguish according to their certification level defined in Section [4.2](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/), which indicates, among other things, which security and data sovereignty criteria the IDS Connector implements.
 
-## Special Connectors
+#### Special Connectors ####
 
 What type of IDS Connector is to be implemented may depend on various aspects, such as the execution environment given or the current developmental stage regarding used Data Services or applyed Data Flows. In the following, three exemplary scenarios are outlined:
 
