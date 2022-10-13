@@ -147,7 +147,6 @@ any modification of a single element of the overall model does not
 require a change in other, logically unrelated parts, the development
 and maintenance of models can be substantially simplified.
 
-
 ![Outline of the Concern-Basic concern hexagon](./media/image32.png)
 
 #### _Fig. 3.4.2: Outline of the Concern-Basic concern hexagon_
