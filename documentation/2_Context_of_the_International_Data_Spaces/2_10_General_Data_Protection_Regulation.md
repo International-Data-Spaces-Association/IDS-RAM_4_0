@@ -24,5 +24,5 @@ technical measures and offer advice regarding the implementation of
 organizational measures. As a result, the IDS participant is enabled to
 implement appropriate measures for GDPR-compliant processing and
 transfer of personal data within the scope of the IDS technology and
-related features (see also: [GDPR-related Requirements and
-Recommendations for the IDS Reference Architecture Model](https://internationaldataspaces.org/download/16445/) ).
+related features (see also: 
+[GDPR-related Requirements and Recommendations for the IDS Reference Architecture Model](https://internationaldataspaces.org/download/16445/).

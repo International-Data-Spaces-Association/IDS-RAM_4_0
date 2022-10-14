@@ -47,5 +47,4 @@ In addition, the Reference Architecture Model comprises three
 
 ![ General structure of Reference Architecture
 Model](../media/image11.png)
-*Figure: General structure of the IDS Reference Architecture
-Model*
+#### Figure 1.2: General structure of the IDS Reference Architecture Model

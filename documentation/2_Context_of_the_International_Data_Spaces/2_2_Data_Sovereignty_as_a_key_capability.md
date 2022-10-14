@@ -26,7 +26,7 @@ itself, as not all data requires the same level of protection, and as
 the value contribution of data varies, depending on what class or
 category it can be subsumed under.
 
-**Definition of Data Sovereignty:**
+## Definition of Data Sovereignty ##
 
 ``Data Sovereignty is the ability of a natural or legal person to exclusively and sovereignly decide concerning the usage of data as an economic asset.``
 

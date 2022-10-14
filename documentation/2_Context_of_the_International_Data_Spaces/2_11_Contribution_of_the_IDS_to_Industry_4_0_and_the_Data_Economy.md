@@ -17,8 +17,7 @@ same time making sure data sovereignty is guaranteed for data owners.
 
 ![ Typical enterprise architecture
 stack](../media/image16.png)
-*Figure: Typical enterprise architecture
-stack*
+### Figure 2.11.1: Typical enterprise architecture stack
 
 In broadening the perspective from an individual use case scenario to a
 platform landscape view, the International Data Spaces positions itself
@@ -33,8 +32,7 @@ be connected to the International Data Spaces.
 
 ![ International Data Spaces connecting different cloud
 platforms](../media/image17.png)
-*Figure: International Data Spaces connecting different cloud
-platforms*
+### Figure 2.11.2: International Data Spaces connecting different cloud platforms
 
 With this integrating ambition, the International Data Spaces initiative
 positions itself in the context of cognate initiatives on both national

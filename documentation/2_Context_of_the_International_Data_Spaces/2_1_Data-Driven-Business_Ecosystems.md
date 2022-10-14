@@ -27,5 +27,4 @@ resource (as shown by a number of examples in the Figure below).
 
 ![Data Sharing in
 Ecosystems](../media/image12.png)
-*Figure: Data Sharing in
-Ecosystems*
+### Figure 2.1: Data Sharing in Ecosystems
