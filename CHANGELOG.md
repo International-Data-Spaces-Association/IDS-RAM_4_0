@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - none
 - Business Layer: Adding Participant Information Service
 - Business Layer: Adding activities in relation to roles.
+- IDSA Rulebook
+
 
 ### Changed
 - none
