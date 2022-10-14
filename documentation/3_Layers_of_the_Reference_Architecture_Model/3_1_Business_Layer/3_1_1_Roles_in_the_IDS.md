@@ -1,4 +1,4 @@
-### ROLES IN THE INTERNATIONAL DATA SPACES
+### ROLES IN THE INTERNATIONAL DATA SPACES ###
 
 In the following, each role a participant can assume in the
 International Data Spaces is described in detail, together with the
@@ -6,7 +6,7 @@ tasks assigned to it. The Reference Architecture model distinguishes
 four "categories" containing "business roles" that, depending on the
 individual business model, can assume one or more of the "basic roles".
 
-#### Basic Roles in the International Data Space
+#### Basic Roles in the International Data Space ###
 
 The ecosystem of the IDS comprises several basic tasks being carried out
 by the various participants. The set of these tasks can be derived from
@@ -28,7 +28,7 @@ cycle. IDS objects that participants in the IDS have to handle are:
 5.  **App**: applications that can be deployed inside the connector.
     Apps facilitate data processing workflows. They may be certified by
     a Certification Body, following the certification procedures defined
-    in the [Certification Perspective](#).
+    in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/README.md).
 
 6.  **Transaction**: comprises all activities performed in the course of
     a data exchange
@@ -69,31 +69,15 @@ be relevant in other contexts than the IDS RAM or may become relevant in
 the future, some potential basic roles are declared as (currently) "out
 of IDS RAM scope". The table below shows the basic roles defined in the IDS.
 
-  ---------------------------------------------------------------------------------------------------------------------------------
-                    **Create**    **Own\***    **Certify/\   **Publish**   **Provide**     **Consume**   **Use**       **Delete**
-                                               verify**                                                                
-  ----------------- ------------- ------------ ------------- ------------- --------------- ------------- ------------- ------------
-  **Connector**     Connector     Connector    Connector     Connector     Connector       (out of IDS   Connector     (out of IDS
-                    Creator       Owner        Certifier     Publisher     Provider        RAM scope)    User          RAM scope)
-
-  **Data**          Data Creator  Data Owner   (out of IDS   Data Broker   Data Provider   Data Consumer Data User     Data Eraser
-                                               RAM scope)                                                              
-
-  **Vocabulary**    Vocabulary    Vocabulary   (out of IDS   Vocabulary    Vocabulary      Vocabulary    Vocabulary    (out of IDS
-                    Creator       Owner        RAM scope)    Publisher     Provider        Consumer      User          RAM scope)
-
-  **Identity**      Identity      Identity     Identity      Identity      Identity        (out of IDS   Identity User Identity
-                    Creator       Owner        Verificator   Publisher     Authenticator   RAM scope)                  Eliminator
-
-  **App**           App Creator   App Owner    App Certifier App Broker    App Provider    App Consumer  App User      App Deleter
-                                                                                                                       (?)
-
-  **Transaction**   Transaction   (out of IDS  Transaction   (out of IDS   (out of IDS RAM (out of IDS   Transaction   (out of IDS
-                    Initiator     RAM scope)   Clearer       RAM scope)    scope)          RAM scope)    Participant   RAM scope)
-
-  **Service**       Service       Service      Service       Service       Service         Service       Service User  (out of IDS
-                    Creator       Owner        Certifier     Broker        Provider        Consumer                    RAM scope)
-  ---------------------------------------------------------------------------------------------------------------------------------
+|                 |       **Create**      |       **Own**      | **Certify / Verify** |       **Publish**       |       **Provide**      |      **Consume      |         **Use**         |      **Delete**     |   |   |   |   |   |
+|-----------------|:---------------------:|:------------------:|:--------------------:|:-----------------------:|:----------------------:|:-------------------:|:-----------------------:|:-------------------:|:-:|:-:|:-:|:-:|:-:|
+| **Connector**   |   Connector Creator   |   Connector Owner  |  Connector Certifier |   Connector Publisher   |   Connector Provider   |  (Out of RAM scope) |      Connector User     |  (Out of RAM scope) |   |   |   |   |   |
+| **Data**        |      Data Creator     |     Data Owner     |  (Out of RAM scope)  | Connector / Data Broker |      Data Provider     |    Data Consumer    |        Data User        |     Data Eraser     |   |   |   |   |   |
+| **Vocabulary**  |   Vocabulary Creator  |  Vocabulary Owner  |  (Out of RAM scope)  |   Vocabulary Publisher  |   Vocabulary Provider  | Vocabulary Consumer |     Vocabulary User     |  (Out of RAM scope) |   |   |   |   |   |
+| **Identity**    |    Identity Creator   |   Identity Owner   | Identity Verificator |   Identitiy Publisher   | Identity Authenticator |  (Out of RAM scope) |      Identity User      | Identity Eliminator |   |   |   |   |   |
+| **App**         |      App Creator      |      App Owner     |     App Certifier    |        App Broker       |      App Provider      |     App Consumer    |         App User        |   App Deleter (?)   |   |   |   |   |   |
+| **Transaction** | Transaction Initiator | (Out of RAM scope) |  Transaction Clearer |    (Out of RAM scope)   |   (Out of RAM scope)   |  (Out of RAM scope) | Transaction Participant |  (Out of RAM scope) |   |   |   |   |   |
+| **Service**     |    Service Creator    |    Service Owner   |   Service Certifier  |      Service Broker     |    Service Provider    |   Service Consumer  |       Service User      |  (Out of RAM scope) |   |   |   |   |   |
 
 These basic roles are suitable to define technical tasks in the IDS and
 roles of the participants in detail. As this quite large number is,
@@ -101,7 +85,7 @@ however, bulky especially for early discussions, grouping basic roles to
 business roles is advisable. The basic roles are explained in a suitable
 context of the business roles.
 
-#### Business Roles in the International Data Space
+#### Business Roles in the International Data Space ####
 
 On the level of the business layer, depending on the use case, it might
 not be crucial to distinguish between basic roles. E.g. if an industrial
@@ -131,7 +115,7 @@ There are four categories of roles:
 
 » Category 4: Governance Body
 
-#### CATEGORY 1: CORE PARTICIPANT
+#### CATEGORY 1: CORE PARTICIPANT ####
 
 Core Participants are involved and required every time data is exchanged
 in the International Data Spaces. Roles assigned to this category are
@@ -144,7 +128,7 @@ these roles as they create, potentially own and possibly provide data as
 well as receive, process and most likely at some point in time delete
 data.
 
-##### DATA SUPPLIER
+##### DATA SUPPLIER ####
 
 The Data Supplier is a role that induces data into the IDS ecosystem.
 Depending on the individual business and technical operation model, the
@@ -206,7 +190,7 @@ some way, or to improve its quality. Data Apps are specific applications
 that can be loaded into the IDS connector and, thus, linked into the
 data exchange workflow.
 
-##### DATA CUSTOMER
+##### DATA CUSTOMER #####
 
 The **Data Consumer** receives data from a Data Provider. From a
 business process modeling perspective, the Data Consumer is the mirror
@@ -251,7 +235,7 @@ successful (or unsuccessful) data exchange transaction at a Clearing
 House, use Apps to enrich, transform, etc. the data received, or use a
 Data Broker to retrieve data sources.
 
-#### CATEGORY 2: INTERMEDIARY
+#### CATEGORY 2: INTERMEDIARY #####
 
 Intermediaries act as trusted entities and are commonly considered as
 "platforms". They assume a rather central role compared to the great
@@ -267,7 +251,7 @@ The Intermediary roles may be assumed only by trusted organizations.
 They create benefit for participants in the IDS by establishing trust,
 providing metadata, and creating a business model around their services.
 
-##### Data Intermediary
+##### Data Intermediary #####
 
 The Data Intermediary is a platform operator that assumes mainly the
 data-related basic roles Data Provider/Data Consumer and Data Broker.
@@ -300,7 +284,7 @@ After the Data Broker has provided the Data Consumer with the metadata
 about a certain Data Provider, it is not involved in the subsequent data
 exchange process.
 
-##### Service Intermediary
+##### Service Intermediary #####
 
 A service offers e.g. data analysis, data integration, data cleansing,
 or semantic enrichment to improve the quality of the data exchanged in
@@ -331,7 +315,7 @@ Service Intermediaries may also assume the role of the **Service
 Broker**. The Service Broker provides metadata on present services in
 the IDS analogously to the Data Broker.
 
-##### APP STORE
+##### APP STORE #####
 
 The business role of the App Store is responsible to distribute data
 apps. In contrary to the Service Provider, the algorithm is not executed
@@ -360,7 +344,7 @@ As the App Store might take responsibility for the validity and
 functionality of the apps provided, the App Store could also act as an
 **App Certifier**.
 
-##### VOCABULARY Intermediary
+##### VOCABULARY Intermediary #####
 
 The Vocabulary Intermediary technically manages and offers vocabularies
 (i.e. ontologies, reference data models, or metadata elements). The
@@ -413,7 +397,7 @@ Suppliers, Data Customers, Service Intermediaries, Data Intermediaries,
 App Stores, etc. Also the Vocabulary Intermediary possibly may use a
 vocabulary to describe the vocabulary repository.
 
-##### CLEARING HOUSE
+##### CLEARING HOUSE #####
 
 The Clearing House is an intermediary that provides clearing and
 settlement services for all financial and data exchange transactions. In
@@ -437,7 +421,7 @@ received by the Data Customer or not). The Clearing House also provides
 reports on the performed (logged) transactions for billing, conflict
 resolution, etc.
 
-##### Identity Authority
+##### Identity Authority #####
 
 The Identity Authority should offer a service to create, maintain,
 manage, monitor, and validate identity information of and for
@@ -461,7 +445,7 @@ would also publish the identity if desired by the owner and especially
 provide certificates, DAPS etc. for authentication purposes. These are
 the basic roles **Identity Publisher** and **Identity Authenticator**.
 
-#### CATEGORY 3: SOFTWARE DEVELOPER
+#### CATEGORY 3: SOFTWARE DEVELOPER ####
 
 This category comprises IT companies providing software to the
 participants of the International Data Spaces. Roles subsumed under this
@@ -474,7 +458,7 @@ of a data exchange transaction (e.g. Enterprise Systems like ERP or MES,
 or other platforms) is not part of the International Data Spaces, as it
 takes place before an organization joins the IDS.
 
-##### App Developer
+##### App Developer #####
 
 App Developers develop data apps to be used in an IDS Connector. Thus,
 the App Developer typically covers the basic roles **App Creator** and,
@@ -491,7 +475,7 @@ Data Customers, Data Suppliers, or Intermediaries. App Developers should
 describe each Data App using metadata (in compliance with a metadata
 model) with regard to its semantics, functionality, interfaces, etc.
 
-##### Connector Developer
+##### Connector Developer #####
 
 A Connector Developer provides software for implementing the
 functionality required by the International Data Spaces (i.e., through
@@ -508,7 +492,7 @@ The Connector Developer typically assumes the basic roles **Connector
 Creator**, **Connector Owner**, and -- considering the way of software
 distribution described above -- **Connector Provider**.
 
-#### CATEGORY 4: GOVERNANCE BODY
+#### CATEGORY 4: GOVERNANCE BODY #####
 
 Governance Bodies in the IDS have the authority and task to set and
 enforce guidelines to standardize data exchange, to create trust and, in
@@ -517,7 +501,7 @@ Body, Evaluation Facilities, Standardization Organizations, and the
 International Data Spaces Association are the business roles in the
 category of Governance Bodies.
 
-##### CERTIFICATION BODY AND EVALUATION FACILITIES
+##### CERTIFICATION BODY AND EVALUATION FACILITIES #####
 
 The participants in the International Data Spaces benefit from the
 Certification Body and the Evaluation Facilities as these roles take
@@ -537,7 +521,7 @@ Certifier**, **App Certifier** and **Service Certifier**.
 
 The Certification Scheme applied in the process is described in the [Certification Perspective](#).
 
-##### Standardization Organization
+##### Standardization Organization #####
 
 Standardization Organizations govern standards that are typically
 describe as an ontology or vocabulary. In general, there is neither a
@@ -555,7 +539,7 @@ Among the standardization organizations, the IDSA assumes a special
 role, as it is exclusively entitled to govern the IDS Reference
 Architecture Model and the Information Model.
 
-##### INTERNATIONAL DATA SPACES ASSOCIATION (IDSA)
+##### INTERNATIONAL DATA SPACES ASSOCIATION (IDSA) #####
 
 The International Data Spaces Association (IDSA) is a non-profit
 organization promoting the continuous development of the International

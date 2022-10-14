@@ -1,4 +1,4 @@
-### Usage Contracts
+### Usage Contracts ###
 
 A legally valid contract is the foundation of any business transaction.
 The IDS cannot, and does not intend to, replace legal contracts or

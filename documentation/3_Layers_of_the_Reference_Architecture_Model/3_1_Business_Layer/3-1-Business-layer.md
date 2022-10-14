@@ -1,4 +1,4 @@
-## Business Layer 
+## Business Layer ##
 
 The Business Layer of the Reference Architecture Model defines and
 categorizes the different roles the participants in the International
