@@ -4,6 +4,8 @@
 
 [Front Matter](./FrontMatter.md)
 
+[Contributing Projects](./Contributing_Projects.md)
+
 [1. Introduction](./1_Introduction/1_1_Goals_of_the_International_Data_Spaces.md)
 
 [2. Context of the International Data Spaces](./2_Context_of_the_International_Data_Spaces/2_1_Data-Driven-Business_Ecosystems.md)
