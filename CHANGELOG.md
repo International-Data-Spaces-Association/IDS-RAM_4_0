@@ -66,6 +66,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed ###
 
 - none
+- Business Layer: editorial changes.
 
 ### Deprecated ###
 
@@ -97,6 +98,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deprecated ###
 
 - none
+- Business Layer: fixed consistency in Role Interaction table.
 
 ### Fixed ###
 
