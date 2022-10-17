@@ -23,7 +23,7 @@ During certification, the applications must be evaluated as a part of the overal
 
 * Authentication and authorization for external interfaces.
 * Ensuring integrity and confidentiality for all communication channels and sessions (see also [Section 4.1.5](./4_1_5_Securing_Interaction_between_IDS_components.md)).
-* Supporting negotiation and enforcement of usage control policies (see also [Section 4.1.6](./4_1_6_Usage_Control.md)).
+* Supporting negotiation and enforcement of usage control policies (see also [Section 4.1.6](./4_1_6_Usage_Control.md#usage-control-in-a-connector)).
 * Securely configuring the entire connector stack including the allowed communication routes between apps.
 * Logging relevant aspects, e.g., configuration changes, access control decisions, access to data resources.
 * For higher Trust Levels: Interacting with responsible kernel/runtime component for using key material protected by hardware mechanisms.

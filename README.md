@@ -51,3 +51,5 @@ The IDS-G contains specific details on specifications, e.g. APIs and their descr
 ## Previous Versions ##
 
 - [IDS RAM 3.0](https://internationaldataspaces.org/download/16630/)
+- [IDS RAM 2.0](https://internationaldataspaces.org/download/16641/)
+- [IDS RAM 1.0](https://internationaldataspaces.org/download/16652/)

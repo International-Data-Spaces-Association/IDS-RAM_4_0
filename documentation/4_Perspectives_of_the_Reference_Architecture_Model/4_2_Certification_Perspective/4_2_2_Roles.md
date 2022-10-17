@@ -8,7 +8,7 @@ The realization of the IDS Certification schema requires different roles respons
 
 It should be noted that all roles described in this section are specific to the International Data Spaces (i.e. terms such as "Certification Body" should not be misunderstood to refer to an existing organization already granting certificates).
 
-The defined roles and their main tasks are described below, while additional details on their tasks and interactions are described in [Section 4.2.5](./4_2_5_Processes.md).
+The defined roles and their main tasks are described below, while additional details on their tasks and interactions are described in [Section 4.2.5](./4_2_5_Processes.md#certification-processes).
 
 #### Certification Body ####
 

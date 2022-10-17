@@ -62,7 +62,8 @@ for the realization of use cases on the foundation of a trustworthy infrastructu
 4. The interaction of all is structured and guided within this Rulebook.
 
 ![Overview Rulebook scope and goals](./media/Overview_Rulebook_scope_and_goals.png)
-*Figure: Overview Rulebook scope and goals*
+
+### Figure 4.3.10.1: Overview Rulebook scope and goals
 
 #### Scope / Non Scope in detail ####
 

@@ -6,25 +6,25 @@ In information security, Access Control restricts access to resources. Authoriza
 
 The [XACML](http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html) (eXtensible Access Control Markup Language) standard is used to introduce commonly used terms in the field of Access Control. XACML is a policy language to express ABAC rules. The main building blocks of the language are subject, action, resource, and environment:
 
-» The subject describes who is accessing a data asset (e.g., a user).
+* The subject describes who is accessing a data asset (e.g., a user).
 
-» The action describes what the subject wants to do with the data asset (e.g., read, write).
+* The action describes what the subject wants to do with the data asset (e.g., read, write).
 
-» The resource describes the data asset.
+* The resource describes the data asset.
 
-» The environment specifies the context of the action (e.g., time, location).
+* The environment specifies the context of the action (e.g., time, location).
 
-[Figure 4.1.6.1](http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en_files/image002.gif) illustrates the XACML data flow diagram and the main actors or components to implement it: the Policy Enforcement Point (PEP), the Policy Decision Point (PDP), the Policy Information Point (PIP), and the Policy Administration Point (PAP).
+[Figure 4.1.6.1](#figure-4161-xacml-data-flow-diagram-source-extensible-access-control-markup-language-xacml-version-30) illustrates the XACML data flow diagram and the main actors or components to implement it: the Policy Enforcement Point (PEP), the Policy Decision Point (PDP), the Policy Information Point (PIP), and the Policy Administration Point (PAP).
 
 In general, attributes can describe anything or anyone. Nevertheless, they can be divided into four major categories:
 
-» Subject attributes, describing the user by e.g. their age, role, or clearance;
+* Subject attributes, describing the user by e.g. their age, role, or clearance;
 
-» Action attributes, describing the intended action (e.g. read, write, or delete);
+* Action attributes, describing the intended action (e.g. read, write, or delete);
 
-» Resource (or object) attributes, describing the resource itself (e.g. object type, location, or classification);
+* Resource (or object) attributes, describing the resource itself (e.g. object type, location, or classification);
 
-» Context (or environment) attributes, addressing time, location, or other dynamic aspects.
+* Context (or environment) attributes, addressing time, location, or other dynamic aspects.
 
 In the IDS, Access Control is a resource-centric regulation of access requests from subjects (i.e., IDS Participants) to resources (i.e., Data Services). Data Owners define Attribute-Based Access Control policies for their endpoints. In addition, they define the attribute values a subject must attest in order to grant access to the resource. These attributes may include:
 
@@ -34,19 +34,19 @@ In the IDS, Access Control is a resource-centric regulation of access requests f
 
 » Security profile requirements (only access requests from a Connector that meets specific security requirements will be granted; e.g., having a TPM >= 1.2 and doing application isolation).
 
-![image](http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en_files/image002.gif)
+![XACML data flow diagram](http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en_files/image002.gif)
 
-_Figure 4.1.6.1: XACML data flow diagram [Source: eXtensible Access Control Markup Language (XACML) Version 3.0 ]_
+### Figure 4.1.6.1: XACML data flow diagram [Source: eXtensible Access Control Markup Language (XACML) Version 3.0 ]
 
 The actual Access Control decision has to be made within the Connector and can be implemented using technologies such as XACML or JAAS, depending on the implementation of the Connector. The IDS Security Architecture does not dictate a specific Access Control enforcement language or implementation.
 
 Alongside with data _Access_ Control, regulating access to specific digital resources (e.g., a service or a file), the IDS Security Architecture also supports data _Usage_ Control. In general, the overall goal is to enforce data usage restrictions on the Data Consumer side after access to data has been granted.
 
-As shown in [Figure 4.1.6.2](media/UC-Definition.drawio.png), Usage Control is an extension of Access Control. It is about the specification and enforcement of restrictions regulating what may be done with a data asset, and what not. Thus, Usage Control is concerned with requirements that pertain to data processing (obligations) rather than data access (provisions). Usage Control is relevant in the context of intellectual property protection, regulatory compliance, and digital rights management.
+As shown in [Figure 4.1.6.2](#figure-4162-data-usage-control-–-an-extension-of-data-access-control), Usage Control is an extension of Access Control. It is about the specification and enforcement of restrictions regulating what may be done with a data asset, and what not. Thus, Usage Control is concerned with requirements that pertain to data processing (obligations) rather than data access (provisions). Usage Control is relevant in the context of intellectual property protection, regulatory compliance, and digital rights management.
 
-![image](media/UC-Definition.drawio.png)
+![Data usage control – an extension of data access control](media/UC-Definition.drawio.png)
 
-_Figure 4.1.6.2: Data usage control – an extension of data access control_
+### Figure 4.1.6.2: Data usage control – an extension of data access control
 
 Data Usage Control in the IDS basically works by attaching data usage policy information to data being exchanged and continuously controlling the way data is processed, aggregated, or forwarded to other endpoints. This data-centric perspective allows Data Providers to continuously control _data flows_, rather than _accesses to services_. At configuration time, data usage policies support developers and administrators in setting up correct data flows.
 
@@ -54,30 +54,29 @@ At runtime, Data Usage Control enforcement prevents IDS Connectors from handling
 
 The following examples illustrate security requirements that cannot be achieved by Access Control, but require data-centric Usage Control:
 
-» **SECRECY:** Classified data must not be forwarded to nodes which do not have the respective clearance.
+* **SECRECY:** Classified data must not be forwarded to nodes which do not have the respective clearance.
 
-» **INTEGRITY:** Critical data must not be modified by untrusted nodes, as otherwise its integrity cannot be guaranteed anymore.
+* **INTEGRITY:** Critical data must not be modified by untrusted nodes, as otherwise its integrity cannot be guaranteed anymore.
 
-» **TIME TO LIVE:** Data must be deleted from storage after a certain period of time.
+* **TIME TO LIVE:** Data must be deleted from storage after a certain period of time.
 
-» **ANONYMIZATION BY DATA AGGREGATION:** Personal data may be used only in an aggregated form by untrusted parties. To do so, a sufficient number of distinct data records must be aggregated in order to prevent deanonymization of individual records.
+* **ANONYMIZATION BY DATA AGGREGATION:** Personal data may be used only in an aggregated form by untrusted parties. To do so, a sufficient number of distinct data records must be aggregated in order to prevent deanonymization of individual records.
 
-» **ANONYMIZATION BY DATA SUBSTITUTION**: Data allowing personal identification (e.g., faces in video files) must be replaced by an adequate substitute (e.g., pixelized) in order to guarantee that individuals cannot be deanonymized.
+* **ANONYMIZATION BY DATA SUBSTITUTION**: Data allowing personal identification (e.g., faces in video files) must be replaced by an adequate substitute (e.g., pixelized) in order to guarantee that individuals cannot be deanonymized.
 
-» **SEPARATION OF DUTY**: Two datasets from competitive entities (e.g., two automotive OEMs) must never be aggregated or processed by the same service.
+* **SEPARATION OF DUTY**: Two datasets from competitive entities (e.g., two automotive OEMs) must never be aggregated or processed by the same service.
 
-» **USAGE SCOPE:** Data may only serve as input for data pipes within the Connector; it must never leave the Connector and be sent to an external endpoint.
+* **USAGE SCOPE:** Data may only serve as input for data pipes within the Connector; it must never leave the Connector and be sent to an external endpoint.
 
-It is important to note that the purpose of Data Usage Control is to allow the specification of such constraints and enforcing them in the respective system. A precondition of Data Usage Control is that the enforcement mechanism itself is trusted; i.e., Data Usage Control itself does not establish trust in an endpoint, but rather builds upon an existing trust relationship and facilitates enforcement of legal or technical requirements, such as Service Level Agreements (SLAs) or data privacy regulations. Thus, users must be aware that Data Usage Control will only provide certain enforcement guarantees if applied on highly trusted platforms, such as Trusted Connectors in the International Data Spaces  [Section 3.2](../../3_Layers_of_the_Reference_Architecture_Model/3_2_Functional_Layer))
+It is important to note that the purpose of Data Usage Control is to allow the specification of such constraints and enforcing them in the respective system. A precondition of Data Usage Control is that the enforcement mechanism itself is trusted; i.e., Data Usage Control itself does not establish trust in an endpoint, but rather builds upon an existing trust relationship and facilitates enforcement of legal or technical requirements, such as Service Level Agreements (SLAs) or data privacy regulations. Thus, users must be aware that Data Usage Control will only provide certain enforcement guarantees if applied on highly trusted platforms, such as Trusted Connectors in the International Data Spaces  [Section 3.2](../../3_Layers_of_the_Reference_Architecture_Model/3_2_Functional_Layer/3_2_FunctionalLayer.md#functional-layer))
 
 #### Organizational Rules and Legal Contracts ####
 
+Data Usage Control can be implemented by means of a machine-readable contract, which is expected to be fulfilled by a party. It is a way to track and trace data as it is used within different systems and to collect evidence of the violation of agreed usage constraints. With that in mind, solutions range from organizational rules or legal contracts to completely technical ways of enforcing usage restrictions. For example, an organizational rule (e.g. a company policy) could state that employees must not use removable storage devices, such as USB sticks. Similarly, a technical form of enforcement, such as group policies specified by the Windows operating system, can prevent employees from using removable storage devices. In some scenarios, organizational rules, legal contracts, and technical rules can be used interchangeably. In other scenarios, the three forms can be used to complement each other. In the long run, it can be expected that organizational rules and legal contracts will increasingly be replaced by technical forms of enforcement (as illustrated in [Figure 4.1.6.3](#figure-4163-technical-enforcement-vs-organizationallegal-enforcement)).
 
-Data Usage Control can be implemented by means of a machine-readable contract, which is expected to be fulfilled by a party. It is a way to track and trace data as it is used within different systems and to collect evidence of the violation of agreed usage constraints. With that in mind, solutions range from organizational rules or legal contracts to completely technical ways of enforcing usage restrictions. For example, an organizational rule (e.g. a company policy) could state that employees must not use removable storage devices, such as USB sticks. Similarly, a technical form of enforcement, such as group policies specified by the Windows operating system, can prevent employees from using removable storage devices. In some scenarios, organizational rules, legal contracts, and technical rules can be used interchangeably. In other scenarios, the three forms can be used to complement each other. In the long run, it can be expected that organizational rules and legal contracts will increasingly be replaced by technical forms of enforcement (as illustrated in [Figure 4.1.6.3](media/Technical_vs_Organizational.drawio.png)).
+![Technical enforcement vs. organizational/legal enforcement](media/Technical_vs_Organizational.drawio.png)
 
-![image](media/Technical_vs_Organizational.drawio.png)
-
-_Figure 4.1.6.3: Technical enforcement vs. organizational/legal enforcement_
+### Figure 4.1.6.3: Technical enforcement vs. organizational/legal enforcement
 
 #### Roles involved in Usage Control ####
 
@@ -107,19 +106,19 @@ For Data Apps to take advantage of Usage Control technology, App Providers need 
 
 The IDS Information Model is a modular meta-model (ontology) describing the capabilities of IDS infrastructure components, such as the Connector or the Data Endpoints. Descriptions of data provided by Data Endpoints are published at dedicated Broker registries, allowing potential Data Consumers to search for and identify data that is relevant (semantics) and applicable (quality) for their particular purpose, and to assess in advance data’s affordability (price) and usability (restrictions).
 
-The IDS Usage Control Language refers to an extension of the Open Digital Rights Language ([ODRL](https://www.w3.org/community/odrl/)), a W3C standard. The Information Model’s Usage Control module uses this language to provide machine-readable specifications of Usage Control policies. These specifications define actions that a party is prohibited or permitted to operate with regard to a given data asset. In addition, they codify any potentially involved duties. Despite a simple core model, which is depicted in [Figure 4.1.6.4](https://www.w3.org/TR/odrl-model/00Model.png), ODRL policies are a formal way to declaratively express Usage Control policies at a specification level. This way, the Information Model provides a technology-agnostic, consistent representation of policies across the International Data Spaces.
+The IDS Usage Control Language refers to an extension of the Open Digital Rights Language ([ODRL](https://www.w3.org/community/odrl/)), a W3C standard. The Information Model’s Usage Control module uses this language to provide machine-readable specifications of Usage Control policies. These specifications define actions that a party is prohibited or permitted to operate with regard to a given data asset. In addition, they codify any potentially involved duties. Despite a simple core model, which is depicted in [Figure 4.1.6.4](#figure-4164-odrl-information-model), ODRL policies are a formal way to declaratively express Usage Control policies at a specification level. This way, the Information Model provides a technology-agnostic, consistent representation of policies across the International Data Spaces.
 
-![odrl](https://www.w3.org/TR/odrl-model/00Model.png)
+![Figure 4.1.6.4: ODRL Information Model](https://www.w3.org/TR/odrl-model/00Model.png)
 
-_Figure 4.1.6.4: ODRL Information Model_
+### Figure 4.1.6.4: ODRL Information Model
 
 In order to implement and enforce usage policies at a specification level within individual target environments, it is necessary to map organizational and technical measures to the individual target environments. While organizational measures are out of scope here, technical measures involve a variety of additional information sources (PIPs) and tight integration with the host environment (PEPs). Here, the Information Model enhances ODRL constructs via predefined extension “hooks” to support mapping onto lower-level, implementation-oriented policy languages (e.g., MYDATA Control Technologies XML).
 
-For example, the ODRL Constraint class expresses logical conditions that govern the applicability of a Rule. Here, an Operator _(eq)_ relates the Left Operand (a predicate like _Geospatial Named Area_) to a Right Operand (dynamic or predefined value). On the one side, the IDS Usage Control Language extends the group of [predefined predicates](http://www.w3.org/TR/odrl-vocab/#term-LeftOperand) in order to support decision-making in particular scenarios of the IDS, such as [data residency;](http://www.omg.org/data-residency/) on the other side, it defines a configuration overlay (b) to tie the abstract predicates (a) to an operable programming logic supplied by the respective target environment (c), as illustrated by [Figure 4.1.6.5](media/mapping-of-policy-languages.drawio.png).
+For example, the ODRL Constraint class expresses logical conditions that govern the applicability of a Rule. Here, an Operator _(eq)_ relates the Left Operand (a predicate like _Geospatial Named Area_) to a Right Operand (dynamic or predefined value). On the one side, the IDS Usage Control Language extends the group of [predefined predicates](http://www.w3.org/TR/odrl-vocab/#term-LeftOperand) in order to support decision-making in particular scenarios of the IDS, such as [data residency;](http://www.omg.org/data-residency/) on the other side, it defines a configuration overlay (b) to tie the abstract predicates (a) to an operable programming logic supplied by the respective target environment (c), as illustrated by [Figure 4.1.6.5](#figure-4165-examples-of-mapping-among-policy-language-levels).
 
-![image](media/mapping-of-policy-languages.drawio.png)
+![imaFigure 4.1.6.4: ODRL Information Modelge](media/mapping-of-policy-languages.drawio.png)
 
-_Figure 4.1.6.5: Examples of mapping among policy language levels_
+### Figure 4.1.6.5: Examples of mapping among policy language levels
 
 #### IDS Usage Control Policies and Policy Classes ####
 
@@ -149,13 +148,13 @@ Usage Control only makes sense in an ecosystem where a certain level of trust ca
 
 The IDS Connector focuses on security and delivers a trusted platform, incorporating crucial building blocks:
 
-» identity & trust management for authenticating communicating parties (e.g., other Connectors) and shaping trusted relationships between partners;
+* identity & trust management for authenticating communicating parties (e.g., other Connectors) and shaping trusted relationships between partners;
 
-» a trusted platform as a baseline for secure data processing;
+* a trusted platform as a baseline for secure data processing;
 
-» trustworthy communication based on authenticated and encrypted connections; and
+* trustworthy communication based on authenticated and encrypted connections; and
 
-» Access & Usage Control.
+* Access & Usage Control.
 
 Instances of the Trusted Connector enable remote integrity verification, so the integrity of the deployed software stack can be guaranteed before granting access to data.
 
@@ -163,41 +162,41 @@ The Trusted Connector guarantees a controlled execution environment for data ser
 
 #### Message Router and Interceptor (Example) ####
 
-An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](media/intercepting-data-flow-data-flow.drawio.png)).
+An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](#figure-4166-message-router-pipeline-example)).
 
-![image](media/intercepting-data-flow-data-flow.drawio.png)
+![Message Router pipeline (example)](media/intercepting-data-flow-data-flow.drawio.png)
 
-_Figure 4.1.6.6: Message Router pipeline (example)_
+### Figure 4.1.6.6: Message Router pipeline (example)
 
-In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](media/intercepting-data-flow-interceptor-data-flow.drawio.png) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
+In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](#figure-4167-intercepting-message-router-data-flows) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
 
-As the International Data Spaces provides an Information Model (see [Section 3.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/)), additional metadata enhances the data transferred via the route, thereby enabling better Usage Control enforcement. The Connector attaches the metadata to the data package, as explained in [Section 3.4](../../3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/). In addition, a PIP is able to resolve more metadata during the decision-making process if necessary.
+As the International Data Spaces provides an Information Model (see [Section 3.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/3-1-Business-layer.md#business-layer)), additional metadata enhances the data transferred via the route, thereby enabling better Usage Control enforcement. The Connector attaches the metadata to the data package, as explained in [Section 3.3](../../3_Layers_of_the_Reference_Architecture_Model/3_3_Information_Layer/3_3_InformationLayer.md#information-layer). In addition, a PIP is able to resolve more metadata during the decision-making process if necessary.
 
-![image](media/intercepting-data-flow-interceptor-data-flow.drawio.png)
+![Intercepting Message Router data flows](media/intercepting-data-flow-interceptor-data-flow.drawio.png)
 
-_Figure 4.1.6.7: Intercepting Message Router data flows_
+### Figure 4.1.6.7: Intercepting Message Router data flows
 
-This paradigm also works across company borders, as data always flows through the IDS Connector and the Interceptor Pattern, respectively (as shown in [Figure 4.1.6.8](media/Data-flow-across-company-borders.png)). When reaching the receiving Connector, the respective policy to protect the data is automatically instantiated.
+This paradigm also works across company borders, as data always flows through the IDS Connector and the Interceptor Pattern, respectively (as shown in [Figure 4.1.6.8](#figure-4168-data-flow-across-company-borders)). When reaching the receiving Connector, the respective policy to protect the data is automatically instantiated.
 
 Depending on the policies available, this way of enforcement is not enough to cover all possible use cases and full Usage Control.
 
-![image](media/Data-flow-across-company-borders.png)
+![Data flow across company borders](media/Data-flow-across-company-borders.png)
 
-_Figure 4.1.6.8: Data flow across company borders_
+### Figure 4.1.6.8: Data flow across company borders
 
 #### Context Information and Obligation Fulfillment ####
 
-Context information is the information such as time, location, states of systems, etc, that is required for the evaluation of a usage policy. In IDS, one can basically distinguish two types of information; the local information that is obtained from the IDS Connector and the global information (see [Figure 4.1.6.9](media/Context-information-and-execution-point-PIP.drawio.png)). The information that can be obtained from a resource inside the IDS Connector itself, such as a system state, is referred to as an IDS local context information. On the other hand, the information that contains, for example, information from the IDS ParIS or the state of a payment that is provided by an IDS compliant resource is referred to as an IDS global context information. The IDS Usage Control language provides ways to address and use these context infomation. For example, They shall be provided by an IDS Policy Information Point (IDS PIP). A Usage Control technology can then use these context information for enforcement by connecting the PIPs.
+Context information is the information such as time, location, states of systems, etc, that is required for the evaluation of a usage policy. In IDS, one can basically distinguish two types of information; the local information that is obtained from the IDS Connector and the global information (see [Figure 4.1.6.9](#figure-4169-ids-information-point)). The information that can be obtained from a resource inside the IDS Connector itself, such as a system state, is referred to as an IDS local context information. On the other hand, the information that contains, for example, information from the IDS ParIS or the state of a payment that is provided by an IDS compliant resource is referred to as an IDS global context information. The IDS Usage Control language provides ways to address and use these context infomation. For example, They shall be provided by an IDS Policy Information Point (IDS PIP). A Usage Control technology can then use these context information for enforcement by connecting the PIPs.
 
-![image](media/Context-information-and-execution-point-PIP.drawio.png)
+![Figure 4.1.6.9: IDS Information Point](media/Context-information-and-execution-point-PIP.drawio.png)
 
-_Figure 4.1.6.9: IDS Information Point_
+### Figure 4.1.6.9: IDS Information Point
 
-Moreover, an IDS Contract can contain obligations that have to be fulfilled. For example, logging in the Clearing House or deleting the stored data. Here, also, there is a difference between an internal (inside the Connector) and an external (outside the connector) execution points (see [Figure 4.1.6.10](media/Context-information-and-execution-point-PXP.drawio.png)). While deleting data stored in the Connector is an internal execution, logging to an external destination is an example of an external execution. The components with interfaces for executing such duties are called Policy Execution Points (PXPs). These IDS PXPs can be connected to the enforcement framework and used accordingly.
+Moreover, an IDS Contract can contain obligations that have to be fulfilled. For example, logging in the Clearing House or deleting the stored data. Here, also, there is a difference between an internal (inside the Connector) and an external (outside the connector) execution points (see [Figure 4.1.6.10](#figure-41610-ids-execution-point)). While deleting data stored in the Connector is an internal execution, logging to an external destination is an example of an external execution. The components with interfaces for executing such duties are called Policy Execution Points (PXPs). These IDS PXPs can be connected to the enforcement framework and used accordingly.
 
-![image](media/Context-information-and-execution-point-PXP.drawio.png)
+![Figure 4.1.6.10: IDS Execution Point](media/Context-information-and-execution-point-PXP.drawio.png)
 
-_Figure 4.1.6.10: IDS Execution Point_
+### Figure 4.1.6.10: IDS Execution Point
 
 #### Data Provenance Tracking ####
 
@@ -217,17 +216,17 @@ The PEP resides within the message routing component of the Connector (or Data A
 
 Data provenance information is queried at a Privacy Dashboard, which is accessible via a Clearing House. The Privacy Dashboard returns a provenance graph for the unique identifier of data content. There are two options for storing data provenance information:
 
-» Centralized architecture (see [Figure 4.1.6.11](media/provenance-tracking-architecture1.png)): A Provenance Storage Point (ProSP) is attached to the Clearing House. After data usage or a data flow has been observed by the data flow tracking component inside the Connector, the transaction is logged at this ProSP.
+* Centralized architecture (see [Figure 4.1.6.11](#figure-41611-architecture-with-centralized-component-for-provenance-information-storage)): A Provenance Storage Point (ProSP) is attached to the Clearing House. After data usage or a data flow has been observed by the data flow tracking component inside the Connector, the transaction is logged at this ProSP.
 
-» Distributed architecture (see [Figure 4.1.6.12](media/provenance-tracking-architecture2.png)): Each Connector is equipped with a ProSP, which is directly connected to the data flow tracking component. The Clearing House accommodates only a stateless Provenance Collection Point (ProCP), which aggregates provenance information coming in from the distributed ProSPs whenever a query occurs at the Privacy Dashboard.
+* Distributed architecture (see [Figure 4.1.6.12](#figure-41612-architecture-with-distributed-component-for-provenance-information-storage)): Each Connector is equipped with a ProSP, which is directly connected to the data flow tracking component. The Clearing House accommodates only a stateless Provenance Collection Point (ProCP), which aggregates provenance information coming in from the distributed ProSPs whenever a query occurs at the Privacy Dashboard.
 
-![image](media/provenance-tracking-architecture1.png)
+![Figure 4.1.6.11: Architecture with centralized component for provenance information storage](media/provenance-tracking-architecture1.png)
 
-_Figure 4.1.6.11: Architecture with centralized component for provenance information storage_
+### Figure 4.1.6.11: Architecture with centralized component for provenance information storage
 
-![image](media/provenance-tracking-architecture2.png)
+![Figure 4.1.6.12: Architecture with distributed component for provenance information storage](media/provenance-tracking-architecture2.png)
 
-_Figure 4.1.6.12: Architecture with distributed component for provenance information storage_
+### Figure 4.1.6.12: Architecture with distributed component for provenance information storage
 
 ##### Communication #####
 
@@ -254,6 +253,7 @@ Data Provenance Tracking does not directly affect the core functionality of the 
 ##### Information Layer #####
 
 Data Provenance Tracking can be orchestrated for different purposes. Regarding the IDS, the most important goals are establishing transparency and being able to prove compliance to contracts, agreements, or legal regulations. Reliability of content is a secondary goal of data provenance tracking in the IDS. While making the lineage of data traceable is the original purpose of Data Provenance Tracking, this requires ei- ther specific, data provenance enabled Data Apps or the use of dedicated PEPs for these Data Apps.
+
 ##### Process Layer #####
 
 Data Provenance Tracking is integrated in the “Exchange Data” process (or, to be more precise, in the “Query Data” sub-process). Data Provenance Tracking components in the Connector of the Data Provider as well as in the Connector of the Data Consumer signal to the data provenance storage component at the Clearing House that data has been successfully sent or received, respectively. This signaling is implemented based on events intercepted by PEPs for distributed Data Usage Control.

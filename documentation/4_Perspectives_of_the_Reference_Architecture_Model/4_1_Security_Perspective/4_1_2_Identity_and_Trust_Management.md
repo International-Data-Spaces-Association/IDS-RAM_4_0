@@ -1,7 +1,7 @@
 ### Identity and Trust Management ###
 
 The International Data Spaces allow participants a cross-company data exchange. In many cases, the participants intending to exchange data have no prior knowledge about the other company and its utilized components to properly assess the consequences of such a data exchange. Thus, the IDS offers mechanisms to gain reliable information which help to establish trust and enable participants to make sovereign and informed decisions.
-Identity and trust management is rooted in the components described in ([Section 3.5.1](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_1_Identity_Provider.md)).
+Identity and trust management is rooted in the components described in ([Section 3.5.1](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_1_Identity_Provider.md#identity-provider)).
 
 #### Identities for Devices ####
 
@@ -12,16 +12,16 @@ In the IDS, each connector instance possesses it's own identity. Each connector 
 * The Connector Core Services software artifacts that provide management functionality and IDS interoperability.
 * The configuration of an IDS Connector (defined data routes, configured Usage Control framework).
 * The IDS Apps or other services (e.g., Clearing House services) that are bound to this connector instance.
-[Section 3.5.2](../../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_2_0_Connector.md) provides more details for the different parts of a connector.
+[Section 3.5.2](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_2_IDS_Connector.md#ids-connector) provides more details for the different parts of a connector.
 
-The IDS Certification is explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md). It is always conducted for a blueprint of the entire stack consisting of platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
+The IDS Certification is explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md#certification-perspective). It is always conducted for a blueprint of the entire stack consisting of platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
 
 The IDS Connector identity serves to uniquely identify one such instance of the Connector Core Services with their IDS Apps on qualified platforms. The identity concept is equally used for other technical components such as Broker, DAPS, ... in the IDS which have their own Core Services (represented by one or multiple containers) running on a comparable platform.
 
 One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platform, the Connector Core Services and the deployed Data Apps.
 
 ![Components SW Stack](./media/SW_Stack_Components_connector_blueprint.png)
-#### _Figure 4.1.2.1: Components of the Software Stack of an IDS Connector_
+#### Figure 4.1.2.1: Components of the Software Stack of an IDS Connector
 
 ##### Component Identifier #####
 
@@ -42,10 +42,10 @@ Each Service Instance needs to be mapped to one platform it utilizes:
   * For distributed platform setups (e.g. with kubernetes): 1 P_UID for the setup maps to n PIKs for the servers in this distributed platform.
   * If connector is run in one protected VM (e.g. SEV SNP): 1 P_UID is mapped to 1 PIK for this SEV-SNP VM.
   * If multiple protected VMs (e.g. SEV SNP) form a distributed platform setup: 1 UID for the setup maps to n PIKs for the VMs which comprise this setup.
-  * Valid P_UIDs are mapped to a C_UID in the DAPS. The platform information is verified by another IDS Connector using remote attestation. 
+  * Valid P_UIDs are mapped to a C_UID in the DAPS. The platform information is verified by another IDS Connector using remote attestation.
 
 ![Identity mapping for different scenarios](./media/identity_mapping.png)
-#### _Figure 4.1.2.2: Identities for IDS Connector Services and Platforms_
+#### Figure 4.1.2.2: Identities for IDS Connector Services and Platforms
 
 *(Remark: The platforms in the image may always be either physical devices or protected VMs)*
 
@@ -54,8 +54,8 @@ Each Service Instance needs to be mapped to one platform it utilizes:
 The IDS targets sovereign data exchange, which does not only comprise a secure exchange of data but also a trustworthy environment for data processing honoring the defined usage control policies. To achieve this goal, it is not sufficient to only know the identity of another IDS component, but additional information about the company operating the component and the utilized software stack is required.
 This information is provided in form of the following describing artifacts:
 
-* A **Company Description** for each company operating an IDS component which contains verified information about the company as well as information about its Operational Environment Certification (explained in [Chapter 4.2.3](../4_2_Certification_Perspective/4_2_3_Operational_Environment_Certification.md)).
-* **Software Manifests** for the utilized software components which have been evaluated in the Component Certification explained in [Chapter 4.2.4](../4_2_Certification_Perspective/4_2_4_Component_Certification.md)). In addition to the awarded certification levels, the manifests for components with Trust Level 2 and 3 contain verified measurements which can be used to validate that the described software is truly running on the device. To support re-usability of components, the description of each software stack consists of three types of Software Manifests used for describing different layers:
+* A **Company Description** for each company operating an IDS component which contains verified information about the company as well as information about its Operational Environment Certification (explained in [Chapter 4.2.3](../4_2_Certification_Perspective/4_2_3_Operational_Environment_Certification.md#operational-environment-certification)).
+* **Software Manifests** for the utilized software components which have been evaluated in the Component Certification explained in [Chapter 4.2.4](../4_2_Certification_Perspective/4_2_4_Component_Certification.md#component-certification)). In addition to the awarded certification levels, the manifests for components with Trust Level 2 and 3 contain verified measurements which can be used to validate that the described software is truly running on the device. To support re-usability of components, the description of each software stack consists of three types of Software Manifests used for describing different layers:
   * A **Root of Trust for Measurement (RTM) Manifest** for components of the boot stage,
   * an **Operating System (OS) Manifest** for utilized kernel and user space components, including the container run time enabling the execution of different isolated containers/apps, and
   * an arbitrary number of **App Manifests** per component identifying the utilized containers/apps.
@@ -69,7 +69,7 @@ All this metadata is provided in machine-readable form. Manifest information for
 To establish a trusted connection, each connector needs the identity information of the corresponding connector to perform access and usage control decisions. The interactions can be depicted as follows:
 
 ![Interaction between IDS Connectors and Identity Components](./media/IdM_Interactions.png)
-#### _Figure 4.1.2.3: Interaction between IDS Connectors and Identity Components_
+#### Figure 4.1.2.3: Interaction between IDS Connectors and Identity Components
 
 1. Each IDS Connector acquires a valid identity certificate from the IDS Device CA.
 2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.

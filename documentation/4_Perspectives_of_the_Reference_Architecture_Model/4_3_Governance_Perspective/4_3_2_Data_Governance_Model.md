@@ -24,7 +24,7 @@ what IDS components are involved.
 
 - IDS Connector
 - Catalogue of rules allowing Data Owners to configure usage conditions related to their own requirements
-- Define pricing model and pricing (see section 3.4.3.9)
+- Define pricing model and pricing (see [Section 3.3.3](../../3_Layers_of_the_Reference_Architecture_Model/3_3_Information_Layer/3_3_InformationLayer.md#digital-resource))
 
 ##### Data Consumer #####
 
@@ -125,9 +125,9 @@ notation  'S', which stands for supported.
 | Distribute and provide data | R, A  | - | S | - |
 | Link data | S | S | R, A | - |
 
-<center>Table: Roles responsible, accountable and supporting in data governance </center>
+### Table4.3.2.1: Roles responsible, accountable and supporting in data governance 
 
-<br/>
+
 
 The following subsections describe five topics that are addressed by the
 Governance Perspective. These topics play an important role when it

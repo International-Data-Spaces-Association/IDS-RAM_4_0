@@ -14,7 +14,7 @@ The figure below shows the three options with their respective trusted computing
 
 ![Deployment Scenarios](./media/deployment_scenarios.png)
 
-#### _Fig. 4.1.3.1: Deployment Scenarios_
+#### Fig. 4.1.3.1: Deployment Scenarios
 
 The TCB consists of the following components:
 
@@ -23,8 +23,8 @@ The TCB consists of the following components:
 * Optionally a **hypervisor** which may be used to isolate multiple connectors on a device by providing a Virtual Machine (VM) for each of them. The impact on the TCB is illustrated for the 1:n mapping in a comparison to a solution with OS-level virtualization, i.e., containers.
 * The **kernel** connects user space software to the hardware of the device.
 * A (container) **runtime** responsible for starting the execution of applications on the system.
-* The **connector core services** taking care of essential connector functionalities as explained in the [System Layer](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_2_IDS_Connector.md).
-* An arbitrary number of **apps** as introduced in the [System Layer](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_3_App_Store_and_Data_Apps.md).
+* The **connector core services** taking care of essential connector functionalities as explained in the [System Layer](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_2_IDS_Connector.md#ids-connector).
+* An arbitrary number of **apps** as introduced in the [System Layer](../../3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/3_5_3_App_Store_and_Data_Apps.md#app-store-and-ids-apps).
 
 Additionally, the TCB may include **external components** in the surrounding infrastructure of a connector which are used for security-relevant tasks, e.g. an authorization server.
 
@@ -56,7 +56,7 @@ To prove the correct setup of a TEE, each of the mentioned approaches offers som
 
 #### Platform Security Requirements ####
 
-The Certification Criteria Catalog for Components defines various requirements for interoperability and security of an IDS Connector. It provides three different Trust Levels with an increasing number of requirements as explained in [Section 4.2.4](../4_2_Certification_Perspective/4_2_4_Component_Certification.md).
+The Certification Criteria Catalog for Components defines various requirements for interoperability and security of an IDS Connector. It provides three different Trust Levels with an increasing number of requirements as explained in [Section 4.2.4](../4_2_Certification_Perspective/4_2_4_Component_Certification.md#component-certification).
 
 The following paragraphs provide an overview of important security requirements affecting the platform of an IDS connector and possible approaches for fulfilling them:
 
