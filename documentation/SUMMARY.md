@@ -3,6 +3,7 @@
 ## Front Matter
 
 * [Front Matter](./FrontMatter.md)
+* [Contributing Projects](./Contributing_Projects.md)
 
 ## Introduction
 
