@@ -1,5 +1,4 @@
-# IDS Reference Architecture Model #
-# Version 4.0 #
+# IDS Reference Architecture Model Version 4.1 #
 
 
 ## Publisher ##
@@ -28,13 +27,12 @@ Dortmund, Germany, 2022
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-
 ## Authors and Contributors ##
 
 * Prof. Dr.-Ing. Boris Otto, Fraunhofer ISST
-* Sebastian Steinbuß, International Data Spaces Association 
-* Andreas Teuscher, SICK 
-* Sebastian Bader, Fraunhofer IESE 
+* Sebastian Steinbuß, International Data Spaces Association
+* Andreas Teuscher, SICK
+* Sebastian Bader, Fraunhofer IESE
 
 <br/>
 

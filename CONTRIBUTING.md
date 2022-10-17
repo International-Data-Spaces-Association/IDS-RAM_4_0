@@ -1,4 +1,4 @@
-# Contributing to RAM 4.0
+# Contributing to RAM 4
 
 The IDS-RAM is one of the core deliverables of the  [IDSA](https://www.internationaldataspaces.org) that comes along with additional specifications in [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G).
 
@@ -25,6 +25,7 @@ the scope of your changes.
 **Bug Report**: As mentioned above, bug reports should be submitted as an issue. To give others
 the chance to reproduce the error in order to find a solution as quickly as possible, the report
 should at least include the following information:
+
 * Description: What did you expect and what happened instead?
 * Steps to reproduce (system specs included)
 * Relevant logs and/or media (optional): e.g. an image
@@ -36,6 +37,7 @@ The [labels](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_
 There are two types of labels: one describes the content of the issue and should be used by the
 developer that creates the issue. The other one, starting with `status`, will be added from the
 developer that takes on the issue. New issues should be initially marked with `status:open`.
+
 *  Basic labels: `bug`, `enhancement`, `suggestion`, `documentation` `outdated`, `question`, `discussion`
 *  `status:closed`: issue is closed (after successful approval by issuer and QA)
 *  `status:duplicate`: issue is a duplicate of another linked issue and therefore discontinued
@@ -78,4 +80,5 @@ An example of a very good commit might look like this: `feat![login]: add awesom
 Content that is added to the repository is published under the Creative Commons Attribution 4.0 license (see the [LICENSE.md file](./LICENSE.md)). That means that you implicitly accept that your content is treated by CC4.0 as soon as you push any changes to the main repository and can be further published, updated, or deleted. In particular, you grant the IDSA the copyright on your content and make sure that your addition does not conflict with any other copyright claim of your knowledge, for instance for used pictures or other graphics. 
 
 ## Versioning
+
 The next published version of the Reference Architecture Model will be Version 4.0.
