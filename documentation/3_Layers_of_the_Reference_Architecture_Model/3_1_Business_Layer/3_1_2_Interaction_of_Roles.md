@@ -15,11 +15,12 @@ identity_.
 
 ![ Roles and interactions in the International Data
 Spaces](./media/image18.png)
+### Figure 3.1.2: Roles and interactions in the International Data Spaces
 
 This shows only the basic interactions taking place between the different
 roles in the International Data Spaces. For data exchange, additional,
 more specific interactions are necessary. These interactions are
-described in the [Process Layer](#) section of the Reference Architecture
+described in the [Process Layer](../3_4_Process_Layer/README.md) section of the Reference Architecture
 Model.
 
 The table below gives an overview of possible (mandatory are marked with X

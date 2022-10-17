@@ -5,23 +5,23 @@ The IDS cannot, and does not intend to, replace legal contracts or
 licensing agreements. Instead, the IDS provides a technical framework
 for technically enforced agreements in addition to existing, legally
 binding contracts. The connection of legally binding contracts and Usage
-Contracts is part of the [IDSA Rulebook](#).
+Contracts is part of the [IDSA Rulebook](https://internationaldataspaces.org/download/19008/).
 
 Many details of a business relationship cannot be modeled in
 machine-readable form. Nevertheless, the IDS specifies methods to define
 categories of applicable contracts, and it presents patterns to observe
 their usage and report validations. For this purpose, the IDS makes use
-of the [Information Layer](#).
+of the [Information Layer](../3_3_Information_Layer/README.md).
 
 ![Technical Enforcement and organizational enforcement of usage
 policies](./media/image20_new.png)
 
 
 A Usage Contract comprises a set of Usage Policies. Each policy
-describes a certain permission or obligation of an [IDS Resource]().
+describes a certain permission or obligation of an [IDS Resource](../3_3_Information_Layer/3_3_InformationLayer.md#digital-resource).
 Usage Contracts are written in a machine-readable
-format (according to the [IDS Usage Policy Language](#)) and must
-be interpreted as defined in [section 4.1.3.6](#). In any
+format (according to the [IDS Usage Policy Language](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_6_Usage_Control.md#ids-usage-control-language)) and must
+be interpreted as [defined](../3_4_Process_Layer/3_4_6_Policy_Enforcement.md). In any
 case, a Usage Contract must always be regarded as an extension of an
 existing legal agreement between two IDS participants, which can be
 overruled by them. As neither the IDS nor any other known technology

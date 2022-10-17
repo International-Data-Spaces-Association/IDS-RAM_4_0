@@ -6,6 +6,7 @@ Data Spaces, and the features to be implemented resulting thereof.
 
 ![ Functional architecture of the International Data
 Spaces](./media/image21.png)
+### Figure 3.2: Functional architecture of the International Data Spaces
 
 The figure above
 shows the functional architecture of the International Data Spaces,
@@ -32,7 +33,7 @@ Each role in the International Data Spaces has certain rights and
 duties. For example, the Identity Provider is responsible for offering
 services to create, maintain, manage, monitor, and validate identity
 information of and for participants in the International Data Spaces.
-More information about the roles is given in the [Business Layer](#).
+More information about the roles is given in the [Business Layer](../3_1_Business_Layer/3_1_1_Roles_in_the_IDS.md).
 
 #### Identity Management ###
 
@@ -107,7 +108,7 @@ technical certification is given in the [Certification Perspective](../../4_Pers
 Being able to describe, find and correctly interpret data is another key
 aspect of the International Data Spaces. Therefore, every data source in
 the International Data Spaces is described on the Information Layer (see
-section 3.4).
+[section 3.3](../3_3_Information_Layer/README.md)).
 
 The Ecosystem of Data group comprises three major aspects: data
 source description, brokering, and vocabularies.
@@ -121,7 +122,7 @@ Furthermore, metadata should describe the application domain of the data
 source. The operator of a Connector must be able to define the price,
 the pricing model, and the usage policies regarding certain data. More
 information about data source description is given in the
-[Information Layer](#).
+[Information Layer](../3_3_Information_Layer/README.md).
 
 #### Brokering ####
 
@@ -132,7 +133,7 @@ must be able to browse and search metadata in the metadata repository,
 provided the participant has the right to access the metadata.
 Furthermore, each participant must be able to browse the list of
 participants registered at a broker. More information about brokering is
-given in the [Process Layer](#).
+given in the [Process Layer](../3_4_Process_Layer/README.md).
 
 #### Vocabularies ####
 
@@ -145,7 +146,7 @@ Collaboration may comprise search, selection, matching, updating,
 requests for changes, version management, deletion, duplicate
 identification, and unused vocabularies. Vocabulary hubs need to be
 managed. More information about vocabularies is given in the
-[Information Layer](#).
+[Information Layer](../3_3_Information_Layer/README.md).
 
 ### Standardized Interoperability ###
 

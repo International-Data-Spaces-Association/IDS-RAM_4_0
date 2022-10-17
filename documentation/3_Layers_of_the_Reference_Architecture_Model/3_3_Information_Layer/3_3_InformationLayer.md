@@ -39,7 +39,7 @@ The Information Model has been specified at three levels of
 formalization. Each level corresponds to a digital representation,
 ranging from this high-level, conceptual document down to the level of
 operational code, as depicted in Figure
-[3.4.1](#_fig-341-representations-of-the-information-model_). Every
+[3.3.1](#figure-331-representations-of-the-information-model_). Every
 representation depicts the complete Information Model in its particular
 way. Among the different representations, the Declarative Representation
 (IDS Vocabulary) is the only normative specification of the Information
@@ -97,10 +97,9 @@ allows developers to easily create instances of the Information Model
 that are compliant with the IDS Vocabulary, relieving them from the
 intricacies of ontology processing.
 
-
 ![Representations of the Information Model](./media/image31.png)
 
-#### _Fig. 3.4.1: Representations of the Information Model_
+#### Figure. 3.3.1: Representations of the Information Model_
 
 ### Conceptual Representation of a Digital Resource in the IDS ###
 
@@ -149,36 +148,36 @@ and maintenance of models can be substantially simplified.
 
 ![Outline of the Concern-Basic concern hexagon](./media/image32.png)
 
-#### _Fig. 3.4.2: Outline of the Concern-Basic concern hexagon_
+#### Figure 3.3.2: Outline of the Concern-Basic concern hexagon_
 
 #### Concern Hexagon ####
 
 To illustrate the main modeling [c]{.underline}oncerns of Digital
 Resources in a way easy to memorize, the mnemonic hexagonal arrangement
 of [c]{.underline}arbon atoms can be used (“C-Hexagon”), as shown in
-Figure [3.4.2](#_fig-342-outline-of-the-concern-basic-concern-hexagon_).
+Figure [3.3.2](#figure-332-outline-of-the-concern-basic-concern-hexagon_).
 
-As a
-Resource's content is its most essential aspect, *C*ontent is located at
-the top of the hexagon. The *Content* concern deals with 
+As a Resource's content is its most essential aspect, *C*ontent is located at
+the top of the hexagon. The *Content* concern deals with
 
-1. the description of a Resource's abstract substance, 
+1. the description of a Resource's abstract substance,
 2. its serialization as a representation in a machine-interpretable format, and 
 3. the materializations of these representations at certain points in time as one or more instances (e.g., values or artifacts).
 
 Content is interpretable by references to a
 shared, formally defined *C*oncept, which may cover the meaning, annotation and interpretation of entities by, e.g., 
 
-1. natural language keywords, 
+1. natural language keywords,
 2. terms defined in curated sources such as controlled vocabularies, or
 3. types defined in type systems or ontologies.
 
 On the other hand, links to a particular
 *C*ontext (in terms of, e.g.,
 
-* time, 
-* place, or 
+* time,
+* place, or
 * real-world entities)
+
 make the
 Content potentially relevant for certain Data Consumers.
 
@@ -186,10 +185,10 @@ Thus, the upper
 part of the C-Hexagon deals with the “what” aspects, independently of
 Data Exchange, Data Sharing or Data Utilization. The lower part relates
 to the “how” aspects; i.e., how the content is exchanged
-(*C*ommunication) and under which conditions (*C*ommodity). 
+(*C*ommunication) and under which conditions (*C*ommodity).
 
 The *Communication* concern deals with means to communicate a Resource's Content in one of the Representations
-available, e.g., 
+available, e.g.,
 
 * by sending messages in some communication protocol
 * to a resource or service endpoint or to an IDS Connector
@@ -208,18 +207,18 @@ with contracts composed of usage policies, thus ensuring data sovereignty.
 
 ![Detailed Concern Hexagon](./media/image53.png)
 
-#### _Fig. 3.4.3: Detailed Concern Hexagon_
+#### Figure 3.3.3: Detailed Concern Hexagon_
 
 The level of detail differs across the individual concerns. The
 selection of their constituting aspects may change in light of new
-requirements and insights; Fig. [3.4.3](#_fig-343-detailed-concern-hexagon_) suggests one such expansion of the C-Hexagon to one more level of detail.
+requirements and insights; Fig. [3.3.3](#figure-333-detailed-concern-hexagon_) suggests one such expansion of the C-Hexagon to one more level of detail.
 
 Modeling concerns may inform, but do not
 necessarily correspond to any physical organization of the model (e.g.,
 modules or directories).
 
 [^1]: IDSA members may find further information at
-    https://industrialdataspace.jiveon.com/community/workinggroups/architecture/swg4-information-model/.
+    [GitHub Repository](https://github.com/International-Data-Spaces-Association/InformationModel).
 
 [^2]: https://www.odata.org/
 
@@ -252,8 +251,7 @@ modules or directories).
 
 [^11]: R. Fielding. \"Architectural Styles and the Design of
     Network-based Software Architectures,\" 2000. PhD thesis. Table 5-1
-    \"REST Data Elements\". Available: https://www.ics.uci.edu/$\sim$
-    fielding/pubs/dissertation/rest_arch_style.htm$\#$ tab_5\_1
+    "REST Data Elements". Available: https://www.ics.uci.edu/fielding/pubs/dissertation/rest_arch_style.htm$ tab_5
 
 [^12]: E. W. Dijkstra. \"On the role of scientific thought,\" EWD 447,
     2000. Available:
