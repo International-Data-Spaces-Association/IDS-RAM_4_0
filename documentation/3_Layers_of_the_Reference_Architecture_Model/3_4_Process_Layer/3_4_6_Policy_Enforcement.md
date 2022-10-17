@@ -11,7 +11,7 @@ To enforce data usage restrictions, a system’s actions need to be monitored an
 
 ![Communication Policy Enforcement Point and Policy Decision Point](media/Communication-PEP-and-PDP.drawio.png)
 
-### Figure 3.4.6.1: Communication Policy Enforcement Point and Policy Decision Point
+##### Figure 3.4.6.1: Communication Policy Enforcement Point and Policy Decision Point
 
 #### Policy Decision Point (PDP) ####
 
@@ -19,7 +19,7 @@ As mentioned before, the **Policy Decision Point (PDP)** makes the decision base
 
 ![image](media/usage-control-conditions.drawio.png)
 
-### Figure 3.4.6.2: Usage Control Pre-, On-, and Post-Conditions
+##### Figure 3.4.6.2: Usage Control Pre-, On-, and Post-Conditions
 
 #### Policy Information Point (PIP) ####
 
@@ -39,8 +39,8 @@ As mentioned before, the **Policy Decision Point (PDP)** makes the decision base
 
 ![Usage Control Components inside an IDS Connector](media/uc-example-Components.drawio.png)
 
-### Figure 3.4.6.3: Usage Control Components inside an IDS Connector
+##### Figure 3.4.6.3: Usage Control Components inside an IDS Connector
 
 ![Usage Control Example Sequence with Context Information (PIP) and Execution (PXP) call](media/uc-example-Sequence.drawio.png)
 
-### Figure 3.4.6.4: Usage Control Example Sequence with Context Information (PIP) and Execution (PXP) call
+##### Figure 3.4.6.4: Usage Control Example Sequence with Context Information (PIP) and Execution (PXP) call

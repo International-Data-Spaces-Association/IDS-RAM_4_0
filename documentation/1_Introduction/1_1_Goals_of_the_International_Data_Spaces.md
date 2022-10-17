@@ -53,7 +53,7 @@ development of products and solutions for the market (see Figure below):
 ![ Three types of activities of the International Data
 Spaces](../media/image10.png)
 
-### Figure 1.1 : Three types of activities of the International Data Spaces
+##### Figure 1.1 : Three types of activities of the International Data Spaces
 
 The International Data Spaces aims at meeting the following strategic
 requirements:

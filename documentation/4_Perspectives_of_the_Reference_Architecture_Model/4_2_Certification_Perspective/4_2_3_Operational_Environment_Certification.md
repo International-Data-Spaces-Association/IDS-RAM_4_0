@@ -23,6 +23,6 @@ Higher Assurance Level represent the increasing demand for more reliable evidenc
 The following figure illustrates all possible combinations of assurance and trust level, that an applicant can choose from. The combinations not marked with a tick, e.g. Assurance Level 1 and Trust Level 3 can not be selected, due to incompatible purposes.
 
 ![Operational Environment Certification Matrix](./media/2022_Operational_Environment_Certification_Matrix.png)
-#### Figure 4.2.3.1: Overview on Certification Levels for Operational Environment Certification
+##### Figure 4.2.3.1: Overview on Certification Levels for Operational Environment Certification
 
 An in-depth description of the Operational Environment Certification can be found in the [IDS Certification Scheme](./CertificationScheme/README.md). The Criteria Catalogue for Operational Environment Certification can be requested on the [IDSA homepage](https://internationaldataspaces.org/publications/white-papers/).

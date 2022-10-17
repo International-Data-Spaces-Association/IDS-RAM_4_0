@@ -36,7 +36,7 @@ In the IDS, Access Control is a resource-centric regulation of access requests f
 
 ![XACML data flow diagram](http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en_files/image002.gif)
 
-### Figure 4.1.6.1: XACML data flow diagram [Source: eXtensible Access Control Markup Language (XACML) Version 3.0 ]
+##### Figure 4.1.6.1: XACML data flow diagram [Source: eXtensible Access Control Markup Language (XACML) Version 3.0 ]
 
 The actual Access Control decision has to be made within the Connector and can be implemented using technologies such as XACML or JAAS, depending on the implementation of the Connector. The IDS Security Architecture does not dictate a specific Access Control enforcement language or implementation.
 
@@ -46,7 +46,7 @@ As shown in [Figure 4.1.6.2](#figure-4162-data-usage-control-–-an-extension-of
 
 ![Data usage control – an extension of data access control](media/UC-Definition.drawio.png)
 
-### Figure 4.1.6.2: Data usage control – an extension of data access control
+##### Figure 4.1.6.2: Data usage control – an extension of data access control
 
 Data Usage Control in the IDS basically works by attaching data usage policy information to data being exchanged and continuously controlling the way data is processed, aggregated, or forwarded to other endpoints. This data-centric perspective allows Data Providers to continuously control _data flows_, rather than _accesses to services_. At configuration time, data usage policies support developers and administrators in setting up correct data flows.
 
@@ -76,7 +76,7 @@ Data Usage Control can be implemented by means of a machine-readable contract, w
 
 ![Technical enforcement vs. organizational/legal enforcement](media/Technical_vs_Organizational.drawio.png)
 
-### Figure 4.1.6.3: Technical enforcement vs. organizational/legal enforcement
+##### Figure 4.1.6.3: Technical enforcement vs. organizational/legal enforcement
 
 #### Roles involved in Usage Control ####
 
@@ -110,7 +110,7 @@ The IDS Usage Control Language refers to an extension of the Open Digital Rights
 
 ![Figure 4.1.6.4: ODRL Information Model](https://www.w3.org/TR/odrl-model/00Model.png)
 
-### Figure 4.1.6.4: ODRL Information Model
+##### Figure 4.1.6.4: ODRL Information Model
 
 In order to implement and enforce usage policies at a specification level within individual target environments, it is necessary to map organizational and technical measures to the individual target environments. While organizational measures are out of scope here, technical measures involve a variety of additional information sources (PIPs) and tight integration with the host environment (PEPs). Here, the Information Model enhances ODRL constructs via predefined extension “hooks” to support mapping onto lower-level, implementation-oriented policy languages (e.g., MYDATA Control Technologies XML).
 
@@ -118,7 +118,7 @@ For example, the ODRL Constraint class expresses logical conditions that govern 
 
 ![imaFigure 4.1.6.4: ODRL Information Modelge](media/mapping-of-policy-languages.drawio.png)
 
-### Figure 4.1.6.5: Examples of mapping among policy language levels
+##### Figure 4.1.6.5: Examples of mapping among policy language levels
 
 #### IDS Usage Control Policies and Policy Classes ####
 
@@ -166,7 +166,7 @@ An IDS Connector may use Message Router to coordinate the data flow between diff
 
 ![Message Router pipeline (example)](media/intercepting-data-flow-data-flow.drawio.png)
 
-### Figure 4.1.6.6: Message Router pipeline (example)
+##### Figure 4.1.6.6: Message Router pipeline (example)
 
 In order to control the usage of data, one approach can be to intercept the data flow between the services and applications. [Figure 4.1.6.7](#figure-4167-intercepting-message-router-data-flows) shows as example of how developers can do this. A Message Router offers the possibility to integrate interceptors (Interceptor Pattern) that it executes between nodes.
 
@@ -174,7 +174,7 @@ As the International Data Spaces provides an Information Model (see [Section 3.1
 
 ![Intercepting Message Router data flows](media/intercepting-data-flow-interceptor-data-flow.drawio.png)
 
-### Figure 4.1.6.7: Intercepting Message Router data flows
+##### Figure 4.1.6.7: Intercepting Message Router data flows
 
 This paradigm also works across company borders, as data always flows through the IDS Connector and the Interceptor Pattern, respectively (as shown in [Figure 4.1.6.8](#figure-4168-data-flow-across-company-borders)). When reaching the receiving Connector, the respective policy to protect the data is automatically instantiated.
 
@@ -182,7 +182,7 @@ Depending on the policies available, this way of enforcement is not enough to co
 
 ![Data flow across company borders](media/Data-flow-across-company-borders.png)
 
-### Figure 4.1.6.8: Data flow across company borders
+##### Figure 4.1.6.8: Data flow across company borders
 
 #### Context Information and Obligation Fulfillment ####
 
@@ -190,13 +190,13 @@ Context information is the information such as time, location, states of systems
 
 ![Figure 4.1.6.9: IDS Information Point](media/Context-information-and-execution-point-PIP.drawio.png)
 
-### Figure 4.1.6.9: IDS Information Point
+##### Figure 4.1.6.9: IDS Information Point
 
 Moreover, an IDS Contract can contain obligations that have to be fulfilled. For example, logging in the Clearing House or deleting the stored data. Here, also, there is a difference between an internal (inside the Connector) and an external (outside the connector) execution points (see [Figure 4.1.6.10](#figure-41610-ids-execution-point)). While deleting data stored in the Connector is an internal execution, logging to an external destination is an example of an external execution. The components with interfaces for executing such duties are called Policy Execution Points (PXPs). These IDS PXPs can be connected to the enforcement framework and used accordingly.
 
 ![Figure 4.1.6.10: IDS Execution Point](media/Context-information-and-execution-point-PXP.drawio.png)
 
-### Figure 4.1.6.10: IDS Execution Point
+##### Figure 4.1.6.10: IDS Execution Point
 
 #### Data Provenance Tracking ####
 
@@ -222,11 +222,11 @@ Data provenance information is queried at a Privacy Dashboard, which is accessib
 
 ![Figure 4.1.6.11: Architecture with centralized component for provenance information storage](media/provenance-tracking-architecture1.png)
 
-### Figure 4.1.6.11: Architecture with centralized component for provenance information storage
+##### Figure 4.1.6.11: Architecture with centralized component for provenance information storage
 
 ![Figure 4.1.6.12: Architecture with distributed component for provenance information storage](media/provenance-tracking-architecture2.png)
 
-### Figure 4.1.6.12: Architecture with distributed component for provenance information storage
+##### Figure 4.1.6.12: Architecture with distributed component for provenance information storage
 
 ##### Communication #####
 

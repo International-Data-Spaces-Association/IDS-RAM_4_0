@@ -15,7 +15,7 @@ identity in the IDS.
 ![ Interactions required for issuing a digital identity in the
 IDS](./media/DigitalIdentities.png)
 
-### Figure 3.1.3: Interactions required for issuing a digital identity in the IDS
+##### Figure 3.1.3: Interactions required for issuing a digital identity in the IDS
 
 #### Participant ####
 

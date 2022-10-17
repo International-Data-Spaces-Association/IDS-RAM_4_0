@@ -69,15 +69,15 @@ be relevant in other contexts than the IDS RAM or may become relevant in
 the future, some potential basic roles are declared as (currently) "out
 of IDS RAM scope". The table below shows the basic roles defined in the IDS.
 
-|                 |       **Create**      |       **Own**      | **Certify / Verify** |       **Publish**       |       **Provide**      |      **Consume      |         **Use**         |      **Delete**     |   |   |   |   |   |
-|-----------------|:---------------------:|:------------------:|:--------------------:|:-----------------------:|:----------------------:|:-------------------:|:-----------------------:|:-------------------:|:-:|:-:|:-:|:-:|:-:|
-| **Connector**   |   Connector Creator   |   Connector Owner  |  Connector Certifier |   Connector Publisher   |   Connector Provider   |  (Out of RAM scope) |      Connector User     |  (Out of RAM scope) |   |   |   |   |   |
-| **Data**        |      Data Creator     |     Data Owner     |  (Out of RAM scope)  | Connector / Data Broker |      Data Provider     |    Data Consumer    |        Data User        |     Data Eraser     |   |   |   |   |   |
-| **Vocabulary**  |   Vocabulary Creator  |  Vocabulary Owner  |  (Out of RAM scope)  |   Vocabulary Publisher  |   Vocabulary Provider  | Vocabulary Consumer |     Vocabulary User     |  (Out of RAM scope) |   |   |   |   |   |
-| **Identity**    |    Identity Creator   |   Identity Owner   | Identity Verificator |   Identitiy Publisher   | Identity Authenticator |  (Out of RAM scope) |      Identity User      | Identity Eliminator |   |   |   |   |   |
-| **App**         |      App Creator      |      App Owner     |     App Certifier    |        App Broker       |      App Provider      |     App Consumer    |         App User        |   App Deleter (?)   |   |   |   |   |   |
-| **Transaction** | Transaction Initiator | (Out of RAM scope) |  Transaction Clearer |    (Out of RAM scope)   |   (Out of RAM scope)   |  (Out of RAM scope) | Transaction Participant |  (Out of RAM scope) |   |   |   |   |   |
-| **Service**     |    Service Creator    |    Service Owner   |   Service Certifier  |      Service Broker     |    Service Provider    |   Service Consumer  |       Service User      |  (Out of RAM scope) |   |   |   |   |   |
+|                 |       **Create**      |       **Own**      | **Certify / Verify** |       **Publish**       |       **Provide**      |      **Consume      |         **Use**         |      **Delete**     |  
+|-----------------|:---------------------:|:------------------:|:--------------------:|:-----------------------:|:----------------------:|:-------------------:|:-----------------------:|:-------------------:|
+| **Connector**   |   Connector Creator   |   Connector Owner  |  Connector Certifier |   Connector Publisher   |   Connector Provider   |  (Out of RAM scope) |      Connector User     |  (Out of RAM scope) |
+| **Data**        |      Data Creator     |     Data Owner     |  (Out of RAM scope)  | Connector / Data Broker |      Data Provider     |    Data Consumer    |        Data User        |     Data Eraser     |
+| **Vocabulary**  |   Vocabulary Creator  |  Vocabulary Owner  |  (Out of RAM scope)  |   Vocabulary Publisher  |   Vocabulary Provider  | Vocabulary Consumer |     Vocabulary User     |  (Out of RAM scope) |
+| **Identity**    |    Identity Creator   |   Identity Owner   | Identity Verificator |   Identitiy Publisher   | Identity Authenticator |  (Out of RAM scope) |      Identity User      | Identity Eliminator |
+| **App**         |      App Creator      |      App Owner     |     App Certifier    |        App Broker       |      App Provider      |     App Consumer    |         App User        |   App Deleter (?)   |
+| **Transaction** | Transaction Initiator | (Out of RAM scope) |  Transaction Clearer |    (Out of RAM scope)   |   (Out of RAM scope)   |  (Out of RAM scope) | Transaction Participant |  (Out of RAM scope) |
+| **Service**     |    Service Creator    |    Service Owner   |   Service Certifier  |      Service Broker     |    Service Provider    |   Service Consumer  |       Service User      |  (Out of RAM scope) |
 
 These basic roles are suitable to define technical tasks in the IDS and
 roles of the participants in detail. As this quite large number is,
@@ -107,13 +107,10 @@ symbols:
 
 There are four categories of roles:
 
-» Category 1: Core Participant
-
-» Category 2: Intermediary
-
-» Category 3: Software Developer
-
-» Category 4: Governance Body
+* Category 1: Core Participant
+* Category 2: Intermediary
+* Category 3: Software Developer
+* Category 4: Governance Body
 
 #### CATEGORY 1: CORE PARTICIPANT ####
 
@@ -146,10 +143,10 @@ as a legal entity or natural person executing control over data. This
 enables the Data Owner to define Data Usage Policies and provide access
 to its data. Data Ownership includes at least two major concepts:
 
-» having the (technical) means and the responsibility to define Usage
+* having the (technical) means and the responsibility to define Usage
 Contracts and Usage Policies, and to provide access to data; and
 
-» having the (technical) means and the responsibility to define the
+* having the (technical) means and the responsibility to define the
 Payment Model, including the model for reuse of data by third parties.
 
 The **Data Provider** makes data technically available in the IDS for
@@ -277,7 +274,7 @@ Creators to send their metadata. The metadata should be stored in an
 internal repository for being queried by Data Consumers in a structured
 manner. While the core of the metadata model must be specified by the
 International Data Spaces (i.e. by the Information Model, see
-  [Information Layer](../3_3_Information_Layer/README.md)), a Metadata Broker may extend the metadata model to manage additional
+[Information Layer](../3_3_Information_Layer/3_3_InformationLayer.md)), a Metadata Broker may extend the metadata model to manage additional
 metadata elements.
 
 After the Data Broker has provided the Data Consumer with the metadata
@@ -437,7 +434,7 @@ Spaces), a Dynamic Attribute Provisioning Service (DAPS, managing the
 dynamic attributes of the participants), and a service named Dynamic
 Trust Monitoring (DTM, for continuous monitoring of the security and
 behavior of the network. More details about identity management can be
-found in the [security perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/README.md).
+found in the [security perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_Security_Perspective.md).
 
 Typically, identities are created by the Identity Authority, then acting
 as an **Identity Creator**. In the sense of a directory, the authority
@@ -465,7 +462,7 @@ the App Developer typically covers the basic roles **App Creator** and,
 as long as the data app is not created on behalf, **App Owner**.
 
 To be deployable, a data app has to be compliant with the system
-architecture of the International Data Spaces (see [system layer](../3_5_System_Layer/README.md)). In
+architecture of the International Data Spaces (see [system layer](../3_5_System_Layer/3_5_0_System_Layer.md)). In
 addition, data Apps can be certified by a Certification Body in order to
 increase trust in these applications (especially with regard to Data
 Apps processing sensitive information).
@@ -479,7 +476,7 @@ model) with regard to its semantics, functionality, interfaces, etc.
 
 A Connector Developer provides software for implementing the
 functionality required by the International Data Spaces (i.e., through
-software components, as described in the [system layer](../3_5_System_Layer/README.md)). Unlike Data Apps,
+software components, as described in the [system layer](../3_5_System_Layer/3_5_0_System_Layer.md)). Unlike Data Apps,
 software is not provided by the App Store, but delivered over the
 Connector Developer's usual distribution channels, and used on the basis
 of individual agreements between the Connector Developer and the user
@@ -519,7 +516,7 @@ supervises the actions and decisions of the Evaluation Facilities.
 Thus, from the technical perspective, the basic roles **Connector
 Certifier**, **App Certifier** and **Service Certifier**.
 
-The Certification Scheme applied in the process is described in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/README.md).
+The Certification Scheme applied in the process is described in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_Certification_Perspective.md).
 
 ##### Standardization Organization #####
 

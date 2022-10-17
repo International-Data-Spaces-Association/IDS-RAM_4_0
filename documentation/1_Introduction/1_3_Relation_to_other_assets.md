@@ -6,4 +6,4 @@ The [Role of IDSA](../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_
 
 ![IDSA Magic Triangle](./media/IDSA_Magic_Triangle.png)
 
-### Figure 1.3.1: IDSA Magic Triangle
+##### Figure 1.3.1: IDSA Magic Triangle

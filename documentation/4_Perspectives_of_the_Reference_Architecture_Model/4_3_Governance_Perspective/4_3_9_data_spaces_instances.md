@@ -11,7 +11,7 @@ The governance of both intra and inter data space interoperability focuses on th
 
 ![Interoperability levels as distinguished in the New European Interoperability Framework](./media/interoperability-levels-as-distinguished-in-the-new-european-interoperability-framework.png.png)
 
-### Figure 4.3.9.1: Interoperability levels as distinguished in the New European Interoperability Framework.
+##### Figure 4.3.9.1: Interoperability levels as distinguished in the New European Interoperability Framework.
 
 For both intra and inter data space interoperability the IDSA has defined its approach on the governance for development and deployment on the various aspects for each of the interoperability levels in the IDSA Whitepaper ‘Governance for Data Spaces Instances’[^2]. It clarifies the roles and responsibilities. In certain cases, the data space instance itself will fill in domain-specific details, while in other cases, the IDSA can propose inter data space standards.
 

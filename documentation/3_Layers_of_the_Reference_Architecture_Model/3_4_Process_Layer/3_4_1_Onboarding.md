@@ -13,7 +13,7 @@ Based on those prerequisites, an organization can instantiate an arbitrary numbe
 All necessary steps are illustrated in the following figure.
 
 ![Onboarding process](./media/onboarding_process.png)
-#### _Fig. 3.4.1.1: Onboarding process_
+##### _Fig. 3.4.1.1: Onboarding process_
 
 #### Preparation: Registration and Certification of the Organization ####
 

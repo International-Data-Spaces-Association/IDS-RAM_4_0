@@ -27,7 +27,7 @@ The following figure illustrates all possible combinations of assurance and trus
 This matrix approach allows the component developer to select a combination of assurance and trust level for their component that best correspond with the intended use cases. On the one hand, this ensures a low entry barrier specifically suitable for SMEs. On the other hand, a scalable certification to meet high information security requirements becomes possible. The combinations not marked with a tick, e.g. Assurance Level 1 and Trust Level 3 can not be selected, due to incompatible purposes.
 
 ![Component Certification Matrix](./media/2022_Component_Certification_Matrix.png)
-#### Figure 4.2.4.1: Overview on Certification Levels for Component Certification
+##### Figure 4.2.4.1: Overview on Certification Levels for Component Certification
 
 An in-depth description of the Component Certification and its Assurance and Trust Levels can be found in the [Certification Scheme](./CertificationScheme). The Criteria Catalogue for Components can be requested on the [IDSA homepage](https://internationaldataspaces.org/publications/white-papers/).
 
