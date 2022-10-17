@@ -1,4 +1,4 @@
-## Industrial Cloud Platforms {#subsec:industrial_cloud}
+## Industrial Cloud Platforms ##
 
 The growing number of industrial cloud platforms will also drive the
 need for a standard for data sovereignty. With a lot of different

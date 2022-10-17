@@ -1,4 +1,4 @@
-## The Internet of Things and the Industrial Internet of Things {#subsec:iiot}
+## The Internet of Things and the Industrial Internet of Things ##
 
 The Internet of Things (IoT) and the Industrial Internet of Things
 (IIoT), respectively, comprises an ever-growing number of devices

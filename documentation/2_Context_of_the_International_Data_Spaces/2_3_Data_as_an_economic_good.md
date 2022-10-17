@@ -1,4 +1,4 @@
-## Data as an Economic Good {#subsec:data_as_economic_good}
+## Data as an Economic Good ##
 
 It is indisputable that data has a value, and that data management
 generates costs. Today, data is traded in the market like a commodity;
@@ -21,5 +21,5 @@ level of protection than private data or club data.
 Because of these differences and distinctions made with regard to data,
 a generally accepted understanding of the value of data has not been
 established so far. Nevertheless, there is a growing need to determine
-the value of data, given the rapid developments taking place in the
-Smart Service Welt.
+the value of data, given the rapid developments taking place Data-driven 
+Business Ecosystems.

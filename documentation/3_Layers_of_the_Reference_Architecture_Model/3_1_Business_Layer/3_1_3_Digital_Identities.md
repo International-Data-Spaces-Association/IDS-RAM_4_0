@@ -15,6 +15,8 @@ identity in the IDS.
 ![ Interactions required for issuing a digital identity in the
 IDS](./media/DigitalIdentities.png)
 
+### Figure 3.1.3: Interactions required for issuing a digital identity in the IDS
+
 #### Participant ####
 
 Certification is required for every participant and the majority of
@@ -25,7 +27,7 @@ capabilities of the core technical components.
 #### Certification ####
 
 Certification of a operational environment or core component involves the
-[Certification Body](#) and an [Evaluation Facility](#).
+[Certification Body](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_2_Roles.md) and an [Evaluation Facility](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_2_Roles.md).
 Evaluation of a operational environment or a core component is executed upon request
 of the participant and relies on the contract between the participant
 and the Evaluation Facility. In the same way, a Service Provider can
@@ -35,7 +37,7 @@ Body is responsible for supervision of the Evaluation Facility involved.
 #### Certificate Authority ####
 
 The Certificate Authority is responsible for issuing, validating and
-revoking [digital certificates](#). A digital certificate
+revoking [digital certificates](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_2_Identity_and_Trust_Management.md). A digital certificate
 is provided for a participant if both a valid certification for the
 operational environment and a valid certification for the core component is
 available. This means that the Certificate Authority provides an
@@ -49,7 +51,7 @@ certificate to the participant upon request.
 
 The information resulting from the certification process is passed on to
 the Dynamic Attribute Provisioning Service (DAPS). This includes master
-data and information on [security profiles](#). The CA provides the details on the digital certificate
+data and information on [security profiles](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/4_2_4_Component_Certification.md#connector-trust-levels). The CA provides the details on the digital certificate
 (public key and IDS-ID). The participant registers at the DAPS after
 successfully deploying the digital certificate inside the component.
 

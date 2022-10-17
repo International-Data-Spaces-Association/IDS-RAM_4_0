@@ -1,6 +1,6 @@
-# Context of the International Data Spaces {#sec:context}
+# Context of the International Data Spaces #
 
-## Data-Driven Business Ecosystems and the Smart Service Welt {#subsec:data_driven_business_ecosystems}
+## Data-Driven Business Ecosystems #
 
 Novel digital products and services often emerge in business ecosystems,
 which organizations enter to jointly fulfill the needs of customers
@@ -18,20 +18,13 @@ to team up. In other words: Every member has to contribute something for
 the benefit of all. Ideally, ecosystems function in an equilibrium state
 of mutual benefits for all members.
 
-Examples of business ecosystems are numerous and can be found across all
-industries. Many of them have been analyzed and documented by the Smart
-Service Welt working group[^1].
-
 A data-driven business ecosystem is an ecosystem in which data is the
 strategic resource used by the members to jointly create innovative
 value offerings. Key to success is to share and jointly maintain data
 within such an ecosystem, as end-to-end customer process support can
 only be achieved if the partners team up and jointly utilize their data
-resource (as shown by a number of examples in Figure
-[1](#fig:_Data-Driven_Business_Ecosystems_examples){reference-type="ref"
-reference="fig:_Data-Driven_Business_Ecosystems_examples"}).
-
+resource (as shown by a number of examples in the Figure below).
 
 ![Data Sharing in
-Ecosystems](../media/image12.png){#fig:_Data-Driven_Business_Ecosystems_examples
-}
+Ecosystems](../media/image12.png)
+### Figure 2.1: Data Sharing in Ecosystems

@@ -1,6 +1,6 @@
-# Metadata Broker
+### Metadata Broker ###
 
-The IDS Metadata Broker consists of an IDS Connector (see Section [3.5.2.0](./3_5_2_0_Connector.md)<!--//**TODO** add correct link-->), an endpoint for the registration, publication, maintenance, and query of Self-Descriptions. Therefore, for any interaction with the IDS Metadata Broker, the processes defined on the Process Layer, the descriptions defined on the Information Layer, and descriptions defined on the System Layer can be applied. The Information Layer describes the message types for registration and query. An IDS Metadata Broker may provide additional services that in term must be described by using terms from the IDS Information Model in the respective Metadata Broker's Self-Description document.
+The IDS Metadata Broker consists of an IDS Connector (see Section [3.5.2](./3_5_2_IDS_Connector.md#ids-connector)), an endpoint for the registration, publication, maintenance, and query of Self-Descriptions. Therefore, for any interaction with the IDS Metadata Broker, the processes defined on the Process Layer, the descriptions defined on the Information Layer, and descriptions defined on the System Layer can be applied. The Information Layer describes the message types for registration and query. An IDS Metadata Broker may provide additional services that in term must be described by using terms from the IDS Information Model in the respective Metadata Broker's Self-Description document.
 
 **Note:  Even though the name might indicate a different purpose, an IDS Metadata Broker is *not* a message broker or provides any similar functions to distribute data assets actively by itself.**
 
@@ -12,27 +12,25 @@ Furthermore, a Metadata Broker implementation might add indexing or caching modu
 
 Additionally, most use cases for Metadata Brokers require a human-oriented interface to the Self-Descriptions. A website with fulltext and facet search capabilities is therefore usually provided. The website might further provide the creation and management of the locally stored Self-Descriptions. However, as the registration and updating process at the Metadata Broker is centered around Connectors, the authority of the human website user and the asset-hosting Connector must be ensured.
 
-## Endpoints
+####  Endpoints ####
 
 Metadata Brokers must provide remote endpoints to their own Self-Description (read-only) as well as to the locally persisted Self-Description graph (read/write for the hosting Connectors, read-only for the others). The server hosting these endpoints translates incoming requests, performs the necessary IDS identity and validity checks, and translates them into operations to the database.
 
 A Metadata Broker might support endpoints for different IDS protocol bindings. In any case, the content of the responses are protocol-independent. That means a successful read operation using one binding must also be successful through any other if targeting the same Self-Description. A Metadata Broker may however discriminate based on the identity of the requester, providing responses to one Connector while rejecting another due to IDS Usage Control configurations.
 
-
-## Search and Querying
+#### Search and Querying ####
 
 The main purpose of a Metadata Broker is the provisioning of remote search functionalities. This can be done in a resource-oriented manner if the identifiers of the targeted Self-Descriptions are already known in advance. Alternatively, full-text or complex queries might be used. A complex query in this sense is any query that combines filters, aggregations or traverses the Self-Description graph to search for information. Which query language is supported by which Metadata Broker instance is outlined in its own Self-Description.
 
 The IDS Information Model provides the scheme for the searches. The knowledge of the Information Model can be used by querying Connectors to formulate their inquiries. Metadata Brokers may also provide additional templates or preformulated queries to support the Connectors.
 
-
-## Self-Description Life Cycle
+#### Self-Description Life Cycle ####
 
 Self-Descriptions go through a life cycle. Created Self-Descriptions are in the `active` state as long as they are not put to `unavailable` by its sovereign. It's important to note that the later state is different to a deletion. It is important to track the usage of Self-Descriptions, in particular their unique identifier, to avoid name clashes or false flag attacks. A Connector therefore can ask to not publicly provide a Self-Description anymore by setting it to `unavailable` but it cannot force the Metadata Broker or any other Connector to completely delete the information from its internal databases.
 
 A Self-Description can be made `active` at any time again by the respective Connector. In addition, it can overwrite already active Self-Descriptions with a new one. The update of a previously `unavailable` Self-Description however will set it back to `active` automatically. Furthermore, new Self-Descriptions must not use the identifier of already existing ones.
 
-## Data Synchronization
+#### Data Synchronization ####
 
 The Metadata Broker is an optional component in a data space. That of course means that there can be data spaces that completely operate without any Metadata Broker. There can be however also data spaces where several Metadata Broker instances are provided. In such use cases, the synchronization between these instances becomes a topic, in particular to avoid redundant or conflicting information.
 

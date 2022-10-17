@@ -1,4 +1,4 @@
-### Data Ownership
+### Data Ownership ###
 
 In the material world, the difference between the terms
 possession and property is an abstract, yet necessary
@@ -44,6 +44,8 @@ it supports these important aspects over the entire data lifecycle.
 Furthermore, it supports the arrangement of collaborative solutions by
 providing an appropriate technical infrastructure.
 
-[^1]: Regulation (EU) 2018/1807 of the European Parliament and of the
+
+[^1]: [Regulation (EU) 2018/1807]
+(https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32018R1807) of the European Parliament and of the
     Council of 14 November 2018 on a framework for the free flow of
     non-personal data in the European Union

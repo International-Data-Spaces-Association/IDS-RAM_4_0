@@ -1,4 +1,4 @@
-## General Data Protection Regulation {#subsec:gdpr}
+## General Data Protection Regulation ##
 
 Compliance of an organization with the European Union's General Data
 Protection Regulation (GDPR) can only be ensured by the implementation
@@ -24,5 +24,5 @@ technical measures and offer advice regarding the implementation of
 organizational measures. As a result, the IDS participant is enabled to
 implement appropriate measures for GDPR-compliant processing and
 transfer of personal data within the scope of the IDS technology and
-related features (see also: GDPR-related Requirements and
-Recommendations for the IDS Reference Architecture Model [^3]).
+related features (see also: 
+[GDPR-related Requirements and Recommendations for the IDS Reference Architecture Model](https://internationaldataspaces.org/download/16445/).

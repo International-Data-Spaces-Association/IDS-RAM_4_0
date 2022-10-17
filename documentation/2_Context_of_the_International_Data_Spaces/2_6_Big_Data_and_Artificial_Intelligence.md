@@ -1,4 +1,4 @@
-## Big Data and Artificial Intelligence {#subsec:bigdata_ai}
+## Big Data and Artificial Intelligence ##
 
 Today companies make a wide use of Big Data applications. The common use
 case is to complement data available within the company by additional

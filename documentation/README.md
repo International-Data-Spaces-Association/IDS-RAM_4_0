@@ -1,7 +1,8 @@
-# IDS-RAM 4.0 (markdown)
-This folder contains the working document for the IDS-RAM 4.0. It is organized in folders for each section.
+# IDS-RAM 4.0 #
 
-## Structure
+## Table of Content ##
+
+[Front Matter](./FrontMatter.md)
 
 [1. Introduction](./1_Introduction/README.md)
 
@@ -13,9 +14,9 @@ This folder contains the working document for the IDS-RAM 4.0. It is organized i
 
 [3.2. Functional Layer](./3_Layers_of_the_Reference_Architecture_Model/3_2_Functional_Layer/README.md)
 
-[3.3. Process Layer](./3_Layers_of_the_Reference_Architecture_Model/3_3_Process_Layer/README.md)
+[3.3. Information Layer](./3_Layers_of_the_Reference_Architecture_Model/3_3_Information_Layer/README.md)
 
-[3.4. Information Layer](./3_Layers_of_the_Reference_Architecture_Model/3_4_Information_Layer/README.md)
+[3.4. Process Layer](./3_Layers_of_the_Reference_Architecture_Model/3_4_Process_Layer/README.md)
 
 [3.5. System Layer](./3_Layers_of_the_Reference_Architecture_Model/3_5_System_Layer/README.md)
 
@@ -27,4 +28,6 @@ This folder contains the working document for the IDS-RAM 4.0. It is organized i
 
 [4.3 Governance Perspective](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/README.md)
 
-[Glossary](https://github.com/International-Data-Spaces-Association/IDS-G/tree/main/glossary)
+[Glossary](https://github.com/International-Data-Spaces-Association/IDS-G/tree/main/Glossary)
+
+

@@ -1,4 +1,4 @@
-## Governance Perspective
+## Governance Perspective ##
 
 The Governance Perspective of the Reference Architecture Model defines
 the roles, functions, and processes of the International Data Spaces
@@ -19,24 +19,24 @@ organizations according to their individual requirements.
 
 The International Data Spaces supports governance issues by
 
--   providing an infrastructure for data exchange, corporate
+- providing an infrastructure for data exchange, corporate
     interoperability, and the use of new, digital business models;
 
--   establishing trustworthy relationships between Data Owners, Data
+- establishing trustworthy relationships between Data Owners, Data
     Providers, and Data Consumers;
 
--   acting as a trustee for mediation between participants;
+- acting as a trustee for mediation between participants;
 
--   facilitating negotiation of agreements and contracts;
+- facilitating negotiation of agreements and contracts;
 
--   aiming at transparency and traceability of data exchange and data
+- aiming at transparency and traceability of data exchange and data
     use;
 
--   allowing private and public data exchange;
+- allowing private and public data exchange;
 
--   taking into account individual requirements of the participants; and
+- taking into account individual requirements of the participants; and
 
--   offering a decentralized architecture that does not require a
+- offering a decentralized architecture that does not require a
     central authority.
 
 The Governance Perspective in the context of the IDS-RAM relates to

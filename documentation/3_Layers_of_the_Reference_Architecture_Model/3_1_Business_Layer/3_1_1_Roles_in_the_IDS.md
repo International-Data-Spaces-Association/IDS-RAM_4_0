@@ -139,7 +139,7 @@ The **Data Creator** creates data, e.g. by generating data such as from
 a sensor or accessing data in backend IT systems.
 
 As the legal situation regarding data ownership is very complicated (as
-discussed in the [Governance Perspective](#)), the term '**Data Owner'** is not used in a
+discussed in the [Governance Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_Governance_Perspective.md)), the term '**Data Owner'** is not used in a
 legal understanding in this document. The Reference Architecture Model
 takes an operational data management perspective, defining a Data Owner
 as a legal entity or natural person executing control over data. This
@@ -178,7 +178,7 @@ the same time, the only activity of the Data Owner is to authorize a
 Data Provider to make its data available to be used by a Data Consumer.
 Any such authorization should be documented by a contract, which should
 include data usage policy information for the data provided (see
-[Usage Control in IDS](#)). The contract needs not necessarily be a paper
+[Usage Control in IDS](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_6_Usage_Control.md)). The contract needs not necessarily be a paper
 document, but may be an electronic file as well.
 
 At the end of a complete or partial data transaction, for example, the
@@ -277,7 +277,7 @@ Creators to send their metadata. The metadata should be stored in an
 internal repository for being queried by Data Consumers in a structured
 manner. While the core of the metadata model must be specified by the
 International Data Spaces (i.e. by the Information Model, see
-  [Information Layer](#)), a Data Broker may extend the metadata model to manage additional
+  [Information Layer](../3_3_Information_Layer/README.md)), a Metadata Broker may extend the metadata model to manage additional
 metadata elements.
 
 After the Data Broker has provided the Data Consumer with the metadata
@@ -356,7 +356,7 @@ Vocabularies can be used to annotate and describe data assets. These
 data assets may comprise at least:
 
 -   **Information Model** of the International Data Spaces, which is the
-    basis for the description of data sources (see [Information Layer](#)). There
+    basis for the description of data sources (see [Information Layer](../3_3_Information_Layer/README.md)). There
     is only one information model in the IDS governed by the IDSA.
 
 -   **Domain-specific vocabularies**: They are essential for the
@@ -437,7 +437,7 @@ Spaces), a Dynamic Attribute Provisioning Service (DAPS, managing the
 dynamic attributes of the participants), and a service named Dynamic
 Trust Monitoring (DTM, for continuous monitoring of the security and
 behavior of the network. More details about identity management can be
-found in the [security perspective](#).
+found in the [security perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/README.md).
 
 Typically, identities are created by the Identity Authority, then acting
 as an **Identity Creator**. In the sense of a directory, the authority
@@ -465,7 +465,7 @@ the App Developer typically covers the basic roles **App Creator** and,
 as long as the data app is not created on behalf, **App Owner**.
 
 To be deployable, a data app has to be compliant with the system
-architecture of the International Data Spaces (see [system layer](#)). In
+architecture of the International Data Spaces (see [system layer](../3_5_System_Layer/README.md)). In
 addition, data Apps can be certified by a Certification Body in order to
 increase trust in these applications (especially with regard to Data
 Apps processing sensitive information).
@@ -479,7 +479,7 @@ model) with regard to its semantics, functionality, interfaces, etc.
 
 A Connector Developer provides software for implementing the
 functionality required by the International Data Spaces (i.e., through
-software components, as described in the [system layer](#)). Unlike Data Apps,
+software components, as described in the [system layer](../3_5_System_Layer/README.md)). Unlike Data Apps,
 software is not provided by the App Store, but delivered over the
 Connector Developer's usual distribution channels, and used on the basis
 of individual agreements between the Connector Developer and the user
@@ -519,7 +519,7 @@ supervises the actions and decisions of the Evaluation Facilities.
 Thus, from the technical perspective, the basic roles **Connector
 Certifier**, **App Certifier** and **Service Certifier**.
 
-The Certification Scheme applied in the process is described in the [Certification Perspective](#).
+The Certification Scheme applied in the process is described in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/README.md).
 
 ##### Standardization Organization #####
 
