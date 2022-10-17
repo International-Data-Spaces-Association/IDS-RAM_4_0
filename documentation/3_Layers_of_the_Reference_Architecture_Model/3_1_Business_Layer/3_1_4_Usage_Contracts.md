@@ -22,6 +22,7 @@ describes a certain permission or obligation of an [IDS Resource](../3_3_Informa
 Usage Contracts are written in a machine-readable
 format (according to the [IDS Usage Policy Language](../../4_Perspectives_of_the_Reference_Architecture_Model/4_1_Security_Perspective/4_1_6_Usage_Control.md#ids-usage-control-language)) and must
 be interpreted as [defined](../3_4_Process_Layer/3_4_6_Policy_Enforcement.md). In any
+
 case, a Usage Contract must always be regarded as an extension of an
 existing legal agreement between two IDS participants, which can be
 overruled by them. As neither the IDS nor any other known technology
