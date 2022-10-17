@@ -21,7 +21,7 @@ The IDS Connector identity serves to uniquely identify one such instance of the 
 One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platform, the Connector Core Services and the deployed Data Apps.
 
 ![Components SW Stack](./media/SW_Stack_Components_connector_blueprint.png)
-#### Figure 4.1.2.1: Components of the Software Stack of an IDS Connector
+##### Figure 4.1.2.1: Components of the Software Stack of an IDS Connector
 
 ##### Component Identifier #####
 
@@ -45,7 +45,7 @@ Each Service Instance needs to be mapped to one platform it utilizes:
   * Valid P_UIDs are mapped to a C_UID in the DAPS. The platform information is verified by another IDS Connector using remote attestation.
 
 ![Identity mapping for different scenarios](./media/identity_mapping.png)
-#### Figure 4.1.2.2: Identities for IDS Connector Services and Platforms
+##### Figure 4.1.2.2: Identities for IDS Connector Services and Platforms
 
 *(Remark: The platforms in the image may always be either physical devices or protected VMs)*
 
@@ -69,7 +69,7 @@ All this metadata is provided in machine-readable form. Manifest information for
 To establish a trusted connection, each connector needs the identity information of the corresponding connector to perform access and usage control decisions. The interactions can be depicted as follows:
 
 ![Interaction between IDS Connectors and Identity Components](./media/IdM_Interactions.png)
-#### Figure 4.1.2.3: Interaction between IDS Connectors and Identity Components
+##### Figure 4.1.2.3: Interaction between IDS Connectors and Identity Components
 
 1. Each IDS Connector acquires a valid identity certificate from the IDS Device CA.
 2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.

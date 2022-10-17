@@ -25,7 +25,7 @@ cancelled at any time._
 
 ![Simple Contract Negotiation](media/policy-negotiation-sequence-1.png)
 
-#### Figure 3.4.3.1: Simple Contract Negotiation
+##### Figure 3.4.3.1: Simple Contract Negotiation
 
 In Figure [3.4.3.1](#figure-3431-simple-contract-negotiation), the negotiation sequence is initiated by the
 Data Consumer's IDS Connector sending a Contract Request to the Data Provider. The content of this
@@ -64,7 +64,7 @@ all signatures to be sure that the Contract Agreement contains the requested con
 
 ![Clearing House Involvement](media/policy-negotiation-sequence-4.png)
 
-#### Figure 3.4.3.2: Contract Agreement with Clearing House Involvement
+##### Figure 3.4.3.2: Contract Agreement with Clearing House Involvement
 
 #### Reversed Sequence ####
 
@@ -77,7 +77,7 @@ this is involved (as described in the previous subsection).
 
 ![Contract Negotiation: Initiation by Data Provider](media/policy-negotiation-sequence-2.png)
 
-#### Figure 3.4.3.3: Contract Negotiation - Initiation by Data Provider
+##### Figure 3.4.3.3: Contract Negotiation - Initiation by Data Provider
 
 #### Counter Offers ####
 
@@ -95,4 +95,4 @@ both IDS Connectors. How this Policy Enforcement will be ensured is explained in
 
 ![Contract Negotiation: Counter Offers](media/policy-negotiation-sequence-3.png)
 
-#### Figure 3.4.3.4: Contract Negotiation - Counter Offers
+##### Figure 3.4.3.4: Contract Negotiation - Counter Offers

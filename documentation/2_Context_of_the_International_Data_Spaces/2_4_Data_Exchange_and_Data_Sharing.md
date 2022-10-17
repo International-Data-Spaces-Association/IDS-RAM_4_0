@@ -9,7 +9,7 @@ standards.
 
 ![Evolution of technical standards for data
 exchange](../media/image13.png)
-### Figure 2.4.1: Evolution of technical standards for data exchange
+##### Figure 2.4.1: Evolution of technical standards for data exchange
 
 The Figure above shows the evolution of
 technical standards for data exchange since the 1980s, using the example
@@ -41,4 +41,4 @@ also the Figure below:
 
 ![Data exchange vs. data
 sharing](../media/image14.png)
-### Figure 2.4.2 : Data Exchange and Data Sharing
+##### Figure 2.4.2 : Data Exchange and Data Sharing

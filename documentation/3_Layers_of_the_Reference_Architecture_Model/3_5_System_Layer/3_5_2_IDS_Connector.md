@@ -13,7 +13,7 @@ The [IDS App Store](./3_5_3_App_Store_and_Data_Apps.md#app-store-and-ids-apps), 
 The Connector consists of one or more computers/virtual machines, operating systems running on them, an Application Container Management, and the Connector Core Service(s) built on top of it.
 
 ![Connector Architecture](media/3.5.2.1_connector_architecture.png)
-#### Figure 3.5.2.1: Connector Architecture
+##### Figure 3.5.2.1: Connector Architecture
 
 The individual elements of the deployment are shown in Figure 3.5.2.1 and described below:
 
@@ -29,7 +29,7 @@ The individual elements of the deployment are shown in Figure 3.5.2.1 and descri
 The IDS Connector must include some essential functionality in its _Connector Core Service(s)_. The functionalities can be implemented in individual micro services or as a single comprehensive software block. In addition, the services do not have to be deployed in the same infrastructure.
 
 ![Connector Functional View](media/3.5.2.2_connector_functional_view.png)
-#### Figure 3.5.2.2: Connector Functional View
+##### Figure 3.5.2.2: Connector Functional View
 
 The individual functionalities of the _Connector Core Service(s)_ are shown in Figure 3.5.2.2 as an [UML deployment diagram](https://www.omg.org/spec/UML/2.5.1/) that depicts each functionality as one component. The figure intentionally does specify the external interfaces of components but not the internal ones as these vary from implementation to implementation. Also, the image does not include all the interactions between the components for the sake of clarity.
 

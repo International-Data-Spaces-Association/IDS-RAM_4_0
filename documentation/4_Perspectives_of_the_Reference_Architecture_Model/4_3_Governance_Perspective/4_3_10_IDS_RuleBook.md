@@ -32,7 +32,8 @@ or shared. It thereby constitutes the basis for developing and offering smart se
 establishing innovative business processes.
 
 ![Overview IDS enabled ecosystems](./media/Overview_IDS_enabled_ecosystems.png)
-*Figure: Overview IDS enabled ecosystems*
+
+##### Figure4.3.9: Overview IDS enabled ecosystems
 
 The IDS initiative aims at defining the technical base and set of agreements for secure and trusted
 data spaces, in which companies of any size and from any industry can manage their data assets in a
@@ -63,7 +64,7 @@ for the realization of use cases on the foundation of a trustworthy infrastructu
 
 ![Overview Rulebook scope and goals](./media/Overview_Rulebook_scope_and_goals.png)
 
-### Figure 4.3.10.1: Overview Rulebook scope and goals
+##### Figure 4.3.10.1: Overview Rulebook scope and goals
 
 #### Scope / Non Scope in detail ####
 

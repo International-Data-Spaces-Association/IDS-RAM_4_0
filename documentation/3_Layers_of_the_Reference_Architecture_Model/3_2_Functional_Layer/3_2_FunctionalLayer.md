@@ -6,14 +6,14 @@ Data Spaces, and the features to be implemented resulting thereof.
 
 ![ Functional architecture of the International Data
 Spaces](./media/image21.png)
-### Figure 3.2: Functional architecture of the International Data Spaces
+##### Figure 3.2: Functional architecture of the International Data Spaces
 
 The figure above
 shows the functional architecture of the International Data Spaces,
 subdividing the requirements into six groups of software functionality
 to be provided by the IDS. These six groups comply with the strategic
 requirements outlined in Section
-[Goals of the International Data Spaces](../../1_Introduction1_1_Goals_of_the_International_Data_Spaces.md).
+[Goals of the International Data Spaces](../../1_Introduction/1_1_Goals_of_the_International_Data_Spaces.md).
 
 The following subsections give a brief summary of these functional
 requirements.
@@ -108,7 +108,7 @@ technical certification is given in the [Certification Perspective](../../4_Pers
 Being able to describe, find and correctly interpret data is another key
 aspect of the International Data Spaces. Therefore, every data source in
 the International Data Spaces is described on the Information Layer (see
-[section 3.3](../3_3_Information_Layer/README.md)).
+[section 3.3](../3_3_Information_Layer/3_3_InformationLayer.md)).
 
 The Ecosystem of Data group comprises three major aspects: data
 source description, brokering, and vocabularies.
@@ -122,7 +122,7 @@ Furthermore, metadata should describe the application domain of the data
 source. The operator of a Connector must be able to define the price,
 the pricing model, and the usage policies regarding certain data. More
 information about data source description is given in the
-[Information Layer](../3_3_Information_Layer/README.md).
+[Information Layer](../3_3_Information_Layer/3_3_InformationLayer.md).
 
 #### Brokering ####
 
@@ -133,7 +133,7 @@ must be able to browse and search metadata in the metadata repository,
 provided the participant has the right to access the metadata.
 Furthermore, each participant must be able to browse the list of
 participants registered at a broker. More information about brokering is
-given in the [Process Layer](../3_4_Process_Layer/README.md).
+given in the [Process Layer](../3_4_Process_Layer/3_4_Process_Layer.md).
 
 #### Vocabularies ####
 
@@ -146,7 +146,7 @@ Collaboration may comprise search, selection, matching, updating,
 requests for changes, version management, deletion, duplicate
 identification, and unused vocabularies. Vocabulary hubs need to be
 managed. More information about vocabularies is given in the
-[Information Layer](../3_3_Information_Layer/README.md).
+[Information Layer](../3_3_Information_Layer/3_3_InformationLayer.md).
 
 ### Standardized Interoperability ###
 
@@ -238,7 +238,7 @@ process must be simple and standardized.
  
 Governance in the International Data Spaces comprises five aspects: data
 as an economic good, data ownership, data sovereignty, data quality, and
-data provenance. More information about governance is given in [Governance Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_1_Layers.md).
+data provenance. More information about governance is given in [Governance Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_Governance_Perspective.md).
 
 #### Legal aspects ####
 

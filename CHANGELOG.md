@@ -10,11 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Section 1.3  Relation to other IDSA assets
 - Minor editorial changes
+- Structural files for GitBook release
 
 ### Changed ###
 
 - Updating front matter with Maintainers and Contributors
 - Proving RAM 4.1 as GitBook
+- Formatting of figures changed to different style
 
 ### Removed ###
 

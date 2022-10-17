@@ -125,7 +125,7 @@ notation  'S', which stands for supported.
 | Distribute and provide data | R, A  | - | S | - |
 | Link data | S | S | R, A | - |
 
-### Table4.3.2.1: Roles responsible, accountable and supporting in data governance 
+##### Table4.3.2.1: Roles responsible, accountable and supporting in data governance 
 
 
 

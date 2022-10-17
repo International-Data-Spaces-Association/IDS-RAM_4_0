@@ -12,7 +12,7 @@ Additionally, we address the topic of [Dynamic Trust Monitoring](#dynamic-trust-
 In preparation for the establishment of a secure communication channel, an IDS component needs to be have a set of information available as shown in the image below.
 ![Overview Required Information](./media/information_for_communication_channel.png)
 
-### Figure 4.1.5.1: Overview Required Information
+##### Figure 4.1.5.1: Overview Required Information
 
 Most of the information is provisioned onto the component when it is initially taken into service and only updated occasionally when things change:
 
@@ -32,7 +32,7 @@ Additionally, the IDS component requires two artifacts for the establishment of 
 The establishment of a secure communication channel requires five essential steps which use the information described above. The image below shows the necessary information for the different validation steps separately to show the logic behind the validations. However, in an implementation of the protocol, necessary information may be transferred in a combined Attestation Report.
 
 ![Communication Channel Establishment](./media/communication_channel_establishment.png)
-####  Fig. 4.1.5.2: Establishing a Secure Communication Channel
+#####  Fig. 4.1.5.2: Establishing a Secure Communication Channel
 
 1. **TLS Handshake**: The communication channel builds on an existing standard to achieve communication security: Transport Layer Security (TLS, currently in
 [Version 3](https://datatracker.ietf.org/doc/html/rfc8446)). The TLS handshake protocol is used to set up an authenticated, confidential and integrity-protected communication channel based on the Identity Device Certificates (before transferring all other information using the TLS record protocol).

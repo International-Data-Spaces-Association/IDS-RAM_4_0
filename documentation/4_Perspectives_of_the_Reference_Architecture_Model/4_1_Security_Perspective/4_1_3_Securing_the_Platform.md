@@ -2,7 +2,7 @@
 
 Security of data processing in an IDS Component depends on the system security of the utilized software stack consisting of different hardware and software components. Those hardware and software components that are critical for ensuring the confidentiality and integrity of the transmitted and processed data form the Trusted Computing Base (TCB). Different deployment scenarios and their respective TCBs are described in the [first subsection](#deployment-scenarios). The [following subsection](#hardware-security-features) provides some background on hardware security features that might be used for securing the platform. Finally, the [last subsection](#platform-security-requirements) provides an overview of essential security requirements and how to achieve them.
 
-## Deployment Scenarios ##
+#### Deployment Scenarios ####
 
 In general, there are three different possibilities for the combinations of platform and connector service instances:
 
@@ -14,7 +14,7 @@ The figure below shows the three options with their respective trusted computing
 
 ![Deployment Scenarios](./media/deployment_scenarios.png)
 
-#### Fig. 4.1.3.1: Deployment Scenarios
+##### Fig. 4.1.3.1: Deployment Scenarios
 
 The TCB consists of the following components:
 

@@ -99,7 +99,7 @@ intricacies of ontology processing.
 
 ![Representations of the Information Model](./media/image31.png)
 
-#### Figure. 3.3.1: Representations of the Information Model_
+##### Figure. 3.3.1: Representations of the Information Model
 
 ### Conceptual Representation of a Digital Resource in the IDS ###
 
@@ -148,7 +148,7 @@ and maintenance of models can be substantially simplified.
 
 ![Outline of the Concern-Basic concern hexagon](./media/image32.png)
 
-#### Figure 3.3.2: Outline of the Concern-Basic concern hexagon_
+##### Figure 3.3.2: Outline of the Concern-Basic concern hexagon
 
 #### Concern Hexagon ####
 
@@ -207,7 +207,7 @@ with contracts composed of usage policies, thus ensuring data sovereignty.
 
 ![Detailed Concern Hexagon](./media/image53.png)
 
-#### Figure 3.3.3: Detailed Concern Hexagon_
+##### Figure 3.3.3: Detailed Concern Hexagon
 
 The level of detail differs across the individual concerns. The
 selection of their constituting aspects may change in light of new
