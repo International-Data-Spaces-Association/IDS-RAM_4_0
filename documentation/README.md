@@ -29,5 +29,3 @@
 [4.3 Governance Perspective](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/README.md)
 
 [Glossary](https://github.com/International-Data-Spaces-Association/IDS-G/tree/main/Glossary)
-
-
