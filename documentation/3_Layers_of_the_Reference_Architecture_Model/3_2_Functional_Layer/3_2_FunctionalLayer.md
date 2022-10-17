@@ -6,14 +6,14 @@ Data Spaces, and the features to be implemented resulting thereof.
 
 ![ Functional architecture of the International Data
 Spaces](./media/image21.png)
-### Figure 3.2: Functional architecture of the International Data Spaces
+##### Figure 3.2: Functional architecture of the International Data Spaces
 
 The figure above
 shows the functional architecture of the International Data Spaces,
 subdividing the requirements into six groups of software functionality
 to be provided by the IDS. These six groups comply with the strategic
 requirements outlined in Section
-[Goals of the International Data Spaces](../../1_Introduction1_1_Goals_of_the_International_Data_Spaces.md).
+[Goals of the International Data Spaces](../../1_Introduction/1_1_Goals_of_the_International_Data_Spaces.md).
 
 The following subsections give a brief summary of these functional
 requirements.
