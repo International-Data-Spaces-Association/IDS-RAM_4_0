@@ -11,7 +11,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Section 1.3  Relation to other IDSA assets
 - Minor editorial changes
 
-
 ### Changed ###
 
 - Updating front matter with Maintainers and Contributors
