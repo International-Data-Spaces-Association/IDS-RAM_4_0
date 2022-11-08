@@ -141,8 +141,9 @@ To create and structure metadata, the data provider in a data space may use voca
 <li> The technical interface between the Vocabulary Hub and the data space infrastructure shall be based on the IDS compatible Connector. 
 <li> The Vocabulary Hub shall have a browser-based user interface and API, which allows to visualize and to browsed vocabularies in a human user-friendly way.
 <li> The Vocabulary Hub shall provide creating, selection, editing (inserting, updating, changing, deleting, matching, version management), read- and search functionalities and support SPARQL queries.
-<li> Language can be specified for a vocabulary, and multi-lingual specification of classes is possible. Language becomes part of the metadata and can be used as a filter. 
+<li> Vocabularies expressed in RDF shall by syntactically compatible with OWL in order to enable processing with more expressive semantics
 <li> User management is required for vocabulary hubs to avoid abuse by editing.
+<li> Language can be specified for a vocabulary, and multi-lingual specification of classes is possible. Language becomes part of the metadata and can be used as a filter. 
 <li>The Vocabulary Hub can provide an API that returns ontology mappings for a given ontology. Mappings can be used for connectors to automatically convert domain specific data into data standard formats. 
 <li>The Vocabulary Hub can enable collaborative development of domain specific standard and support for mapping differing positions into a new meta concept as common standard.
 
