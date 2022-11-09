@@ -1,7 +1,7 @@
 ## Information Layer ##
 
 The Information Layer specifies the Information Model, the
-domain-agnostic, common language of the International Data Spaces. The
+domain-agnostic, common language, i.e., Vocabulary of the International Data Spaces. The
 Information Model is an essential agreement shared by the participants
 and components of the IDS, facilitating compatibility and
 interoperability. The primary purpose of this formal model is to enable
@@ -23,7 +23,7 @@ Group 4.[^1]
 ### Scope ###
 
 The Information Model is a generic model, with no commitment to any
-particular domain. Domain modeling is delegated to shared vocabularies
+particular domain. Domain modeling is delegated to shared Vocabularies
 and data schemata, as provided, e.g., by domain-specific communities of
 the International Data Spaces. The Information Model does not provide a
 meta-model for defining custom datatypes comparable to standards such as
@@ -66,7 +66,7 @@ The Declarative Representation (IDS Vocabulary) provides a normative
 view of the Information Model of the International Data Spaces.[^4] It
 has been developed along the analysis, findings, and requirements of the
 Conceptual Representation. Based on a stack of W3C Semantic Web
-technology standards[^5] and standard modeling vocabularies (the Data Catalog Vocabulary DCAT[^6],
+technology standards[^5] and standard modeling Vocabularies (the Data Catalog Vocabulary DCAT[^6],
 the Open Digital Rights Language ODRL[^7], the Simple Knowledge Organization System SKOS[^8], etc.), it provides a formal, machine-interpretable
 specification of concepts envisaged by the Conceptual Representation,
 residing at the persistent namespace URI <https://w3id.org/idsa/core/> according to best practices for publishing linked data[^bp-ld].
@@ -78,8 +78,8 @@ number of Programmatic Representations. The IDS Vocabulary is typically
 used and instantiated by knowledge engineers, ontology experts, or
 information architects. It defines a fairly minimal, domain-agnostic
 core model and relies on third-party standard and custom
-vocabularies in order to express domain-specific facts. According to the
-common practice, existing domain vocabularies and standards are reused
+Vocabularies in order to express domain-specific facts. According to the
+common practice, existing domain Vocabularies and standards are reused
 where possible, fostering acceptance and interoperability.
 
 #### Programmatic Representation ####
@@ -100,6 +100,11 @@ intricacies of ontology processing.
 ![Representations of the Information Model](./media/image31.png)
 
 ##### Figure. 3.3.1: Representations of the Information Model
+
+### Relation to Domain-specific Vocabularies ###
+
+In specific IDS-based ecosystems, domain-specific adaptations – also known as Application Profiles – of the Information Model may be used.
+The definition of such domain-specific Vocabularies should follow best practices established, e.g., by the DCAT Application Profile for data portals in Europe (DCAT-AP), which tailors the specification of DCAT “to the specific application needs of data portals in Europe while providing semantic interoperability with other applications on the basis of reuse of established Controlled Vocabularies […] and mappings to existing metadata Vocabularies”[^dcat-ap].
 
 ### Conceptual Representation of a Digital Resource in the IDS ###
 
@@ -168,7 +173,7 @@ Content is interpretable by references to a
 shared, formally defined *C*oncept, which may cover the meaning, annotation and interpretation of entities by, e.g., 
 
 1. natural language keywords,
-2. terms defined in curated sources such as controlled vocabularies, or
+2. terms defined in curated sources such as Controlled Vocabularies, or
 3. types defined in type systems or ontologies.
 
 On the other hand, links to a particular
@@ -256,3 +261,6 @@ modules or directories).
 [^12]: E. W. Dijkstra. \"On the role of scientific thought,\" EWD 447,
     2000. Available:
     http://www.cs.utexas.edu/users/EWD/ewd04xx/EWD447.PDF
+
+[^dcat-ap]: DCAT Application Profile for data protals in Europe.
+https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe
