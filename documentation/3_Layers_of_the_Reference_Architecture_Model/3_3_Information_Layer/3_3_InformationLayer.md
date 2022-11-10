@@ -103,8 +103,10 @@ intricacies of ontology processing.
 
 ### Relation to Domain-specific Vocabularies ###
 
-In specific IDS-based ecosystems, domain-specific adaptations – also known as Application Profiles – of the Information Model may be used.
+In specific IDS-based ecosystems, domain-specific adaptations – also known as Application Profiles – of the Information Model may be used to describe Resources, Participants, infrastructure and other constituents of an International Data Space.
 The definition of such domain-specific Vocabularies should follow best practices established, e.g., by the DCAT Application Profile for data portals in Europe (DCAT-AP), which tailors the specification of DCAT “to the specific application needs of data portals in Europe while providing semantic interoperability with other applications on the basis of reuse of established Controlled Vocabularies […] and mappings to existing metadata Vocabularies”[^dcat-ap].
+
+_Further_, independent domain-specific Vocabularies, which are not necessarily derived from the IDS Information Model, may be used to describe the Content of a Resource and the Concepts addressed by a Resource, as detailed in the respective sections below.
 
 ### Conceptual Representation of a Digital Resource in the IDS ###
 
@@ -166,15 +168,15 @@ As a Resource's content is its most essential aspect, *C*ontent is located at
 the top of the hexagon. The *Content* concern deals with
 
 1. the description of a Resource's abstract substance,
-2. its serialization as a representation in a machine-interpretable format, and 
+2. its serialization as a representation in a machine-interpretable format, making use of Vocabularies as appropriate, and 
 3. the materializations of these representations at certain points in time as one or more instances (e.g., values or artifacts).
 
 Content is interpretable by references to a
 shared, formally defined *C*oncept, which may cover the meaning, annotation and interpretation of entities by, e.g., 
 
 1. natural language keywords,
-2. terms defined in curated sources such as Controlled Vocabularies, or
-3. types defined in type systems or ontologies.
+2. terms defined in curated sources such as Controlled Vocabularies, concept schemes, taxonomies, thesauri, etc., or
+3. types defined in type systems or ontologies, i.e., Vocabularies.
 
 On the other hand, links to a particular
 *C*ontext (in terms of, e.g.,
