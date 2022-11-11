@@ -96,7 +96,7 @@ more basic role. Their exact scope of comprised basic roles depends on
 the individual business model of the participant as individual business
 models (including pricing models) may be applied as deemed appropriate.
 E.g. a data intermediary (see details below) operating a data hub may
-store data as a trustee, act as a metadata broker or do both -- depending on the
+store data as a trustee, act as a Metadata Broker or do both -- depending on the
 business model. Therefore, as the assignment of basic roles to a
 business role may vary, the assignment is marked with the following
 symbols:

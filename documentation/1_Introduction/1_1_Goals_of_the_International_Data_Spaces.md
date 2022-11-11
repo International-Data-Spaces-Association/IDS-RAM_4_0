@@ -80,7 +80,7 @@ requirements:
     is transferred to a trusted party. This approach requires a
     comprehensive description of each data source and the value and
     usability of data for other companies, combined with the ability to
-    integrate domain-specific data vocabularies. In addition, metadata brokers in
+    integrate domain-specific data vocabularies. In addition, Metadata Brokers in
     the ecosystem provide services for real-time data search.
 
 - **Standardized interoperability**: The International Data Spaces

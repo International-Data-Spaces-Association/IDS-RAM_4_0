@@ -128,11 +128,11 @@ information about data source description is given in the
 
 The operator of a Connector must be able to provide an interface for
 data and metadata access. Each Connector must be able to transmit
-metadata of its data sources to one or more metadata brokers. Each participant
+metadata of its data sources to one or more Metadata Brokers. Each participant
 must be able to browse and search metadata in the metadata repository,
 provided the participant has the right to access the metadata.
 Furthermore, each participant must be able to browse the list of
-participants registered at a metadata broker. More information about metadata brokering is
+participants registered at a Metadata Broker. More information about metadata brokering is
 given in the [Process Layer](../3_4_Process_Layer/3_4_Process_Layer.md).
 
 #### Vocabularies ####
