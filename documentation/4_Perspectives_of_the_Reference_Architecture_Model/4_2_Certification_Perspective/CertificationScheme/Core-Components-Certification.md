@@ -204,11 +204,11 @@ be ensured by independent evaluation and certification from an
 approved evaluation facility and the certification body of the
 Industrial Data Space.
 
-#### Broker
+#### Metadata Broker
 
-A Broker service does not have access to primary data, but only to
+A Metadata Broker service does not have access to primary data, but only to
 metadata provided by data providers, which is generally considered
-less sensitive. Likewise, Broker services do not assign or enforce
+less sensitive. Likewise, Metadata Broker services do not assign or enforce
 access rights, but merely support data exchange. Nevertheless,
 integrity and availability of metadata (i.e., correct and secure
 storing and handling of meta- data) is of high importance for the

@@ -82,7 +82,7 @@ is given in the [Security Perspective](../../4_Perspectives_of_the_Reference_Arc
 
 #### Trustworthy Communication & Security by Design ####
 
-Connectors, App Stores, and Brokers can check if the Connector of the
+Connectors, App Stores, and any Broker can check if the Connector of the
 connecting party is running a trusted (i.e. certified) software stack.
 Any communication between (external) Connectors can be encrypted and
 integrity protected. Each Data Owner and Data Provider must be able to
@@ -111,7 +111,7 @@ the International Data Spaces is described on the Information Layer (see
 [section 3.3](../3_3_Information_Layer/3_3_InformationLayer.md)).
 
 The Ecosystem of Data group comprises three major aspects: data
-source description, brokering, and vocabularies.
+source description, metadata brokering, and vocabularies.
 
 #### Data Source Description ####
 
@@ -124,15 +124,15 @@ the pricing model, and the usage policies regarding certain data. More
 information about data source description is given in the
 [Information Layer](../3_3_Information_Layer/3_3_InformationLayer.md).
 
-#### Brokering ####
+#### Metadata Brokering ####
 
 The operator of a Connector must be able to provide an interface for
 data and metadata access. Each Connector must be able to transmit
-metadata of its data sources to one or more brokers. Each participant
+metadata of its data sources to one or more metadata brokers. Each participant
 must be able to browse and search metadata in the metadata repository,
 provided the participant has the right to access the metadata.
 Furthermore, each participant must be able to browse the list of
-participants registered at a broker. More information about brokering is
+participants registered at a metadata broker. More information about metadata brokering is
 given in the [Process Layer](../3_4_Process_Layer/3_4_Process_Layer.md).
 
 #### Vocabularies ####

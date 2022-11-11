@@ -73,7 +73,7 @@
 
 [4.1.6.3 Roles involved in Usage Control](./4_1_6_Usage_Control.md#roles-involved-in-usage-control)
 
-[4.1.6.3.1 Meta Data Broker](./4_1_6_Usage_Control.md#meta-data-broker)
+[4.1.6.3.1 Meta Data Broker](./4_1_6_Usage_Control.md#metadata-broker)
 
 [4.1.6.3.2 Connector](./4_1_6_Usage_Control.md#connector)
 

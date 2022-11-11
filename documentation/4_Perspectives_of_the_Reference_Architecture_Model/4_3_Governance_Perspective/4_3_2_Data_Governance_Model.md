@@ -11,7 +11,7 @@ what IDS components are involved.
 **DG/DM activities**
 
 - Define usage constraints for data resources
-- Publish metadata including usage constraints to Broker
+- Publish metadata including usage constraints to Metadata Broker
 - Transfer data with usage constraints linked to data
 - Receive information about data transaction from Clearing House
 - Bill data (if required)
@@ -31,7 +31,7 @@ what IDS components are involved.
 **DG/DM activities**
 
 - Use data in compliance with usage constraints}
-- Search for existing datasets by making an inquiry at a Broker Service Provider
+- Search for existing datasets by making an inquiry at a ß Broker Service Provider
 - Nominate Data Users (if needed)
 - Receive information about data transaction from Clearing House
 - Monitor policy enforcement
@@ -41,7 +41,7 @@ what IDS components are involved.
 - IDS Connector
 - Catalogue of rules to act in compliance with usage constraints specified by Data Owner
 
-##### Meta Data Broker Service Provider #####
+##### Metadata Broker Service Provider #####
 
 **DG/DM activities**
 
@@ -50,7 +50,7 @@ what IDS components are involved.
 
 **Enabling/Supporting IDS Component:**
 
-- Meta Data Broker Service Provider component
+- Metadata Broker Service Provider component
 - Core of the metadata model must be specified by the International Data Spaces (by the Information Model)
 - Provide registration interface for Data Provider
 - Provide query interface for Data Consumer
@@ -106,7 +106,7 @@ the IDS ecosystem. RACI stands for 'responsible' ,
 lies on the 'R' and 'A' of the RACI matrix, supported by the
 notation  'S', which stands for supported.
 
-| Activity | Data Owner / Data Provider | Data User / Data Consumer | Broker | Clearing House|
+| Activity | Data Owner / Data Provider | Data User / Data Consumer | Metadata Broker | Clearing House|
 | :--- | :---: | :---:  | :---:  | :---:  |
 | **Management**  | | | | |
 | Determine data usage restrictions (execute data ownership rights)| R, A | - | S | - |

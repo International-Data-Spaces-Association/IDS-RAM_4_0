@@ -7,7 +7,7 @@ Within the next two subsections, three different levels of assurance and trust f
 #### Component Assurance Levels: ####
 
 The depth and rigor of a component evaluation consists of the following three assurance levels,
-independent on the type of component that is being certified (e.g. Connector, Broker, etc.):
+independent on the type of component that is being certified (e.g. Connector, Brokers, etc.):
 
 * Assurance Level 1: Checklist self-assessment and automated interoperability testing
 * Assurance Level 2: External concept review including functional and security testing
@@ -33,4 +33,4 @@ An in-depth description of the Component Certification and its Assurance and Tru
 
 #### Certification of other components ####
 
-As the Broker, App Store, Clearing House, ParIS and Vocabulary Provider components are at their core also a Connector, the general certification process and assurance levels apply to them as well, in addition to component specific functional profiles. As an example for these profiles, the criteria catalogue "Components-Broker" can be requested on the [IDSA Homepage](https://internationaldataspaces.org/publications/white-papers/).
+As the Metadata Broker, App Store, Clearing House, ParIS and Vocabulary Provider components are at their core also a Connector, the general certification process and assurance levels apply to them as well, in addition to component specific functional profiles. As an example for these profiles, the criteria catalogue "Components-Broker" can be requested on the [IDSA Homepage](https://internationaldataspaces.org/publications/white-papers/).

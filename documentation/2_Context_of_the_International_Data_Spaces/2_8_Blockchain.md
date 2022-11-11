@@ -49,7 +49,7 @@ hash code ('fingerprint' of a piece of data) which can be used to verify
 a larger file (e.g. a complex product design for which an order was
 sent) being shared with the help of an IDS Connector. In terms of the
 IDS-RAM, blockchain technology could be used for the Clearing House or
-the Broker, for example (see Business Layer).
+the Metadata Broker, for example (see Business Layer).
 
 In general, the use of Blockchain technology can ensure data consistency
 and transparency in combination with the general IDS approach for data

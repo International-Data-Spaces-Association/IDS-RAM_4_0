@@ -8,7 +8,7 @@ International Data Spaces. It also specifies the roles within the IDS.
 Thereby, it is directly related to the Governance Perspective by
 considering the business point of view regarding data ownership, data
 provision, and data consumption, and by describing core service concepts
-such as data brokerage.
+such as metadata brokerage.
 
 #### Functional Layer ####
 

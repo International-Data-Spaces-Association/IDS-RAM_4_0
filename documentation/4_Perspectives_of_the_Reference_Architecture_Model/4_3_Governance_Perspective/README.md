@@ -24,7 +24,7 @@
 
 [4.3.2.1.2 Data Consumer](./4_3_2_Data_Governance_Model.md#data-consumer)
 
-[4.3.2.1.3 Meta Data Broker Service Provider](./4_3_2_Data_Governance_Model.md#meta-data-broker-service-provider)
+[4.3.2.1.3 MetaData Broker Service Provider](./4_3_2_Data_Governance_Model.md#metadata-broker-service-provider)
 
 [4.3.2.1.4 Clearing House](./4_3_2_Data_Governance_Model.md#clearing-house)
 
