@@ -82,7 +82,7 @@ is given in the [Security Perspective](../../4_Perspectives_of_the_Reference_Arc
 
 #### Trustworthy Communication & Security by Design ####
 
-Connectors, App Stores, and any Broker can check if the Connector of the
+Connectors, App Stores, and any Metadata Broker can check if the Connector of the
 connecting party is running a trusted (i.e. certified) software stack.
 Any communication between (external) Connectors can be encrypted and
 integrity protected. Each Data Owner and Data Provider must be able to

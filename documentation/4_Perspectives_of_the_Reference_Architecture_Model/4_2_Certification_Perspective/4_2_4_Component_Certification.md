@@ -7,7 +7,7 @@ Within the next two subsections, three different levels of assurance and trust f
 #### Component Assurance Levels: ####
 
 The depth and rigor of a component evaluation consists of the following three assurance levels,
-independent on the type of component that is being certified (e.g. Connector, Brokers, etc.):
+independent on the type of component that is being certified (e.g. Connector, Metadata Brokers, etc.):
 
 * Assurance Level 1: Checklist self-assessment and automated interoperability testing
 * Assurance Level 2: External concept review including functional and security testing
