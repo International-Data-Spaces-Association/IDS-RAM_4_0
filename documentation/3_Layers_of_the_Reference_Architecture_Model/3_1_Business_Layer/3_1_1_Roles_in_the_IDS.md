@@ -196,7 +196,7 @@ Consumer are therefore similar to the activities performed by the Data
 Provider.
 
 If data is processed by a Service Provider (see below), the Data
-Customer takes the role of a **Service Consumer**. This constellation my
+Customer takes the role of a **Service Consumer**. This constellation may
 occur, e.g. when the Data Owner/Provider attaches usage policies to the
 data that require data being processed by a third-party service (i.e.
 Service Provider) before being handed to the consumer. Then, the Data
