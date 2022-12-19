@@ -8,6 +8,11 @@ The IDS define manners to tackle these challenges by specifying a technology-agn
 
 Apart from such edge cases, the Data Provider has the interest to correctly and comprehensively describe its data assets to maximize the amount of interested Data Consumers. It further wants to stick to commonly accepted and understood standards to simplify its discovery for potential business partners. The IDS Information Model provides the schema for Self-Descriptions and their basic building blocks, like for instance Usage Contracts, endpoint descriptions, or the internal structure of data assets.
 
+During the creation of the a Data Offering the Data Provider may reuse, as descibed above, existing standards for the (semantic) description of the the data itself or create a (semantic) description of the data. These Vocabualries can be published to a [Vocabulary Hub](../3_5_System_Layer/3_5_6_Vocabulary_Hub.md) and linked to the self-description (see section on [domain-specific vocabularies and application profiles](../3_3_Information_Layer/3_3_InformationLayer.md#relation-to-domain-specific-vocabularies)). This **Design-time** step supports the semantic interoperbility in Data Spaces. While semantic models for the description of data in data spaces are in general a good practice, Vocabularies can also make use of other concepts.
+
+![PublishVocabulary](./media/register-atvocabulary-hub-activity.png)
+##### Figure 3.4.2.1: Register Vocabulary at IDS Vocabulary Hub
+
 #### Self-Description at Data Provider ####
 
 The first step in a typical data publication process is therefore the proper creation of a data asset Self-Description. Usually, IDS Connectors provide the technical manners to create and maintain them, e.g. through suitable GUIs. After reaching a syntactically and semantically correct Self-Description, they are then deployed at the Data Providers IDS Connector and can be accessed by other IDS Connectors via its endpoints.
@@ -31,7 +36,7 @@ However, no Data Provider is obliged to publish any data assets at any IDS Metad
 As shown in Figure [3.4.2.1](#figure-3421-register-self-description-at-ids-metadata-broker), the Data Provider can send Self-Description documents to an IDS Metadata Broker. The Self-Description must be self-containing and compliant to the specifications of the IDS Information Model. Usually representations of the RDF classes [ids:Connector](https://w3id.org/idsa/core/Connector) and [ids:Resource](https://w3id.org/idsa/core/Resource) are used. The IDS Metadata Broker then checks the Self-Description syntactic correctness and persists it in its local database. It does not check the semantic correctness, or the plausibility of the supplied information.
 
 ![PublishSelf-Description](media/register-at-broker-activity.png)
-##### Figure 3.4.2.1: Register Self-Description at IDS Metadata Broker
+##### Figure 3.4.2.2: Register Self-Description at IDS Metadata Broker
 
 Different to other ecosystems, an IDS Metadata Broker does not actively crawl for Self-Descriptions or searches for updates. The IDS Metadata Broker relies on notifications from the original Data Providers. In case the Data Provider misses an update, the IDS Metadata Broker can therefore not be made responsible for outdated or wrong information.
 
@@ -44,7 +49,7 @@ To find a Data Provider, the Data Consumer may search in the catalogs of an IDS 
 The IDS Metadata Broker then returns the query result to the Data Consumer. The query result may differ depending on the requesting IDS Connector due to filtering of the displayed data according to usage policies defined by the Data Provider. The Data Consumer needs to interpret the result to find out about the different data sources available. Each query result must provide information about each IDS Connector capable of providing the desired data, so the Data Consumer can access each IDS Connector’s Self-Description to learn more about how to receive the desired dataset. The Data Provider may serve the same data using different representations or pricing options, so the Data Consumer may select a suitable offer from the Data Provider.
 
 ![Query Self-Descriptions](media/query-at-broker-activity.png)
-##### Figure 3.4.2.2: Query IDS Metadata Broker
+##### Figure 3.4.2.3: Query IDS Metadata Broker
 
 #### Crawling Self-Descriptions ####
 
@@ -55,4 +60,4 @@ After that, the Data Consumer can search for available offers by querying its ca
 For each of these approaches, an overview of all Participants in the data ecosystem would be required for the FCC to get into exchange with running IDS Connectors. Such an initial overview of other Participants can be obtained by querying central IDS entities about their known Participants. For example, an IDS Metadata Broker can be queried for other IDS Connectors that have published offered resources. If other IDS components provide interfaces to query their active participants, an overview can also be derived from this. For example, an IDS component could provide an interface on which IDS Connectors have been actively communicating with it for within a certain period of last days. An FCC could then prioritize crawling active Participants.
 
 ![Crawling Self-Descriptions](media/crawling.png)
-##### Figure 3.4.2.3: Hybrid setup - Crawling Self-Descriptions and Metadata Broker
+##### Figure 3.4.2.4: Hybrid setup - Crawling Self-Descriptions and Metadata Broker
