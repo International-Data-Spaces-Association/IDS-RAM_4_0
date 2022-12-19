@@ -51,6 +51,12 @@ The IDS Metadata Broker then returns the query result to the Data Consumer. The 
 ![Query Self-Descriptions](media/query-at-broker-activity.png)
 ##### Figure 3.4.2.3: Query IDS Metadata Broker
 
+The IDS Metadata Broker does not serve Vocabularies but provides a reference to a vocabulary and, if required, a reference to a Vocabulary Hub, included in the Self Descption during **Runtime** when a connector is searching for a data provider or a data set. The Data Consumers connector may verify if the data is provided by using a vocabulary that is consumable by the connector, when quering an IDS Metadata Broker or when quering the Self-Description directly from a Data Providers Connector. If the data is not provided in a consumable way, the connector may:
+
+- request the data in a different format
+- implement the required strucutres to consume the data
+- or choose a different data provider.
+
 #### Crawling Self-Descriptions ####
 
 Another possible approach to find relevant data offers in a data ecosystem is a federated catalog. This approach is based on a crawler architecture implementing a federated cache node (FCN) and a federated cache crawler (FCC). The FCN of an IDS Connector makes data offers public to other Participants, as part of its Self-Description. In addition, further information describing the contents can be requested directly. This way, another IDS Connector can cache all available data offerings by crawling known Data Providers via its FCC.
