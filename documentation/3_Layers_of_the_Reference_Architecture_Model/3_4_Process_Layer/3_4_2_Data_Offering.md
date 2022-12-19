@@ -57,6 +57,10 @@ The IDS Metadata Broker does not serve Vocabularies but provides a reference to 
 - implement the required strucutres to consume the data
 - or choose a different data provider.
 
+When a Vocabulary related to the data is provided by Data Provider, the Data Consumer may
+validate the provided schema by reasonable means before initiating the contract negtiation
+sequence.
+
 #### Crawling Self-Descriptions ####
 
 Another possible approach to find relevant data offers in a data ecosystem is a federated catalog. This approach is based on a crawler architecture implementing a federated cache node (FCN) and a federated cache crawler (FCC). The FCN of an IDS Connector makes data offers public to other Participants, as part of its Self-Description. In addition, further information describing the contents can be requested directly. This way, another IDS Connector can cache all available data offerings by crawling known Data Providers via its FCC.

@@ -63,6 +63,30 @@ to switch from data pulling to data pushing easily. The sequence is depicted in 
 
 ##### Figure 3.4.4.2: Out-of-band Data Exchange
 
+#### Semantic Interoperability
+
+Semantic Interoperability is crucial for Data Exchange in Data Spaces. This starts dhring
+Design-time, as described in the [Data Offering process](./3_4_2_Data_Offering.md#data-offering),
+and in the process of [publishing](./3_4_2_Data_Offering.md#data-provider-registering-self-descriptions)
+and [quering](./3_4_2_Data_Offering.md#data-consumer-searching-for-self-descriptions) self-descriptions.
+In the process of Data Exchange the Vocabulary Hub and the Vocabularies are invoked for semantic
+interoperability.
+
+The following steps are followed:
+
+1. Prior to the invokation of a data operation by the data consumer one or multiple vocabularies
+are loaded by the data consumers connector
+2. Based on the vocabularies the data consumer can implement required interfaces to conduct the
+data transfer as described in the sections above.
+3. During the data transfer, respectivly after the data was transfered, the data can be validated
+against the given vocabularies. In case of invalid data the consumers connector may decline the data
+usage.
+4. Subsequently to the data transfer the data might require some additonal treatment to make use of
+this, like ETL (Extract, Transform, Loading) tooling. During this activity, a connector can make
+use of Data Apps, as described in the following section.
+
+include a graphic here.
+
 #### Usage Control ####
 
 All communication patterns and protocols must ensure that usage control, covering the contents of
