@@ -74,7 +74,7 @@ interoperability.
 
 The following steps are followed:
 
-1. Prior to the invokation of a data operation by the data consumer one or multiple vocabularies
+1. Prior to the invokation of a data operation (in a synchronous or asynchronous way) by the data consumer one or multiple vocabularies
 are loaded by the data consumers connector
 2. Based on the vocabularies the data consumer can implement required interfaces to conduct the
 data transfer as described in the sections above.
@@ -85,7 +85,9 @@ usage.
 this, like ETL (Extract, Transform, Loading) tooling. During this activity, a connector can make
 use of Data Apps, as described in the following section.
 
-include a graphic here.
+![Semantic Interoperability](media/semantic_interop_data-transfer.drawio.png)
+
+##### Figure 3.4.4.3: Support of Semantic Interoperability and related activites
 
 #### Usage Control ####
 
