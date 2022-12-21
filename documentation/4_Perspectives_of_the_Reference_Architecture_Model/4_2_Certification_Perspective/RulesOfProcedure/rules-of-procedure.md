@@ -234,7 +234,7 @@ Appropriate sampling shall be used to determine whether the operational environm
 6. The Applicant is obliged to cooperate in accordance with § 3.2.
 In particular, it shall prepare documentation of the changes to the technical and organizational measures in accordance with § 3.2 Para. 2.
 7. The Evaluation Facility prepares an evaluation report and sends it to the Certification Body.
-8. After successful evaluation of the report, the Certification Body issues a new certificate for the new version of the component. The original validity of the previous certificate will be maintained. 
+8. After successful evaluation of the report, the Certification Body issues a new certificate for the new version of the component. The original validity of the previous certificate will be maintained for the new certificate, i.e. the validity will not be extended if the old certification version is used. 
 9. Alternatively to a change certification, the applicant has also the possibility to apply for a renewal certification. This is conducted according to the current certification version (certification criteria and IDS reference testbed version). If the evaluation is successful, the Certification Body issues a certificate with a validity of two years. 
 
 ## 4. The certification procedure   
