@@ -222,8 +222,8 @@ The final version of the evaluation report may only be submitted to the Applican
 8. The Applicant may only make the evaluation report available to third parties in full text, stating the date of issue, and pass it on after written approval by the Evaluation Facility.
 
 ### 3.6 Change Certification     
-1. After a component has been certified, the applicant must inform the Certification Body and, in the case of Assurance Level 2 or 3, the applicant must also inform the Evaluation Facility of any changes made to the component. The applicant must report the changes and fill in the impact assessment provided by the Certification Body.
-2. Change Certifications can also be carried out at the Applicant\'s request.
+1. After a component has been certified, the applicant must inform the Certification Body (Assurance Level 1-3) and the Evaluation Facility (Assurance Level 2 & 3) of any changes made to the component. The applicant must report the changes and fill in the impact assessment provided by the Certification Body.
+2. Change Certifications can also be carried out at the Applicant\'s request when a new version of the IDS reference testbed or of the certification criteria is released.
 3. During a change certification, the Certification Body must determine whether the certified operational environment or component continues to meet the IDS requirements of the originally certified Trust Level after changes have been made.
 4. For small changes, e.g. bug fixes or security patches for components, the change can be certified with minimal effort in form of a maintenance certification.
 For larger changes, e.g. to management processes of an organization or larger source code modifications for a component, a re-certification must be conducted.
