@@ -237,7 +237,7 @@ By default, the component or operational environment will be assessed using the 
 6. The Applicant is obliged to cooperate in accordance with § 3.2.
 In particular, it shall prepare documentation of the changes to the technical and organizational measures in accordance with § 3.2 Para. 2.
 7. The Evaluation Facility prepares an evaluation report and sends it to the Certification Body.
-8. After successful evaluation of the report, the Certification Body issues a new certificate for the new version of the component. The original validity of the previous certificate will be maintained for the new certificate, i.e. the validity will not be extended if the old certification version is used. 
+8. After successful evaluation of the report, the Certification Body issues a new certificate for the new version of the component. The original validity of the previous certificate will be maintained for the new certificate, i.e. the validity will not be extended. 
 9. Change Certifications can also be carried out at the Applicant\'s request when a new version of the IDS reference testbed or of the certification criteria is released. In this case, the change certification will focus on the new or changed test cases or criteria. The original validity of the previous certificate will be maintained for the new certificate.
 10. Alternatively to a change certification, the applicant has also the possibility to apply for a renewal certification. This is conducted according to the current certification version (certification criteria and IDS reference testbed version). If the evaluation is successful, the Certification Body issues a new certificate with a validity of two years. 
 
