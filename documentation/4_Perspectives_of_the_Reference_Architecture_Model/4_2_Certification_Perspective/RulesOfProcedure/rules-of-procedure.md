@@ -223,9 +223,8 @@ The final version of the evaluation report may only be submitted to the Applican
 
 ### 3.6 Change Certification     
 1. After a component has been certified, the applicant must inform the Certification Body (Assurance Level 1-3) and the Evaluation Facility (Assurance Level 2 & 3) of any changes made to the component. The applicant must report the changes and fill in the impact assessment provided by the Certification Body.
-2. Change Certifications can also be carried out at the Applicant\'s request when a new version of the IDS reference testbed or of the certification criteria is released.
-3. During a change certification, the Certification Body must determine whether the certified operational environment or component continues to meet the IDS requirements of the originally certified Trust Level after changes have been made.
-4. For small changes, e.g. bug fixes or security patches for components, the change can be certified with minimal effort in form of a maintenance certification.
+2. During a change certification, the Certification Body must determine whether the certified operational environment or component continues to meet the IDS requirements of the originally certified Trust Level after changes have been made.
+3. For small changes, e.g. bug fixes or security patches for components, the change can be certified with minimal effort in form of a maintenance certification.
 For larger changes, e.g. to management processes of an organization or larger source code modifications for a component, a re-certification must be conducted.
 4. For a maintenance certification, the Evaluation Facility evaluates the documented changes to determine whether they may result in a violation of the certified IDS requirements.
 If that is the case, a deeper evaluation in form of a re-certification is required. The above requirements for evaluation apply accordingly except for § 3.3.
@@ -236,7 +235,8 @@ Appropriate sampling shall be used to determine whether the operational environm
 In particular, it shall prepare documentation of the changes to the technical and organizational measures in accordance with § 3.2 Para. 2.
 7. The Evaluation Facility prepares an evaluation report and sends it to the Certification Body.
 8. After successful evaluation of the report, the Certification Body issues a new certificate for the new version of the component. The original validity of the previous certificate will be maintained for the new certificate, i.e. the validity will not be extended if the old certification version is used. 
-9. Alternatively to a change certification, the applicant has also the possibility to apply for a renewal certification. This is conducted according to the current certification version (certification criteria and IDS reference testbed version). If the evaluation is successful, the Certification Body issues a new certificate with a validity of two years. 
+9. Change Certifications can also be carried out at the Applicant\'s request when a new version of the IDS reference testbed or of the certification criteria is released. In this case, the change certification will focus on the new or changed test cases or criteria. The original validity of the previous certificate will be maintained for the new certificate.
+10. Alternatively to a change certification, the applicant has also the possibility to apply for a renewal certification. This is conducted according to the current certification version (certification criteria and IDS reference testbed version). If the evaluation is successful, the Certification Body issues a new certificate with a validity of two years. 
 
 ## 4. The certification procedure   
 ### §4.1 Contractual basis      
