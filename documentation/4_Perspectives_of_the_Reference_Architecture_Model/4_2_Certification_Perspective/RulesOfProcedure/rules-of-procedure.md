@@ -230,7 +230,9 @@ For larger changes, e.g. to management processes of an organization or larger so
 If that is the case, a deeper evaluation in form of a re-certification is required. The above requirements for evaluation apply accordingly except for § 3.3.
 5. For a re-certification, all above requirements for evaluation apply accordingly.
 The scope of the re-certifications shall be such that the changes to the operational environments or components made since the last evaluation are checked.
-Appropriate sampling shall be used to determine whether the operational environment or component as a whole continues to meet the IDS requirements. The component or operational environment will be assessed using the same certification version (certification criteria and IDS reference testbed version) as for the first evaluation.
+Appropriate sampling shall be used to determine whether the operational environment or component as a whole continues to meet the IDS requirements. 
+The evaluation is conducted with the methodology of the originally certified Assurance Level.
+By default, the component or operational environment will be assessed using the same certification version (i.e., certification criteria catalog, IDS Reference Testbed version, test specifications, ...) as for the first evaluation. A newer certification version may be requested according to 9.
 6. The Applicant is obliged to cooperate in accordance with § 3.2.
 In particular, it shall prepare documentation of the changes to the technical and organizational measures in accordance with § 3.2 Para. 2.
 7. The Evaluation Facility prepares an evaluation report and sends it to the Certification Body.
