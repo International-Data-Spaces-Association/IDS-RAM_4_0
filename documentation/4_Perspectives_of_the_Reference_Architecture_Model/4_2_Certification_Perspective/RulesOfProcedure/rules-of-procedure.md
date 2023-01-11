@@ -3,7 +3,7 @@
 ## Change History
 | Version | Date | Changes |
 | --- | --- | --- |
-| Version 1.3 | January 2023 | Updated with input from WG Certification Meeting December 2022 
+| Version 1.3 | January 2023 | Updated change certification (based on decisions from the WG Certification Meeting on December 8th, 2022)  |
 | Version 1.2 | August 2022 | Small changes, updated wording |
 | Version 1.1. |  Sept 2020 | made wording consistent, updated change certification, generalized references to accreditation bodies.|
 | Version 1.0 | 2019 | Initial version. |
