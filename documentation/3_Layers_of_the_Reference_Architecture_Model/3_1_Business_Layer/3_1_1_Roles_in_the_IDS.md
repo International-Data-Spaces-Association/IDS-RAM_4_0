@@ -187,7 +187,7 @@ some way, or to improve its quality. Data Apps are specific applications
 that can be loaded into the IDS connector and, thus, linked into the
 data exchange workflow.
 
-##### DATA CUSTOMER #####
+##### DATA CONSUMER #####
 
 The **Data Consumer** receives data from a Data Provider. From a
 business process modeling perspective, the Data Consumer is the mirror
