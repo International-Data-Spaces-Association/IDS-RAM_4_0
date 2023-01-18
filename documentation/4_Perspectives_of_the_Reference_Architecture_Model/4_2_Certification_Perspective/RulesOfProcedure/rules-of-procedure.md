@@ -308,7 +308,7 @@ If the Certification Body does not remedy the objection, this shall be justified
 6. The decision on the opposition, including the statement of grounds, shall be communicated to the Applicant in text form.
 
 ### §4.9 Change certification     
-1. At the Applicant\'s request, the Certification Body may change the certificate by means of a change certification. In the event of an amendment, the certificate shall continue to exist for its original period of validity.
+1. At the Applicant\'s request, the Certification Body may issue a certificate for a new version of the component or with regards to a new certification version by means of a change certification. The original validity of the previous certificate will be maintained for the new certificate.
 2. A change certification can be carried out as a maintenance certification or a re-certification depending on the scope of the changes.
 The provisions on the certification procedure shall apply accordingly to the change certification procedure.
 Section 3.6 shall apply to evaluation within the framework of change certification.
