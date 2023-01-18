@@ -354,14 +354,14 @@ It consists of the unique name of the Certification Body, the designation IDS-CS
 The Certification Body maintains a list of certificates and publishes the certificate together with the annex during the validity period and for a further ten years on a publicly accessible website.
 The certificates must be easily accessible.
 
-### §5.3 Period of validity. Renewed certification      
+### §5.3 Period of validity. Renewal certification      
 1. The certificate is issued for a maximum period of validity of two years for components and three years for the operational environments of participating organizations.
 The period begins with the date of issue stated in the certificate.
 2. The Applicant may request, before or after the period of validity has expired, that the operational environment or component be reevaluated and re-certified in accordance with these Rules of Procedure.
-3. The rules for the (first) evaluation and certification apply to the renewed evaluation and certification.
+3. The rules for the (first) evaluation and certification apply to the renewal evaluation and certification.
 The Applicant may appoint the Evaluation Facility which carried out the previous evaluation or another Evaluation Facility.
 If the test reports of the previous tests are available and the evaluation object is unchanged with respect to the last evaluation, the evaluation may be reduced to a re-assessment of the evaluation object with respect to developments in the state of the art and the IDS.
-4. The Certification Body may issue the new certificate immediately after expiry of the validity period of the previous certificate if the application for the date is submitted in good time.
+4. The Certification Body may issue the new certificate to either start immediately or to start immediately after expiry of the validity period of the previous certificate if the application for the date is submitted in good time.
 
 ### §5.4 Monitoring     
 1. The operational environment of the participating organization shall be subject to surveillance in the form of an annual surveillance audit during the period of validity of the certificate.
