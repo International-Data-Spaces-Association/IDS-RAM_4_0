@@ -1,8 +1,38 @@
-# Changelog
+# Changelog #
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+
+## 4.1.1 ##
+
+### Added ###
+
+- none
+
+### Changed ###
+
+- Updating figure 1.2
+
+
+### Removed ###
+
+- none
+
+### Deprecated ###
+
+- none
+
+### Fixed ###
+
+- none
+
+
+### Security ###
+
+- none
 
 ## Version 4.1
 
@@ -100,7 +130,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deprecated ###
 
 - none
-- Business Layer: fixed consistency in Role Interaction table.
 
 ### Fixed ###
 
