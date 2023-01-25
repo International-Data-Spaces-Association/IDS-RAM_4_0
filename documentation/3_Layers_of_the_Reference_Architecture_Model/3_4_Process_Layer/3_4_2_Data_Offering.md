@@ -53,9 +53,9 @@ The IDS Metadata Broker then returns the query result to the Data Consumer. The 
 
 The IDS Metadata Broker does not serve Vocabularies but provides a reference to a vocabulary and, if required, a reference to a Vocabulary Hub, included in the Self Descption during **Runtime** when a connector is searching for a data provider or a data set. The Data Consumers connector may verify if the data is provided by using a vocabulary that is consumable by the connector, when quering an IDS Metadata Broker or when quering the Self-Description directly from a Data Providers Connector. If the data is not provided in a consumable way, the connector may:
 
-- request the data in a different format
-- implement the required strucutres to consume the data
-- or choose a different data provider.
+- request the data in a different format from the data provider or search and invoke another service that can conduct a transformation of the data accoring to another data scheme.
+- implement the required strucutres (interfaces) to consume the data. As this could be a manual taks to implement the required interfaces code fragments, this could be a time consuming task. 
+- or choose a different data provider, which provides the required data in a schema and format that is usable by the data consumer.
 
 When a Vocabulary related to the data is provided by Data Provider, the Data Consumer may
 validate the provided schema by reasonable means before initiating the contract negtiation
