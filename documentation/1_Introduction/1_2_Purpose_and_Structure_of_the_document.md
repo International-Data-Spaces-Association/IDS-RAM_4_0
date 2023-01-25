@@ -6,7 +6,7 @@ data' , the IDS-RAM resides at a higher abstraction level than common
 architecture models of concrete software solutions do. The document
 provides an overview supplemented by dedicated architecture
 specifications defining the individual components of the International
-Data Spaces (Connector, Broker, App Store, etc.) in detail.
+Data Spaces (Connector, Metadata Broker, App Store, etc.) in detail.
 
 In compliance with common system architecture models and standards
 (e.g., ISO 42010, 4+1 view model), the Reference Architecture Model uses

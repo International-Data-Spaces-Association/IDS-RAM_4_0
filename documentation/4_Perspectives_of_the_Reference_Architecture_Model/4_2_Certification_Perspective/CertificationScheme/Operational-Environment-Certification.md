@@ -349,7 +349,7 @@ required to participate in the Industrial Data Space itself, it can
 outsource certain tasks, like publishing their data in the Industrial
 Data Space to a Service Provider hosting the required infrastructure.
 If this is the case, this Service Provider assumes the role of a Data
-Provider, Data Consumer, Broker Ser- vice Provider, etc. and performs
+Provider, Data Consumer, Broker Service Provider, etc. and performs
 the corresponding activities. They inherit the original role's
 responsibilities and risks, and shall therefore be subject to the
 corresponding requirements regarding certification.

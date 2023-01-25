@@ -80,7 +80,7 @@ requirements:
     is transferred to a trusted party. This approach requires a
     comprehensive description of each data source and the value and
     usability of data for other companies, combined with the ability to
-    integrate domain-specific data vocabularies. In addition, brokers in
+    integrate domain-specific data vocabularies. In addition, Metadata Brokers in
     the ecosystem provide services for real-time data search.
 
 - **Standardized interoperability**: The International Data Spaces
@@ -101,7 +101,7 @@ requirements:
     of novel, data-driven services that make use of data apps. It also
     fosters new business models for these services by providing clearing
     mechanisms and billing functions, and by creating domain-specific
-    broker solutions and marketplaces. In addition, the International
+    metadata broker solutions and marketplaces. In addition, the International
     Data Spaces provides templates and other methodological support for
     participants to use when specifying usage restriction information
     and requesting legal information.

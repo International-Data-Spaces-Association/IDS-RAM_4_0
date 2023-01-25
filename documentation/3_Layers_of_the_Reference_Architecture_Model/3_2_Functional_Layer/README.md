@@ -26,7 +26,7 @@
 
 [3.2.3.1 Data Source Description](./3_2_FunctionalLayer.md#data-source-description)
 
-[3.2.3.2](./3_2_FunctionalLayer.md#brokering)
+[3.2.3.2](./3_2_FunctionalLayer.md#metadata-brokering)
 
 [3.2.3.3 Vocabularies](./3_2_FunctionalLayer.md#vocabularies)
 

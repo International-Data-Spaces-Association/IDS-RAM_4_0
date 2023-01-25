@@ -82,9 +82,9 @@ Data Usage Control can be implemented by means of a machine-readable contract, w
 
 Usage Control is a cross-sectional concept and technology, which involves several IDS roles.
 
-##### Meta Data Broker #####
+##### Metadata Broker #####
 
-The IDS Broker manages Connector self-descriptions that can contain usage policies. Therefore the Broker must be able to support usage policies. In addition the Connector self-description itself may be subject of usage policies.
+The IDS Metadata Broker manages Connector self-descriptions that can contain usage policies. Therefore the Metadata Broker must be able to support usage policies. In addition the Connector self-description itself may be subject of usage policies.
 
 ##### Connector #####
 
@@ -104,7 +104,7 @@ For Data Apps to take advantage of Usage Control technology, App Providers need 
 
 #### IDS Usage Control Language ####
 
-The IDS Information Model is a modular meta-model (ontology) describing the capabilities of IDS infrastructure components, such as the Connector or the Data Endpoints. Descriptions of data provided by Data Endpoints are published at dedicated Broker registries, allowing potential Data Consumers to search for and identify data that is relevant (semantics) and applicable (quality) for their particular purpose, and to assess in advance data’s affordability (price) and usability (restrictions).
+The IDS Information Model is a modular meta-model (ontology) describing the capabilities of IDS infrastructure components, such as the Connector or the Data Endpoints. Descriptions of data provided by Data Endpoints are published at dedicated Metadata Broker registries, allowing potential Data Consumers to search for and identify data that is relevant (semantics) and applicable (quality) for their particular purpose, and to assess in advance data’s affordability (price) and usability (restrictions).
 
 The IDS Usage Control Language refers to an extension of the Open Digital Rights Language ([ODRL](https://www.w3.org/community/odrl/)), a W3C standard. The Information Model’s Usage Control module uses this language to provide machine-readable specifications of Usage Control policies. These specifications define actions that a party is prohibited or permitted to operate with regard to a given data asset. In addition, they codify any potentially involved duties. Despite a simple core model, which is depicted in [Figure 4.1.6.4](#figure-4164-odrl-information-model), ODRL policies are a formal way to declaratively express Usage Control policies at a specification level. This way, the Information Model provides a technology-agnostic, consistent representation of policies across the International Data Spaces.
 

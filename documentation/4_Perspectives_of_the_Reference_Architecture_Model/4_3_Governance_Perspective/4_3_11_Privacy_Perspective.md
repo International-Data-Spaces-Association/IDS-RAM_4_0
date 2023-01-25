@@ -26,7 +26,7 @@ it’s protective power.
 Although TLS does protect data in transit in an efficient and widely accepted way, it is not the best measure in terms of
 privacy protection. E.g. scinetist were able to identify Google search queries from the size of data TLS protected data packets
 in the internet due to the still available metadata. The need for End2End encryption arises out of the privacy risks mentioned above.
-As Intermediate broker / provider are able to see customer data, it is only prudent to encrypt the data in a way that allows
+As intermediate (broker) service providers are able to see customer data, it is only prudent to encrypt the data in a way that allows
 the use for the primary purpose only.
 
 ##### Transport Layer Privacy / Source Anonymitiy #####
@@ -64,7 +64,7 @@ As set of encryption algorithms that allows a limited set of computations on the
 
 A more general term for any advanced encryption scheme. The required key size is usually larger, the possible applications
 have to be choosen from the variety of possible algorithms. e.g. proxy re-encryption allows to send a message to an intermediate
-broker, but the message can be re-encrypted to a final recipient at a later point in time.
+broker service, but the message can be re-encrypted to a final recipient at a later point in time.
 
 #### Minimum required risk mitigations ####
 

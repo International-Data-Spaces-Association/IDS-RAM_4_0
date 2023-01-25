@@ -121,7 +121,7 @@ e.g. the IDS standards and services. See attachment “Operational Agreements, L
 certification, onboarding, operation and usage. See attachment “Operational Agreements. Processes”
 
 Typical roles anticipated in an IDS based data driven continuum are described in more detail. Included
-are Data Provider and Data Owner, Data Consumer, Data user, metadata Broker, Software-, Service- and
+are Data Provider and Data Owner, Data Consumer, Data user, Metadata Broker, Software-, Service- and
 App-Provider, Appstore Provider, and basic roles like ID Provider, Certification Provider, Clearing
 House and Vocabulary Provider.
 

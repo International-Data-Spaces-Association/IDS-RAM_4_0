@@ -16,7 +16,7 @@ In the IDS, each connector instance possesses it's own identity. Each connector 
 
 The IDS Certification is explained in [Section 4.2](../4_2_Certification_Perspective/4_2_Certification_Perspective.md#certification-perspective). It is always conducted for a blueprint of the entire stack consisting of platform and Connector Core Services. Each such certified blueprint can be instantiated multiple times.
 
-The IDS Connector identity serves to uniquely identify one such instance of the Connector Core Services with their IDS Apps on qualified platforms. The identity concept is equally used for other technical components such as Broker, DAPS, ... in the IDS which have their own Core Services (represented by one or multiple containers) running on a comparable platform.
+The IDS Connector identity serves to uniquely identify one such instance of the Connector Core Services with their IDS Apps on qualified platforms. The identity concept is equally used for other technical components such as Broker Services, DAPS, ... in the IDS which have their own Core Services (represented by one or multiple containers) running on a comparable platform.
 
 One component always is characterized by the combination of platform and service instances. As an example, this Connector instance is running several data apps. The identity is comprised of the platform, the Connector Core Services and the deployed Data Apps.
 

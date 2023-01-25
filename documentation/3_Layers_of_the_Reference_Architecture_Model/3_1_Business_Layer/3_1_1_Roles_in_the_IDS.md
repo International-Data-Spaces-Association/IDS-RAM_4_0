@@ -72,7 +72,7 @@ of IDS RAM scope". The table below shows the basic roles defined in the IDS.
 |                 |       **Create**      |       **Own**      | **Certify / Verify** |       **Publish**       |       **Provide**      |      **Consume      |         **Use**         |      **Delete**     |  
 |-----------------|:---------------------:|:------------------:|:--------------------:|:-----------------------:|:----------------------:|:-------------------:|:-----------------------:|:-------------------:|
 | **Connector**   |   Connector Creator   |   Connector Owner  |  Connector Certifier |   Connector Publisher   |   Connector Provider   |  (Out of RAM scope) |      Connector User     |  (Out of RAM scope) |
-| **Data**        |      Data Creator     |     Data Owner     |  (Out of RAM scope)  | Connector / Data Broker |      Data Provider     |    Data Consumer    |        Data User        |     Data Eraser     |
+| **Data**        |      Data Creator     |     Data Owner     |  (Out of RAM scope)  | Connector / Metadata Broker |      Data Provider     |    Data Consumer    |        Data User        |     Data Eraser     |
 | **Vocabulary**  |   Vocabulary Creator  |  Vocabulary Owner  |  (Out of RAM scope)  |   Vocabulary Publisher  |   Vocabulary Provider  | Vocabulary Consumer |     Vocabulary User     |  (Out of RAM scope) |
 | **Identity**    |    Identity Creator   |   Identity Owner   | Identity Verificator |   Identitiy Publisher   | Identity Authenticator |  (Out of RAM scope) |      Identity User      | Identity Eliminator |
 | **App**         |      App Creator      |      App Owner     |     App Certifier    |        App Broker       |      App Provider      |     App Consumer    |         App User        |   App Deleter (?)   |
@@ -96,7 +96,7 @@ more basic role. Their exact scope of comprised basic roles depends on
 the individual business model of the participant as individual business
 models (including pricing models) may be applied as deemed appropriate.
 E.g. a data intermediary (see details below) operating a data hub may
-store data as a trustee, act as a broker or do both -- depending on the
+store data as a trustee, act as a Metadata Broker or do both -- depending on the
 business model. Therefore, as the assignment of basic roles to a
 business role may vary, the assignment is marked with the following
 symbols:
@@ -151,7 +151,7 @@ Payment Model, including the model for reuse of data by third parties.
 
 The **Data Provider** makes data technically available in the IDS for
 being transmitted to a Data Customer on behalf of the Data Owner. To
-submit metadata to a Broker, or exchange data with a Data Consumer, the
+submit metadata to a Metadata Broker, or exchange data with a Data Consumer, the
 Data Provider uses software components that are compliant with the
 Reference Architecture Model of the International Data Spaces. Compliant
 software is available from Software Developers and App Developers.
@@ -223,14 +223,14 @@ pushes data directly to the Data Consumer.
 If the Data Customer searches for a type of data that is provided by
 many suppliers, .e.g. weather data, the Data Consumer can search for
 existing datasets by making an inquiry at a Data Intermediary that
-assumes the basic role of a Data Broker (cf. according section below).
-The Data Intermediary (Data Broker) then provides the required metadata
+assumes the basic role of a Metadata Broker (cf. according section below).
+The Data Intermediary (Metadata Broker) then provides the required metadata
 for the Data Consumer to connect to a Data Provider.
 
 Like a Data Provider, the Data Consumer may log the details of a
 successful (or unsuccessful) data exchange transaction at a Clearing
 House, use Apps to enrich, transform, etc. the data received, or use a
-Data Broker to retrieve data sources.
+Metadata Broker to retrieve data sources.
 
 #### CATEGORY 2: INTERMEDIARY #####
 
@@ -251,7 +251,7 @@ providing metadata, and creating a business model around their services.
 ##### Data Intermediary #####
 
 The Data Intermediary is a platform operator that assumes mainly the
-data-related basic roles Data Provider/Data Consumer and Data Broker.
+data-related basic roles Data Provider/Data Consumer and Metadata Broker.
 
 Assuming the basic role of a **Data Provider** or **Data Consumer**, the
 Data Intermediary is responsible for the execution of the data exchange
@@ -260,16 +260,16 @@ Consumer with data is, hence, the main activity of the Data Provider.
 
 To facilitate a data request from a Data Consumer, the Data Intermediary
 would provide a **Data Broker** with proper metadata about the data.
-Acting as a Data Broker, the Data Intermediary stores and manages
+Acting as a Metadata Broker, the Data Intermediary stores and manages
 information about the data sources available in the International Data
-Spaces. An organization offering data brokering in the International
+Spaces. An organization offering metadata brokering in the International
 Data Spaces may assume other intermediary basic roles at the same time
 (e.g. Service Broker, Clearing House or Identity Authority, see below).
 Assuming further basic roles consequently means additional tasks a
 participant has to execute.
 
-The activities of the Data Broker mainly focus on receiving and
-providing metadata. The Data Broker must provide an interface for Data
+The activities of the Metadata Broker mainly focus on receiving and
+providing metadata. The Metadata Broker must provide an interface for Data
 Creators to send their metadata. The metadata should be stored in an
 internal repository for being queried by Data Consumers in a structured
 manner. While the core of the metadata model must be specified by the
@@ -277,7 +277,7 @@ International Data Spaces (i.e. by the Information Model, see
 [Information Layer](../3_3_Information_Layer/3_3_InformationLayer.md)), a Metadata Broker may extend the metadata model to manage additional
 metadata elements.
 
-After the Data Broker has provided the Data Consumer with the metadata
+After the Metadata Broker has provided the Data Consumer with the metadata
 about a certain Data Provider, it is not involved in the subsequent data
 exchange process.
 
@@ -310,7 +310,7 @@ then operates the service on behalf of the owner.
 To allow other participants in the IDS to retrieve available services,
 Service Intermediaries may also assume the role of the **Service
 Broker**. The Service Broker provides metadata on present services in
-the IDS analogously to the Data Broker.
+the IDS analogously to the Metadata Broker.
 
 ##### APP STORE #####
 
@@ -325,7 +325,7 @@ by the App Creator that can, but does not have to be identical to the
 App Owner (cf. Data Owner/Creator above).
 
 The App Store is first responsible for managing information about apps.
-This is the **Data Broker** role. The App Store should provide
+This is the **Metadata Broker** role. The App Store should provide
 interfaces for publishing and retrieving apps plus corresponding
 metadata. In most cases, the App Store will, secondly, also assume the
 basic role of the **App Provider** as it is common for mobile phone app
@@ -399,7 +399,7 @@ vocabulary to describe the vocabulary repository.
 The Clearing House is an intermediary that provides clearing and
 settlement services for all financial and data exchange transactions. In
 the International Data Spaces, clearing activities are separated from
-broker services, since these activities are technically different from
+any broker services, since these activities are technically different from
 maintaining a metadata repository. As already stated above, it might
 still be possible that the role Clearing House and other intermediary
 roles are assumed by the same organization, as both roles require acting
