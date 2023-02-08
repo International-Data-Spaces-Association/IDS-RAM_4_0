@@ -3,6 +3,7 @@
 ## Change History
 | Version | Date | Changes |
 | --- | --- | --- |
+| Version 1.3 | February 2023 | Updated change certification (based on decisions from the WG Certification Meeting on December 8th, 2022)  |
 | Version 1.2 | August 2022 | Small changes, updated wording |
 | Version 1.1. |  Sept 2020 | made wording consistent, updated change certification, generalized references to accreditation bodies.|
 | Version 1.0 | 2019 | Initial version. |
@@ -221,18 +222,27 @@ The final version of the evaluation report may only be submitted to the Applican
 8. The Applicant may only make the evaluation report available to third parties in full text, stating the date of issue, and pass it on after written approval by the Evaluation Facility.
 
 ### 3.6 Change Certification     
-1. Change Certifications can be carried out at the Applicant\'s request.
-2. During a change certification, the Certification Body must determine whether the certified operational environment or component continues to meet the IDS requirements of the originally certified Trust Level after changes have been made.
+1. After a component has been certified, the applicant must inform the Certification Body (Assurance Level 1-3) and an Evaluation Facility (Assurance Level 2 & 3) of any changes to this component that shall be deployed in an IDS context. 
+2. To start the change certification process, the applicant must report the changes and submit an impact assessment to the Certification Body (Assurance Level 1-3) and Evaluation Facilitity (Assurance Level 2&3)  (based on a provided template).
+2. During a change certification, the Certification Body and Evaluation Facility (for Assurance Level 2&3) must determine whether the certified operational environment or component continues to meet the IDS requirements of the originally certified Trust Level after changes have been made.
 3. For small changes, e.g. bug fixes or security patches for components, the change can be certified with minimal effort in form of a maintenance certification.
 For larger changes, e.g. to management processes of an organization or larger source code modifications for a component, a re-certification must be conducted.
 4. For a maintenance certification, the Evaluation Facility evaluates the documented changes to determine whether they may result in a violation of the certified IDS requirements.
 If that is the case, a deeper evaluation in form of a re-certification is required. The above requirements for evaluation apply accordingly except for § 3.3.
 5. For a re-certification, all above requirements for evaluation apply accordingly.
 The scope of the re-certifications shall be such that the changes to the operational environments or components made since the last evaluation are checked.
-Appropriate sampling shall be used to determine whether the operational environment or component as a whole continues to meet the IDS requirements.
+Appropriate sampling shall be used to determine whether the operational environment or component as a whole continues to meet the IDS requirements. 
+The evaluation is conducted with the methodology of the originally certified Assurance Level.
+By default, the component or operational environment will be assessed using the same certification version (i.e., certification criteria catalog, IDS Reference Testbed version, test specifications, ...) as for the first evaluation. A newer certification version may be requested according to 9.
 6. The Applicant is obliged to cooperate in accordance with § 3.2.
 In particular, it shall prepare documentation of the changes to the technical and organizational measures in accordance with § 3.2 Para. 2.
 7. The Evaluation Facility prepares an evaluation report and sends it to the Certification Body.
+8. After successful evaluation of the report, the Certification Body issues a new certificate for the new version of the component. The original validity of the previous certificate will be maintained for the new certificate, i.e. the validity will not be extended. 
+9. Change Certifications can also be carried out at the Applicant\'s request when a new certification version (i.e., certification criteria catalog, IDS Reference Testbed version, test specifications, ...) is released. 
+Likewise an Applicant may request to use a newer certification version for a re-certification (according to 5.) in case of changes to the component.
+In this case, the change certification will (additionally) focus on the new or changed test cases or criteria. 
+The original validity of the previous certificate will be maintained for the new certificate.
+10. Alternatively to a change certification, the applicant has also the possibility to apply for a renewal certification (see §5.3). This is conducted according to the current certification version (certification criteria and IDS reference testbed version). If the evaluation is successful, the Certification Body issues a new certificate with a validity of two years. 
 
 ## 4. The certification procedure   
 ### §4.1 Contractual basis      
@@ -308,7 +318,7 @@ If the Certification Body does not remedy the objection, this shall be justified
 6. The decision on the opposition, including the statement of grounds, shall be communicated to the Applicant in text form.
 
 ### §4.9 Change certification     
-1. At the Applicant\'s request, the Certification Body may change the certificate by means of a change certification. In the event of an amendment, the certificate shall continue to exist for its original period of validity.
+1. At the Applicant\'s request, the Certification Body may issue a certificate for a new version of the component or with regards to a new certification version by means of a change certification. The original validity of the previous certificate will be maintained for the new certificate.
 2. A change certification can be carried out as a maintenance certification or a re-certification depending on the scope of the changes.
 The provisions on the certification procedure shall apply accordingly to the change certification procedure.
 Section 3.6 shall apply to evaluation within the framework of change certification.
@@ -347,14 +357,14 @@ It consists of the unique name of the Certification Body, the designation IDS-CS
 The Certification Body maintains a list of certificates and publishes the certificate together with the annex during the validity period and for a further ten years on a publicly accessible website.
 The certificates must be easily accessible.
 
-### §5.3 Period of validity. Renewed certification      
+### §5.3 Period of validity. Renewal certification      
 1. The certificate is issued for a maximum period of validity of two years for components and three years for the operational environments of participating organizations.
 The period begins with the date of issue stated in the certificate.
 2. The Applicant may request, before or after the period of validity has expired, that the operational environment or component be reevaluated and re-certified in accordance with these Rules of Procedure.
-3. The rules for the (first) evaluation and certification apply to the renewed evaluation and certification.
+3. The rules for the (first) evaluation and certification apply to the renewal evaluation and certification.
 The Applicant may appoint the Evaluation Facility which carried out the previous evaluation or another Evaluation Facility.
 If the test reports of the previous tests are available and the evaluation object is unchanged with respect to the last evaluation, the evaluation may be reduced to a re-assessment of the evaluation object with respect to developments in the state of the art and the IDS.
-4. The Certification Body may issue the new certificate immediately after expiry of the validity period of the previous certificate if the application for the date is submitted in good time.
+4. The Certification Body may issue the new certificate to either start immediately or to start immediately after expiry of the validity period of the previous certificate if the application for the date is submitted in good time.
 
 ### §5.4 Monitoring     
 1. The operational environment of the participating organization shall be subject to surveillance in the form of an annual surveillance audit during the period of validity of the certificate.
