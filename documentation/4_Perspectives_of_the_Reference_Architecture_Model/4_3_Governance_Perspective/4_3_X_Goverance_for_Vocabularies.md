@@ -1,10 +1,35 @@
-
 ### Governance for Vocabularies
-The need for shared vocabularies, or 'semantic standards', in data sharing networks cannot be overstated. They provide a common language for describing data, allowing different systems and organizations to share and understand the data  effectively. Without semantic standards, data is likely to be inconsistent and difficult to understand, and the added value of sharing that data decreases.
 
-Good standards are living documents in that they change over time. Semantic standards are no different. They pass through life cycle phases from exploration to retirement. Given the development as a continuous process, a semantic standard can pass through different stages of maturity, including such as completeness of documentation or stability of concepts over a certain period. This involves the use of metrics for the maturity and selection of a suitable versioning scheme.
+Data spaces are expected to be built in a decentralized manner and with distributed efforts,
+hence necessary shared vocabularies will also be created by different parties.
+This gives rise to the need of certain governance to ensure the interoperability of the domains involved
+in the respective use cases and solutions.
+For this, two main perspectives need to be considered, which should be supported by the Vocabulary Hub. 
 
-Setting up governance of semantic standards is essential to ensure they are technically sound and reliable, but also to keep them in line with the changing needs of its users. Governance means setting guidelines for creating and maintaining the standards, as well as processes for resolving conflicts or inconsistencies that may arise. 
+1. Technical perspective, aiming at the design of vocabularies as artifacts
+2. Governance perspective, aiming at the application and lifecycle of the vocabularies.
+
+
+The need for shared vocabularies, or 'semantic standards', in data sharing networks cannot be overstated.
+They provide a common language for describing data, allowing different systems and organizations to share
+and understand the data  effectively. Without semantic standards, data is likely to be inconsistent and
+difficult to understand, and the added value of sharing that data decreases.
+
+
+Good standards are living documents in that they change over time. Semantic standards are no different.
+They pass through life cycle phases from exploration to retirement. Given the development as a continuous process,
+a semantic standard can pass through different stages of maturity, including such as completeness of documentation
+or stability of concepts over a certain period. This involves the use of metrics for the maturity and selection
+of a suitable versioning scheme.
+
+Setting up governance of semantic standards is essential to ensure they are technically sound and reliable,
+but also to keep them in line with the changing needs of its users. Governance means setting guidelines for
+creating and maintaining the standards, as well as processes for resolving conflicts or inconsistencies that may arise. 
+
+The governance perspective comprises the following aspects:
+* Lifecycle of vocabularies: Vocabularies can pass through phases from exploration to retirement, which needs to be followed in order to aid users in selecting suitable vocabularies for their solutions.
+* Maturity of vocabularies: Given the development as a continuous process, a vocabulary can pass through different stages of maturity, including such as completeness of documentation or stability of concepts over a certain period. This involves metrics for the maturity and selection of a suitable versioning scheme.
+* Approval of vocabularies: Release of a vocabulary should be controlled by either a decision board and supported by automated model checking where possible.
 
 #### Open vs. centralized governance
 Governance can be set up in varying gradations of openness and centralization. The former promotes a more democratic and participatory process, where decision about the standards are made by a broad range of stakeholders. Governance in this sense is about ensuring that the standards are inclusive and reflective of the needs of all stakeholders.
