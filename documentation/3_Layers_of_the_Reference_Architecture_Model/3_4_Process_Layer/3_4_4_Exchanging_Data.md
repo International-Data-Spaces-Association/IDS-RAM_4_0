@@ -85,7 +85,7 @@ usage.
 this, like ETL (Extract, Transform, Loading) tooling. During this activity, a connector can make
 use of Data Apps, as described in the following section.
 
-![Semantic Interoperability](media/semantic_interop_data-transfer.drawio.png)
+![Semantic Interoperability](media/semantic_interop_data-transfer.png)
 
 ##### Figure 3.4.4.3: Support of Semantic Interoperability and related activites
 
