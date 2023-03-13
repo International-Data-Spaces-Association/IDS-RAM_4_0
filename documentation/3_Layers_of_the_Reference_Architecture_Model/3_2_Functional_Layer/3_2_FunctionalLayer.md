@@ -137,16 +137,20 @@ given in the [Process Layer](../3_4_Process_Layer/3_4_Process_Layer.md).
 
 #### Vocabularies ####
 
-To create and structure metadata, the operator of a Connector may use
-vocabularies. In doing so, an operator of a Connector can use existing
-vocabularies, create own vocabularies, or work with other operators on
-new vocabularies provided by vocabulary hubs. Vocabulary hubs are
-central servers that store vocabularies and enable collaboration.
-Collaboration may comprise search, selection, matching, updating,
-requests for changes, version management, deletion, duplicate
-identification, and unused vocabularies. Vocabulary hubs need to be
-managed. More information about vocabularies is given in the
-[Information Layer](../3_3_Information_Layer/3_3_InformationLayer.md).
+To create and structure metadata, the data provider can use vocabularies to define the semantics of the various elements in the data assets.
+The vocabulary in turn can be stored in a Vocabulary Hub that is accessible to all users of a data space in an agreed format.
+With vocabularies the data consumer has possibility to easily understand of the semantics of the various data elements in an offered data asset and verify the data asset afterwards.
+This universal location (Vocabulary Hub) is an IDS component (centralized server or decentralized network), that stores vocabularies and enables collaboration between participants to harmonise single vocabularies and create common set of harmonised vocabulary standards for the given data space.
+A set of functional requirements for this component is defined further:
+
+* The technical interface between the Vocabulary Hub and the data space infrastructure shall be based on the IDS Connector.
+* The Vocabulary Hub shall have a browser-based user interface and API, which allows to visualize and to browsed vocabularies in a human user-friendly way.
+* The Vocabulary Hub shall provide creating, selection, editing (inserting, updating, changing, deleting, matching, version management), read- and search functionalities and support queries with appropriate means, e.g. SPARQL.
+* Vocabularies expressed in RDF shall by syntactically compatible with OWL in order to enable processing with more expressive semantics
+* User management is required for vocabulary hubs to avoid abuse by editing.
+* Language can be specified for a vocabulary, and multi-lingual specification of classes is possible. Language becomes part of the metadata and can be used as a filter.
+* The Vocabulary Hub can provide an API that returns ontology mappings for a given ontology. Mappings can be used for connectors to automatically convert domain specific data into data standard formats.
+* The Vocabulary Hub can enable collaborative development of domain specific standard and support for mapping differing positions into a new meta concept as common standard.
 
 ### Standardized Interoperability ###
 
