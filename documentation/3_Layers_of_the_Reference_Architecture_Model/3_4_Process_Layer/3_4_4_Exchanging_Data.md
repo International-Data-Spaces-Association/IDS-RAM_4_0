@@ -65,23 +65,21 @@ to switch from data pulling to data pushing easily. The sequence is depicted in 
 
 #### Semantic Interoperability
 
-Semantic Interoperability is crucial for Data Exchange in Data Spaces (see [section 2.5](../../2_Context_of_the_International_Data_Spaces/2_5_From_Data_To_Information_Do_You_Understand.md)). This starts dhring
+Semantic Interoperability is crucial for Data Exchange in Data Spaces (see [section 2.5](../../2_Context_of_the_International_Data_Spaces/2_5_From_Data_To_Information_Do_You_Understand.md)). This starts during
 Design-time, as described in the [Data Offering process](./3_4_2_Data_Offering.md#data-offering),
 and in the process of [publishing](./3_4_2_Data_Offering.md#data-provider-registering-self-descriptions)
 and [quering](./3_4_2_Data_Offering.md#data-consumer-searching-for-self-descriptions) self-descriptions.
-In the process of Data Exchange the Vocabulary Hub and the Vocabularies are queried and used for semantic
-interoperability.
+In the process of Data Exchange the Vocabulary Hub and the Vocabularies are queried and used for semantic interoperability.
 
 The following steps are followed:
 
-0. During Design Time, the data provider may publish a vocabulary or use an already published vocabulary and reference to it. Details can be found in section[Data Offering](./3_4_2_Data_Offering.md#data-offering)
+0. During Design Time, the data provider may publish a vocabulary or use an already published vocabulary and reference it. Details can be found in section[Data Offering](./3_4_2_Data_Offering.md#data-offering)
 1. Prior to the invokation of a data operation (in a synchronous or asynchronous way) by the data consumer one or multiple vocabularies are loaded by the data consumers connector.
 2. The data consumers connector validates the schema with appropriate measures, depending on the provided schema.
 3. Based on the vocabularies the data consumer can implement required interfaces to conduct the
 data transfer as described in the sections above.
 4. During the data transfer, respectivly after the data was transfered, the data can be validated
-against the given vocabularies. In case of invalid data the consumers connector may decline the data
-usage.
+against the given vocabularies. In case of invalid data the consumers connector may not accept the data.
 5. Subsequently to the data transfer the data might require some additonal treatment to make use of
 this, like ETL (Extract, Transform, Loading) tooling. During this activity, a connector can make
 use of Data Apps, as described in the following section.

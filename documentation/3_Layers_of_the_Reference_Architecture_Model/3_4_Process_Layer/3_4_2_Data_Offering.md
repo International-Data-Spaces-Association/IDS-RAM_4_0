@@ -8,7 +8,7 @@ The IDS define manners to tackle these challenges by specifying a technology-agn
 
 Apart from such edge cases, the Data Provider has the interest to correctly and comprehensively describe its data assets to maximize the amount of interested Data Consumers. It further wants to stick to commonly accepted and understood standards to simplify its discovery for potential business partners. The IDS Information Model provides the schema for Self-Descriptions and their basic building blocks, like for instance Usage Contracts, endpoint descriptions, or the internal structure of data assets.
 
-During the creation of the a Data Offering the Data Provider may reuse, as descibed above, existing standards for the (semantic) description of the the data itself or create a (semantic) description of the data. These Vocabualries can be published to a [Vocabulary Hub](../3_5_System_Layer/3_5_6_Vocabulary_Hub.md) and linked to the self-description (see section on [domain-specific vocabularies and application profiles](../3_3_Information_Layer/3_3_InformationLayer.md#relation-to-domain-specific-vocabularies)). This **Design-time** step supports the semantic interoperbility in Data Spaces. While semantic models for the description of data in data spaces are in general a good practice, Vocabularies can also make use of other concepts.
+During the creation of a Data Offering the Data Provider may reuse, as described above, existing standards for the (semantic) description of the the data itself or create a (semantic) description of the data. These Vocabualries can be published to a [Vocabulary Hub](../3_5_System_Layer/3_5_6_Vocabulary_Hub.md) and linked to the self-description (see section on [domain-specific vocabularies and application profiles](../3_3_Information_Layer/3_3_InformationLayer.md#relation-to-domain-specific-vocabularies)). This **Design-time** step supports the semantic interoperability in Data Spaces. While semantic models for the description of data in data spaces are in general a good practice, Vocabularies can also make use of other concepts.
 
 ![PublishVocabulary](./media/register-atvocabulary-hub-activity.png)
 ##### Figure 3.4.2.1: Register Vocabulary at IDS Vocabulary Hub
@@ -51,14 +51,14 @@ The IDS Metadata Broker then returns the query result to the Data Consumer. The 
 ![Query Self-Descriptions](media/query-at-broker-activity.png)
 ##### Figure 3.4.2.3: Query IDS Metadata Broker
 
-The IDS Metadata Broker does not serve Vocabularies but provides a reference to a vocabulary and, if required, a reference to a Vocabulary Hub, included in the Self Description during **Runtime** when a connector is searching for a data provider or a data set. The Data Consumers connector may verify if the data is provided by using a vocabulary that is consumable by the connector, when quering an IDS Metadata Broker or when quering the Self-Description directly from a Data Providers Connector. If the data is not provided in a consumable way, the connector may:
+The IDS Metadata Broker does not serve Vocabularies but provides a reference to a vocabulary and, if required, a reference to a Vocabulary Hub included in the Self Description during **Runtime** when a connector is searching for a data provider or a data set. The Data Consumers connector may verify if the data is provided by using a vocabulary that is consumable by the connector, when quering an IDS Metadata Broker or when quering the Self-Description directly from a Data Providers Connector. If the data is not provided in a consumable way, the connector may:
 
-- request the data in a different format from the data provider or search and invoke another service that can conduct a transformation of the data accoring to another data scheme,
-- implement the required strucutres (interfaces) to consume the data. As this could be a manual task to implement the required interfaces or code fragments, this could be a time consuming task,
+- request the data in a different format from the data provider or search and invoke another service that can conduct a transformation of the data according to another data scheme,
+- implement the required structures (interfaces) to consume the data. As this could be a manual task to implement the required interfaces or code fragments, this could be a time consuming task,
 - or choose a different data provider, which provides the required data in a schema and format that is usable by the data consumer.
 
 When a Vocabulary related to the data is provided by Data Provider, the Data Consumer may
-validate the provided schema by reasonable means before initiating the contract negtiation
+validate the provided schema by reasonable means before initiating the contract negotiation
 sequence.
 
 #### Crawling Self-Descriptions ####
