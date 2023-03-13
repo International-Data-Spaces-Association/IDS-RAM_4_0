@@ -12,4 +12,4 @@ This means there is often a limit to the level of semantic interoperability that
 
 In any case, governance has to be put in place to make sure that a semantic standard serves the needs of the community as best as possible and will remain doing so. How these governance processes can be organized is discussed in section 4.
 
-From a technology perspective, achieving semantic interoperability requires the use semantic technologies to create Linked Data. Semantic technologies such as OWL, RDF and SKOS allow us to enrich data with meaning by creating links to other datasets and vocabularies, enabling automatic reasoning over data through rules. The role of vocabularies and other semantic technologies in IDS is discussed in section 3. 
+From a technology perspective, achieving semantic interoperability requires the use semantic technologies to create Linked Data. Semantic technologies such as RDF, SHACL, OWL and SKOS allow us to enrich data with meaning by creating links to other datasets and vocabularies, enabling automatic reasoning over data through rules. The role of vocabularies and other semantic technologies in IDS is discussed in section 3.
