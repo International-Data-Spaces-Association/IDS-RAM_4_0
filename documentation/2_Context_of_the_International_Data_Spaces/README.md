@@ -12,7 +12,7 @@
 
 [2.4 Data Exchange and Data Sharing](./2_4_Data_Exchange_and_Data_Sharing.md#data-exchange-and-data-sharing)
 
-[2.5 From Data To Information: Do You Understand?](./2_5_From_Data_To_Information_Do_You_Understand.md)
+[2.5 Meaningful data](./2_5_Meaningful_data.md)
 
 [2.6 Industrial Cloud Platforms](./2_6_Industrial_Cloud_Platforms.md#industrial-cloud-platforms)
 
