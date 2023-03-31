@@ -20,6 +20,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated the Functional Layer with addtional requirements towards semantic interoperability
 - Updated section numbering in section 2 and section 4
 
+## 4.2.0 ##
+
+### Added ###
+
+- Adding a detailled description for Self Descriptions at the IDS Metadata Broker
+
+### Changed ###
+
+- Updating figure 3.5.2.2 according to the text to improve readability and put it in line with the Dataspace Protocol
+
+
 ### Removed ###
 
 - none
@@ -31,13 +42,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed ###
 
 - Fixing links, Figure numbering and typos.
+- Adding missing label in figure 1.3.1
 
+## 4.1.2 ##
+
+### Added ###
+
+- none
+
+### Changed ###
+
+- Editorial update: Harmonizing wording for the Metadata Broker through the whole document
+
+
+### Removed ###
+
+- none
+
+### Deprecated ###
+
+- none
+
+### Fixed ###
+
+- Misspelling of Metadata Broker in the RAM. Is now harmonized.
+
+## 4.1.1 ##
+
+### Added ###
+
+- none
+
+### Changed ###
+
+- Updating figure 1.2
+
+
+### Removed ###
+
+- none
+
+### Deprecated ###
+
+- none
+
+### Fixed ###
+
+- none
 
 ### Security ###
 
 - none
 
 ## Version 4.1 ##
+=======
 
 ### Added ###
 
@@ -62,7 +120,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed ###
 
 - Fixing links, Figure numbering and typos.
-
 
 ### Security ###
 

@@ -1,6 +1,6 @@
 # IDS RAM 4 #
 
-Welcome to the IDS RAM 4 repository of the [IDSA](../../../idsa). 
+Welcome to the IDS RAM 4 repository of the [IDSA](../../../idsa).
 
 ## Overview ##
 
@@ -11,15 +11,15 @@ Please consider the following information:
 - [License](./LICENSE.md),
 - [Changelog](./CHANGELOG.md),
 
-and check the open [issues](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues) 
+and check the open [issues](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/issues)
 and [pull requests](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/pulls).
 
-The [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G) provides additional 
+The [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G) provides additional
 information to the IDS RAM.
 
 ## Scope ##
 
-The IDS RAM is complemented with additional documents and repositories. Most relevant in this 
+The IDS RAM is complemented with additional documents and repositories. Most relevant in this
 context is the [IDS-G](https://github.com/International-Data-Spaces-Association/IDS-G).
 
 In general, the IDS RAM contains the conceptual level including technology-agnostic specifications.
@@ -50,7 +50,8 @@ The IDS-G contains specific details on specifications, e.g. APIs and their descr
 
 ## Previous Versions ##
 
-- [IDS-RAM 4.1 - current -](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/)
+- [IDS-RAM 4.2 - current -](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/)
+- [IDS-RAM 4.1](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/releases/tag/v.4.1.2)
 - [IDS-RAM 4.0](https://github.com/International-Data-Spaces-Association/IDS-RAM_4_0/releases/tag/v.4.0.0)
 - [IDS RAM 3.0](https://internationaldataspaces.org/download/16630/)
 - [IDS RAM 2.0](https://internationaldataspaces.org/download/16641/)

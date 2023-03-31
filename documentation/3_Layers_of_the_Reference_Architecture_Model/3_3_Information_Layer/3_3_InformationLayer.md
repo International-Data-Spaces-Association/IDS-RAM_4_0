@@ -72,7 +72,7 @@ specification of concepts envisaged by the Conceptual Representation,
 residing at the persistent namespace URI <https://w3id.org/idsa/core/> according to best practices for publishing linked data[^bp-ld].
 Furthermore, it details and formally defines entities of the
 International Data Spaces in order to be able to share, search for, and
-reason upon the structured metadata describing these entities. The IDS Vocabulary is defined using RDF Schema[^rdfs] and the OWL Web Ontology Language[^owl]; additionally, descriptions of Digital Resources can be validated against SHACL shapes[^shacl] that express syntactic and semantic conditions. Queries against, e.g., Data Resources listed in the Data Catalogue of a Connector or Broker, or against Software Resources available from an App Store, can be formulated in query languages such as SPARQL[^sparql].  Thus, the
+reason upon the structured metadata describing these entities. The IDS Vocabulary is defined using RDF Schema[^rdfs] and the OWL Web Ontology Language[^owl]; additionally, descriptions of Digital Resources can be validated against SHACL shapes[^shacl] that express syntactic and semantic conditions. Queries against, e.g., Data Resources listed in the Data Catalogue of a Connector or Metadata Broker, or against Software Resources available from an App Store, can be formulated in query languages such as SPARQL[^sparql].  Thus, the
 Declarative Representation comprises a complete referential model allowing the derivation of a
 number of Programmatic Representations. The IDS Vocabulary is typically
 used and instantiated by knowledge engineers, ontology experts, or
