@@ -32,7 +32,7 @@ be connected to the International Data Spaces.
 
 ![ International Data Spaces connecting different cloud
 platforms](../media/image17.png)
-##### Figure 2.11.2: International Data Spaces connecting different cloud platforms
+##### Figure 2.12.2: International Data Spaces connecting different cloud platforms
 
 With this integrating ambition, the International Data Spaces initiative
 positions itself in the context of cognate initiatives on both national

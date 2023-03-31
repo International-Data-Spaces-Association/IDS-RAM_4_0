@@ -62,6 +62,8 @@
 
 [4.3.10.2 Minimum required risk mitigations](./4_3_11_Privacy_Perspective.md#minimum-required-risk-mitigations)
 
+[4.3.11 Governance for Vocabularies](./4_3_12_Goverance_for_Vocabularies.md)
+
 ## Files ##
 
 - [4_3_Governance_Perspective.md](./4_3_Governance_Perspective.md)
@@ -75,3 +77,4 @@
 - [4_3_9_data_spaces_instances.md](./4_3_9_data_spaces_instances.md)
 - [4_3_10_IDS_RuleBook.md](./4_3_10_IDS_RuleBook.md)
 - [4_3_11_Privacy_Perspective.md](./4_3_11_Privacy_Perspective.md)
+- [Goverance_for_Vocabularies.md](./4_3_12_Goverance_for_Vocabularies.md)

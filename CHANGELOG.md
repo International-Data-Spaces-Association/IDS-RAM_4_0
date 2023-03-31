@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Version 4.3 ##
+
+### Added ###
+
+- Section on semantic interoperability in the context of the RAM
+- Added relationship to Vocabularies in the IDS Information Layer
+- Added processes for semantic Interoperability in the Process Layer, introducing Design Time and Runtime for Data Offerings
+- Adding section on Governance for Vocabularies in the Governance Perspective
+
+### Changed ###
+
+- Updated Business Layer and IDS Role Model with new interaction with the Vocabulary Provider
+- Updated the Functional Layer with addtional requirements towards semantic interoperability
+- Updated section numbering in section 2 and section 4
+
 ## 4.2.0 ##
 
 ### Added ###
@@ -26,8 +41,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed ###
 
+- Fixing links, Figure numbering and typos.
 - Adding missing label in figure 1.3.1
-- 
 
 ## 4.1.2 ##
 
@@ -75,12 +90,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - none
 
-
 ### Security ###
 
 - none
 
-## Version 4.1
+## Version 4.1 ##
+=======
 
 ### Added ###
 
@@ -106,12 +121,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fixing links, Figure numbering and typos.
 
-
 ### Security ###
 
 - none
 
-## Version 4.0
+## Version 4.0 ##
 
 ### Added ###
 
@@ -124,7 +138,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Section 4.3.11: Adding Privacy Perspective
 - Added structural elements in README files
 
-### Changed
+### Changed ###
 
 - Section 1.1: Editorial Changess
 - Section 1.2.: Editorial Changes
@@ -180,7 +194,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed ###
 
 - none
-
 
 ### Security ###
 

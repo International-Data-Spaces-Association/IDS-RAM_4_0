@@ -19,14 +19,15 @@
   * [2.2 Data Sovereignty as a Key Capability](2_Context_of_the_International_Data_Spaces/2_2_Data_Sovereignty_as_a_key_capability.md)
   * [2.3 Data as an Economic Good](2_Context_of_the_International_Data_Spaces/2_3_Data_as_an_economic_good.md)
   * [2.4 Data Exchange and Data Sharing](2_Context_of_the_International_Data_Spaces/2_4_Data_Exchange_and_Data_Sharing.md)
-  * [2.5 Industrial Cloud Platforms](2_Context_of_the_International_Data_Spaces/2_5_Industrial_Cloud_Platforms.md)
-  * [2.6 Big Data and Artificial Intelligence](2_Context_of_the_International_Data_Spaces/2_6_Big_Data_and_Artificial_Intelligence.md)
-  * [2.7 The Internet of Things and the Industrial Internet of Things](2_Context_of_the_International_Data_Spaces/2_7_The_Internet_of_Things_and_the_Industrial_Internet_of_Things.md)
-  * [2.8 Blockchain](2_Context_of_the_International_Data_Spaces/2_8_Blockchain.md)
-  * [2.9 Towards legal interoperability: federated frameworks for data sharing agreements and terms-of-use](2_Context_of_the_International_Data_Spaces/2_9_Towards_legal_interoperability_federated_frameworks_for_data_sharing_agreements.md)
-  * [2.10 General Data Protection Regulation](2_Context_of_the_International_Data_Spaces/2_10_General_Data_Protection_Regulation.md)
-  * [2.11 Contribution of the International Data Spaces to Industry 4.0 and the Data Economy](2_Context_of_the_International_Data_Spaces/2_11_Contribution_of_the_IDS_to_Industry_4_0_and_the_Data_Economy.md)
-  * [2.12 Privacy in the connected world](2_Context_of_the_International_Data_Spaces/2_12_Privacy_in_the_Connected_World.md)
+  * [2.5 Meaningful data](./2_Context_of_the_International_Data_Spaces/2_5_Meaningful_data.md)
+  * [2.6 Industrial Cloud Platforms](2_Context_of_the_International_Data_Spaces/2_5_Industrial_Cloud_Platforms.md)
+  * [2.7 Big Data and Artificial Intelligence](2_Context_of_the_International_Data_Spaces/2_6_Big_Data_and_Artificial_Intelligence.md)
+  * [2.8 The Internet of Things and the Industrial Internet of Things](2_Context_of_the_International_Data_Spaces/2_7_The_Internet_of_Things_and_the_Industrial_Internet_of_Things.md)
+  * [2.9 Blockchain](2_Context_of_the_International_Data_Spaces/2_8_Blockchain.md)
+  * [2.10 Towards legal interoperability: federated frameworks for data sharing agreements and terms-of-use](2_Context_of_the_International_Data_Spaces/2_9_Towards_legal_interoperability_federated_frameworks_for_data_sharing_agreements.md)
+  * [2.11 General Data Protection Regulation](2_Context_of_the_International_Data_Spaces/2_10_General_Data_Protection_Regulation.md)
+  * [2.12 Contribution of the International Data Spaces to Industry 4.0 and the Data Economy](2_Context_of_the_International_Data_Spaces/2_11_Contribution_of_the_IDS_to_Industry_4_0_and_the_Data_Economy.md)
+  * [2.13 Privacy in the connected world](2_Context_of_the_International_Data_Spaces/2_12_Privacy_in_the_Connected_World.md)
 
 ## Layers of the Reference Architecture Model
 
@@ -80,3 +81,4 @@
     * [4.3.8 Data Space Instances](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_9_data_spaces_instances.md)
     * [4.3.9 IDS Rulebook](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_10_IDS_RuleBook.md)
     * [4.3.10 Privacy Perspective](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_11_Privacy_Perspective.md)
+    * [4.3.11 Governance for Vocabularies](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_12_Goverance_for_Vocabularies.md)

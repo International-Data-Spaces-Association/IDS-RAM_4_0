@@ -59,4 +59,4 @@ extraction (see Figure below).
 
 ![ General architectural patterns for data exchange and data
 sharing](../media/image15.png)
-##### Figure 2.8 : General architectural patterns for data exchange and data sharing
+##### Figure 2.9 : General architectural patterns for data exchange and data sharing
