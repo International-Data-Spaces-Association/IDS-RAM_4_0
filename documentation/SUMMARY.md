@@ -81,3 +81,4 @@
     * [4.3.8 Data Space Instances](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_9_data_spaces_instances.md)
     * [4.3.9 IDS Rulebook](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_10_IDS_RuleBook.md)
     * [4.3.10 Privacy Perspective](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_11_Privacy_Perspective.md)
+    * [4.3.11 Governance for Vocabularies](./4_Perspectives_of_the_Reference_Architecture_Model/4_3_Governance_Perspective/4_3_12_Goverance_for_Vocabularies.md)
