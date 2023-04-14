@@ -1,9 +1,10 @@
-## Towards legal interoperability: federated frameworks for data sharing agreements and terms-of-use ##
+## Federated frameworks for data sharing agreements and terms of use ##
 
 IDS provides a federated data-sharing environment that poses strong
 requirements with regard to interoperability on each of the levels
-distinguished in the new European Interoperability Framework (as
-developed by the European Commission ); i.e., legal, organizational,
+distinguished in the new
+[European Interoperability Framework](https://joinup.ec.europa.eu/collection/nifo-national-interoperability-framework-observatory/european-interoperability-framework-detail)
+(as developed by the European Commission ); i.e., legal, organizational,
 semantic and technical interoperability, under an overarching integrated
 governance approach.
 
