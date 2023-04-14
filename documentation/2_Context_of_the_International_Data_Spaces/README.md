@@ -22,7 +22,7 @@
 
 [2.9 Blockchain](./2_9_Blockchain.md#blockchain)
 
-[2.10 Towards legal interoperability: federated frameworks for data sharing agreements and terms-of-use](./2_10_Towards_legal_interoperability_federated_frameworks_for_data_sharing_agreements.md)
+[2.10 Towards legal interoperability: federated frameworks for data sharing agreements and terms of use](./2_10_Towards_legal_interoperability_federated_frameworks_for_data_sharing_agreements.md)
 
 [2.11 General Data Protection Regulation](./2_11_General_Data_Protection_Regulation.md#general-data-protection-regulation)
 
