@@ -24,7 +24,7 @@
   * [2.7 Big Data and Artificial Intelligence](2_Context_of_the_International_Data_Spaces/2_6_Big_Data_and_Artificial_Intelligence.md)
   * [2.8 The Internet of Things and the Industrial Internet of Things](2_Context_of_the_International_Data_Spaces/2_7_The_Internet_of_Things_and_the_Industrial_Internet_of_Things.md)
   * [2.9 Blockchain](2_Context_of_the_International_Data_Spaces/2_8_Blockchain.md)
-  * [2.10 Towards legal interoperability: federated frameworks for data sharing agreements and terms-of-use](2_Context_of_the_International_Data_Spaces/2_9_Towards_legal_interoperability_federated_frameworks_for_data_sharing_agreements.md)
+  * [2.10 Federated frameworks for data sharing agreements and terms of use](./2_Context_of_the_International_Data_Spaces/2_10_Towards_legal_interoperability_federated_frameworks_for_data_sharing_agreements.md)
   * [2.11 General Data Protection Regulation](2_Context_of_the_International_Data_Spaces/2_10_General_Data_Protection_Regulation.md)
   * [2.12 Contribution of the International Data Spaces to Industry 4.0 and the Data Economy](2_Context_of_the_International_Data_Spaces/2_11_Contribution_of_the_IDS_to_Industry_4_0_and_the_Data_Economy.md)
   * [2.13 Privacy in the connected world](2_Context_of_the_International_Data_Spaces/2_12_Privacy_in_the_Connected_World.md)
