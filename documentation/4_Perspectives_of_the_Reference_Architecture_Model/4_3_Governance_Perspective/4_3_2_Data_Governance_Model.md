@@ -30,8 +30,8 @@ what IDS components are involved.
 
 **DG/DM activities**
 
-- Use data in compliance with usage constraints}
-- Search for existing datasets by making an inquiry at a ß Broker Service Provider
+- Use data in compliance with usage constraints
+- Search for existing datasets by making an inquiry at Broker Service Provider
 - Nominate Data Users (if needed)
 - Receive information about data transaction from Clearing House
 - Monitor policy enforcement
