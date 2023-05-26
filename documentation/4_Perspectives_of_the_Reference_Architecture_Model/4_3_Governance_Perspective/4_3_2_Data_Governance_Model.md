@@ -30,8 +30,8 @@ what IDS components are involved.
 
 **DG/DM activities**
 
-- Use data in compliance with usage constraints}
-- Search for existing datasets by making an inquiry at a ß Broker Service Provider
+- Use data in compliance with usage constraints
+- Search for existing datasets by making an inquiry at Broker Service Provider
 - Nominate Data Users (if needed)
 - Receive information about data transaction from Clearing House
 - Monitor policy enforcement
@@ -90,12 +90,12 @@ processing, and use of data. While governance activities set the overall
 directive of the decision-making system, data management comprises three
 groups of activities with regard to the creation, processing, and use of
 data. In the IDS context, data governance comprises also usage rights of
-data shared and exchanged within the IDS ecosystem. The management of
-metadata specifies data about data and comprises both syntactic,
-semantic and pragmatic information. This is of particular importance in
-distributed system environments that do not rely on a central instance
-for data storage, but instead allow self-organization of different
-heterogeneous databases. Additionally, data lifecycle management is
+data shared and exchanged within the IDS ecosystem. The management of 
+metadata involves providing descriptive information about the data itself and
+comprises both syntactic, semantic and pragmatic information. This
+is of particular importance in distributed system environments that do not 
+rely on a central instance for data storage, but instead allow self-organization
+of different heterogeneous databases. Additionally, data lifecycle management is
 concerned with the creation and capturing of data, including data
 processing, enrichment, storage, distribution, and use.
 

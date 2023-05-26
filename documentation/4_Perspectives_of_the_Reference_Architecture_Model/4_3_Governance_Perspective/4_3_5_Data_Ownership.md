@@ -6,7 +6,8 @@ construct. It is accepted that moving a good from one place to another
 and changing possession of the good does not necessarily have an impact
 on the property rights. Regarding the specific concept of the
 International Data Spaces, it is necessary to take into account that the
-Data Owner and Data Provider may not be identical (see Chapter 3.1.1).
+Data Owner and Data Provider may not be identical
+(see [Section 3.1.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/3_1_1_Roles_in_the_IDS.md)).
 
 From a legal perspective, there is no ownership regarding data, as data
 is an intangible good. With the Free Flow of Data
@@ -22,13 +23,14 @@ The International Data Spaces makes sure the need of a Data Provider or
 a Data Producer is comprehensively addressed by providing a secure and
 trusted platform for authorization and authentication within a
 decentralized architecture. This allows Data Providers as well as
-Service Providers to be identified and controlled by an Identity
-Provider (see Chapter 3.1.1). Decentralized data exchange by means of
+Service Providers to be identified and controlled by an Identity Provider 
+(see [Section 3.1.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/3_1_1_Roles_in_the_IDS.md#basic-roles-in-the-international-data-space)).
+Decentralized data exchange by means of
 Connectors, in contrast to other architectures of data networks (e.g.,
 data lakes or cloud services), ensures full data sovereignty. In
 addition to these self-control mechanisms, the architecture allows
-logging of data transfer information at a Clearing House (see Chapter
-3.2.5).
+logging of data transfer information at a Clearing House
+(see [Section 3.1.1](../../3_Layers_of_the_Reference_Architecture_Model/3_1_Business_Layer/3_1_1_Roles_in_the_IDS.md#clearing-house)).
 
 As the need for Data Sovereignty is obvious, but the term of ownership
 is not defined for data, the term Data Sovereign indicates the
