@@ -6,7 +6,7 @@ construct. It is accepted that moving a good from one place to another
 and changing possession of the good does not necessarily have an impact
 on the property rights. Regarding the specific concept of the
 International Data Spaces, it is necessary to take into account that the
-Data Owner and Data Provider may not be identical (see Chapter 3.1.1).
+Data Owner and Data Provider may not be identical (see [Section 3.1.1](../../3_Layers_of_the_Reference_Architecture_Model/3-1-business-layer/3_1_1_roles_in_the_ids.md)).
 
 From a legal perspective, there is no ownership regarding data, as data
 is an intangible good. With the Free Flow of Data
