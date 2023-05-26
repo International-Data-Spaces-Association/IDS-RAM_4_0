@@ -28,7 +28,7 @@ cycle. IDS objects that participants in the IDS have to handle are:
 5.  **App**: applications that can be deployed inside the connector.
     Apps facilitate data processing workflows. They may be certified by
     a Certification Body, following the certification procedures defined
-    in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective/README.md).
+    in the [Certification Perspective](../../4_Perspectives_of_the_Reference_Architecture_Model/4_2_Certification_Perspective.md).
 
 6.  **Transaction**: comprises all activities performed in the course of
     a data exchange
