@@ -31,7 +31,7 @@ The IDS Scheme ensures data sovereignty for data owners making data available fo
 or shared. It thereby constitutes the basis for developing and offering smart services and for
 establishing innovative business processes.
 
-![Overview IDS enabled ecosystems](./media/Overview_IDS_enabled_ecosystems.png)
+![Overview IDS enabled ecosystems](media/Overview_IDS_enabled_ecosystems.png)
 
 ##### Figure4.3.9: Overview IDS enabled ecosystems
 
