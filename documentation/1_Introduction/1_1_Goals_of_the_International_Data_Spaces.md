@@ -51,7 +51,7 @@ development of products and solutions for the market (see Figure below):
     facilities.
 
 ![ Three types of activities of the International Data
-Spaces](../media/image10.png)
+Spaces](media/image10.png)
 
 ##### Figure 1.1 : Three types of activities of the International Data Spaces
 

@@ -13,8 +13,7 @@ relation _provides software_. Likewise, the Identity Provider
 would be connected to all other roles with the relation _provides
 identity_.
 
-![ Roles and interactions in the International Data
-Spaces](./media/image18.png)
+![ Roles and interactions in the International Data Spaces](media/image18.png)
 ##### Figure 3.1.2: Roles and interactions in the International Data Spaces
 
 This shows only the basic interactions taking place between the different

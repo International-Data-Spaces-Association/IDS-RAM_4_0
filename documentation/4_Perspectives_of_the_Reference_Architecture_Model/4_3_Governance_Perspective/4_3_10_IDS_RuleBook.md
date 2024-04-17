@@ -97,8 +97,11 @@ and from what commitments and laws the dedicated data exchange can benefit
 
 5. Commercial assumptions: This Rulebook defines not a commercial business model, but it is
 enabling several ones. Commercial Agreements are not part of the Rulebook, but we make some
-commercial assumptions à Essential services (low profit), base services (enabling functionality)
-cash cow services on top of that. à Commercial agreements will be done separately.
+commercial assumptions
+
+   - Essential services (low profit), base services (enabling functionality)
+cash cow services on top of that.
+   - Commercial agreements will be done separately.
 
 6. Liaisons agreements: The data sovereignty community based on IDS naturally collaborates with
 other ecosystems like ENX or certifications in automotive, Plattform Industrie 4.0, GAIA-X etc.

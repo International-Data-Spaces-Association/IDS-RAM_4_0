@@ -58,5 +58,5 @@ Data Lakes focus on the integration of data for the purpose of knowledge
 extraction (see Figure below).
 
 ![ General architectural patterns for data exchange and data
-sharing](../media/image15.png)
+sharing](media/image15.png)
 ##### Figure 2.9 : General architectural patterns for data exchange and data sharing

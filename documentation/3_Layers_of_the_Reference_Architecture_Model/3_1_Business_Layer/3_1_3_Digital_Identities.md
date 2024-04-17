@@ -12,8 +12,7 @@ Provisioning Service (DAPS), and the Participant Information Service (ParIS).
 The figure below illustrates the roles and interactions required for issuing a digital
 identity in the IDS.
 
-![ Interactions required for issuing a digital identity in the
-IDS](./media/DigitalIdentities.png)
+![Interactions required for issuing a digital identity in the IDS](media/DigitalIdentities.png)
 
 ##### Figure 3.1.3: Interactions required for issuing a digital identity in the IDS
 

@@ -21,7 +21,7 @@ Further endpoints, besides the ones listed above, are the config endpoint and th
 
 The IDS App Store is a secure platform for distributing IDS Apps. An IDS App Store consists of a registry for available IDS Apps in this App Store. It also features the capabilty to search for IDS Apps using different search options (e.g. by functional or non-functional properties, pricing model, certification status, community ratings, etc.). Therefore, an App Store must support operations for App registration, publication, maintenance, and query, as well as operations for the provisioning of an App to a connector to App Users as depicted in Figure [3.5.3.1](#figure-3531-app-store-architecture). These basic operations can be optionally complemented by additional services, e.g. billing or support activities. The processes of publishing, finding and using IDS Apps are documented in detail in Section [3.4.5](../3_4_Process_Layer/3_4_5_Publishing_and_using_Data_Apps.md#publishing-and-using-ids-apps).
 
-![AppStoreArchitecture](./media/app-store-architecture.png)
+![AppStoreArchitecture](media/app-store-architecture.png)
 ##### Figure 3.5.3.1: App Store Architecture
 
 An IDS App Store also consists of an IDS Connector in order to communicate with the Connectors of App Providers and App Users within the Data Space. As a consequence, each instance of an App Store must be compliant to the Connector Certification criteria an provide the functionalities and endpoints of general Connectors together with the above-mentioned operations (e.g. provide a Self-Description, have a valid IDS Identity and use a valid DAT in its communication).

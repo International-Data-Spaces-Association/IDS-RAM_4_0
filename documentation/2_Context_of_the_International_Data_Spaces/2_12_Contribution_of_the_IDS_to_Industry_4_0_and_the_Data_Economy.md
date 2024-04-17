@@ -16,7 +16,7 @@ secure data supply chains from data source to data use, while at the
 same time making sure data sovereignty is guaranteed for data owners.
 
 ![ Typical enterprise architecture
-stack](../media/image16.png)
+stack](media/image16.png)
 ##### Figure 2.11.1: Typical enterprise architecture stack
 
 In broadening the perspective from an individual use case scenario to a
@@ -31,7 +31,7 @@ clouds, on-premises applications and individual, connected devices can
 be connected to the International Data Spaces.
 
 ![ International Data Spaces connecting different cloud
-platforms](../media/image17.png)
+platforms](media/image17.png)
 ##### Figure 2.12.2: International Data Spaces connecting different cloud platforms
 
 With this integrating ambition, the International Data Spaces initiative

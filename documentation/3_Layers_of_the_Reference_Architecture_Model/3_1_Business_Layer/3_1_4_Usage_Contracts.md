@@ -13,8 +13,7 @@ categories of applicable contracts, and it presents patterns to observe
 their usage and report validations. For this purpose, the IDS makes use
 of the [Information Layer](../3_3_Information_Layer/3_3_InformationLayer.md).
 
-![Technical Enforcement and organizational enforcement of usage
-policies](./media/image20_new.png)
+![Technical Enforcement and organizational enforcement of usage policies](media/image20_new.png)
 
 A Usage Contract comprises a set of Usage Policies. Each policy
 describes a certain permission or obligation of an [IDS Resource](../3_3_Information_Layer/3_3_InformationLayer.md#digital-resource).

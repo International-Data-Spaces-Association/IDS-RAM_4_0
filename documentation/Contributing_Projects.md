@@ -2,7 +2,7 @@
 
 These projects contributed to the IDS Reference Architecture Model.
 
-** Thank you! **
+**Thank you!**
 
 ## Industrial Data Space ##
 
@@ -60,7 +60,7 @@ These projects contributed to the IDS Reference Architecture Model.
 
 ## AI4EU ##
 
-![AI4EU](media/ai4eu-logo_NOTAGLINE.jfif)
+![AI4EU](media/ai4eu-logo_NOTAGLINE.jpg)
 
 [AI4EU](https://www.ai4europe.eu/)
 
@@ -72,7 +72,7 @@ These projects contributed to the IDS Reference Architecture Model.
 
 ## Qua4lity ##
 
-![Qua4liy](media/Logo%2BQu4lity.jfif)
+![Qua4liy](media/Logo-Qu4lity.jpg)
 
 [Qua4lity](https://qu4lity-project.eu/)
 
@@ -96,7 +96,7 @@ These projects contributed to the IDS Reference Architecture Model.
 
 ## DIH^2 ##
 
-![DIH2](media/Logo%2BDIH%C2%B2.jfif)
+![DIH2](media/Logo-DIH.jpg)
 
 [DIH^2](http://www.dih-squared.eu/)
 
@@ -130,7 +130,7 @@ These projects contributed to the IDS Reference Architecture Model.
 
 [TRUSTS](https://www.trusts-data.eu/)
 
-## FlexiGoBots
+## FlexiGroBots
 
 ![FlexiGroBots](media/FLEXIGROBOTS_logo_v02_final-01.jpg)
 

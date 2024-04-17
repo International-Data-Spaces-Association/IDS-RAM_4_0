@@ -164,7 +164,7 @@ The Trusted Connector guarantees a controlled execution environment for data ser
 
 An IDS Connector may use Message Router to coordinate the data flow between different systems and applications. From a technical point of view, the developer does this by using pipelining, which is a usually a paradigm of Message Routers for connecting different nodes in a route definition. The basic idea of a pipeline is that Message Routers uses the output of one node as input to the next node. Every node in such a route is a processor, except for the initial endpoint (as shown in [Figure 4.1.6.6](#figure-4166-message-router-pipeline-example)).
 
-![Message Router pipeline (example)](media/intercepting-data-flow-data-flow.drawio.png)
+![Message Router pipeline ](media/intercepting-data-flow-data-flow.drawio.png)
 
 ##### Figure 4.1.6.6: Message Router pipeline (example)
 

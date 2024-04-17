@@ -41,6 +41,8 @@ As mentioned before, the **Policy Decision Point (PDP)** makes the decision base
 
 ##### Figure 3.4.6.3: Usage Control Components inside an IDS Connector
 
-![Usage Control Example Sequence with Context Information (PIP) and Execution (PXP) call](media/uc-example-Sequence.drawio.png)
+let's add some text here for testing
+
+![Usage Control Example Sequence with Context Information -PIP- and Execution -PXP- call](media/uc-example-Sequence.drawio.png)
 
 ##### Figure 3.4.6.4: Usage Control Example Sequence with Context Information (PIP) and Execution (PXP) call

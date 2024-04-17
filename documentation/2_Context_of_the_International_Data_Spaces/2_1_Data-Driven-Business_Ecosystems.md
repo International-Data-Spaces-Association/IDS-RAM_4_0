@@ -25,6 +25,5 @@ within such an ecosystem, as end-to-end customer process support can
 only be achieved if the partners team up and jointly utilize their data
 resource (as shown by a number of examples in the Figure below).
 
-![Data Sharing in
-Ecosystems](../media/image12.png)
+![Data Sharing in Ecosystems](media/image12.png)
 ##### Figure 2.1: Data Sharing in Ecosystems

@@ -1,6 +1,6 @@
 ### Metadata Broker ###
 
-The IDS Metadata Broker is an IDS Connector (see Section [3.5.2](./3_5_2_IDS_Connector.md#ids-connector)), which contains an endpoint for the registration, publication, maintenance, and query of Self-Descriptions. 
+The IDS Metadata Broker is an IDS Connector (see Section [3.5.2](./3_5_2_IDS_Connector.md#ids-connector)), which contains an endpoint for the registration, publication, maintenance, and query of Self-Descriptions.
 
 A Self-Description encapsulates information about IDS Connector itself and its capabilities and characteristics. This Self-Description contains information about the offered interfaces, the owner of the component and the metadata of the data offered by the component. A Self-Description is provided by the operator of the Connector. The Self-Description in total can be seen as metadata.
 
@@ -18,7 +18,7 @@ Furthermore, a Metadata Broker implementation might add indexing or caching modu
 
 Additionally, most use cases for Metadata Brokers require a human-oriented interface to the Self-Descriptions. A website with fulltext and facet search capabilities is therefore usually provided. The website might further provide the creation and management of the locally stored Self-Descriptions. However, as the registration and updating process at the Metadata Broker is centered around Connectors, the authority of the human website user and the asset-hosting Connector must be ensured.
 
-####  Endpoints ####
+#### Endpoints ####
 
 Metadata Brokers must provide remote endpoints to their own Self-Description (read-only) as well as to the locally persisted Self-Description graph (read/write for the hosting Connectors, read-only for the others). The server hosting these endpoints translates incoming requests, performs the necessary IDS identity and validity checks, and translates them into operations to the database.
 

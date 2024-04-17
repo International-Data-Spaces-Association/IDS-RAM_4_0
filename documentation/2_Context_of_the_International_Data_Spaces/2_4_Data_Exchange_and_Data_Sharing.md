@@ -7,8 +7,7 @@ With the proliferation of Electronic Data Interchange (EDI) in the
 which were accompanied by the development of certain technical
 standards.
 
-![Evolution of technical standards for data
-exchange](../media/image13.png)
+![Evolution of technical standards for data exchange](media/image13.png)
 ##### Figure 2.4.1: Evolution of technical standards for data exchange
 
 The Figure above shows the evolution of
@@ -39,6 +38,5 @@ also the Figure below:
     data marketplaces). Furthermore, data sharing implies a mode of
     collaboration towards coopetition.
 
-![Data exchange vs. data
-sharing](../media/image14.png)
+![Data exchange vs. data sharing](media/image14.png) 
 ##### Figure 2.4.2 : Data Exchange and Data Sharing
