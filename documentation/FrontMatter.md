@@ -78,7 +78,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 * Dr. Markus Ketterl, msg systems
 * Judith Koetzsch, Rittal
 * Jacob Köhler, Deloitte
-* Dr. Christoph Lange, Fraunhofer IAIS
+* Dr. Christoph Lange, Fraunhofer FIT
 * Dorothea Langer, Deloitte
 * Jörg Langkau, nicos
 * Dominik Lis, Fraunhofer ISST
