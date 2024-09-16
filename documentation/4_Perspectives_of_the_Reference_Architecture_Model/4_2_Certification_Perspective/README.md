@@ -1,4 +1,4 @@
-# Certifiaction Perspective
+# Certification Perspective
 
 ## Table of Content ##
 
