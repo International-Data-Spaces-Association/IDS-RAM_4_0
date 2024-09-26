@@ -72,14 +72,14 @@ To establish a trusted connection, each connector needs the identity information
 ##### Figure 4.1.2.3: Interaction between IDS Connectors and Identity Components
 
 1. Each IDS Connector acquires a valid identity certificate from the IDS Device CA.
-2. Each IDS Connector requests a current Dynamic Attibute Token from DAPS.
-3. When establishing communication, the DAT of both IDS Connector instances is exchanged. This is also matched with the used TLS certificate.
+2. Each IDS Connector requests a current Dynamic Attribute Token (DAT) from a DAPS.
+3. When establishing communication, the DAT of both IDS Connector instances is exchanged and verified as detailed below.
 
-To reduce the risk of an attacker abusing a DAT, these DATs should only be disclosed to other communication partnes at will.
-To further protect from attacks performed with leaked DATs, each Connector has to validate the certificate used for the TLS connection against the DAT in one of the following two ways:
+To protect from attacks performed with leaked DATs, each Connector has to validate the certificate used for the TLS connection against the DAT in the following way:
 
-* Option 1. The connector uses its identity certificate for TLS connections. In this case, the corresponding IDS connector must assure the identifier in the DAT matches the presented certificate.
-* Option 2. The connector uses a separate certificate for TLS connections (e.g., issued by a CA such as Let's Encrypt). In this case, the corresponding IDS Connector must assure the certificate fingerprint matches the one that is embedded in the DAT.
+- When the DAT is requested in step 2, the Connector SHOULD include fingerprints of the/all certificate(s) that may be used for transport encryption in conjunction with that DAT into the request. These may be just the identity certificate, separate transport certificate(s), or both. The DAPS server SHOULD in turn include this information into the token.
+- The DAPS server MUST include fingerprints into the token. At least the fingerprint of the identity certificate SHOULD be configured as default value, and the DAPS server SHOULD overwrite this value with the ones submitted with the DAT request.
+- After exchanging DATs, in the end of step 3, each Connector MUST check the fingerprint of the peer Connector's TLS certificate, used for transport encryption, against the fingerprint(s) given in its token. If no matching fingerprint is found, the DAT MUST be considered compromised and the connection MUST be aborted.
 
 The ParIS only serves untrusted information and thus is not part of this interaction. The DAT will be refreshed on a regular basis, since the token lifetime is limited to a short timeframe. The device identity will be provisioned and refreshed only after expiration (with a long time frame) or in case of revocation. 
 
