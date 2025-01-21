@@ -120,12 +120,14 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 * Prof. Dr.-Ing. Gernot Spiegelberg, Siemens
 * Markus Spiekermann, Fraunhofer ISST
 * Christian Spohn, ATOS
+* Michiel Stornebrink, TNO
 * Gerrit Stöhr, GESIS
 * Erwin Tanger, ATOS
 * Dr. Michael Theß, Signal Cruncher
 * Rizkallah Touma, I2CAT
 * Dr. Sebastian Tramp, eccenca
 * Anil Turkmayali, International Data Spaces Association
+* Wouter van den Berg, TNO
 * Dr. Mona Wappler, thyssenkrupp
 * Ann-Christin Weiergräber, Uniklinik RWTH Aachen
 * Dr. Sven Wenzel, Fraunhofer ISST
