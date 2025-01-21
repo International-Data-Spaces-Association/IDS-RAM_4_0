@@ -127,7 +127,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 * Rizkallah Touma, I2CAT
 * Dr. Sebastian Tramp, eccenca
 * Anil Turkmayali, International Data Spaces Association
-* Wouter VandenBerg, TNO
+* Wouter van den Berg, TNO
 * Dr. Mona Wappler, thyssenkrupp
 * Ann-Christin Weiergräber, Uniklinik RWTH Aachen
 * Dr. Sven Wenzel, Fraunhofer ISST
